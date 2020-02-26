@@ -106,6 +106,15 @@
             color:black;
             text-decoration: underline;
         }
+        li > a.active {
+            text-decoration:none;
+            color: #333333;
+        }
+        img.latestBlog__icon__nhsimg{
+            width:40px;
+            float:right;
+            margin-right:20px;
+        }
     </style>
 </head>
 
@@ -164,10 +173,10 @@
 
 <nav>
     <ol class="list list--reset list--inline">
-        <li class="active">Tasks</li>
-        <li><a href="#">Teams</a></li>
-        <li><a href="#">News and events</a></li>
-        <li><a href="#">About NHS Digital</a></li>
+        <li class="active"><a href="task-list.html" class="active">Tasks</a></li>
+        <li><a href="#">Teams and networks</a></li>
+        <li><a href="#">News, events and blogs</a></li>
+        <li><a href="#">Collaborate</a></li>
     </ol>
 </nav>
                                 </div>
@@ -230,7 +239,7 @@
                     </li>
                         <li class="breadcrumb__crumb">
                             <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true" />
-                            <a href="index.html" class="breadcrumb__link" data-text="Systems and services">Tasks</a>
+                            <a href="task-list.html" class="breadcrumb__link" data-text="Systems and services">Tasks</a>
                         </li>
                         <li class="breadcrumb__crumb">
                             <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true" />
@@ -270,7 +279,7 @@ HRG for hotels and flights
 </ul>
 </p> 
 <p>
-<a href="#" class="nhsuk-button">Book travel</a> 
+<a href="https://travel.crowncommercial.gov.uk/" class="nhsuk-button">Book travel</a> 
 </p>
 </div>
                         </div>
@@ -304,22 +313,22 @@ HRG for hotels and flights
                                 <a href="#top" aria-label="Scroll to &#39;Top of page&#39;" title="Scroll to &#39;Top of page&#39;">Top of page</a>
                             </li>
                             <li>
-                                <a href="#about-nhsmail" aria-label="Scroll to &#39;About NHSmail&#39;" title="Scroll to &#39;About NHSmail&#39;">Before you start</a>
+                                <a href="#before-start" aria-label="Scroll to &#39;About NHSmail&#39;" title="Scroll to &#39;About NHSmail&#39;">Before you start</a>
                             </li>
                             <li>
-                                <a href="#start-using-nhsmail" aria-label="Scroll to &#39;Start using NHSmail&#39;" title="Scroll to &#39;Start using NHSmail&#39;">Book rail travel</a>
+                                <a href="#book-trains" aria-label="Scroll to &#39;Start using NHSmail&#39;" title="Scroll to &#39;Start using NHSmail&#39;">Book rail travel</a>
                             </li>
                             <li>
-                                <a href="#security" aria-label="Scroll to &#39;Security&#39;" title="Scroll to &#39;Security&#39;">Book accommodation</a>
+                                <a href="#book-accommodation" aria-label="Scroll to &#39;Security&#39;" title="Scroll to &#39;Security&#39;">Book accommodation</a>
                             </li>
                             <li>
-                                <a href="#guidance-for-sending-secure-email-including-to-patients-" aria-label="Scroll to &#39;Flights&#39;" title="Scroll to &#39;Flights&#39;">Book a flight</a>
+                                <a href="#book-flights" aria-label="Scroll to &#39;Flights&#39;" title="Scroll to &#39;Flights&#39;">Book a flight</a>
                             </li>
                             <li>
-                                <a href="#related-articles-related-news-nhsmail" aria-label="Scroll to &#39;Related news&#39;" title="Scroll to &#39;Related news&#39;">Contact us about travel</a>
+                                <a href="#contact-us">Contact us about travel</a>
                             </li>
                           <li>
-                                <a href="#user-guides" aria-label="Scroll to &#39;Related news&#39;" title="Scroll to &#39;Related news&#39;">User guides</a>
+                                <a href="#user-guides">User guides</a>
                             </li>
                             <li>
                                 <a href="#further-information" aria-label="Scroll to &#39;Related pages&#39;" title="Scroll to &#39;Related pages&#39;">Related pages</a>
@@ -346,36 +355,7 @@ For all other queries regarding NHSmail, the national NHSmail helpdesk is availa
 
 
 
-
-
-
-
-
-        <div id="about-nhsmail" class="article-section ">
-
-              <h2 data-uipath="website.contentblock.section.title">Before you start</h2>
-
-            <div data-uipath="website.contentblock.section.content" class="rich-text-content">
-<p>
-If you already have a login, use the link above, and enter your NHS Digital email address and password for DigiTS. 
-</p>
-<p>
-If you don’t have a login, you will need to fill in an online form to request access. The information to enter is:
-</P>
-
-<p><a href ="http://services2.hscic.gov.uk/forms/ICTForms/_layouts/FormServer.aspx?XsnLocation=http://services2.hscic.gov.uk/forms/ICTForms/Self%20Service%20Travel%20Request%20Access/Forms/template.xsn">Request access</a> – complete the form to request a travel booking account 
-</p>
-<p>
-<a href="https://policytool.hscic.gov.uk/UserHome/Learning/CourseList.aspx?c=104">Complete training</a> – complete the training course
-<h4>Setup your account</h4>
-<p>After your request is received, you will receive a unique link to complete your DigiTS setup. Enter your name as it appears on your passport in your profile, this prevents future issues.
-
-</p> 
-</div>
-        </div>
-
-
-        <div id="start-using-nhsmail" class="article-section ">
+        <div id="book-trains" class="article-section ">
 
               <h2 data-uipath="website.contentblock.section.title">Book rail travel</h2>
 
@@ -391,7 +371,7 @@ The travel team ask you to book a week in advance and choose the cheapest ticket
 <li>Use the link above and enter your login for DigiTS 
 </li>
 <li>
-Choose Book Rail
+Choose <strong>Book Rail</strong>
 </li>
 <li>
 Enter your journey details and choose the best option for your journey, such as an advance or off-peak return ticket
@@ -412,52 +392,211 @@ Note the collection reference number and route details
 <h3>
 Changes and cancellations
 </h3>
+<p>You can change the date of outward travel for an advance ticket, but they are non-refundable if you are no longer travelling.  For other ticket types such as off-peak, you can cancel and rebook tickets. 
+</p>
 
+<p>To cancel or change a ticket:</p>
+<ol>
+<li>Use the link above and enter your login for DigiTS
+</li>
+<li>
+Choose My Account and view your bookings
+</li>
+<li>
+Check the options next to the booking such as <strong>Change date/time</strong>
+</li>
+<li>
+Or to cancel, click the booking and choose Cancel
+</li>
+</ol>
             </div>
         </div>
 
 
-        <div id="security" class="article-section ">
+        <div id="book-accommodation" class="article-section ">
 
-              <h2 data-uipath="website.contentblock.section.title">Security</h2>
+              <h2 data-uipath="website.contentblock.section.title">Book accommodation</h2>
 
             <div data-uipath="website.contentblock.section.content" class="rich-text-content">
-<p>NHSmail is <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/715778/May-2018_Government-Security-Classifications-2.pdf" onclick="logGoogleAnalyticsEvent(&apos;Download attachment&apos;,&apos;Service&apos;,&apos;NHSmail =&gt; https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/715778/May-2018_Government-Security-Classifications-2.pdf&apos;);" onkeyup="return vjsu.onKeyUp(event)">accredited to government OFFICIAL status</a>&#160;for sharing patient identifiable and sensitive information, meaning it meets a set of information security controls that offer an appropriate level of protection against loss or inappropriate access.</p>            </div>
+<p>
+The travel team ask that you look for a room near your destination that has breakfast included, and also has a cancellation policy of 2pm on the day of arrival with no charge. If such a room is not available, then pick the next best alternative.
+</p>
+<p>
+Before you book: check the cost and email your line manager to obtain approval for your trip. Make sure you know which portfolio (PCODE) the trip comes under.
+</p>
+<p>
+To book a hotel:
+</p>
+
+<ol>
+<li>Sign into DigiTS and choose Travel Agency
+</li>
+<li>Enter the location and dates
+</li>
+<li>Check the list for the best match and proceed to book the hotel
+</li>
+<li>Choose your approver and the portfolio for the trip
+</li>
+<li>Note the confirmation number and dates
+</li>
+</ol>
+
+<p>
+<strong>In policy rates:</strong> In London, Cambridge, Oxford and Reading the maximum rate per night is £150. For all other areas the rate per night is £100.
+</p>
+<h3>
+No hotel available within budget
+</h3>
+<p>
+Check for a hotel in nearby locations that you can travel to your destination from in the morning. If none are available, use the over budget hotel request
+</p>
+<p>
+Link [Request an over budget hotel]
+</p>
+<h3>
+Cancel or amend a hotel booking
+</h3>
+<p>
+To cancel a hotel booking that is cancellable:
+</p>
+<ol>
+<li>go to your trips in HRG and select the hotel booking
+</li>
+<li>choose cancel booking and confirm the cancellation
+</ol>
+<h3>Amend a hotel booking</h3>
+<p>
+To change the date of your stay:
+</p>
+<ol>
+<li>start a new search for the new date 
+</li>
+<li>make the new booking
+</li>
+<li>cancel the original booking 
+</li>
+</ol>
+</p> 
+</div>
         </div>
 
 
-        <div id="guidance-for-sending-secure-email-including-to-patients-" class="article-section ">
+        <div id="book-flights" class="article-section ">
 
-              <h2 data-uipath="website.contentblock.section.title">Guidance for sending secure email (including to patients)</h2>
+              <h2 data-uipath="website.contentblock.section.title">Book a flight</h2>
 
             <div data-uipath="website.contentblock.section.content" class="rich-text-content">
-<p>Make sure you know how to send sensitive, personal and confidential information&#160;securely by email by reading the <a href="/services/nhsmail/guidance-for-sending-secure-email">sending secure email guidance</a>.</p>
+<p>
+The travel team ask that for a domestic flight, you write a business case and send it to the Business services team using ResolveIT with approval attached from EMT.
 
-<h3>NHSmail Portal</h3>
+Before you book: check the approximate cost and email your line manager to obtain approval for your trip. Make sure you know which portfolio (PCODE) the trip comes under.
 
-<p>Further information is available on the <a href="https://support.nhs.net/" onclick="logGoogleAnalyticsEvent(&apos;Link click&apos;,&apos;Service&apos;,&apos;https://support.nhs.net/&apos;);" onkeyup="return vjsu.onKeyUp(event)">NHSmail portal</a> under &apos;Sharing sensitive information guidance&apos;.</p>            </div>
+To book a flight:
+1.	Sign into DigiTS and choose Travel Agency
+2.	Enter the departure/destination and dates
+3.	Check the list for the best match and proceed to book the flight
+4.	Choose your approver and the portfolio for the trip
+5.	Note the confirmation number and dates
+Airport parking
+Send the team an email to corporateservices@nhs.net with details of the vehicle and airport parking required. Include the booking reference of the flight you have self-booked so that the team can action this for you.
+Cancel a flight
+As flight bookings are not cancellable, these are your options:
+•	You can amend a flight by calling the Business Services team.
+•	To cancel a flight, call the HRG flights team, to enable us to recover the tax portion of the cost of your flight
+
+</p>
+
+</div>
+        </div>
+       <div id="contact-us" class="article-section ">
+
+              <h2 data-uipath="website.contentblock.section.title">Contact us about travel</h2>
+
+            <div data-uipath="website.contentblock.section.content" class="rich-text-content">
+<p>
+If you have any questions about travel, you can get help from the Business Services team:
+
+Raise a case now using Resolve-IT online 
+Email us at corporateservices@nhs.net 
+Call us on 0113 397 3970 option 2 / option 2
+
+
+</p>
+
+</div>
         </div>
 
+        <div id="user-guides" class="article-section ">
 
+              <h2 data-uipath="website.contentblock.section.title">User guides</h2>
 
-  <div id="related-articles-related-news-nhsmail" class="latestBlog article-section related-articles--div filter-parent" data-max-count="3" data-state="short">
-        <h2>Related news</h2>
+            <div data-uipath="website.contentblock.section.content" class="rich-text-content">
+<p>
+If you need more detailed information to help you book, check these user guides from the providers:
+</p>
 
               <div class="latestBlog__item filter-list__item">
                   <div class="latestBlog__icon">
-                          <img class="latestBlog__icon__nhsimg" src="../content/images/fibre_57101102_med.jpg" alt="NHS Digital article" >
+                          <img class="latestBlog__icon__nhsimg" src="../content/images/doc.png">
                   </div>
 
                   <div class="latestBlog__content">
-                      <div class="latestBlog__title"><a class="cta__title cta__button" href="/news-and-events/issues-with-nhsmail-on-outlook" onClick="logGoogleAnalyticsEvent('Link click','Service','/news-and-events/issues-with-nhsmail-on-outlook');" onKeyUp="return vjsu.onKeyUp(event)" title="Connectivity issues for some users of NHSmail through Outlook">Connectivity issues for some users of NHSmail through Outlook</a></div>
+                      <div class="latestBlog__title"><a class="cta__title cta__button" href="#">Trainline Self Book Quick Start Guide v0.5.pdf</a></div>
                           <div class="latestBlog__author">
-
-
-
-5 November 2019                          </div>
-                      <div class="latestBlog__body">We are aware that some users are currently unable to access NHSmail through Outlook.</div>
+5 November 2019
+                            </div>
+                      <div class="latestBlog__body" style="display:none">We are aware that some users are currently unable to access NHSmail through Outlook.</div>
                   </div>
               </div>
+              <div class="latestBlog__item filter-list__item">
+                  <div class="latestBlog__icon">
+                          <img class="latestBlog__icon__nhsimg" src="../content/images/doc.png">
+                  </div>
+
+                  <div class="latestBlog__content">
+                      <div class="latestBlog__title"><a class="cta__title cta__button" href="#">HRG Booking Tool Hints and Tips.docx</a></div>
+                          <div class="latestBlog__author">
+5 November 2019
+                            </div>
+                      <div class="latestBlog__body" style="display:none">We are aware that some users are currently unable to access NHSmail through Outlook.</div>
+                  </div>
+              </div>
+
+              <div class="latestBlog__item filter-list__item">
+                  <div class="latestBlog__icon">
+                          <img class="latestBlog__icon__nhsimg" src="../content/images/doc.png">
+                  </div>
+
+                  <div class="latestBlog__content">
+                      <div class="latestBlog__title"><a class="cta__title cta__button" href="#">HRG Online Profile User Guide - NHS Digital.docx</a></div>
+                          <div class="latestBlog__author">
+5 November 2019
+                            </div>
+                      <div class="latestBlog__body" style="display:none">We are aware that some users are currently unable to access NHSmail through Outlook.</div>
+                  </div>
+              </div>
+
+              <div class="latestBlog__item filter-list__item">
+                  <div class="latestBlog__icon">
+                          <img class="latestBlog__icon__nhsimg" src="../content/images/doc.png">
+                  </div>
+
+                  <div class="latestBlog__content">
+                      <div class="latestBlog__title"><a class="cta__title cta__button" href="#">HRG Online User Guide - NHS Digital.docx</a></div>
+                          <div class="latestBlog__author">
+5 November 2019
+                            </div>
+                      <div class="latestBlog__body" style="display:none">We are aware that some users are currently unable to access NHSmail through Outlook.</div>
+                  </div>
+              </div>
+ 
+ 
+ 
+
+</p>
+
+</div>
+        </div>
 
 
 
@@ -545,86 +684,43 @@ Changes and cancellations
         }());
     </script>
 
-      </div>
+
 
     <div class="article-section article-section--child-pages" id="further-information">
         <h2>Related pages</h2>
-        <ol class="list list--reset cta-list">
-                <li>
-
-        <span class="type-span type-span--external type-span--hidden" data-type="external">external</span>
-
-                            <article class="cta cta--hf">
-                                <h2 class="cta__title"><a href="https://support.nhs.net/service-status/" onClick="logGoogleAnalyticsEvent('Link click', 'Service', 'https://support.nhs.net/service-status/')" onKeyUp="return vjsu.onKeyUp(event)">NHSmail service status</a></h2>
-                                    <p class="cta__text">Up-to-date information on the status of NHSmail services and any key known issues affecting users.</p>
-                            </article>
-
-                </li>
-                <li>
-
-        <span class="type-span type-span--external type-span--hidden" data-type="external">external</span>
-
-                            <article class="cta cta--hf">
-                                <h2 class="cta__title"><a href="https://portal.nhs.net/Help/policyandguidance" onClick="logGoogleAnalyticsEvent('Link click', 'Service', 'https://portal.nhs.net/Help/policyandguidance')" onKeyUp="return vjsu.onKeyUp(event)">NHSmail support site</a></h2>
-                                    <p class="cta__text">Access training and guidance materials for NHSmail.</p>
-                            </article>
-
-                </li>
-                <li>
+        <ul class="list--reset">
+                 <li>
                         <article class="cta cta--hf">
         <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
-                        <h2 class="cta__title"><a href="/services/nhsmail/nhsmail-case-studies">NHSmail case studies</a></h2>
-                                <p class="cta__text">Find out how NHSmail has changed the way health and social care colleagues work.</p>
+                        <h5 class="cta__title"><a href="#">Travel team</a></h5>
+                                <p class="cta__text" style="display:none">Travel team page</p>
                         </article>
-                </li>
-                <li>
+                </li> 
+
+                 <li>
                         <article class="cta cta--hf">
         <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
-                        <h2 class="cta__title"><a href="/services/nhsmail/the-benefits-of-nhsmail">The benefits of NHSmail</a></h2>
-                                <p class="cta__text">NHSmail contains core services that are centrally funded by the Department of Health and Social Care, as well as optional top-ups and collaboration services.</p>
+                        <h5 class="cta__title"><a href="#">Claiming expenses</a></h5>
+                                <p class="cta__text" style="display:none">Travel team page</p>
                         </article>
-                </li>
-                <li>
+                </li> 
+                 <li>
                         <article class="cta cta--hf">
         <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
-                        <h2 class="cta__title"><a href="/services/nhsmail/nhsmail-live-with-microsoft-hybrid-service-on-office-365">NHSmail live with Microsoft Hybrid service on Office 365</a></h2>
-                                <p class="cta__text">NHSmail is working with Microsoft to provide a hybrid version of Office 365 (O365) that integrates the NHSmail directory, Exchange and Skype for Business services.</p>
+                        <h5 class="cta__title"><a href="#">Approving travel and expenses</a></h5>
+                                <p class="cta__text" style="display:none">Travel team page</p>
                         </article>
-                </li>
-                <li>
+                </li> 
+                 <li>
                         <article class="cta cta--hf">
         <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
-                        <h2 class="cta__title"><a href="/services/nhsmail/the-secure-email-standard">The secure email standard</a></h2>
-                                <p class="cta__text">Emails sent to and from health and social care organisations must meet the secure email standard (DCB1596) so that everyone can be sure that sensitive and confidential information is kept secure.</p>
+                        <h5 class="cta__title"><a href="#">Non-employee travel and expenses</a></h5>
+                                <p class="cta__text" style="display:none">Salary advance for travel expenses</p>
                         </article>
-                </li>
-                <li>
-                        <article class="cta cta--hf">
-        <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
-                        <h2 class="cta__title"><a href="/services/nhsmail/nhsmail-policies">NHSmail policies</a></h2>
-                                <p class="cta__text">As a secure email system, NHSmail must be operated and used in accordance with a set of clear policies and procedures.</p>
-                        </article>
-                </li>
-                <li>
-                        <article class="cta cta--hf">
-        <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
-                        <h2 class="cta__title"><a href="/about-nhs-digital/our-work/keeping-patient-data-safe/gdpr/gdpr-register/nhsmail-use-by-nhs-digital">NHSmail use by NHS Digital: GDPR information</a></h2>
-                                <p class="cta__text">Why and how we process your data within NHSmail, and your rights.</p>
-                        </article>
-                </li>
+                </li> 
         </ol>
 
         <ol class="list list--reset">
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
             <li>
             </li>
             <li>
