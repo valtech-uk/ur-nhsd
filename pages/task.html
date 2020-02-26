@@ -52,7 +52,7 @@
 <script defer src="../content/js/breadcrumbs.js"></script>
 <script defer src="../content/js/highlighter-copy-button.js"></script>
 <script defer src="../content/js/aria.js"></script>
-<script defer src="../content/js/details-element-polyfill/dist/details-element-polyfill.js"></script>
+<script defer src="../content/js/details-element-polyfill.js"></script>
 
 
     <style>
@@ -66,6 +66,35 @@
         .inner-wrapper-sticky {
             z-index:1;
         }
+        media (min-width: 925px){
+            .local-header *+* {
+                margin-top:0.5em !important;
+            }
+        }
+
+        .nhsuk-button {
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 28px;
+    -webkit-appearance: none;
+    background-color: #007f3b;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 4px 0 #00401e;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 0;
+    padding: 12px 16px;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    width: auto;
+}
     </style>
 </head>
 
@@ -125,9 +154,9 @@
 <nav>
     <ol class="list list--reset list--inline">
         <li class="active">Tasks</li>
-        <li><a href="/services">Teams</a></li>
-        <li><a href="/news-and-events">News and events</a></li>
-        <li><a href="/about-nhs-digital">About NHS Digital</a></li>
+        <li><a href="#">Teams</a></li>
+        <li><a href="#">News and events</a></li>
+        <li><a href="#">About NHS Digital</a></li>
     </ol>
 </nav>
                                 </div>
@@ -186,15 +215,15 @@
             <nav aria-label="Breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb__crumb">
-                        <a href="../" class="breadcrumb__link" data-text="NHS Digital">Intranet</a>
+                        <a href="../index.html" class="breadcrumb__link" data-text="NHS Digital">Intranet</a>
                     </li>
                         <li class="breadcrumb__crumb">
                             <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true" />
-                            <a href="/services" class="breadcrumb__link" data-text="Systems and services">Teams</a>
+                            <a href="index.html" class="breadcrumb__link" data-text="Systems and services">Tasks</a>
                         </li>
                         <li class="breadcrumb__crumb">
                             <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true" />
-                            <span class="breadcrumb__link breadcrumb__link--secondary" data-text="NHSmail" aria-current="page">NHSmail</span>
+                            <span class="breadcrumb__link breadcrumb__link--secondary" data-text="NHSmail" aria-current="page">Travel</span>
                         </li>
                 </ol>
             </nav>
@@ -204,199 +233,38 @@
 
     <main id="main-content">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- This is a load of global setup for the highcharts config -->
-
-<script src="../content/js/highcharts/highcharts.js"></script>
-<!--[if lt IE 9]>
-<script src="../content/js/highcharts/oldie.js"></script>
-<![endif]-->
-
-<!--Allow exporting of chart images-->
-<script src="../content/js/highcharts/exporting.js"></script>
-<script src="../content/js/highcharts/offline-exporting.js"></script>
-
-<!--Supported maps-->
-<script src="../content/js/highcharts/maps/map.js"></script>
-<script src="../content/js/highcharts/maps/mapdata/british-isles-all.js"></script>
-<script src="../content/js/highcharts/maps/mapdata/british-isles.js"></script>
-
-<script>
-    Highcharts.setOptions({
-        colors: ['#005EB8', '#84919C', '#003087', '#71CCEF', '#D0D5D6'],
-        chart: {
-            backgroundColor: '#F4F5F6',
-            style: {
-                fontFamily: 'Frutiger W01'
-            },
-            zoomType: 'xy'
-        },
-        xAxis: {
-            title: {
-                style: {"color":"#000000","fontWeight":"bold"},
-            },
-            gridLineDashStyle: 'shortdash',
-            gridLineWidth: 1
-        },
-        yAxis: {
-            title: {
-                style: {"color":"#000000","fontWeight":"bold"},
-            },
-            gridLineDashStyle: 'shortdash',
-            gridLineWidth: 1
-        },
-        credits: {
-            enabled: false
-        },
-        plotOptions: {
-            scatter: {
-                marker: {
-                    radius: 5,
-                }
-            },
-            line: {
-                marker: {
-                    enabled: false
-                }
-            }
-        }
-    });
-</script>
-
-<!-- Set up equation support from mathjax -->
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS_HTML"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Usage of macro in your .ftl file:        -->
-<!--    1. Create wrapper div and add class name 'filter-parent' to it -->
-<!--    2. To the wrapper div add properties: -->
-<!--         - data-state="short" -->
-<!--         - data-max-count="maxItemsToDisplay" -->
-<!--    3. Inside wrapper create series of HTML elements (ex. divs) to show/hide and add class="filter-list__item" to each of the element -->
-<!--    4. add showAll macro and pass 3 params: overallNumberOfItems and maxItemsToDisplay -->
-<!--         - overallNumberOfItems -->
-<!--         - maxItemsToDisplay -->
-<!--         - (optional) showLessStylingClass - class which is used for styling showAll/showLess button -->
-<!--    5. include showAll.ftl file in your ftl file-->
-
-
-<!-- Sample FTL structure could look like this one: -->
-<!--  <div class="column filter-parent" data-max-count="\$\{maxItemsToDisplay\}" data-state="short">  -->
-<!--    <div class="filter-list__item">Element 1 to show/hide</div>           -->
-<!--    <div class="filter-list__item">Element 2 to show/hide</div>           -->
-<!--    <div class="filter-list__item">Element 3 to show/hide</div>           -->
-<!--    ...                                                                    -->
-<!--    \<\@showAll overallNumberOfItems maxItemsToDisplay \/\>                        -->
-<!--  </div>                                                                   -->
-
-
-
-
-
-      <!-- strip HTML tags -->
-
-
-
-
-
-
-
-
-
 <article class="article article--service">
-
-
-    <!-- checking whether simulating doc in order to avoid console errors from NewsHub and EventHub docs -->
-
-
-
-
 
     <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide" aria-label="Document Header">
         <div class="local-header article-header article-header--with-icon" >
             <div class="grid-wrapper">
                 <div class="article-header__inner">
                     <div class="grid-row">
-                        <div class="column--two-thirds column--reset">
+                        <div class=""><!-- column  two-thirds column reset -->
 
 
 
-                            <h1 id="top" class="local-header__title" data-uipath="document.title" itemprop=name >NHSmail</h1>
+                            <h1 id="top" class="local-header__title" data-uipath="document.title" itemprop=name >Booking travel</h1>
                               <div class="article-header__subtitle" data-uipath="website.service.summary">
-<p>NHSmail is our secure email service approved by the Department of Health and Social Care for sharing patient identifiable and sensitive information. NHSmail, messaging, and sharing can be accessed by any organisation commissioned to deliver NHS healthcare or related activities.</p>                              </div>
+<p>
+You can book travel and accommodation through the following operators in DigiTS:
+
+<ul>
+<li>
+Trainline for train travel
+</li>
+<li>
+HRG for hotels and flights
+</li>
+</ul>
+</p> 
+<p>
+<a href="#" class="nhsuk-button">Book travel</a> 
+</p>
+</div>
                         </div>
-                            <div class="column--one-third column--reset local-header__icon">
-                                      <img src="https://digital.nhs.uk/svg-magic/binaries/content/gallery/website/icons/universal/letter.svg?colour=ffcd60" alt="NHSmail" />
+                            <div class="column--one-third column--reset local-header__icon" style="display:none">
+                                      <img src="#" alt="NHSmail" />
                             </div>
                     </div>
                 </div>
@@ -432,19 +300,22 @@
                                 <a href="#top" aria-label="Scroll to &#39;Top of page&#39;" title="Scroll to &#39;Top of page&#39;">Top of page</a>
                             </li>
                             <li>
-                                <a href="#about-nhsmail" aria-label="Scroll to &#39;About NHSmail&#39;" title="Scroll to &#39;About NHSmail&#39;">About NHSmail</a>
+                                <a href="#about-nhsmail" aria-label="Scroll to &#39;About NHSmail&#39;" title="Scroll to &#39;About NHSmail&#39;">Before you start</a>
                             </li>
                             <li>
-                                <a href="#start-using-nhsmail" aria-label="Scroll to &#39;Start using NHSmail&#39;" title="Scroll to &#39;Start using NHSmail&#39;">Start using NHSmail</a>
+                                <a href="#start-using-nhsmail" aria-label="Scroll to &#39;Start using NHSmail&#39;" title="Scroll to &#39;Start using NHSmail&#39;">Book rail travel</a>
                             </li>
                             <li>
-                                <a href="#security" aria-label="Scroll to &#39;Security&#39;" title="Scroll to &#39;Security&#39;">Security</a>
+                                <a href="#security" aria-label="Scroll to &#39;Security&#39;" title="Scroll to &#39;Security&#39;">Book accommodation</a>
                             </li>
                             <li>
-                                <a href="#guidance-for-sending-secure-email-including-to-patients-" aria-label="Scroll to &#39;Guidance for sending secure email (including to patients)&#39;" title="Scroll to &#39;Guidance for sending secure email (including to patients)&#39;">Guidance for sending secure email (including to patients)</a>
+                                <a href="#guidance-for-sending-secure-email-including-to-patients-" aria-label="Scroll to &#39;Flights&#39;" title="Scroll to &#39;Flights&#39;">Book a flight</a>
                             </li>
                             <li>
-                                <a href="#related-articles-related-news-nhsmail" aria-label="Scroll to &#39;Related news&#39;" title="Scroll to &#39;Related news&#39;">Related news</a>
+                                <a href="#related-articles-related-news-nhsmail" aria-label="Scroll to &#39;Related news&#39;" title="Scroll to &#39;Related news&#39;">Contact us about travel</a>
+                            </li>
+                          <li>
+                                <a href="#user-guides" aria-label="Scroll to &#39;Related news&#39;" title="Scroll to &#39;Related news&#39;">User guides</a>
                             </li>
                             <li>
                                 <a href="#further-information" aria-label="Scroll to &#39;Related pages&#39;" title="Scroll to &#39;Related pages&#39;">Related pages</a>
@@ -459,11 +330,11 @@
 
             <div class="column column--two-thirds page-block page-block--main">
 
-                    <div class="article-section article-section--highlighted">
+                    <div class="article-section article-section--highlighted" style="display:none">
                         <div class="callout callout--attention">
                             <h2>Top tasks</h2>
                             <div class="rich-text-content">
-<h2><a href="https://fs.nhs.net/adfs/ls/?wa=wsignin1.0&amp;wtrealm=https%3a%2f%2femail.nhs.net%2fowa%2f&amp;wctx=rm%3d0%26id%3dpassive%26ru%3d%252fowa%252f&amp;wct=2019-08-27T20%3a20%3a36Z" onclick="logGoogleAnalyticsEvent(&apos;Link click&apos;,&apos;Service&apos;,&apos;https://fs.nhs.net/adfs/ls/?wa=wsignin1.0&amp;wtrealm=https%3a%2f%2femail.nhs.net%2fowa%2f&amp;wctx=rm%3d0%26id%3dpassive%26ru%3d%252fowa%252f&amp;wct=2019-08-27T20%3a20%3a36Z&apos;);" onkeyup="return vjsu.onKeyUp(event)">Log into your NHSmail account</a></h2><p><strong>Your local helpdesk</strong><br />
+<h2><a href="#">Log into your NHSmail account</a></h2><p><strong>Your local helpdesk</strong><br />
 Your local IT team should be your first point of contact for help with your account, such as unlocking your account or a password reset. They can also assist in setting up a mobile phone or email programme to connect to NHSmail.</p><p><strong>NHSmail helpdesk</strong><br />
 For all other queries regarding NHSmail, the national NHSmail helpdesk is available 24 hours a day, 365 days a year on 0333 200 1133, or via email at <a href="mailto:helpdesk@nhs.net" onclick="logGoogleAnalyticsEvent(&apos;Link click&apos;,&apos;Service&apos;,&apos;mailto:helpdesk@nhs.net&apos;);" onkeyup="return vjsu.onKeyUp(event)">helpdesk@nhs.net</a>.</p>                            </div>
                         </div>
@@ -478,14 +349,25 @@ For all other queries regarding NHSmail, the national NHSmail helpdesk is availa
 
         <div id="about-nhsmail" class="article-section ">
 
-              <h2 data-uipath="website.contentblock.section.title">About NHSmail</h2>
+              <h2 data-uipath="website.contentblock.section.title">Before you start</h2>
 
             <div data-uipath="website.contentblock.section.content" class="rich-text-content">
-<p>NHSmail is available for use by any organisation commissioned to deliver publicly funded health and social care.</p>
+<p>
+If you already have a login, use the link above, and enter your NHS Digital email address and password for DigiTS. 
+</p>
+<p>
+If you don’t have a login, you will need to fill in an online form to request access. The information to enter is:
+</P>
 
-<p>More than half-a-million staff already use NHSmail on a daily basis in England and Scotland to help them deliver better patient care.</p>
+<p><a href ="http://services2.hscic.gov.uk/forms/ICTForms/_layouts/FormServer.aspx?XsnLocation=http://services2.hscic.gov.uk/forms/ICTForms/Self%20Service%20Travel%20Request%20Access/Forms/template.xsn">Request access</a> – complete the form to request a travel booking account 
+</p>
+<p>
+<a href="https://policytool.hscic.gov.uk/UserHome/Learning/CourseList.aspx?c=104">Complete training</a> – complete the training course
+<h4>Setup your account</h4>
+<p>After your request is received, you will receive a unique link to complete your DigiTS setup. Enter your name as it appears on your passport in your profile, this prevents future issues.
 
-<p>User numbers are growing at a rate of more than 10 per cent each year, as more organisations choose NHSmail as their preferred email service. <a href="https://support.nhs.net/" onclick="logGoogleAnalyticsEvent(&apos;Link click&apos;,&apos;Service&apos;,&apos;https://support.nhs.net/&apos;);" onkeyup="return vjsu.onKeyUp(event)">Find out more on the NHSmail support pages</a>.</p>            </div>
+</p> 
+</div>
         </div>
 
 

@@ -69,6 +69,185 @@
         .inner-wrapper-sticky {
             z-index:1;
         }
+
+.app-tabs {
+    list-style-type: none;
+    margin: -1px auto;
+    margin-bottom: 0;
+    overflow: visible;
+    padding: 0
+}
+
+.app-tabs__item {
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    z-index: 2
+}
+
+.app-tabs__item a {
+    background: inherit;
+    color: #005eb8;
+    display: block;
+    font-weight: bold;
+    margin-top: -1px;
+    padding: 15px;
+    text-decoration: none
+}
+
+.app-tabs__item--current a {
+    border-bottom-color: #005eb8;
+    border-top-color: #005eb8
+}
+
+.app-tabs__item__heading a {
+    background: inherit;
+    border-top: 0;
+    color: #005ea5;
+    display: none;
+    font-weight: bold;
+    padding: 15px;
+    position: relative;
+    text-decoration: none;
+    z-index: 2
+}
+
+.app-tabs__item__heading a:visited {
+    color: #005ea5
+}
+
+.app-tabs__item__heading--current {
+    background-color: #f0f0f0
+}
+
+.app-tabs__text {
+    padding: 20px
+}
+
+.app-tabs__container {
+    margin-top: -2px;
+    position: relative
+}
+
+.app-tabs__container pre {
+    background-color: #f8f8f8;
+    border: 0;
+    font-size: inherit;
+    margin: 0;
+    margin-bottom: 0;
+    max-width: inherit;
+    overflow: auto;
+    padding: 15px;
+    position: relative
+}
+
+.app-link--copy:link,.app-link--copy:active,.app-link--copy:visited,.app-link--copy:hover {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    color: #007f3b;
+    font-family: 'nta', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    min-width: 58px;
+    padding: 4px 10px 0;
+    position: absolute;
+    right: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 15px;
+    z-index: 1
+}
+
+.app-tabs {
+    background: #fff;
+    border-bottom: 0;
+    display: none
+}
+
+@media (min-width: 40.0625em) {
+    .app-tabs {
+        display:block
+    }
+}
+
+.app-tabs__item {
+    background-color: transparent;
+    margin: 0
+}
+
+.app-tabs__item a {
+    border: 0;
+    font-weight: normal;
+    margin: 0;
+    padding: 8px 16px;
+    text-decoration: underline
+}
+
+@media (min-width: 40.0625em) {
+    .app-tabs__item a {
+        padding:12px 24px
+    }
+}
+
+.app-tabs__item a:hover {
+    color: #7C2855;
+    outline: 0;
+    text-decoration: none
+}
+
+.app-tabs__item a:focus {
+    background-color: #ffeb3b;
+    box-shadow: 0 -2px #ffeb3b,0 4px #212b32;
+    color: #212b32;
+    outline: 4px solid transparent;
+    text-decoration: none
+}
+
+.app-tabs__item--current a {
+    text-decoration: none
+}
+
+@media (min-width: 40.0625em) {
+    .app-tabs__item--current a {
+        box-shadow:0 4px 0 #005eb8
+    }
+}
+
+.app-tabs__item--current a:hover {
+    color: #005eb8
+}
+
+.app-tabs__item--current a:focus:hover {
+    color: #212b32
+}
+
+.app-tabs__item--mobile {
+    background-color: #fff;
+    border-width: 1px 0;
+    display: block;
+    margin: -1px 0
+}
+
+@media (min-width: 40.0625em) {
+    .app-tabs__item--mobile {
+        display:none
+    }
+}
+
+.app-tabs__container {
+    background-color: #fff;
+    border-bottom: 0;
+    margin-top: 0
+}
+
+.app-tabs__container pre {
+    align-self: stretch;
+    background-color: #fff;
+    padding: 0
+}
+
     </style>
 </head>
 
@@ -189,11 +368,11 @@
             <nav aria-label="Breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb__crumb">
-                        <a href="/" class="breadcrumb__link" data-text="NHS Digital">NHS Digital</a>
+                        <a href="../index.html" class="breadcrumb__link" data-text="NHS Digital">Intranet</a>
                     </li>
                         <li class="breadcrumb__crumb">
                             <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true" />
-                            <span class="breadcrumb__link breadcrumb__link--secondary" data-text="Systems and services" aria-current="page">Systems and services</span>
+                            <span class="breadcrumb__link breadcrumb__link--secondary" data-text="Systems and services" aria-current="page">Tasks</span>
                         </li>
                 </ol>
             </nav>
@@ -204,61 +383,81 @@
     <main id="main-content">
 
 
-
-
-
-
-
-      <!-- strip HTML tags -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <article class="article article--filtered-list">
     <div class="grid-wrapper grid-wrapper--article">
         <div class="grid-row">
             <div class="column column--two-thirds column--reset">
                 <div class="article-header article-header--secondary">
-                    <h1 data-uipath="document.title">Systems and services</h1>
+                    <h1 data-uipath="document.title">Tasks</h1>
                 </div>
             </div>
         </div>
 
         <div class="grid-row">
-            <div class="column column--two-thirds column--reset">
+            <div class="column column--reset">
                 <div id="section-summary" class="article-section article-section--summary  no-border">
                     <div class="grid-row">
                         <div class="column column--reset">
                             <div class="rich-text-content">
-                                <div data-uipath="website.linkslist.summary"><p>We deliver systems and services to the NHS and the wider health and social care sector which help providers deliver better care.    Our information, data, and IT systems help health professionals, commissioners, analysts and managers give the best outcomes for patients.</p></div>
+                                <div data-uipath="website.linkslist.summary">
+                                
+                                <ul class="app-tabs" role="tablist">
+               <li class="app-tabs__item" role="presentation" data-index="ex-0">
+               <h5 role="tab" style="padding-left:1em;">Common tasks</hs>
+               </li>
+
+              <li class="app-tabs__item" role="presentation" data-index="ex-1">
+                  <a href="task.html" role="tab" aria-controls="example-default-open-html" data-track="tab-html" aria-selected="true">
+                    Annual leave
+                  </a>
+              </li>
+              
+              <li class="app-tabs__item" role="presentation" data-index="ex-2">
+                  <a href="task.html" role="tab" aria-controls="example-default-open-html" data-track="tab-html" aria-selected="true">
+                    Claiming expenses
+                  </a>
+              </li>
+
+                 <li class="app-tabs__item" role="presentation" data-index="ex-2">
+                  <a href="task.html" role="tab" aria-controls="example-default-open-html" data-track="tab-html" aria-selected="true">
+                    Travel
+                  </a>
+              </li>
+                            <li class="app-tabs__item" role="presentation" data-index="ex-2">
+                  <a href="" role="tab" aria-controls="example-default-open-html" data-track="tab-html" aria-selected="true">
+                    Lookup people
+                  </a>
+              </li>
+                            <li class="app-tabs__item" role="presentation" data-index="ex-2">
+                  <a href="task.html" role="tab" aria-controls="example-default-open-html" data-track="tab-html" aria-selected="true">
+                    Timesheets
+                  </a>
+              </li>
+                            <li class="app-tabs__item" role="presentation" data-index="ex-2">
+                  <a href="task.html" role="tab" aria-controls="example-default-open-html" data-track="tab-html" aria-selected="true">
+                    Training
+                  </a>
+              </li>
+                            <li class="app-tabs__item" role="presentation" data-index="ex-2">
+                  <a href="task.html" role="tab" aria-controls="example-default-open-html" data-track="tab-html" aria-selected="true">
+                    ResolveIT
+                  </a>
+              </li>
+                            <li class="app-tabs__item" role="presentation" data-index="ex-2">
+                  <a href="task.html" role="tab" aria-controls="example-default-open-html" data-track="tab-html" aria-selected="true">
+                    Travel
+                  </a>
+              </li>           
+          </ul>
+                                <p>
+
+
+
+
+
+
+
+                                </p></div>
                             </div>
                         </div>
                     </div>
@@ -363,19 +562,12 @@
                     <div class="cta">
         <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
                             
-                            <h2 class="cta__title"><a href="/services/screening-services/abdominal-aortic-aneurysm-screening">Abdominal Aortic Aneurysm screening</a></h2>
+                            <h2 class="cta__title"><a href="task.html">Annual leave</a></h2>
                         
-                            <p class="cta__text">We identify individuals at highest risk of Abdominal Aortic Aneurysm, and invite them for screening</p>
+                            <p class="cta__text">Check your holiday entitlement and arrange your annual leave</p>
 
                     </div>
-                    <div class="cta">
-        <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
-                            
-                            <h2 class="cta__title"><a href="/services/adoption-registration-service">Adoption Registration Service</a></h2>
-                        
-                            <p class="cta__text">This service can check for a record of a Civil Death Registration in England, Wales and the Isle of Man on behalf of adoptees and birth relatives to establish if an adoptee or birth relative is recorded as having died. You can also use this service to forward information about hereditary medical conditions to an adoptee&#39;s or birth relative&#39;s GP.</p>
-
-                    </div>
+     
                 </div>
             </div>
         </div>
@@ -400,9 +592,9 @@
                     <div class="cta">
         <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
                             
-                            <h2 class="cta__title"><a href="/services/benefits-management">Benefits management</a></h2>
+                            <h2 class="cta__title"><a href="task.html">Booking travel</a></h2>
                         
-                            <p class="cta__text">NHS Digital&#39;s benefit management team ensures that benefits are considered throughout the lifecycle of every programme and into service.</p>
+                            <p class="cta__text">Arrange your travel and accommodation using DigiTS</p>
 
                     </div>
                     <div class="cta">
