@@ -5,7 +5,7 @@
     background-color:#fff;
 }
 
-.grid-row>.column{
+.grid-row #logo-container{
     display:flex;
 }
 .site-header-a__logo{
