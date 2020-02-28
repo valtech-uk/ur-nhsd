@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Generic meta tags -->
+    <title>Intranet Tasks</title>
+    <meta name="title" content="Systems and services - NHS Digital" />
+    <meta name="description" content="NHS Digital deliver systems and services to the NHS and the wider health and social care sector which help providers deliver better care. Our information, data, and IT systems help health professionals, commissioners, analysts and managers give the best outcomes for patients." />
+
+    <link rel="preload" href="../content/fonts/FrutigerLTW01-55Roman.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="../content/fonts/FrutigerLTW01-56Italic.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="../content/fonts/FrutigerLTW01-65Bold.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="../content/fonts/FrutigerLTW01-66BoldItalic.woff2" as="font" type="font/woff2">
+
+
+    <!--[if IE]><link rel="shortcut icon" href="../content/cons/favicon.ico"><![endif]-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../content/cons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../content/cons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../content/cons/favicon-16x16.png">
+    <link rel="manifest" href="../content/cons/manifest.json">
+    <link rel="mask-icon" href="../content/cons/safari-pinned-tab.svg">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="../content/css/nhsuk.css" media="screen" type="text/css" />
+    <!--<![endif]-->
+    <!--[if IE 6]>
+    <link rel="stylesheet" href="../content/css/nhsuk-ie6.css" media="screen" type="text/css"/>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="../content/css/nhsuk-ie7.css" media="screen" type="text/css"/>
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" href="../content/css/nhsuk-ie8.css" media="screen" type="text/css"/>
+    <![endif]-->
+
+    <link rel="stylesheet" href="../content/css/eforms.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="../content/css/nhsuk-print.css" media="print" type="text/css" />
+    <link rel="stylesheet" href="../content/css/custom.css" media="screen" type="text/css" />
+
+  
+    <script src="../content/js/jquery.js"></script>
+    <script defer src="../content/js/breadcrumbs.js"></script>
+    <script defer src="../content/js/highlighter-copy-button.js"></script>
+    <script defer src="../content/js/aria.js"></script>
+    <script defer src="../content/js/details-element-polyfill.js"></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body class="debugs">
+    <a href="#main-content" class="nhsd-skip-link">Skip to main content</a>
+    <header class="site-header" id="header">
+        <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide">
+            <div class="grid-row">
+                <div class="column column--reset">
+                    <div class="grid-wrapper grid-wrapper--collapse">
+                        <div class="grid-row">
+                            <div class="column column--18-75 column--reset" id="logo-container">
+                                <a class="site-header-a__logo" href="https://digital.nhs.uk"><img src="../content/images/nhs-digital-logo.svg" alt="NHS Digital logo" class="site-header__logo"/></a>
+                                <a class="intranet-logo" href="../index.html"><img src="../content/images/intranet-logo.png"/></a>
+                            </div>
+
+
+                            <div class="main-nav">
+                                <div class="main-nav__burger" id="navToggle">
+                                    <button class="main-nav__burger-button" aria-label="Navigation menu">
+                                        <span class="main-nav__burger-line">&nbsp;</span>
+                                        <span class="main-nav__burger-line">&nbsp;</span>
+                                        <span class="main-nav__burger-line">&nbsp;</span>
+                                    </button>
+                                </div>
+
+                                <div class="column column--81-25  column--reset">
+                                    <div class="main-nav__menu">
+                                        <div class="site-header__search-wrapper">
+
+                                            <form role="search" method="get" action=/search class="search-strip" aria-label="???search-banner.title???" id="search">
+                                                <div class="search-strip__contents">
+                                                    <div class="search-strip__table-cell">
+                                                        <input type="text" name="query" id="query" class="search-strip__input" placeholder="Search" value="" aria-label="Search">
+                                                        <label for="query" class="visually-hidden">Search</label>
+                                                    </div>
+                                                    <div class="search-strip__table-cell search-strip__table-cell--button">
+                                                        <button data-uipath="search.button" class="search-strip__button" aria-label="Search">
+                                                            <img src="../content/images/icon-search-white.png" alt="Magnifying glass" />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+
+                                        <nav>
+                                            <ol class="list list--reset list--inline">
+                                                <li class="active">Tasks</li>
+                                                <li><a href="#">Teams and networks</a></li>
+                                                <li><a href="#">News, events and blogs</a></li>
+                                                <li><a href="#">Collaborate</a></li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script>(function () {
+            var oldBrowser = window.addEventListener ? false : true;
+            var $header = document.getElementById('header');
+            var $nav = document.getElementById('nav');
+            var $navToggle = document.getElementById('navToggle');
+
+            function handleToggleClick() {
+                if ($header.className.indexOf('menu-open') >= 0) {
+                    $header.className = $header.className.replace('menu-open', '');
+                } else {
+                    $header.className += ' menu-open';
+                }
+                $header.className = $header.className.replace(/^\s+|\s+$/g, '');
+            }
+
+            function init() {
+                if (!oldBrowser) {
+                    $navToggle.addEventListener('click', handleToggleClick);
+                    window.addEventListener('resize', onResize);
+                } else {
+                    $navToggle.attachEvent('onclick', handleToggleClick);
+                    window.attachEvent('onresize', onResize);
+                }
+            }
+
+            function onResize() {
+                if (window.innerWidth > 1024 && $header.className.indexOf('menu-open') >= 0) {
+                    handleToggleClick();
+                }
+            }
+            init();
+        }())</script>
+
+
+
+    <div class="grid-wrapper">
+        <div class="grid-row">
+            <div class="column column--reset">
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb__crumb">
+                            <a href="../index.html" class="breadcrumb__link" data-text="NHS Digital">Intranet</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true" />
+                            <span class="breadcrumb__link breadcrumb__link--secondary" data-text="Systems and services" aria-current="page">Tasks</span>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content">
+
+
+        <article class="article article--filtered-list">
+            <div class="grid-wrapper grid-wrapper--article">
+                <div class="grid-row">
+                    <div class="column column--two-thirds column--reset">
+                        <div class="article-header article-header--secondary">
+                            <h1 data-uipath="document.title">Tasks</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-row">
+                    <div class="column column--reset">
+                        <div id="section-summary" class="article-section article-section--summary  no-border">
+                            <div class="grid-row">
+                                <div class="column column--reset">
+                                    <div class="rich-text-content">
+                                        <div data-uipath="website.linkslist.summary">
+
+                                            <ul class="app-tabs" role="tablist">
+                                                <li class="app-tabs__item" role="presentation" data-index="ex-0">
+                                                    <h5 role="tab" style="padding-left:1em;">Common tasks</hs>
+                                                </li>
+
+                                                <li class="app-tabs__item" role="presentation" data-index="ex-1">
+                                                    <a href="#" role="tab" aria-controls="example-default-open-html" data-track="tab-html" aria-selected="true">
+                                                        Annual leave
+                                                    </a>
+                                                </li>
+
+                                                <li class="app-tabs__item" role="presentation" data-index="ex-2">
+                                                    <a href="task-expenses.html" role="tab" aria-controls="example-default-open-html" data-track="tab-html" aria-selected="true">
+                                                        Claiming expenses
+                                                    </a>
+                                                </li>
+
+                                                <li class="app-tabs__item" role="presentation" data-index="ex-2">
+                                                    <a href="task-travel.html" role="tab" aria-controls="example-default-open-html" data-track="tab-html" aria-selected="true">
+                                                        Travel
+                                                    </a>
+                                                </li>
+                                                <li class="app-tabs__item" role="presentation" data-index="ex-2">
+                                                    <a href="#" role="tab" aria-controls="example-default-open-html" data-track="tab-html" aria-selected="true">
+                                                        Lookup people
+                                                    </a>
+                                                </li>
+                                                <li class="app-tabs__item" role="presentation" data-index="ex-2">
+                                                    <a href="#" role="tab" aria-controls="example-default-open-html" data-track="tab-html" aria-selected="true">
+                                                        Timesheets
+                                                    </a>
+                                                </li>
+                                                <li class="app-tabs__item" role="presentation" data-index="ex-2">
+                                                    <a href="task-mandatory-training.html" role="tab" aria-controls="example-default-open-html" data-track="tab-html" aria-selected="true">
+                                                        Training
+                                                    </a>
+                                                </li>
+                                                <li class="app-tabs__item" role="presentation" data-index="ex-2">
+                                                    <a href="#" role="tab" aria-controls="example-default-open-html" data-track="tab-html" aria-selected="true">
+                                                        ResolveIT
+                                                    </a>
+                                                </li>
+                                                <li class="app-tabs__item" role="presentation" data-index="ex-2">
+                                                    <a href="task-mandatory-training.html" role="tab" aria-controls="example-default-open-html" data-track="tab-html" aria-selected="true">
+                                                        Mandatory training
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <p>
+
+
+
+
+
+
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="grid-row">
+                    <div class="column column--one-third page-block page-block--sidebar sticky sticky--top">
+                        <div class="article-section-nav-wrapper">
+                            <div class="article-section-nav">
+                                <h2 class="article-section-nav__title">Refine results</h2>
+                                <nav>
+                                    <ol title="Alphabetical navigation" class="article-section-nav__menu article-section-nav__menu--push">
+                                        <li>
+                                            <a href="#a" aria-label="Jump to articles starting with the letter 'A'">A</a>
+                                        </li>
+                                        <li>
+                                            <a href="#b" aria-label="Jump to articles starting with the letter 'B'">B</a>
+                                        </li>
+                                        <li>
+                                            <a href="#c" aria-label="Jump to articles starting with the letter 'C'">C</a>
+                                        </li>
+                                        <li>
+                                            <a href="#d" aria-label="Jump to articles starting with the letter 'D'">D</a>
+                                        </li>
+                                        <li>
+                                            <a href="#e" aria-label="Jump to articles starting with the letter 'E'">E</a>
+                                        </li>
+                                        <li>
+                                            <a href="#f" aria-label="Jump to articles starting with the letter 'F'">F</a>
+                                        </li>
+                                        <li>
+                                            <a href="#g" aria-label="Jump to articles starting with the letter 'G'">G</a>
+                                        </li>
+                                        <li>
+                                            <a href="#h" aria-label="Jump to articles starting with the letter 'H'">H</a>
+                                        </li>
+                                        <li>
+                                            <a href="#i" aria-label="Jump to articles starting with the letter 'I'">I</a>
+                                        </li>
+                                        <li class="is-disabled">J</li>
+                                        <li class="is-disabled">K</li>
+                                        <li>
+                                            <a href="#l" aria-label="Jump to articles starting with the letter 'L'">L</a>
+                                        </li>
+                                        <li>
+                                            <a href="#m" aria-label="Jump to articles starting with the letter 'M'">M</a>
+                                        </li>
+                                        <li>
+                                            <a href="#n" aria-label="Jump to articles starting with the letter 'N'">N</a>
+                                        </li>
+                                        <li>
+                                            <a href="#o" aria-label="Jump to articles starting with the letter 'O'">O</a>
+                                        </li>
+                                        <li>
+                                            <a href="#p" aria-label="Jump to articles starting with the letter 'P'">P</a>
+                                        </li>
+                                        <li>
+                                            <a href="#q" aria-label="Jump to articles starting with the letter 'Q'">Q</a>
+                                        </li>
+                                        <li>
+                                            <a href="#r" aria-label="Jump to articles starting with the letter 'R'">R</a>
+                                        </li>
+                                        <li>
+                                            <a href="#s" aria-label="Jump to articles starting with the letter 'S'">S</a>
+                                        </li>
+                                        <li>
+                                            <a href="#t" aria-label="Jump to articles starting with the letter 'T'">T</a>
+                                        </li>
+                                        <li class="is-disabled">U</li>
+                                        <li class="is-disabled">V</li>
+                                        <li class="is-disabled">W</li>
+                                        <li class="is-disabled">X</li>
+                                        <li class="is-disabled">Y</li>
+                                        <li class="is-disabled">Z</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column column--two-thirds page-block page-block--main">
+
+                        <div class="article-section article-section--letter-group" id="a">
+                            <div class="grid-row sticky sticky--top" data-name="a">
+                                <div class="column column--reset">
+                                    <div class="article-header article-header--tertiary">
+                                        <div class="grid-row">
+                                            <div class="column column--reset">
+                                                <h2 class="article-header__title">A</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-row">
+                                <div class="column column--reset">
+                                    <div class="list list--reset cta-list cta-list--sections">
+                                        <div class="cta">
+                                            <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
+
+                                            <h2 class="cta__title"><a href="task-travel.html">Annual leave</a></h2>
+
+                                            <p class="cta__text">Check your holiday entitlement and arrange your annual leave</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article-section article-section--letter-group" id="b">
+                            <div class="grid-row sticky sticky--top" data-name="b">
+                                <div class="column column--reset">
+                                    <div class="article-header article-header--tertiary">
+                                        <div class="grid-row">
+                                            <div class="column column--reset">
+                                                <h2 class="article-header__title">B</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-row">
+                                <div class="column column--reset">
+                                    <div class="list list--reset cta-list cta-list--sections">
+                                        <div class="cta">
+                                            <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
+
+                                            <h2 class="cta__title"><a href="task-travel.html">Booking travel</a></h2>
+
+                                            <p class="cta__text">Arrange your travel and accommodation using DigiTS</p>
+
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article-section article-section--letter-group" id="c">
+                            <div class="grid-row sticky sticky--top" data-name="c">
+                                <div class="column column--reset">
+                                    <div class="article-header article-header--tertiary">
+                                        <div class="grid-row">
+                                            <div class="column column--reset">
+                                                <h2 class="article-header__title">C</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-row">
+                                <div class="column column--reset">
+                                    <div class="list list--reset cta-list cta-list--sections">
+                                        <div class="cta">
+                                            <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
+
+                                            <h2 class="cta__title"><a href="task-expenses.html">Claim expenses</a></h2>
+
+                                            <p class="cta__text">Claim your travel expenses when you are travelling on NHS Digital business</p>
+
+                                        </div>
+                                        <div class="cta">
+                                            <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
+
+                                            <h2 class="cta__title"><a href="#">Contacting people</a></h2>
+
+                                            <p class="cta__text">Find people’s contact details</p>
+
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article-section article-section--letter-group" id="d">
+                            <div class="grid-row sticky sticky--top" data-name="d">
+                                <div class="column column--reset">
+                                    <div class="article-header article-header--tertiary">
+                                        <div class="grid-row">
+                                            <div class="column column--reset">
+                                                <h2 class="article-header__title">D</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-row">
+                                <div class="column column--reset">
+                                    <div class="list list--reset cta-list cta-list--sections">
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article-section article-section--letter-group" id="e">
+                            <div class="grid-row sticky sticky--top" data-name="e">
+                                <div class="column column--reset">
+                                    <div class="article-header article-header--tertiary">
+                                        <div class="grid-row">
+                                            <div class="column column--reset">
+                                                <h2 class="article-header__title">E</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-row">
+                                <div class="column column--reset">
+                                    <div class="list list--reset cta-list cta-list--sections">
+                                        <div class="cta">
+                                            <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
+
+                                            <h2 class="cta__title"><a href="task-expenses.html">Expenses</a></h2>
+
+                                            <p class="cta__text">Claim your travel expenses when you are travelling on NHS Digital business</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article-section article-section--letter-group" id="f">
+                            <div class="grid-row sticky sticky--top" data-name="f">
+                                <div class="column column--reset">
+                                    <div class="article-header article-header--tertiary">
+                                        <div class="grid-row">
+                                            <div class="column column--reset">
+                                                <h2 class="article-header__title">F</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-row">
+                                <div class="column column--reset">
+                                    <div class="list list--reset cta-list cta-list--sections">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article-section article-section--letter-group" id="g">
+                            <div class="grid-row sticky sticky--top" data-name="g">
+                                <div class="column column--reset">
+                                    <div class="article-header article-header--tertiary">
+                                        <div class="grid-row">
+                                            <div class="column column--reset">
+                                                <h2 class="article-header__title">G</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-row">
+                                <div class="column column--reset">
+                                    <div class="list list--reset cta-list cta-list--sections">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article-section article-section--letter-group" id="h">
+                            <div class="grid-row sticky sticky--top" data-name="h">
+                                <div class="column column--reset">
+                                    <div class="article-header article-header--tertiary">
+                                        <div class="grid-row">
+                                            <div class="column column--reset">
+                                                <h2 class="article-header__title">H</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-row">
+                                <div class="column column--reset">
+                                    <div class="list list--reset cta-list cta-list--sections">
+                                        <div class="cta">
+                                            <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
+
+                                            <h2 class="cta__title"><a href="task-travel.html">Holiday</a></h2>
+
+                                            <p class="cta__text">Check your holiday entitlement and arrange your annual leave</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article-section article-section--letter-group" id="i">
+                            <div class="grid-row sticky sticky--top" data-name="i">
+                                <div class="column column--reset">
+                                    <div class="article-header article-header--tertiary">
+                                        <div class="grid-row">
+                                            <div class="column column--reset">
+                                                <h2 class="article-header__title">I</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-row">
+                                <div class="column column--reset">
+                                    <div class="list list--reset cta-list cta-list--sections">
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article-section article-section--letter-group" id="l">
+                            <div class="grid-row sticky sticky--top" data-name="l">
+                                <div class="column column--reset">
+                                    <div class="article-header article-header--tertiary">
+                                        <div class="grid-row">
+                                            <div class="column column--reset">
+                                                <h2 class="article-header__title">L</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-row">
+                                <div class="column column--reset">
+                                    <div class="list list--reset cta-list cta-list--sections">
+                                        <div class="cta">
+                                            <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
+
+                                            <h2 class="cta__title"><a href="/services/local-service-providers">Local Service Providers</a></h2>
+
+                                            <p class="cta__text">Local Service Provider (LSP) Delivery supports the Department of Health in delivery against LSP contracts.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article-section article-section--letter-group" id="m">
+                            <div class="grid-row sticky sticky--top" data-name="m">
+                                <div class="column column--reset">
+                                    <div class="article-header article-header--tertiary">
+                                        <div class="grid-row">
+                                            <div class="column column--reset">
+                                                <h2 class="article-header__title">M</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-row">
+                                <div class="column column--reset">
+                                    <div class="list list--reset cta-list cta-list--sections">
+                                        <div class="cta">
+                                            <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
+
+                                            <h2 class="cta__title"><a href="task-mandatory-training.html">Mandatory training</a></h2>
+
+                                            <p class="cta__text">Mandatory and includes fire safety, unconscious bias and activity based recording training</p>
+
+                                        </div>
+       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article-section article-section--letter-group" id="n">
+                            <div class="grid-row sticky sticky--top" data-name="n">
+                                <div class="column column--reset">
+                                    <div class="article-header article-header--tertiary">
+                                        <div class="grid-row">
+                                            <div class="column column--reset">
+                                                <h2 class="article-header__title">N</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-row">
+                                <div class="column column--reset">
+                                    <div class="list list--reset cta-list cta-list--sections">
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article-section article-section--letter-group" id="o">
+                            <div class="grid-row sticky sticky--top" data-name="o">
+                                <div class="column column--reset">
+                                    <div class="article-header article-header--tertiary">
+                                        <div class="grid-row">
+                                            <div class="column column--reset">
+                                                <h2 class="article-header__title">O</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-row">
+                                <div class="column column--reset">
+                                    <div class="list list--reset cta-list cta-list--sections">
+                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article-section article-section--letter-group" id="p">
+                            <div class="grid-row sticky sticky--top" data-name="p">
+                                <div class="column column--reset">
+                                    <div class="article-header article-header--tertiary">
+                                        <div class="grid-row">
+                                            <div class="column column--reset">
+                                                <h2 class="article-header__title">P</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-row">
+                                <div class="column column--reset">
+                                    <div class="list list--reset cta-list cta-list--sections">
+                                        <div class="grid-row">
+                                            <div class="column column--reset">
+                                                <div class="list list--reset cta-list cta-list--sections">
+                                                    <div class="cta">
+                                                        <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
+
+                                                        <h2 class="cta__title"><a href="#">People</a></h2>
+
+                                                        <p class="cta__text">Find people’s contact details</p>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article-section article-section--letter-group" id="q">
+                            <div class="grid-row sticky sticky--top" data-name="q">
+                                <div class="column column--reset">
+                                    <div class="article-header article-header--tertiary">
+                                        <div class="grid-row">
+                                            <div class="column column--reset">
+                                                <h2 class="article-header__title">Q</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-row">
+                                <div class="column column--reset">
+                                    <div class="list list--reset cta-list cta-list--sections">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article-section article-section--letter-group" id="r">
+                            <div class="grid-row sticky sticky--top" data-name="r">
+                                <div class="column column--reset">
+                                    <div class="article-header article-header--tertiary">
+                                        <div class="grid-row">
+                                            <div class="column column--reset">
+                                                <h2 class="article-header__title">R</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-row">
+                                <div class="column column--reset">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article-section article-section--letter-group" id="s">
+                            <div class="grid-row sticky sticky--top" data-name="s">
+                                <div class="column column--reset">
+                                    <div class="article-header article-header--tertiary">
+                                        <div class="grid-row">
+                                            <div class="column column--reset">
+                                                <h2 class="article-header__title">S</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-row">
+                                <div class="column column--reset">
+                                    <div class="list list--reset cta-list cta-list--sections">
+                     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article-section article-section--letter-group" id="t">
+                            <div class="grid-row sticky sticky--top" data-name="t">
+                                <div class="column column--reset">
+                                    <div class="article-header article-header--tertiary">
+                                        <div class="grid-row">
+                                            <div class="column column--reset">
+                                                <h2 class="article-header__title">T</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-row">
+                                <div class="column column--reset">
+                                    <div class="list list--reset cta-list cta-list--sections">
+                         
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="article-section muted">
+                            Last edited: 17 February 2020 9:15 am
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+
+
+
+
+
+    <footer class="site-footer white-links" id="footer">
+        <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide">
+            <div class="grid-row">
+                <div class="column column--reset">
+
+                    <div class="site-footer__section site-footer__section--top">
+                        <div class="grid-wrapper grid-wrapper--collapse">
+                            <div class="grid-row">
+                                <div class="column column--three-quarters column--left">
+                                    <nav class="site-footer__menu site-footer__menu--1">
+                                        <h2 class="list__header">About NHS Digital</h2>
+                                        <ul class="list list--reset list--close">
+                                            <li><a href="/about-nhs-digital">About us</a></li>
+                                            <li><a href="/about-nhs-digital/corporate-information-and-documents/our-strategy">Our strategy</a></li>
+                                            <li><a href="/about-nhs-digital/corporate-information-and-documents/nhs-digital-s-annual-reports-and-accounts">Annual report and accounts</a></li>
+                                            <li><a href="/about-nhs-digital/corporate-information-and-documents/nhs-digital-business-plan-2018--19">Our business plan</a></li>
+                                            <li><a href="/news-and-events">News and events</a></li>
+                                            <li><a href="/about-nhs-digital/our-work/keeping-patient-data-safe/how-we-look-after-your-health-and-care-information">How we look after your information</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                                <div class="column column--one-quarter column--right">
+                                    <nav class="site-footer__menu site-footer__menu--3">
+                                        <ul class="list list--reset list--close">
+                                            <li><a href="/about-nhs-digital/contact-us">Contact us</a></li>
+                                            <li><a href="/news-and-events/press-office">Press office</a></li>
+                                            <li><a href="/about-nhs-digital/contact-us/freedom-of-information">Freedom of information</a></li>
+                                            <li><a href="/about-nhs-digital/careers">Careers</a></li>
+                                            <li class="last-item"><a href="/forms/tell-us-what-you-think-of-our-website" title="Provide website feedback">Tell us what you think of our website</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="site-footer__section site-footer__section--bottom">
+                        <div class="grid-wrapper grid-wrapper--collapse">
+                            <div class="grid-row">
+                                <div class="column column--left">
+                                    <nav class="site-footer__menu site-footer__menu--4">
+                                        <ul class="list list--inline list--reset">
+                                            <li><a href="/about-nhs-digital/privacy-and-cookies">Privacy and cookies</a></li>
+                                            <li><a href="/about-nhs-digital/terms-and-conditions">Terms and conditions</a></li>
+                                            <li><a href="/about-nhs-digital/accessibility">Accessibility</a></li>
+                                            <li><a href="javascript:Cookiebot.renew()">Cookie consent</a></li>
+                                        </ul>
+                                    </nav>
+
+                                    <div class="site-footer__menu site-footer__menu--5">
+                                        <ul class="list list--inline list--reset">
+                                            <li>
+                                                <a href="https://www.linkedin.com/company/nhs-digital" onClick="logGoogleAnalyticsEvent('Link click', 'Footer', 'https://www.linkedin.com/company/nhs-digital')" onKeyUp="return vjsu.onKeyUp(event)">
+                                                    <img src="../content/images/icon-linkedin.png" alt="LinkedIn logo" class="image-icon" /><span>LinkedIn</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://twitter.com/NHSDigital" onClick="logGoogleAnalyticsEvent('Link click', 'Footer', 'https://twitter.com/NHSDigital')" onKeyUp="return vjsu.onKeyUp(event)">
+                                                    <img src="../content/images/icon-twitter.png" alt="Twitter logo" class="image-icon" /><span>Twitter</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
