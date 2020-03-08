@@ -174,7 +174,7 @@
 
         <section class="search-banner search-banner--short" aria-label="Search Bar">
             <div class="grid-wrapper grid-wrapper--collapse">
-                <form role="search" method="get" action="https://digital.nhs.uk/search" class="search-banner__form" id="search" aria-label="???search-banner.title???">
+                <form role="search" class="search-banner__form" id="search-main" aria-label="???search-banner.title???">
                     <div>
                         <input type="text" name="query" id="query-main" class="search-banner__input" placeholder="Search Intranet" value="travel" aria-label="Search">
                         <label for="query" class="visually-hidden">Search</label>
@@ -879,6 +879,13 @@
 
 <script type="text/javascript">
     jQuery(function () {
+
+        $("#search-main").submit(function (event) {
+            var term = $(this).find("input#query-main").val();
+            window.location.href = "search-results.html?area=all&query=" + term;
+            event.preventDefault();
+        });
+
         $(".js-name").hide();
 
         var area = getUrlVars()["area"];
@@ -923,7 +930,7 @@
             $(".js-name").show();
             }
 
-        var countresults = 7;
+        var countresults = $('.cta--detailed:visible').length;
         $(".js-count").text(countresults);
      
     $("#query-main").val(query);
