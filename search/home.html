@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Generic meta tags -->
+    <title>Intranet Teams</title>
+    <meta name="title" content="Intranet - Search results" />
+
+    <link rel="preload" href="../content/fonts/FrutigerLTW01-55Roman.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="../content/fonts/FrutigerLTW01-56Italic.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="../content/fonts/FrutigerLTW01-65Bold.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="../content/fonts/FrutigerLTW01-66BoldItalic.woff2" as="font" type="font/woff2">
+
+
+    <!--[if IE]><link rel="shortcut icon" href="../content/cons/favicon.ico"><![endif]-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../content/cons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../content/cons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../content/cons/favicon-16x16.png">
+    <link rel="manifest" href="../content/cons/manifest.json">
+    <link rel="mask-icon" href="../content/cons/safari-pinned-tab.svg">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="../content/css/nhsuk.css" media="screen" type="text/css" />
+    <!--<![endif]-->
+    <!--[if IE 6]>
+    <link rel="stylesheet" href="../content/css/nhsuk-ie6.css" media="screen" type="text/css"/>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="../content/css/nhsuk-ie7.css" media="screen" type="text/css"/>
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" href="../content/css/nhsuk-ie8.css" media="screen" type="text/css"/>
+    <![endif]-->
+
+    <link rel="stylesheet" href="../content/css/eforms.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="../content/css/nhsuk-print.css" media="print" type="text/css" />
+    <link rel="stylesheet" href="../content/css/custom.css" media="screen" type="text/css" />
+
+  
+    <script src="../content/js/jquery.js"></script>
+    <script defer src="../content/js/breadcrumbs.js"></script>
+    <script defer src="../content/js/highlighter-copy-button.js"></script>
+    <script defer src="../content/js/aria.js"></script>
+    <script defer src="../content/js/details-element-polyfill.js"></script>
+<script src="../content/js/custom.js"></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body class="debugs">
+    <a href="#main-content" class="nhsd-skip-link">Skip to main content</a>
+    <header class="site-header" id="header">
+        <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide">
+            <div class="grid-row">
+                <div class="column column--reset">
+                    <div class="grid-wrapper grid-wrapper--collapse">
+                        <div class="grid-row">
+                            <div class="column column--18-75 column--reset" id="logo-container">
+                                <a class="site-header-a__logo" href="home.html"><img src="../content/images/nhs-digital-logo.svg" alt="NHS Digital logo" class="site-header__logo"/></a>
+                                <a class="intranet-logo" href="home.html"><img src="../content/images/intranet-logo.png"/></a>
+                            </div>
+
+
+                            <div class="main-nav">
+                                <div class="main-nav__burger" id="navToggle">
+                                    <button class="main-nav__burger-button" aria-label="Navigation menu">
+                                        <span class="main-nav__burger-line">&nbsp;</span>
+                                        <span class="main-nav__burger-line">&nbsp;</span>
+                                        <span class="main-nav__burger-line">&nbsp;</span>
+                                    </button>
+                                </div>
+
+                                <div class="column column--81-25  column--reset">
+                                    <div class="main-nav__menu">
+                                        <div class="site-header__search-wrapper">
+
+                                            <form role="search" method="get" action=/search class="search-strip" aria-label="???search-banner.title???" id="search">
+                                                <div class="search-strip__contents">
+                                                    <div class="search-strip__table-cell">
+                                                        <input type="text" name="query" id="query" class="search-strip__input" placeholder="Search" value="" aria-label="Search">
+                                                        <label for="query" class="visually-hidden">Search</label>
+                                                    </div>
+                                                    <div class="search-strip__table-cell search-strip__table-cell--button">
+                                                        <button data-uipath="search.button" class="search-strip__button" aria-label="Search">
+                                                            <img src="../content/images/icon-search-white.png" alt="Magnifying glass" />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+
+                                        <nav>
+                                            <ol class="list list--reset list--inline">
+                                                <li><a href="../pages/task-list.html">Tasks</a></li>
+                                                <li class="active"><a href="../pages/team-list.html">Teams and networks</a></li>
+                                                <li><a href="#">News, events and blogs</a></li>
+                                                <li><a href="#">Collaborate</a></li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script>(function () {
+            var oldBrowser = window.addEventListener ? false : true;
+            var $header = document.getElementById('header');
+            var $nav = document.getElementById('nav');
+            var $navToggle = document.getElementById('navToggle');
+
+            function handleToggleClick() {
+                if ($header.className.indexOf('menu-open') >= 0) {
+                    $header.className = $header.className.replace('menu-open', '');
+                } else {
+                    $header.className += ' menu-open';
+                }
+                $header.className = $header.className.replace(/^\s+|\s+$/g, '');
+            }
+
+            function init() {
+                if (!oldBrowser) {
+                    $navToggle.addEventListener('click', handleToggleClick);
+                    window.addEventListener('resize', onResize);
+                } else {
+                    $navToggle.attachEvent('onclick', handleToggleClick);
+                    window.attachEvent('onresize', onResize);
+                }
+            }
+
+            function onResize() {
+                if (window.innerWidth > 1024 && $header.className.indexOf('menu-open') >= 0) {
+                    handleToggleClick();
+                }
+            }
+            init();
+        }())</script>
+
+
+
+   
+    <main id="main-content">
+
+
+
+<img src="../content/images/homepageimage.png"/>
+       
+
+        <iframe name="__uspapiLocator" tabindex="-1" role="presentation" aria-hidden="true" title="Blank" style="display: none; position: absolute; width: 1px; height: 1px; top: -9999px;" src="./Expenses task page_files/saved_resource.html"></iframe><strong><strong><strong>
+
+
+    </main>
+
+
+
+
+
+
+    <footer class="site-footer white-links" id="footer">
+        <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide">
+            <div class="grid-row">
+                <div class="column column--reset">
+
+                    <div class="site-footer__section site-footer__section--top">
+                        <div class="grid-wrapper grid-wrapper--collapse">
+                            <div class="grid-row">
+                                <div class="column column--three-quarters column--left">
+                                    <nav class="site-footer__menu site-footer__menu--1">
+                                        <h2 class="list__header">About NHS Digital</h2>
+                                        <ul class="list list--reset list--close">
+                                            <li><a href="/about-nhs-digital">About us</a></li>
+                                            <li><a href="/about-nhs-digital/corporate-information-and-documents/our-strategy">Our strategy</a></li>
+                                            <li><a href="/about-nhs-digital/corporate-information-and-documents/nhs-digital-s-annual-reports-and-accounts">Annual report and accounts</a></li>
+                                            <li><a href="/about-nhs-digital/corporate-information-and-documents/nhs-digital-business-plan-2018--19">Our business plan</a></li>
+                                            <li><a href="/news-and-events">News and events</a></li>
+                                            <li><a href="/about-nhs-digital/our-work/keeping-patient-data-safe/how-we-look-after-your-health-and-care-information">How we look after your information</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                                <div class="column column--one-quarter column--right">
+                                    <nav class="site-footer__menu site-footer__menu--3">
+                                        <ul class="list list--reset list--close">
+                                            <li><a href="/about-nhs-digital/contact-us">Contact us</a></li>
+                                            <li><a href="/news-and-events/press-office">Press office</a></li>
+                                            <li><a href="/about-nhs-digital/contact-us/freedom-of-information">Freedom of information</a></li>
+                                            <li><a href="/about-nhs-digital/careers">Careers</a></li>
+                                            <li class="last-item"><a href="/forms/tell-us-what-you-think-of-our-website" title="Provide website feedback">Tell us what you think of our website</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="site-footer__section site-footer__section--bottom">
+                        <div class="grid-wrapper grid-wrapper--collapse">
+                            <div class="grid-row">
+                                <div class="column column--left">
+                                    <nav class="site-footer__menu site-footer__menu--4">
+                                        <ul class="list list--inline list--reset">
+                                            <li><a href="/about-nhs-digital/privacy-and-cookies">Privacy and cookies</a></li>
+                                            <li><a href="/about-nhs-digital/terms-and-conditions">Terms and conditions</a></li>
+                                            <li><a href="/about-nhs-digital/accessibility">Accessibility</a></li>
+                                            <li><a href="javascript:Cookiebot.renew()">Cookie consent</a></li>
+                                        </ul>
+                                    </nav>
+
+                                    <div class="site-footer__menu site-footer__menu--5">
+                                        <ul class="list list--inline list--reset">
+                                            <li>
+                                                <a href="https://www.linkedin.com/company/nhs-digital" onClick="logGoogleAnalyticsEvent('Link click', 'Footer', 'https://www.linkedin.com/company/nhs-digital')" onKeyUp="return vjsu.onKeyUp(event)">
+                                                    <img src="../content/images/icon-linkedin.png" alt="LinkedIn logo" class="image-icon" /><span>LinkedIn</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://twitter.com/NHSDigital" onClick="logGoogleAnalyticsEvent('Link click', 'Footer', 'https://twitter.com/NHSDigital')" onKeyUp="return vjsu.onKeyUp(event)">
+                                                    <img src="../content/images/icon-twitter.png" alt="Twitter logo" class="image-icon" /><span>Twitter</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+<script type="text/javascript">
+    jQuery(function () {
+
+        $("#search-main").submit(function (event) {
+            var term = $(this).find("input#query-main").val();
+            window.location.href = "search-results.html?area=all&query=" + term;
+            event.preventDefault();
+        });
+
+        $(".js-name").hide();
+
+        var area = getUrlVars()["area"];
+        if (area.indexOf("eople") > 0) {
+            $(".cta--detailed").hide();
+            $(".js-people").show();
+            $(".js-tab-all").removeClass("tabs-nav__item--active");
+            $(".js-tab-people").addClass("tabs-nav__item--active");
+        }
+
+        if (area.indexOf("asks") > 0) {
+            $(".cta--detailed").hide();
+            $(".js-tasks").show();
+            $(".js-tab-all").removeClass("tabs-nav__item--active");
+            $(".js-tab-tasks").addClass("tabs-nav__item--active");
+        }
+
+        if (area.indexOf("eams") > 0) {
+            $(".cta--detailed").hide();
+            $(".js-teams").show();
+            $(".js-tab-all").removeClass("tabs-nav__item--active");
+            $(".js-tab-teams").addClass("tabs-nav__item--active");
+        }
+
+        if (area.indexOf("ews") > 0) {
+            $(".cta--detailed").hide();
+            $(".js-news").show();
+            $(".js-tab-all").removeClass("tabs-nav__item--active");
+            $(".js-tab-news").addClass("tabs-nav__item--active");
+        }
+
+        if (area.indexOf("ocu") > 0) {
+            $(".cta--detailed").hide();
+            $(".js-documents").show();
+            $(".js-tab-all").removeClass("tabs-nav__item--active");
+            $(".js-tab-docs").addClass("tabs-nav__item--active");
+        }
+
+        var query = getUrlVars()["query"];
+        if (query.indexOf("lex") > 0) {
+            $(".js-travel").hide();
+            $(".js-name").show();
+            }
+
+        var countresults = $('.cta--detailed:visible').length;
+        $(".js-count").text(countresults);
+     
+    $("#query-main").val(query);
+    $(".js-searchterm").text(query);
+});
+
+// Read a page's GET URL variables and return them as an associative array.
+
+function getUrlVars()
+{
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+    }
+
+</script>
+</html>
