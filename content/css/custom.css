@@ -375,7 +375,7 @@ input#query-main{
 .search-banner {
     background: #f0f4f5;
     padding: 3.5em 0 3.8em;
-    margin-bottom: 48px;
+    margin-bottom: 10px;
     min-height: 30px
 }
 
@@ -824,3 +824,15 @@ input#query-main{
     fill: #fff
 }
  
+.search-results .cta-list  .cta--detailed .cta__label{
+    float:right;
+    background-color:darkgray;
+    color:#fff;
+}
+.search-results .cta-list .cta--detailed,
+.search-results .cta-list .cta:first-child{
+    padding:15px;
+    background-color: #fff;
+    display:block;
+    margin-bottom:20px;
+}
