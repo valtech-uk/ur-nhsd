@@ -183,8 +183,32 @@
                     <div>
                         <button class="search-banner__button" data-uipath="search.button" value="Search">Search</button>
                     </div>
-  
+   
                 </form>
+                
+                                        <div class="search-banner__form">
+                                            <ul class="app-tabs" role="tablist">
+                                                <li class="app-tabs__item app-tabs__item--active js-tab-all">
+                                                    <a tabindex="0" href="search-results.html?area=all&query=travel" class="tabs-link" title="All results" role="tab">All</a>
+                                                </li>
+                                                <li class="app-tabs__item  js-tab-tasks">
+                                                    <a tabindex="1" href="search-results.html?area=tasks&query=travel" class="tabs-link" title="Task results" role="tab">Tasks</a>
+                                                </li>
+                                                <li class="app-tabs__item  js-tab-teams">
+                                                    <a tabindex="2" href="search-results.html?area=teams&query=travel" class="tabs-link" title="Team results" role="tab">Teams</a>
+                                                </li>
+                                                <li class="app-tabs__item  js-tab-people">
+                                                    <a tabindex="2" href="search-results.html?area=people&query=travel" class="tabs-link" role="tab">People</a>
+                                                </li>
+                                                <li class="app-tabs__item  js-tab-news">
+                                                    <a tabindex="3" href="search-results.html?area=news&query=travel" class="tabs-link" title="News and events results" role="tab">News</a>
+                                                </li>
+                                                <li class="app-tabs__item  js-tab-docs">
+                                                    <a tabindex="3" href="search-results.html?area=documents&query=travel" class="tabs-link" title="Policies and documents results" role="tab">Documents </a>
+                                                </li>
+                          
+                                            </ul>
+                                        </div>
             </div>
         </section>
 
@@ -421,49 +445,6 @@
                     </div>
 
                     <div class="column column--two-thirds page-block page-block--main">
-                        <div class="nav-tabs">
-
-
-
-
-
-                            <div data-uipath="ps.search-tabs" class="js-tabs">
-
-                                <ul class="tabs-nav" role="tablist">
-                                    <li class="tabs-nav__item tabs-nav__item--active js-tab-all">
-                                        <a tabindex="0" href="search-results.html?area=all&query=travel" class="tabs-link" title="All results" role="tab">All</a>
-                                    </li>
-                                    <li class="tabs-nav__item  js-tab-tasks">
-                                        <a tabindex="1" href="search-results.html?area=tasks&query=travel" class="tabs-link" title="Task results" role="tab">Tasks</a>
-                                    </li>
-                                    <li class="tabs-nav__item  js-tab-teams">
-                                        <a tabindex="2" href="search-results.html?area=teams&query=travel" class="tabs-link" title="Team results" role="tab">Teams</a>
-                                    </li>
-                                    <li class="tabs-nav__item  js-tab-people">
-                                        <a tabindex="2" href="search-results.html?area=people&query=travel" class="tabs-link" role="tab">People</a>
-                                    </li>
-                                    <li class="tabs-nav__item  js-tab-news">
-                                        <a tabindex="3" href="search-results.html?area=news&query=travel" class="tabs-link" title="News and events results" role="tab">News</a>
-                                    </li>
-                                    <li class="tabs-nav__item  js-tab-docs">
-                                        <a tabindex="3" href="search-results.html?area=documents&query=travel" class="tabs-link" title="Policies and documents results" role="tab">Documents </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                         <div data-uipath="ps.search-results" data-totalresults="97">
                             <div class="search-results-heading">
@@ -894,36 +875,36 @@
         if (area.indexOf("eople") > 0) {
             $(".cta--detailed").hide();
             $(".js-people").show();
-            $(".js-tab-all").removeClass("tabs-nav__item--active");
-            $(".js-tab-people").addClass("tabs-nav__item--active");
+            $(".js-tab-all").removeClass("app-tabs__item--active");
+            $(".js-tab-people").addClass("app-tabs__item--active");
         }
 
         if (area.indexOf("asks") > 0) {
             $(".cta--detailed").hide();
             $(".js-tasks").show();
-            $(".js-tab-all").removeClass("tabs-nav__item--active");
-            $(".js-tab-tasks").addClass("tabs-nav__item--active");
+            $(".js-tab-all").removeClass("app-tabs__item--active");
+            $(".js-tab-tasks").addClass("app-tabs__item--active");
         }
 
         if (area.indexOf("eams") > 0) {
             $(".cta--detailed").hide();
             $(".js-teams").show();
-            $(".js-tab-all").removeClass("tabs-nav__item--active");
-            $(".js-tab-teams").addClass("tabs-nav__item--active");
+            $(".js-tab-all").removeClass("app-tabs__item--active");
+            $(".js-tab-teams").addClass("app-tabs__item--active");
         }
 
         if (area.indexOf("ews") > 0) {
             $(".cta--detailed").hide();
             $(".js-news").show();
-            $(".js-tab-all").removeClass("tabs-nav__item--active");
-            $(".js-tab-news").addClass("tabs-nav__item--active");
+            $(".js-tab-all").removeClass("app-tabs__item--active");
+            $(".js-tab-news").addClass("app-tabs__item--active");
         }
 
         if (area.indexOf("ocu") > 0) {
             $(".cta--detailed").hide();
             $(".js-documents").show();
-            $(".js-tab-all").removeClass("tabs-nav__item--active");
-            $(".js-tab-docs").addClass("tabs-nav__item--active");
+            $(".js-tab-all").removeClass("app-tabs__item--active");
+            $(".js-tab-docs").addClass("app-tabs__item--active");
         }
 
         var query = getUrlVars()["query"];

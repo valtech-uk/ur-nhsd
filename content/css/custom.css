@@ -129,11 +129,15 @@ border-color: #212b32
 }
 
 .app-tabs__item {
+    font-size:0.8em;
     display: inline-block;
     margin: 0;
     position: relative;
-    z-index: 2
+    z-index: 2;
+    text-decoration: none;
 }
+
+
 
     .app-tabs__item a {
         background: inherit;
@@ -142,13 +146,17 @@ border-color: #212b32
         font-weight: bold;
         margin-top: -1px;
         padding: 15px;
-        text-decoration: none
+        text-decoration: none !important;
+        border-style: none;
+        border-color: #005eb8;
     }
 
+    .app-tabs__item--active a,
 .app-tabs__item--current a {
-    border-bottom-color: #005eb8;
-    border-top-color: #005eb8
+    border-width: 3px;
+    border-bottom-style: solid;
 }
+
 
 .app-tabs__item__heading a {
     background: inherit;
@@ -228,7 +236,6 @@ border-color: #212b32
 }
 
     .app-tabs__item a {
-        border: 0;
         font-weight: normal;
         margin: 0;
         padding: 8px 16px;
@@ -251,7 +258,7 @@ border-color: #212b32
     background-color: #ffeb3b;
     box-shadow: 0 -2px #ffeb3b,0 4px #212b32;
     color: #212b32;
-    outline: 4px solid transparent;
+    outline: 4px solid;
     text-decoration: none
 }
 
