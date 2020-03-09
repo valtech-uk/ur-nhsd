@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Generic meta tags -->
-    <title>Intranet Teams</title>
+    <title>Intranet Search</title>
     <meta name="title" content="Intranet - Search results" />
 
     <link rel="preload" href="../content/fonts/FrutigerLTW01-55Roman.woff2" as="font" type="font/woff2">
@@ -157,7 +157,7 @@
                 <nav aria-label="Breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb__crumb">
-                            <a href="https://valtech.invisionapp.com/share/XBW7T23AFWZ#/407455796_Home_-_Desktop_-_3" class="breadcrumb__link" data-text="NHS Digital">Search results</a>
+                            <a href="https://valtech.invisionapp.com/share/XBW7T23AFWZ#/407455796_Home_-_Desktop_-_3" class="breadcrumb__link" data-text="NHS Digital">Intranet</a>
                         </li>
                         <li class="breadcrumb__crumb">
                             <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true" />
@@ -174,7 +174,8 @@
 
         <section class="search-banner search-banner--short" aria-label="Search Bar">
             <div class="grid-wrapper grid-wrapper--collapse">
-                <form role="search" class="search-banner__form" id="search-main" aria-label="???search-banner.title???">
+                <form role="search" class="search-banner__form search-main" id="search-main" aria-label="???search-banner.title???">
+
                     <div>
                         <input type="text" name="query" id="query-main" class="search-banner__input" placeholder="Search Intranet" value="travel" aria-label="Search">
                         <label for="query" class="visually-hidden">Search</label>
@@ -182,6 +183,7 @@
                     <div>
                         <button class="search-banner__button" data-uipath="search.button" value="Search">Search</button>
                     </div>
+  
                 </form>
             </div>
         </section>
@@ -925,6 +927,7 @@
         }
 
         var query = getUrlVars()["query"];
+        query  = query.replace("%20", " " );
         if (query.indexOf("lex") > 0) {
             $(".js-travel").hide();
             $(".js-name").show();

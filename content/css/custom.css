@@ -355,3 +355,465 @@ th,td {
         line-height: 1.15
     }
 }
+
+
+/* search */
+input#query-main{
+    background-color: #fff;;
+}
+.search-banner__form {
+    padding-left:100px !important;
+    padding-right:100px !important;
+}
+.search-banner {
+    background: #f0f4f5;
+    padding: 3.5em 0 3.8em;
+    margin-bottom: 48px;
+    min-height: 30px
+}
+
+.search-banner--short {
+    padding: 2em 0 1.8em
+}
+
+.search-banner__headline {
+    color: #fff;
+    max-width: 420px;
+    margin-bottom: 30px;
+    font-family: "Frutiger W01",Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: none
+}
+
+@media (min-width: 925px) {
+    .search-banner__headline {
+        font-size:20px;
+        line-height: 30px
+    }
+}
+
+@media (min-width: 925px) {
+    .search-banner__headline {
+        max-width:500px
+    }
+}
+
+.search-banner__form {
+    position: relative;
+    display: table;
+    width: 100%;
+    left: 3px
+}
+
+.search-banner__form .search-banner__input,.search-banner__form .search-banner__button {
+    width: 100%
+}
+
+.search-banner__form>div {
+    display: table-cell;
+    min-width: 100px
+}
+
+.search-banner__form>div:not(:first-child) {
+    width: 140px
+}
+
+@media (max-width: 640px) {
+    .search-banner__form>div {
+        display:block;
+        width: 100%
+    }
+
+    .search-banner__form>div:not(:first-child) {
+        width: 100%
+    }
+
+    .search-banner__form>div:first-child {
+        margin-bottom: 1rem
+    }
+}
+
+.search-banner__input {
+    border: none;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    min-height: 30px;
+    padding: 10px 16px;
+    color: #425563;
+    background-color: #f0f4f5;
+    position: relative;
+    border: 3px solid transparent;
+    outline: 0;
+    left: -3px;
+    top: -3px;
+    font-family: "Frutiger W01",Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: none
+}
+
+.search-banner__input:focus {
+    border: 3px solid #FFB81C;
+    outline: 0
+}
+
+@media (min-width: 925px) {
+    .search-banner__input {
+        font-size:20px;
+        line-height: 30px
+    }
+}
+
+.search-banner__button {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: "Frutiger W01",Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #00386E;
+    border: 0;
+    box-shadow: 0 2px 0 #003364;
+    cursor: pointer;
+    letter-spacing: .5px;
+    line-height: 1.25;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0;
+    color: #fff;
+    position: relative;
+    left: 1px;
+    box-shadow: none;
+    outline-offset: -3px;
+    line-height: 30px;
+    position: relative;
+    border: 3px solid transparent;
+    outline: 0;
+    left: -3px;
+    top: -3px
+}
+
+@media (min-width: 925px) {
+    .search-banner__button {
+        font-size:20px;
+        line-height: 30px
+    }
+}
+
+@media (min-width: 641px) {
+    .search-banner__button {
+        width:auto
+    }
+}
+
+.search-banner__button+.button {
+    margin-top: 16px
+}
+
+@media (min-width: 641px) {
+    .search-banner__button+.button {
+        margin-left:16px;
+        margin-top: 0
+    }
+}
+
+@media (min-width: 925px) {
+    .search-banner__button+.button {
+        margin-left:32px
+    }
+}
+
+.search-banner__button:visited {
+    background-color: #00386E
+}
+
+.search-banner__button:focus {
+    outline: 3px solid #FFB81C
+}
+
+.search-banner__button:hover,.search-banner__button:focus {
+    background-color: #002b55
+}
+
+.search-banner__button:active {
+    box-shadow: 0 0 0 #00386E
+}
+
+.search-banner__button.disabled,.search-banner__button[disabled="disabled"],.search-banner__button[disabled] {
+    opacity: .5
+}
+
+.search-banner__button.disabled:hover,.search-banner__button[disabled="disabled"]:hover,.search-banner__button[disabled]:hover {
+    background-color: #00386E;
+    cursor: default
+}
+
+.search-banner__button.disabled:active,.search-banner__button[disabled="disabled"]:active,.search-banner__button[disabled]:active {
+    box-shadow: 0 2px 0 #012;
+    top: 0
+}
+
+.search-banner__button:link,.search-banner__button:hover,.search-banner__button:focus,.search-banner__button:visited {
+    color: #fff
+}
+
+.search-banner__button:before {
+    background: transparent;
+    content: "";
+    display: block;
+    height: 110%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.search-banner__button:active:before {
+    height: 120%;
+    top: -10%
+}
+
+.search-banner__button:before {
+    height: 0
+}
+
+.search-banner__button:focus {
+    border: 3px solid #FFB81C;
+    outline: 0
+}
+
+.highlight {
+    background: #fada8b;
+    color: black
+}
+
+.search-strip {
+    position: relative;
+    display: block;
+    height: 44px;
+    overflow: hidden
+}
+
+.search-strip__margin {
+    margin-top: 20px
+}
+
+.search-strip__table-cell {
+    position: relative;
+    display: table-cell;
+    width: auto;
+    vertical-align: middle;
+    height: 100%
+}
+
+.search-strip__table-cell--button {
+    width: 44px
+}
+
+.search-strip__contents {
+    position: relative;
+    width: 100%;
+    display: table;
+    top: 3px;
+    left: 3px
+}
+
+.search-strip__input {
+    font-family: "Frutiger W01",Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: none;
+    position: relative;
+    border: 3px solid transparent;
+    outline: 0;
+    left: -3px;
+    top: -3px;
+    border: 2px solid #005EB8;
+    border-right-width: 0;
+    border-right-color: #f0f4f5;
+    outline: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 44px;
+    line-height: 18px;
+    padding: 10px 14px;
+    color: #425563;
+    background-color: #f0f4f5
+}
+
+@media (min-width: 925px) {
+    .search-strip__input {
+        font-size:18px;
+        line-height: 30px
+    }
+}
+
+.search-strip__input:focus {
+    border: 3px solid #FFB81C;
+    outline: 0
+}
+
+.search-strip__input:focus {
+    padding: 10px 13px
+}
+
+.search-strip__button {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: "Frutiger W01",Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #005EB8;
+    border: 0;
+    box-shadow: 0 2px 0 #0059ae;
+    cursor: pointer;
+    letter-spacing: .5px;
+    line-height: 1.25;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0;
+    color: #fff;
+    position: relative;
+    border: 3px solid transparent;
+    outline: 0;
+    left: -3px;
+    top: -3px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    box-shadow: none;
+    outline-offset: -3px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 44px
+}
+
+@media (min-width: 925px) {
+    .search-strip__button {
+        font-size:20px;
+        line-height: 30px
+    }
+}
+
+@media (min-width: 641px) {
+    .search-strip__button {
+        width:auto
+    }
+}
+
+.search-strip__button+.button {
+    margin-top: 16px
+}
+
+@media (min-width: 641px) {
+    .search-strip__button+.button {
+        margin-left:16px;
+        margin-top: 0
+    }
+}
+
+@media (min-width: 925px) {
+    .search-strip__button+.button {
+        margin-left:32px
+    }
+}
+
+.search-strip__button:visited {
+    background-color: #005EB8
+}
+
+.search-strip__button:focus {
+    outline: 3px solid #FFB81C
+}
+
+.search-strip__button:hover,.search-strip__button:focus {
+    background-color: #00519f
+}
+
+.search-strip__button:active {
+    box-shadow: 0 0 0 #005EB8
+}
+
+.search-strip__button.disabled,.search-strip__button[disabled="disabled"],.search-strip__button[disabled] {
+    opacity: .5
+}
+
+.search-strip__button.disabled:hover,.search-strip__button[disabled="disabled"]:hover,.search-strip__button[disabled]:hover {
+    background-color: #005EB8;
+    cursor: default
+}
+
+.search-strip__button.disabled:active,.search-strip__button[disabled="disabled"]:active,.search-strip__button[disabled]:active {
+    box-shadow: 0 2px 0 #00376c;
+    top: 0
+}
+
+.search-strip__button:link,.search-strip__button:hover,.search-strip__button:focus,.search-strip__button:visited {
+    color: #fff
+}
+
+.search-strip__button:before {
+    background: transparent;
+    content: "";
+    display: block;
+    height: 110%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.search-strip__button:active:before {
+    height: 120%;
+    top: -10%
+}
+
+.search-strip__button:focus {
+    border: 3px solid #FFB81C;
+    outline: 0
+}
+
+.search-strip__button:before {
+    height: 0
+}
+
+@media (min-width: 641px) {
+    .search-strip__button {
+        width:44px
+    }
+}
+
+.search-strip__button svg,.search-strip__button img {
+    position: relative;
+    display: block;
+    width: 50%;
+    height: auto;
+    left: 25%;
+    fill: #fff
+}
+ 
