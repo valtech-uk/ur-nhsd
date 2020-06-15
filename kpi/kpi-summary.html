@@ -182,9 +182,9 @@
                                     <!-- column  two-thirds column reset -->
 
                                     <h1 id="top" class="local-header__title">Performance indicators</h1>
-                                    <hr/>
-                                    <strong>Responsible person</strong>
-                                    <a href="https://digital.nhs.uk/people/nhs-digital/assurance-and-risk-management/akatu-ikwue">Akatu Ikwue</a>
+<hr style="margin: 10px 0;"/>
+<strong>Responsible person</strong><br>
+<a href="https://digital.nhs.uk/people/nhs-digital/assurance-and-risk-management/akatu-ikwue">Akatu Ikwue</a> – Head of Corporate performance and analysis
 
                                 </div>
 
@@ -291,11 +291,54 @@
                                     </div>
                                 </div>
 
-                                <div class="article-section js-item js-item-green">
+                                <div class="article-section js-item js-item-amber">
                                     <div class="grid-row">
                                         <div class="column column--two-thirds">
                                             <h3 id="security-kpi"><a href="workforce.html">Security incidents</a></h3>
-                                            <strong class="govuk-tag govuk-tag--green" style="margin-top:0;">Green</strong>
+                                            <strong class="govuk-tag govuk-tag--yellow" style="margin-top:0;">amber</strong>
+                                            <p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
+                                            <p>Owner: <a href="#">Ben Davison</a> - Executive Director of <a href="cp-and-a-team.html">Product Development</a></p>
+                                            <p><a class="cta__title cta__button" href="#">View the Security incidents dashboard</a></p>
+                                            <br/>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="article-section js-item js-item-amber">
+                                    <div class="grid-row">
+                                        <div class="column column--two-thirds">
+                                            <h3 id="security-kpi"><a href="workforce.html">Security incidents</a></h3>
+                                            <strong class="govuk-tag govuk-tag--yellow" style="margin-top:0;">amber</strong>
+                                            <p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
+                                            <p>Owner: <a href="#">Ben Davison</a> - Executive Director of <a href="cp-and-a-team.html">Product Development</a></p>
+                                            <p><a class="cta__title cta__button" href="#">View the Security incidents dashboard</a></p>
+                                            <br/>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="article-section js-item js-item-amber">
+                                    <div class="grid-row">
+                                        <div class="column column--two-thirds">
+                                            <h3 id="security-kpi"><a href="workforce.html">Security incidents</a></h3>
+                                            <strong class="govuk-tag govuk-tag--yellow" style="margin-top:0;">amber</strong>
+                                            <p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
+                                            <p>Owner: <a href="#">Ben Davison</a> - Executive Director of <a href="cp-and-a-team.html">Product Development</a></p>
+                                            <p><a class="cta__title cta__button" href="#">View the Security incidents dashboard</a></p>
+                                            <br/>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="article-section js-item js-item-amber">
+                                    <div class="grid-row">
+                                        <div class="column column--two-thirds">
+                                            <h3 id="security-kpi"><a href="workforce.html">Security incidents</a></h3>
+                                            <strong class="govuk-tag govuk-tag--yellow" style="margin-top:0;">Amber</strong>
                                             <p>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</p>
                                             <p>Owner: <a href="#">Ben Davison</a> - Executive Director of <a href="cp-and-a-team.html">Product Development</a></p>
                                             <p><a class="cta__title cta__button" href="#">View the Security incidents dashboard</a></p>
@@ -417,7 +460,8 @@
     
 <script>
 $( document ).ready(function() {
-    $(".js-filter").on("click", function(){
+    $(".js-filter").on("click", function(e){
+        e.preventDefault();
         $(".js-item").addClass("hide");
         var classnames = $(this).attr("class");
         if (classnames.indexOf("red") > 0){
