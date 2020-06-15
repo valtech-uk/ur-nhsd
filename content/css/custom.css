@@ -836,3 +836,59 @@ input#query-main{
     display:block;
     margin-bottom:20px;
 }
+
+
+
+.nhsuk-back-link {
+    margin-bottom: 16px
+}
+
+.nhsuk-back-link__link {
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 1.71429;
+    display: inline-block;
+    padding-left: 16px;
+    position: relative;
+    text-decoration: none
+}
+
+@media (min-width: 40.0625em) {
+    .nhsuk-back-link__link {
+        font-size:16px;
+        font-size: 1rem;
+        line-height: 1.5
+    }
+}
+
+@media print {
+    .nhsuk-back-link__link {
+        font-size: 14pt;
+        line-height: 1.2
+    }
+}
+
+.nhsuk-back-link__link .nhsuk-icon__chevron-left {
+    height: 24px;
+    left: -8px;
+    position: absolute;
+    top: -1px;
+    width: 24px
+}
+
+.nhsuk-back-link__link:visited {
+    color: #005eb8
+}
+
+.nhsuk-back-link__link:hover {
+    color: #7C2855;
+    text-decoration: underline
+}
+
+.nhsuk-back-link__link:hover .nhsuk-icon__chevron-left {
+    fill: #7C2855
+}
+
+.nhsuk-back-link__link:focus .nhsuk-icon__chevron-left {
+    fill: #212b32
+}
