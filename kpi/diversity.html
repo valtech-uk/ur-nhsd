@@ -245,8 +245,6 @@
                                 </div>
                             </dl>
 
-                            <div id="kpi-diversity" style="width:100%; height:400px;"></div>
-
                         </div>
 
                     </div>
@@ -256,27 +254,30 @@
 
         <div class="grid-wrapper grid-wrapper--article">
 
+            <h2>Diversity mapped against the working population</h2>
             <div class="grid-row">
                 <div class="column column--one-third">
                     <h3><a href="age.html">Age</a></h3>
-                    <div id="kpi-age" style="width:100%; height:400px;"></div>
+                    <div id="kpi-age" class="chart" style="width:100%; height:400px;"></div>
                 </div>
 
                 <div class="column column--one-third">
                     <h3><a href="age.html">Gender</a></h3>
-                    <div id="kpi-gender" style="width:100%; height:400px;"></div>
+                    <div id="kpi-gender" class="chart" style="width:100%; height:400px;"></div>
                 </div>
 
                 <div class="column column--one-third">
                     <h3><a href="age.html">Disability</a></h3>
-                    <div id="kpi-disability" style="width:100%; height:400px;"></div>
+                    <div id="kpi-disability" class="chart" style="width:100%; height:400px;"></div>
                 </div>
 
                 <div class="column column--one-third">
                     <h3><a href="age.html">Ethnic origin</a></h3>
-                    <div id="kpi-ethnicity" style="width:100%; height:400px;"></div>
+                    <div id="kpi-ethnicity" class="chart" style="width:100%; height:400px;"></div>
                 </div>
             </div>
+
+            <h2>Diversity mapped against salary</h2>
 
             <br>
             <br>
@@ -377,7 +378,6 @@
 <script>
 document.addEventListener('DOMContentLoaded', function () {
 
-
         var diversityChart = Highcharts.chart('kpi-age', {
             chart: {
                 type: 'bar'
@@ -386,22 +386,93 @@ document.addEventListener('DOMContentLoaded', function () {
                 text: 'Age'
             },
             xAxis: {
-                categories: ['Apples', 'Bananas', 'Oranges']
+                categories: ['16-24', '25-34', '35-49', '50-64', '65', 'Unknown']
             },
             yAxis: {
                 title: {
-                    text: 'Fruit eaten'
+                    text: 'NHS Digital against working population'
                 }
             },
             series: [{
-                name: 'Jane',
-                data: [1, 0, 4]
+                name: 'Working population',
+                data: [11.9, 23.1, 33.4, 27.7, 6, 0.1]
             }, {
-                name: 'John',
-                data: [5, 7, 3]
+                name: 'NHS Digital',
+                data: [1, 15.7, 51.3, 28.8, 0.2, 0.2]
             }]
         });
 
+        var genderChart = Highcharts.chart('kpi-gender', {
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'Gender'
+            },
+            xAxis: {
+                categories: ['Female', 'Male']
+            },
+            yAxis: {
+                title: {
+                    text: 'NHS Digital against working population'
+                }
+            },
+            series: [{
+                name: 'Working population',
+                data: [47, 53]
+            }, {
+                name: 'NHS Digital',
+                data: [44.7, 55.3]
+            }]
+        });
+
+        var disabilityChart = Highcharts.chart('kpi-disability', {
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'Disability status'
+            },
+            xAxis: {
+                categories: ['Disabled', 'Not disabled', 'Not disclosed']
+            },
+            yAxis: {
+                title: {
+                    text: 'NHS Digital against working population'
+                }
+            },
+            series: [{
+                name: 'Working population',
+                data: [10.4, 68.5, 21.2]
+            }, {
+                name: 'NHS Digital',
+                data: [4.9, 70.3, 24.8]
+            }]
+        });
+
+        var ethnicityChart = Highcharts.chart('kpi-ethnicity', {
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'Ethnic origin'
+            },
+            xAxis: {
+                categories: ['Black & mixed ethnicity', 'Not shared', 'White']
+            },
+            yAxis: {
+                title: {
+                    text: 'NHS Digital against working population'
+                }
+            },
+            series: [{
+                name: 'Working population',
+                data: [12.8, 0.1, 87.2]
+            }, {
+                name: 'NHS Digital',
+                data: [13.1, 9.1, 77.7]
+            }]
+        });
 
 });
 

@@ -1127,3 +1127,7 @@ input#query-main{
     color: #005a30;
     background: #cce2d8
 }
+
+.chart {
+    margin-bottom: 40px;
+}
