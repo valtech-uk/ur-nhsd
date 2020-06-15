@@ -169,7 +169,11 @@
                         </li>
                         <li class="breadcrumb__crumb">
                             <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true" />
-                            <span class="breadcrumb__link breadcrumb__link--secondary" aria-current="page">Diversity</span>
+                            <a href="diversity.html" class="breadcrumb__link breadcrumb__link--secondary" aria-current="page">Diversity</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true" />
+                            <span class="breadcrumb__link breadcrumb__link--secondary" aria-current="page">Age</span>
                         </li>
                     </ol>
                 </nav>
@@ -188,17 +192,17 @@
                     <div class="column column--two-thirds page-block page-block--main">
                         <div class="article-section">
                             <div class="nhsuk-back-link">
-                                <a class="nhsuk-back-link__link" href="workforce.html">
+                                <a class="nhsuk-back-link__link" href="diversity.html">
                                     <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
                                         <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
                                     </svg>
-                                    Go back to Workforce</a>
+                                    Go back to Diversity</a>
                             </div>
 
                            
 
-                            <h1>Diversity</h1>
-                            <p>This page shows information about how our Workforce diversity KPI is currently performing.</p>
+                            <h1>Age</h1>
+                            <p>This page shows information about how our Workforce age KPI is currently performing.</p>
 
                             <div class="nhsuk-review-date">
                                 <p class="nhsuk-body-s">
@@ -217,35 +221,18 @@
                                 </div>
 
                                 <div class="nhsuk-summary-list__row">
-                                    <dt class="nhsuk-summary-list__key">Current status</dt>
-                                    <dd class="nhsuk-summary-list__value">
-                                        <strong class="govuk-tag govuk-tag--yellow">Amber</strong>
-                                    </dd>
-                                </div>
-
-                                <div class="nhsuk-summary-list__row">
-                                    <dt class="nhsuk-summary-list__key">Previous status</dt>
-                                    <dd class="nhsuk-summary-list__value">
-                                        <strong class="govuk-tag govuk-tag--green">Green</strong>
-                                    </dd>
-                                </div>
-
-                                <div class="nhsuk-summary-list__row">
                                     <dt class="nhsuk-summary-list__key">Summary</dt>
                                     <dd class="nhsuk-summary-list__value">
                                         <p>
-                                        At an organisational level we are exceeding Black Asian and Minority Ethnic (BAME) representation against 
-                                        the working population however we need to increase representation in senior grades. We are making some progress 
-                                        on female representation but again need to do more in relation to pipeline for senior grades. There is also 
-                                        have significantly more work to do to enhance our representation of disabled colleagues.
-                                        Our Academy strategy will work towards changing the age demographic alongside the work we are doing to reach
-                                        out into the education system and work with students from a younger age.
+                                        The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+                                        The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+                                        The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
                                         </p>
                                     </dd>
                                 </div>
                             </dl>
 
-                            <div id="kpi-diversity" style="width:100%; height:400px;"></div>
+                            <div id="kpi-age" style="width:100%; height:400px;"></div>
 
                         </div>
 
@@ -256,27 +243,7 @@
 
         <div class="grid-wrapper grid-wrapper--article">
 
-            <div class="grid-row">
-                <div class="column column--one-third">
-                    <h3><a href="age.html">Age</a></h3>
-                    <div id="kpi-age" style="width:100%; height:400px;"></div>
-                </div>
-
-                <div class="column column--one-third">
-                    <h3><a href="age.html">Gender</a></h3>
-                    <div id="kpi-gender" style="width:100%; height:400px;"></div>
-                </div>
-
-                <div class="column column--one-third">
-                    <h3><a href="age.html">Disability</a></h3>
-                    <div id="kpi-disability" style="width:100%; height:400px;"></div>
-                </div>
-
-                <div class="column column--one-third">
-                    <h3><a href="age.html">Ethnic origin</a></h3>
-                    <div id="kpi-ethnicity" style="width:100%; height:400px;"></div>
-                </div>
-            </div>
+  
 
             <br>
             <br>
@@ -386,19 +353,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 text: 'Age'
             },
             xAxis: {
-                categories: ['Apples', 'Bananas', 'Oranges']
+                categories: ['16-24', '25-34', '35-49', '50-64', '65', 'Unknown']
             },
             yAxis: {
                 title: {
-                    text: 'Fruit eaten'
+                    text: 'NHS Digital against working population'
                 }
             },
             series: [{
-                name: 'Jane',
-                data: [1, 0, 4]
+                name: 'Working population',
+                data: [11.9, 23.1, 33.4, 27.7, 6, 0.1]
             }, {
-                name: 'John',
-                data: [5, 7, 3]
+                name: 'NHS Digital',
+                data: [1, 15.7, 51.3, 28.8, 0.2, 0.2]
             }]
         });
 
