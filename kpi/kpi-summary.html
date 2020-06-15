@@ -251,19 +251,19 @@
                                         <p><strong class="govuk-tag govuk-tag--red">Red</strong> – below target</p>
                                     </dt>
                                     <dd class="nhsuk-summary-list__value"><p>1 indicator</p></dd>
-                                    <dd class="nhsuk-summary-list__actions"><p><a href="#" class="js-filter js-red">View all reds</a></p></dd>
+                                    <dd class="nhsuk-summary-list__actions"><p><a href="#list" class="js-filter js-red">View all reds</a></p></dd>
                                 </div>
 
                                 <div class="nhsuk-summary-list__row">
                                     <dt class="nhsuk-summary-list__key"><p><strong class="govuk-tag govuk-tag--yellow">Amber</strong> – close to target</p></dt>
                                     <dd class="nhsuk-summary-list__value"><p>4 indicators</p></dd>
-                                    <dd class="nhsuk-summary-list__actions"><p><a href="#" class="js-filter js-amber">View all ambers</a></p></dd>
+                                    <dd class="nhsuk-summary-list__actions"><p><a href="#list" class="js-filter js-amber">View all ambers</a></p></dd>
                                 </div>
 
                                 <div class="nhsuk-summary-list__row">
                                     <dt class="nhsuk-summary-list__key"><p><strong class="govuk-tag govuk-tag--green">Green</strong> – on target</p></dt>
                                     <dd class="nhsuk-summary-list__value"><p>1 indicator</p></dd>
-                                    <dd class="nhsuk-summary-list__actions"><p><a href="#" class="js-filter js-green">View all greens</a></p></dd>
+                                    <dd class="nhsuk-summary-list__actions"><p><a href="#list" class="js-filter js-green">View all greens</a></p></dd>
                                 </div>
 
                             </dl>
@@ -487,6 +487,10 @@ $( document ).ready(function() {
         if (classnames.indexOf("green") > 0){
             $(".js-item-green").removeClass("hide");
         }
+
+        $('html, body').animate({
+                    scrollTop: $("#list").offset().top
+         }, 2000);
     })
 });
 </script>
