@@ -1131,3 +1131,7 @@ input#query-main{
 .chart {
     margin-bottom: 40px;
 }
+
+.hide{
+    display:none;
+}
