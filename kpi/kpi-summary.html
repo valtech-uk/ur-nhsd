@@ -249,19 +249,19 @@
                                 <div class="nhsuk-summary-list__row">
                                     <dt class="nhsuk-summary-list__key"><p><strong class="govuk-tag govuk-tag--red">Red</strong></p></dt>
                                     <dd class="nhsuk-summary-list__value"><p>1 indicator</p></dd>
-                                    <dd class="nhsuk-summary-list__actions"><p><a href="#">View all reds</a></p></dd>
+                                    <dd class="nhsuk-summary-list__actions"><p><a href="#" class="js-filter js-red">View all reds</a></p></dd>
                                 </div>
 
                                 <div class="nhsuk-summary-list__row">
                                     <dt class="nhsuk-summary-list__key"><p><strong class="govuk-tag govuk-tag--yellow">Amber</strong></p></dt>
                                     <dd class="nhsuk-summary-list__value"><p>4 indicators</p></dd>
-                                    <dd class="nhsuk-summary-list__actions"><p><a href="#">View all ambers</a></p></dd>
+                                    <dd class="nhsuk-summary-list__actions"><p><a href="#" class="js-filter js-amber">View all ambers</a></p></dd>
                                 </div>
 
                                 <div class="nhsuk-summary-list__row">
                                     <dt class="nhsuk-summary-list__key"><p><strong class="govuk-tag govuk-tag--green">Green</strong></p></dt>
                                     <dd class="nhsuk-summary-list__value"><p>1 indicator</p></dd>
-                                    <dd class="nhsuk-summary-list__actions"><p><a href="#">View all greens</a></p></dd>
+                                    <dd class="nhsuk-summary-list__actions"><p><a href="#" class="js-filter js-green">View all greens</a></p></dd>
                                 </div>
 
                             </dl>
@@ -272,7 +272,7 @@
                         <div id="list">
                             <div class="grid-wrapper grid-wrapper--article" style="padding:0">
 
-                                <div class="article-section">
+                                <div class="article-section js-item js-item-red">
 
                                     <div class="grid-row">
                                         <div class="column column--two-thirds">
@@ -290,7 +290,7 @@
                                     </div>
                                 </div>
 
-                                <div class="article-section">
+                                <div class="article-section js-item js-item-green">
                                     <div class="grid-row">
                                         <div class="column column--two-thirds">
                                             <h3 id="security-kpi"><a href="workforce.html">Security incidents</a></h3>
@@ -307,7 +307,7 @@
                                     </div>
                                 </div>
 
-                                <div class="article-section">
+                                <div class="article-section js-item js-item-green">
 
                                     <div class="grid-row">
                                         <div class="column column--two-thirds">
@@ -419,40 +419,24 @@
         </div>
     </footer>
 
-
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-        var myChart = Highcharts.chart('container', {
-            chart: {
-                type: 'bar'
-            },
-            title: {
-                text: 'Fruit Consumption'
-            },
-            xAxis: {
-                categories: ['Apples', 'Bananas', 'Oranges']
-            },
-            yAxis: {
-                title: {
-                    text: 'Fruit eaten'
-                }
-            },
-            series: [{
-                name: 'Jane',
-                data: [1, 0, 4]
-            }, {
-                name: 'John',
-                data: [5, 7, 3]
-            }]
-        });
-    });
-
-    </script>
     
-
-   
-
+<script>
+$( document ).ready(function() {
+    $(".js-filter").on("click", function(){
+        $(".js-item").addClass("hide");
+        var classnames = $(this).attr("class");
+        if (classnames.indexOf("red") > 0){
+            $(".js-item-red").removeClass("hide");
+        }
+        if (classnames.indexOf("amber") > 0){
+            $(".js-item-amber").removeClass("hide");
+        }
+        if (classnames.indexOf("green") > 0){
+            $(".js-item-green").removeClass("hide");
+        }
+    })
+});
+</script>
 </body>
 
 </html>
