@@ -199,13 +199,39 @@
                                     Next review due: 6 August 2020
                                 </p>
                             </div>
-                        </div>
 
-                        <div class="article-section">
-                            <h3>How can we help you?</h3>
-                            <p>
-                                The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
-                            </p>
+                            <dl class="nhsuk-summary-list">
+
+                                <div class="nhsuk-summary-list__row">
+                                    <dt class="nhsuk-summary-list__key">Owner</dt>
+                                    <dd class="nhsuk-summary-list__value"><a href="#">Julie Pinder</a></dd>
+                                </div>
+
+                                <div class="nhsuk-summary-list__row">
+                                    <dt class="nhsuk-summary-list__key">Current status</dt>
+                                    <dd class="nhsuk-summary-list__value">
+                                        <strong class="govuk-tag govuk-tag--yellow">Amber</strong>
+                                    </dd>
+                                </div>
+
+                                <div class="nhsuk-summary-list__row">
+                                    <dt class="nhsuk-summary-list__key">Previous status</dt>
+                                    <dd class="nhsuk-summary-list__value">
+                                        <strong class="govuk-tag govuk-tag--green">Green</strong>
+                                    </dd>
+                                </div>
+
+                                <div class="nhsuk-summary-list__row">
+                                    <dt class="nhsuk-summary-list__key">Summary</dt>
+                                    <dd class="nhsuk-summary-list__value">
+                                        <p>
+                                        The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+                                        The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+                                        The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+                                        </p>
+                                    </dd>
+                                </div>
+                            </dl>
                         </div>
 
                     </div>
@@ -232,9 +258,14 @@
                 </div>
             </div>
 
+            <br>
+            <br>
+            <br>
+            <br>
             <hr />
+            <br>
             <div class="grid-row">
-                <div class="column column--two-thirds">
+                <div class="column column--one-half">
                     <h2>Help us improve</h2>
                     <p>If you have problems with the information on this page, please contact the <a href="#">Corporate performance and Analysis</a> team.</p>
                 </div>
@@ -373,7 +404,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }]
         });
 
-        var availabilityChart = Highcharts.chart('kpi-availaibility', {
+        var availabilityChart = Highcharts.chart('kpi-availability', {
             chart: {
                 type: 'bar'
             },
