@@ -243,6 +243,12 @@
         <div class="grid-wrapper grid-wrapper--article">
 
             <div class="grid-row">
+
+                <div class="column column--one-third">
+                    <h3><a href="diversity.html">Size</a></h3>
+                    <div id="kpi-size" style="width:100%; height:400px;"></div>
+                </div>
+
                 <div class="column column--one-third">
                     <h3><a href="diversity.html">Flexibility</a></h3>
                     <div id="kpi-flexibility" style="width:100%; height:400px;"></div>
@@ -357,6 +363,28 @@
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+
+      var flexibilityChart = Highcharts.chart('kpi-size', {
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'Size'
+            },
+            xAxis: {
+                categories: ['November', 'December', 'January', 'February', 'March', 'April']
+            },
+            yAxis: {
+                title: {
+                    text: 'Permanent employees'
+                }
+            },
+            series: [{
+                name: 'Total',
+                data: [2543, 2539, 2504, 2489, 2445, 2394]
+            }]
+        });
+
         var flexibilityChart = Highcharts.chart('kpi-flexibility', {
             chart: {
                 type: 'bar'
