@@ -225,7 +225,7 @@
                                     <div class="filter">
                                         <div class="filter-head">
                                             <span class="filter-head__title">Filter by:</span>
-                                            <a class="filter-head__reset button button--tiny" href="" title="Reset">Reset</a>
+                                            <a class="filter-head__reset button button--tiny" href="https://digital.nhs.uk/search-results?query=pension" title="Reset">Reset</a>
                                         </div>
 
 
@@ -237,11 +237,6 @@
                                                     <li class="filter-list__item">
 
                                                         <a href="search-results.html?type=tasks&query=travel" title="Tasks" class="filter-link">Tasks</a>
-
-                                                    </li>
-                                                     <li class="filter-list__item">
-
-                                                        <a href="search-results.html?type=tasks&query=travel" title="Teams" class="filter-link">Teams</a>
 
                                                     </li>
                                                     <li class="filter-list__item">
@@ -472,57 +467,6 @@
 
                             <div class="search-results">
                                 <div class="cta-list">
-
-                                   <div class="cta js-tasks js-kpi js-normal cta--detailed" data-uipath="ps.search-results.result">
-                                        <div>
-                                            <span class="cta__label" data-uipath="ps.search-results.result.type">Task</span>
-                                        </div>
-                                        <a class="cta__title cta__button" href="../kpi/kpi-summary.html" title="Fit notes" data-uipath="ps.search-results.result.title">
-                                            Check our performance indicators
-                                        </a>
-
-                                        <p class="cta__text" data-uipath="ps.search-results.result.summary">
-                                            Find out how we are performing, see how we are tracking against our performance indicators (KPIs)
-                                        </p>
-                                    </div>
-                                   <div class="cta js-teams js-kpi js-normal cta--detailed" data-uipath="ps.search-results.result">
-                                        <div>
-                                            <span class="cta__label" data-uipath="ps.search-results.result.type">Team</span>
-                                        </div>
-                                        <a class="cta__title cta__button" href="../kpi/cp-and-a-team.html" title="Fit notes" data-uipath="ps.search-results.result.title">
-                                            Corporate performance &amp; analysis team
-                                        </a>
-
-                                        <p class="cta__text" data-uipath="ps.search-results.result.summary">
-                                            We are responsible for the health of NHS Digital as an organisation. This is measured in many different ways from workforce diversity to financial performance.
-                                        </p>
-                                    </div>
-                                   <div class="cta js-tasks js-kpi js-normal cta--detailed" data-uipath="ps.search-results.result">
-                                        <div>
-                                            <span class="cta__label" data-uipath="ps.search-results.result.type">Indicator</span>
-                                        </div>
-                                        <a class="cta__title cta__button" href="../kpi/workforce.html" title="Fit notes" data-uipath="ps.search-results.result.title">
-                                            Workforce diversity indicator
-                                        </a>
-
-                                        <p class="cta__text" data-uipath="ps.search-results.result.summary">
-                                            How our Workforce diversity KPI is currently performing
-                                        </p>
-                                    </div>
-                                   <div class="cta js-tasks js-kpi js-normal cta--detailed" data-uipath="ps.search-results.result">
-                                        <div>
-                                            <span class="cta__label" data-uipath="ps.search-results.result.type">Task</span>
-                                        </div>
-                                        <a class="cta__title cta__button" href="#" title="Fit notes" data-uipath="ps.search-results.result.title">
-                                            Book a performance indicator review
-                                        </a>
-
-                                        <p class="cta__text" data-uipath="ps.search-results.result.summary">
-                                            We review your performance indicator to make sure it is still valid and still providing what you need it to. Reviews generally take 2 days and you will need to book in with our team
-                                        </p>
-                                    </div>
-
-
 
                                     <div class="cta js-tasks js-travel js-normal cta--detailed" data-uipath="ps.search-results.result">
                                         <div>
@@ -926,7 +870,6 @@
         });
 
         $(".js-name").hide();
-        $(".js-travel").hide();
 
         var area = getUrlVars()["area"];
         if (area.indexOf("eople") > 0) {
@@ -968,10 +911,8 @@
         query  = query.replace("%20", " " );
         if (query.indexOf("lex") > 0) {
             $(".js-travel").hide();
-            $(".js-kpi").hide();
             $(".js-name").show();
             }
-
 
         var countresults = $('.cta--detailed:visible').length;
         $(".js-count").text(countresults);
