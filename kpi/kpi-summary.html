@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="../content/css/custom.css" type="text/css" />
 
     <script src="../content/js/jquery.js"></script>
-    <script defer src="../content/js/breadcrumbs.js"></script>
+    <!--<script defer src="../content/js/breadcrumbs.js"></script>-->
     <script defer src="../content/js/highlighter-copy-button.js"></script>
     <script defer src="../content/js/aria.js"></script>
     <script defer src="../content/js/details-element-polyfill.js"></script>
@@ -149,19 +149,19 @@
                 <nav aria-label="Breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb__crumb">
-                            <a href="../search/home.html" class="breadcrumb__link" data-text="NHS Digital">Intranet</a>
+                            <a href="../search/home.html" class="breadcrumb__link">Intranet</a>
                         </li>
                         <li class="breadcrumb__crumb">
                             <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true" />
-                            <a href="../pages/team-list.html" class="breadcrumb__link" data-text="Systems and services">Teams and networks</a>
+                            <a href="../pages/team-list.html" class="breadcrumb__link">Teams and networks</a>
                         </li>
                         <li class="breadcrumb__crumb">
                             <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true" />
-                            <a href="cp-and-a-team.html" class="breadcrumb__link" data-text="Systems and services">Corporate performance &amp; analysis</a>
+                            <a href="cp-and-a-team.html" class="breadcrumb__link">Corporate performance &amp; analysis</a>
                         </li>
                         <li class="breadcrumb__crumb">
                             <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true" />
-                            <span class="breadcrumb__link breadcrumb__link--secondary" data-text="NHSmail" aria-current="page">Performance indicators</span>
+                            <span class="breadcrumb__link breadcrumb__link--secondary" aria-current="page">Performance indicators</span>
                         </li>
                     </ol>
                 </nav>
@@ -251,19 +251,19 @@
                                         <p><strong class="govuk-tag govuk-tag--red">Red</strong> – below target</p>
                                     </dt>
                                     <dd class="nhsuk-summary-list__value"><p>1 indicator</p></dd>
-                                    <dd class="nhsuk-summary-list__actions"><p><a href="#" class="js-filter js-red">View all reds</a></p></dd>
+                                    <dd class="nhsuk-summary-list__actions"><p><a href="#list" class="js-filter js-red">View all reds</a></p></dd>
                                 </div>
 
                                 <div class="nhsuk-summary-list__row">
                                     <dt class="nhsuk-summary-list__key"><p><strong class="govuk-tag govuk-tag--yellow">Amber</strong> – close to target</p></dt>
                                     <dd class="nhsuk-summary-list__value"><p>4 indicators</p></dd>
-                                    <dd class="nhsuk-summary-list__actions"><p><a href="#" class="js-filter js-amber">View all ambers</a></p></dd>
+                                    <dd class="nhsuk-summary-list__actions"><p><a href="#list" class="js-filter js-amber">View all ambers</a></p></dd>
                                 </div>
 
                                 <div class="nhsuk-summary-list__row">
                                     <dt class="nhsuk-summary-list__key"><p><strong class="govuk-tag govuk-tag--green">Green</strong> – on target</p></dt>
                                     <dd class="nhsuk-summary-list__value"><p>1 indicator</p></dd>
-                                    <dd class="nhsuk-summary-list__actions"><p><a href="#" class="js-filter js-green">View all greens</a></p></dd>
+                                    <dd class="nhsuk-summary-list__actions"><p><a href="#list" class="js-filter js-green">View all greens</a></p></dd>
                                 </div>
 
                             </dl>
@@ -487,6 +487,10 @@ $( document ).ready(function() {
         if (classnames.indexOf("green") > 0){
             $(".js-item-green").removeClass("hide");
         }
+
+        $('html, body').animate({
+                    scrollTop: $("#list").offset().top
+         }, 2000);
     })
 });
 </script>
