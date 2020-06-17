@@ -1168,3 +1168,22 @@ input#query-main{
   .card .card-header.green {
     background-color: #ddffcc; /* F0F0F0 */
   }
+
+  .card a,
+  table a{
+      text-decoration: none;
+  }
+  .rag{
+      padding:10px;
+      background-color: silver;
+  }
+
+  .rag.red{
+    background-color: #ffb3b3; /* F0F0F0 */
+  }
+  .rag.amber{
+    background-color: #ffe0b3; /* F0F0F0 */
+  }
+  .rag.green{
+    background-color:#ddffcc; /* F0F0F0 */
+  }
