@@ -1,0 +1,42 @@
+
+/*-- cards --*/
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .card-body {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .card-header {
+    padding: 16px;
+    background-color: #E8E8E8; /* F0F0F0 */
+  }
+  
+ .card .card-header.red {
+    background-color: #ffb3b3; /* F0F0F0 */
+  }
+  .card .card-header.amber {
+    background-color: #ffe0b3; /* F0F0F0 */
+  }
+  .card .card-header.green {
+    background-color: #ddffcc; /* F0F0F0 */
+  }
+
+  .card a,
+  table a{
+      text-decoration: none;
+  }
+  .rag{
+      padding:10px;
+      background-color: silver;
+  }
