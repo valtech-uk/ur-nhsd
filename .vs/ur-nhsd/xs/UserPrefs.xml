@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{5E15779D-0DA0-4C97-A83C-35C6679B2E0C}|Default">
   <MonoDevelop.Ide.ItemProperties.ur-nhsd PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="cpmo/lifecycle-stages.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="cpmo/chapter.html">
     <Files>
-      <File FileName="cpmo/lifecycle-stages.html" Line="438" Column="5" />
-      <File FileName="content/css/custom.css" Line="1254" Column="2" />
+      <File FileName="cpmo/lifecycle-stages.html" Line="292" Column="15" />
+      <File FileName="content/css/custom.css" Line="1270" Column="17" />
       <File FileName="bloomreach/kpi-summary.html" Line="622" Column="1" />
+      <File FileName="cpmo/chapter.html" Line="286" Column="19" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,9 +15,10 @@
               <Node name="bloomreach" expanded="True" />
               <Node name="content" expanded="True">
                 <Node name="css" expanded="True" />
+                <Node name="images" expanded="True" />
               </Node>
               <Node name="cpmo" expanded="True">
-                <Node name="lifecycle-stages.html" selected="True" />
+                <Node name="chapter.html" selected="True" />
               </Node>
             </Node>
           </Node>

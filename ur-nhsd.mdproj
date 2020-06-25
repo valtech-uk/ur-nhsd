@@ -91,5 +91,8 @@
     <None Include="README.md" />
     <None Include="cpmo\lifecycle-stages.html" />
     <None Include="content\images\refresh.png" />
+    <None Include="cpmo\chapter.html" />
+    <None Include="cpmo\approach-tool.html" />
+    <None Include="content\css\nhsd-intranet.css" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,698 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Generic meta tags -->
+    <title>Intranet - Lifecycle stages</title>
+    <meta name="title" content="Intranet - Org2" />
+
+
+    <link rel="preload" href="../content/fonts/FrutigerLTW01-55Roman.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../content/fonts/FrutigerLTW01-56Italic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../content/fonts/FrutigerLTW01-65Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../content/fonts/FrutigerLTW01-66BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+
+    <meta name="theme-color" content="#ffffff">
+
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="../content/css/nhsd-intranet.css" type="text/css" />
+    <!--<![endif]-->
+    <!--[if IE 6]>
+    <link rel="stylesheet" href="../content/css/nhsuk-ie6.css" media="screen" type="text/css"/>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="../content/css/nhsuk-ie7.css" media="screen" type="text/css"/>
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" href="../content/css/nhsuk-ie8.css" media="screen" type="text/css"/>
+    <![endif]-->
+
+    <link rel="stylesheet" href="../content/css/custom.css" type="text/css" />
+
+    <script src="../content/js/jquery.js"></script>
+    <!--<script defer src="../content/js/breadcrumbs.js"></script>-->
+    <script defer src="../content/js/highlighter-copy-button.js"></script>
+    <script defer src="../content/js/aria.js"></script>
+    <script defer src="../content/js/details-element-polyfill.js"></script>
+    <script src="../content/js/custom.js"></script>
+
+
+</head>
+
+<body class="debugs">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-src="sprite.de5f5359395829169670f642beb41ba0.svg" style="width: 0px; height: 0px; display: none;">
+        <defs>
+            <symbol viewBox="0 0 24 24" id="add--sprite">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="edit-document--sprite">
+                <g>
+                    <path d="M14,17c0,0.472-0.561,1-1.031,1 M13,15V8H9C8.529,8,8,7.471,8,7V3H3L2.998,17.049L11,17.01L10.002,18H2.854
+		C2.383,18,2,17.617,2,17.146V2.913c0-0.472,0.383-0.854,0.854-0.854h5.97c0.473,0,1.131,0.275,1.461,0.605l3.111,2.877
+		C13.725,5.871,14,6.528,14,7v7L13,15z M13,17 M5.284,10h5.431C10.875,10,11,10.125,11,10.285v0.431C11,10.875,10.875,11,10.715,11
+		H5.284C5.125,11,5,10.875,5,10.715v-0.431C5,10.125,5.125,10,5.284,10z M5.284,12h5.431C10.875,12,11,12.124,11,12.284v0.431
+		C11,12.875,10.875,13,10.715,13H5.284C5.125,13,5,12.875,5,12.715v-0.431C5,12.124,5.125,12,5.284,12z M5.284,14h5.431
+		C10.875,14,11,14.124,11,14.284v0.431C11,14.875,10.875,15,10.715,15H5.284C5.125,15,5,14.875,5,14.715v-0.431
+		C5,14.124,5.125,14,5.284,14z M9,7h4c-0.053-0.151-0.135-0.302-0.197-0.365L9.365,3.196C9.303,3.134,9.152,3.054,9,3V7z"></path>
+                </g>
+                <g>
+                    <rect x="19.793" y="11.086" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 43.8345 6.8431)" width="1.414" height="2.828"></rect>
+                    <polygon points="18,13 11,20 11,22 13,22 20,15 	"></polygon>
+                </g>
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="edit-menu--sprite">
+                <g>
+                    <polygon points="14,13 4,13 4,14 13,14 14,13 	"></polygon>
+                </g>
+                <g>
+                    <polygon points="17,8 4,8 4,9 17,9 17,8 	"></polygon>
+                </g>
+                <g>
+                    <polygon points="17,3 4,3 4,4 17,4 17,3 	"></polygon>
+                </g>
+                <g>
+                    <rect x="19.793" y="10.086" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 43.1274 5.136)" width="1.414" height="2.828"></rect>
+                    <polygon points="18,12 11,19 11,21 13,21 20,14 	"></polygon>
+                </g>
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="flask--sprite">
+                <g>
+                    <path d="M13,5v4c0,0.188,0.054,0.374,0.154,0.533c2.483,3.942,5.234,8.42,5.706,9.371c-0.074,0.925-0.759,1.086-1.165,1.096H6.544
+		c-0.345,0-1.435-0.082-1.536-1.077c0.493-1.019,3.646-6.003,5.832-9.379C10.944,9.382,11,9.193,11,9V5H13 M15,4H9v1h1v4
+		c0,0-6,9.265-6,9.769C4,20.966,6.397,21,6.544,21c0.005,0,0.007,0,0.007,0h11.145c0,0,2.172,0,2.172-2.267C19.867,18.315,14,9,14,9
+		V5h1V4L15,4z"></path>
+                </g>
+                <rect x="6.267" y="15" width="11.333" height="1"></rect>
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="lock--sprite">
+                <g>
+                    <path d="M11.5,3.937c2.231,0,3.563,1.519,3.563,4.063v3.063H7.937V8C7.937,5.456,9.269,3.937,11.5,3.937 M11.5,3
+		C8.674,3,7,5.042,7,8v4h9V8C16,5.042,14.327,3,11.5,3L11.5,3z"></path>
+                </g>
+                <g>
+                    <path d="M17.077,11.923v8.154H5.923v-8.154H17.077 M18,11H5v10h13V11L18,11z"></path>
+                </g>
+                <rect x="11" y="14" width="1" height="4"></rect>
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="not-allowed--sprite">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8 0-1.85.63-3.55 1.69-4.9L16.9 18.31C15.55 19.37 13.85 20 12 20zm6.31-3.1L7.1 5.69C8.45 4.63 10.15 4 12 4c4.42 0 8 3.58 8 8 0 1.85-.63 3.55-1.69 4.9z"></path>
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="plus--sprite">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="search--sprite">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+            </symbol>
+        </defs>
+    </svg><div id="MathJax_Message" style="display: none;"></div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6GJCR9"
+                height="0" width="0" style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <a href="#main-content" class="nhsd-skip-link">Skip to main content</a>
+
+    <header class="site-header site-header--intranet site-header--with-search" id="header">
+        <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide">
+            <div class="grid-row">
+                <div class="column column--reset">
+                    <div class="grid-wrapper grid-wrapper--collapse">
+                        <div class="grid-row">
+                            <div class="column column--18-75 column--reset">
+                                <a class="site-header__waffle-link" href="https://www.office.com/" target="_blank" aria-label="Office 365"><span class="ms-Icon ms-Icon--WaffleOffice365"></span></a>
+                                <a class="site-header-a__logo" href="/site/_cmsinternal/intranet"><img src="../content/images/nhs-digital-intranet-logo.svg" alt="NHS Digital Intranet logo" class="site-header__logo"></a>
+                            </div>
+
+
+                            <div class="main-nav">
+
+                                <div class="site-header__search-wrapper">
+
+
+
+
+
+
+
+                                    <form role="search" method="get" action="/site/_cmsinternal/intranet/search" class="search-strip" aria-label="???search-banner.title???" id="search" autocomplete="off">
+                                        <div class="search-strip__contents">
+                                            <div class="search-strip__table-cell">
+                                                <input type="text" name="query" id="query" class="search-strip__input" placeholder="Search" value="" aria-label="Search">
+                                                <label for="query" class="visually-hidden">Search</label>
+                                            </div>
+                                            <div class="search-strip__table-cell search-strip__table-cell--button">
+                                                <button data-uipath="search.button" class="search-strip__button" aria-label="Search">
+                                                    <img src="../content/images/icon-search-white.png" alt="Magnifying glass" class="search-strip__icon" aria-hidden="true">
+
+                                                    <img src="../content/images/icon-loading.svg" alt="Spinning circle graphic" class="search-strip__icon search-strip__icon--loading" aria-hidden="true">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <nav>
+                                    <button tabindex="0" class="main-nav__burger" aria-label="Navigation menu" id="navToggle">
+                                        <span class="main-nav__burger-button">
+                                            <span class="main-nav__burger-line-group">
+                                                <span class="main-nav__burger-line">&nbsp;</span>
+                                                <span class="main-nav__burger-line">&nbsp;</span>
+                                                <span class="main-nav__burger-line">&nbsp;</span>
+                                            </span>
+                                        </span>
+                                    </button>
+                                    <div class="column  column--reset">
+                                        <div class="main-nav__menu">
+
+
+
+
+
+                                            <nav>
+                                                <ol class="list list--reset list--inline">
+                                                    <li><a href="/site/_cmsinternal/intranet/tasks">Tasks</a></li>
+                                                    <li><a href="#">Teams &amp; Networks</a></li>
+                                                    <li><a href="#">News &amp; Announcements</a></li>
+                                                    <li><a href="#">Collaborate</a></li>
+                                                </ol>
+                                                <!-- {"HST-Type":"EDIT_MENU_LINK","uuid":"c5c8bbc5-123a-4693-91c5-5ce53926056d"} --><a class="hst-fab hippo-overlay-box"></a>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script>(function () {
+            var oldBrowser = window.addEventListener ? false : true;
+            var $header = document.getElementById('header');
+            var $nav = document.getElementById('nav');
+            var $navToggle = document.getElementById('navToggle');
+            function handleToggleClick() {
+                if ($header.className.indexOf('menu-open') >= 0) {
+                    $header.className = $header.className.replace('menu-open', '');
+                } else {
+                    $header.className += ' menu-open';
+                }
+                $header.className = $header.className.replace(/^\s+|\s+$/g, '');
+            }
+            function init() {
+                if (!oldBrowser) {
+                    $navToggle.addEventListener('click', handleToggleClick);
+                    window.addEventListener('resize', onResize);
+                } else {
+                    $navToggle.attachEvent('onclick', handleToggleClick);
+                    window.attachEvent('onresize', onResize);
+                }
+            }
+            function onResize() {
+                if (window.innerWidth > 1024 && $header.className.indexOf('menu-open') >= 0) {
+                    handleToggleClick();
+                }
+            }
+            init();
+        }())</script>
+
+
+
+
+
+
+    <div class="grid-wrapper">
+        <div class="grid-row">
+            <div class="column column--reset">
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb__crumb">
+                            <a href="/site/_cmsinternal/intranet" class="breadcrumb__link" data-text="NHS Digital">NHS Digital</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
+                            <a href="/site/_cmsinternal/intranet/valtech-test" class="breadcrumb__link" data-text="Valtech Test">Valtech Test</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
+                            <a href="/site/_cmsinternal/intranet/valtech-test/templates" class="breadcrumb__link" data-text="Templates">Templates</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
+                            <span class="breadcrumb__link breadcrumb__link--secondary" data-text="Task Page Icon List Option" aria-current="page">Task Page Icon List Option</span>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Set up equation support from mathjax -->
+        <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS_HTML"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>window.dataLayer.push({ 'data-doc-type': 'Task' });
+            window.dataLayer.push({ 'data-creation-date': '2020-06-22T14:44:46Z' });
+            window.dataLayer.push({ 'data-last-modified-date': '2020-06-22T16:14:06Z' });
+            window.dataLayer.push({ 'data-author': 'amy.gallagher' });
+            window.dataLayer.push({ 'data-topics': '' });
+            window.dataLayer.push({ 'data-subject': '' });</script>
+
+
+
+        <!-- strip HTML tags -->
+
+
+
+
+
+
+
+
+
+        <article class="article article--intranet-task">
+
+
+            <!-- checking whether simulating doc in order to avoid console errors from NewsHub and EventHub docs -->
+
+
+
+
+
+            <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide" aria-label="Document Header">
+                <div class="local-header article-header article-header--with-icon">
+                    <div class="grid-wrapper">
+                        <div class="article-header__inner">
+                            <div class="grid-row">
+                                <div class="column--two-thirds column--reset">
+
+
+
+                                    <h1 id="top" class="local-header__title" data-uipath="document.title">Task Page Icon List Option</h1>
+
+
+
+                                    <div class="rich-text-content article-header__subtitle">
+                                        <p>Task page with the icon list option added</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide grid-wrapper--chapter-pagination">
+                <div class="chapter-pagination-wrapper">
+                    <div class="grid-wrapper">
+                        <div class="grid-row chapter-pagination-wrapper__skip visually-hidden">
+                            <div class="column column--reset">
+                                <a href="#document-content">???labels.skip-to-content???</a>
+                            </div>
+                        </div>
+
+                        <nav class="chapter-pagination" aria-label="Chapter Navigation">
+                            <ul class="chapter-pagination__list grid-row">
+                                <li class="chapter-pagination__list-item chapter-pagination-item--previous">
+                                    <p>
+                                        <span class="chapter-pagination__direction" aria-hidden="true">Previous task chapters</span>
+                                        <a class="chapter-pagination__link" href="/site/_cmsinternal/intranet/valtech-test/templates/task-page-check-list-option">
+                                            <span class="chapter-pagination__link-direction visually-hidden">Previous task chapters: </span>
+                                            <span class="chapter-pagination__link-arrow"><img aria-hidden="true" alt="Left Arrow" src="../content/images/left-arrow.svg"></span>
+                                            <!--
+                                            No space between elements -->
+                                            <span class="chapter-pagination__link-page">Task Page Check Lists Examples</span>
+                                        </a>
+                                    </p>
+                                </li>
+                                <li class="chapter-pagination__list-item chapter-pagination-item--current column-one-third">
+                                    <p>
+                                        <span class="chapter-pagination__direction">Task Page Icon List Option</span>
+                                        <a class="chapter-pagination__link" href="#chapter-index">
+                                            <span class="chapter-pagination__link-direction visually-hidden"></span>
+                                            <span class="chapter-pagination__link-arrow"><img aria-hidden="true" alt="Down Arrow" src="../content/images/down-arrow.svg"></span>
+                                            <!--
+                                            No space between elements -->
+                                            <span class="chapter-pagination__link-page">View all Task chapters</span>
+                                        </a>
+                                    </p>
+
+                                </li>
+                                <li class="chapter-pagination__list-item chapter-pagination-item--next column-one-third">
+                                    <p>
+                                        <span class="chapter-pagination__direction" aria-hidden="true">
+                                            Next task chapters
+                                        </span>
+                                        <a class="chapter-pagination__link" href="/site/_cmsinternal/intranet/valtech-test/templates/task-page-gallery-option">
+                                            <span class="chapter-pagination__link-direction visually-hidden">Next task chapters: </span>
+                                            <span class="chapter-pagination__link-page">Task Page Gallery Items Title</span>
+                                            <!--
+                                            No space between elements -->
+                                            <span class="chapter-pagination__link-arrow"><img aria-hidden="true" alt="Right Arrow" src="../content/images/right-arrow.svg"></span>
+                                        </a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="grid-wrapper grid-wrapper--article" aria-label="Document Content">
+                <div class="grid-row">
+                    <div class="column column--one-third page-block page-block--sidebar article-section-nav-outer-wrapper">
+                        <div id="sticky-nav" class="" style="">
+                            <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+
+                                <div class="article-section-nav-wrapper">
+                                    <div class="article-section-nav">
+                                        <h2 class="article-section-nav__title">Page contents</h2>
+                                        <nav>
+                                            <ol class="article-section-nav__list">
+                                                <li>
+                                                    <a href="#top" aria-label="Scroll to 'Top of page'" title="Scroll to 'Top of page'" class=" ">Top of page</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#icon-list-title" aria-label="Scroll to 'Icon list title'" title="Scroll to 'Icon list title'" class="active">Icon list title</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#dates" aria-label="Scroll to 'Dates'" title="Scroll to 'Dates'" class=" ">Dates</a>
+                                                </li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="column column--two-thirds page-block page-block--main">
+
+                        <div class="article-section">
+
+                            <div id="icon-list-title" class="article-section">
+                                <h2 data-uipath="website.contentblock.iconlist.title">Icon list title</h2>
+
+                                <div data-uipath="website.contentblock.iconlist.introduction">
+                                    <p>Icon list introduction</p>
+
+                                    <p>The heading level is main heading</p>
+
+                                    <p>You add multiple icon list items underneath and each one has its own heading, description and image</p>
+                                </div>
+
+                                <div class="iconList">
+
+                                    <!-- iconListItem -->
+                                    <div class="iconList__item">
+                                        <div class="iconList__icon">
+                                            <img class="iconList__icon__img" aria-hidden="true" src="/site/_cmsinternal/svg-magic/binaries/content/gallery/website/icons/tech/cog.svg?colour=005EB8" alt="Icon list title" width="100" height="100">
+                                        </div>
+
+                                        <div class="iconList__content">
+                                            <div class="iconList__title" data-uipath="website.contentblock.iconlistitem.heading">Icon list item heading</div>
+
+                                            <div class="iconList__body" data-uipath="website.contentblock.iconlistitem.description">
+                                                <p>Icon list item description. Image is of cog icon</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- iconListItem -->
+                                    <div class="iconList__item">
+                                        <div class="iconList__icon">
+                                            <img class="iconList__icon__img" aria-hidden="true" src="/site/_cmsinternal/svg-magic/binaries/content/gallery/website/icons/tech/speech-bubble-2.svg?colour=005EB8" alt="Icon list title" width="100" height="100">
+                                        </div>
+
+                                        <div class="iconList__content">
+                                            <div class="iconList__title" data-uipath="website.contentblock.iconlistitem.heading">Icon list item heading</div>
+
+                                            <div class="iconList__body" data-uipath="website.contentblock.iconlistitem.description">
+                                                <p>Item list icon description with the speech bubble image selected</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- iconListItem -->
+                                    <div class="iconList__item">
+                                        <div class="iconList__icon">
+                                            <img class="iconList__icon__img" aria-hidden="true" src="/site/_cmsinternal/svg-magic/binaries/content/gallery/website/icons/tech/wearable-technology.svg?colour=005EB8" alt="Icon list title" width="100" height="100">
+                                        </div>
+
+                                        <div class="iconList__content">
+                                            <div class="iconList__title" data-uipath="website.contentblock.iconlistitem.heading"></div>
+
+                                            <div class="iconList__body" data-uipath="website.contentblock.iconlistitem.description">
+                                                <p>Icon list item description.&nbsp; No heading completed for this example</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="article-section" id="dates">
+                            <h2>Dates</h2>
+                            <div class="detail-list-grid detail-list-grid--regular">
+                                <dl class="detail-list">
+                                    <dt class="detail-list__key">Review date:</dt>
+                                    <dd class="detail-list__value">21 August 2020</dd>
+                                </dl>
+
+                                <dl class="detail-list">
+                                    <dt class="detail-list__key">Last modified:</dt>
+                                    <dd class="detail-list__value">
+                                        22 June 2020 5:14 pm
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1002px; height: 839px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide" id="chapter-index">
+                <div class="chapter-nav">
+                    <div class="grid-wrapper">
+
+                        <div class="grid-row">
+                            <div class="column column--reset">
+                                <h2 class="chapter-nav__title">Task chapters</h2>
+                            </div>
+                        </div>
+
+                        <div class="grid-row">
+                            <div class="column column--one-half column--left">
+                                <ol class="list list--reset cta-list chapter-index">
+                                    <li class="chapter-index__item">
+                                        <a class="chapter-index__link" href="/site/_cmsinternal/intranet/valtech-test/templates/task-page-general" title="Overall Task Page With Children">Overall Task Page With Children</a>
+                                    </li>
+                                    <li class="chapter-index__item">
+                                        <a class="chapter-index__link" href="/site/_cmsinternal/intranet/valtech-test/templates/task-page-buttons" title="Examples of buttons">Examples of buttons</a>
+                                    </li>
+                                    <li class="chapter-index__item">
+                                        <a class="chapter-index__link" href="/site/_cmsinternal/intranet/valtech-test/templates/task-page-sections-option" title="Examples of the section option">Examples of the section option</a>
+                                    </li>
+                                    <li class="chapter-index__item">
+                                        <a class="chapter-index__link" href="/site/_cmsinternal/intranet/valtech-test/templates/task-page-emphasis-box-option" title="Emphasis box examples">Emphasis box examples</a>
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <div class="column column--one-half column--right">
+                                <ol class="list list--reset cta-list chapter-index" start="5">
+                                    <li class="chapter-index__item">
+                                        <a class="chapter-index__link" href="/site/_cmsinternal/intranet/valtech-test/templates/task-page-check-list-option" title="Task Page Check Lists Examples">Task Page Check Lists Examples</a>
+                                    </li>
+                                    <li class="chapter-index__item chapter-index__item--current">
+                                        <p class="chapter-index__current-item">Task Page Icon List Option</p>
+                                    </li>
+                                    <li class="chapter-index__item">
+                                        <a class="chapter-index__link" href="/site/_cmsinternal/intranet/valtech-test/templates/task-page-gallery-option" title="Task Page Gallery Items Title">Task Page Gallery Items Title</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer white-links" id="footer">
+        <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide">
+            <div class="grid-row">
+                <div class="column column--reset">
+
+                    <div class="site-footer__section site-footer__section--top">
+                        <div class="grid-wrapper grid-wrapper--collapse">
+                            <div class="grid-row">
+                                <div class="column column--left column--one-half">
+                                    <nav class="site-footer__menu site-footer__menu--1">
+                                        <h2 class="list__header">About NHS Digital</h2>
+                                        <ul class="list list--reset list--close">
+                                            <li><a href="/about-nhs-digital">About us</a></li>
+                                            <li><a href="/about-nhs-digital/corporate-information-and-documents/our-strategy">Our strategy</a></li>
+                                            <li><a href="/about-nhs-digital/corporate-information-and-documents/nhs-digital-s-annual-reports-and-accounts">Annual report and accounts</a></li>
+                                            <li><a href="/about-nhs-digital/corporate-information-and-documents/nhs-digital-business-plan-2018--19">Our business plan</a></li>
+                                            <li><a href="/news-and-events">News and events</a></li>
+                                            <li><a href="/about-nhs-digital/our-work/keeping-patient-data-safe/how-we-look-after-your-health-and-care-information">How we look after your information</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                                <div class="column column--right column--one-half">
+                                    <nav class="site-footer__menu site-footer__menu--3">
+                                        <ul class="list list--reset list--close">
+                                            <li><a href="/about-nhs-digital/contact-us">Contact us</a></li>
+                                            <li><a href="/news-and-events/press-office">Press office</a></li>
+                                            <li><a href="/about-nhs-digital/contact-us/freedom-of-information">Freedom of information</a></li>
+                                            <li><a href="/about-nhs-digital/careers">Careers</a></li>
+                                            <li class="last-item"><a href="/forms/tell-us-what-you-think-of-our-website" title="Provide website feedback">Tell us what you think of our website</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="site-footer__section site-footer__section--bottom">
+                        <div class="grid-wrapper grid-wrapper--collapse">
+                            <div class="grid-row">
+                                <div class="column column--left">
+                                    <nav class="site-footer__menu site-footer__menu--4">
+                                        <ul class="list list--inline list--reset">
+                                            <li><a href="/about-nhs-digital/privacy-and-cookies">Privacy and cookies</a></li>
+                                            <li><a href="/about-nhs-digital/terms-and-conditions">Terms and conditions</a></li>
+                                            <li><a href="/about-nhs-digital/accessibility">Accessibility</a></li>
+                                            <li><a href="javascript:Cookiebot.renew()">Cookie consent</a></li>
+                                        </ul>
+                                    </nav>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="8a16fbff-6ab2-4087-ae02-65267c376ba1" data-blockingmode="auto"></script><iframe name="__uspapiLocator" tabindex="-1" role="presentation" aria-hidden="true" title="Blank" style="display: none; position: absolute; width: 1px; height: 1px; top: -9999px;"></iframe><iframe tabindex="-1" role="presentation" aria-hidden="true" title="Blank" src="https://consentcdn.cookiebot.com/sdk/bc.min.html" style="position: absolute; width: 1px; height: 1px; top: -9999px;"></iframe>
+
+
+    <script data-cookieconsent="preferences,statistics" type="text/plain">
+        (function(t){window.lpTag=window.lpTag||{};if(typeof window.lpTag._tagCount==="undefined"){window.lpTag={site:t,section:lpTag.section||"",autoStart:lpTag.autoStart===false?false:true,ovr:lpTag.ovr||{},_v:"1.6.0",_tagCount:1,protocol:"https:",events:{bind:function(t,e,o){lpTag.defer(function(){lpTag.events.bind(t,e,o)},0)},trigger:function(t,e,o){lpTag.defer(function(){lpTag.events.trigger(t,e,o)},1)}},defer:function(t,e){if(e==0){this._defB=this._defB||[];this._defB.push(t)}else if(e==1){this._defT=this._defT||[];this._defT.push(t)}else{this._defL=this._defL||[];this._defL.push(t)}},load:function(t,e,o){var s=this;setTimeout(function(){s._load(t,e,o)},0)},_load:function(t,e,o){var s=t;if(!t){s=this.protocol+"//"+(this.ovr&&this.ovr.domain?this.ovr.domain:"lptag.liveperson.net")+"/tag/tag.js?site="+this.site}var n=document.createElement("script");n.setAttribute("charset",e?e:"UTF-8");if(o){n.setAttribute("id",o)}n.setAttribute("src",s);document.getElementsByTagName("head").item(0).appendChild(n)},init:function(){this._timing=this._timing||{};this._timing.start=(new Date).getTime();var t=this;if(window.attachEvent){window.attachEvent("onload",function(){t._domReady("domReady")})}else{window.addEventListener("DOMContentLoaded",function(){t._domReady("contReady")},false);window.addEventListener("load",function(){t._domReady("domReady")},false)}if(typeof window._lptStop=="undefined"){this.load()}},start:function(){this.autoStart=true},_domReady:function(t){if(!this.isDom){this.isDom=true;this.events.trigger("LPT","DOM_READY",{t:t})}this._timing[t]=(new Date).getTime()},vars:lpTag.vars||[],dbs:lpTag.dbs||[],ctn:lpTag.ctn||[],sdes:lpTag.sdes||[],ev:lpTag.ev||[]};lpTag.init()}else{window.lpTag._tagCount+=1}window.cafexAssistBootstrap={};window.cafexAssistBootstrap.laBootstrapLoaded=false;window.cafexAssistBootstrap.cobrowseState;window.cafexAssistBootstrap.bootstrapLa=function(t){var e=document.getElementById("assist-cobrowse-bootstrap-script");if(e){e.parentNode.removeChild(e)}var o=t+"/assist-bootstrap/assist-bootstrap.js";var s=document.createElement("script");s.id="assist-cobrowse-bootstrap-script";s.type="text/javascript";s.src=o;window.cafexAssistBootstrap.cobrowseBootstrapLoaded=function(){window.cafexAssistBootstrap.laBootstrapLoaded=true;switch(window.cafexAssistBootstrap.cobrowseState){case"accepted":window.cafexAssistBootstrap.cobrowseAccepted(window.cafexAssistBootstrap.agentId);break;case"rejected":window.cafexAssistBootstrap.cobrowseRejected(window.cafexAssistBootstrap.agentId);break}};document.head.appendChild(s)};if(sessionStorage.getItem("cobrowseServer")){window.cafexAssistBootstrap.bootstrapLa(sessionStorage.getItem("cobrowseServer"))}lpTag.events.bind({eventName:"cobrowseOffered",appName:"*",func:function(t){console.log(t);window.cafexAssistBootstrap.cobrowseState="offered";var e=document.querySelectorAll("[data-assist-a"+t.agentId+"]");var o=JSON.parse(atob(e[e.length-1].dataset["assistA"+t.agentId]));console.log(o);if(y(o.server)===false){return}sessionStorage.setItem("cobrowseServer",o.server);window.cafexAssistBootstrap.bootstrapLa(o.server)},async:true});lpTag.events.bind({eventName:"cobrowseAccepted",appName:"*",func:function(t){console.log(t);window.cafexAssistBootstrap.cobrowseState="accepted";window.cafexAssistBootstrap.agentId=t.agentId;if(window.cafexAssistBootstrap.laBootstrapLoaded){window.cafexAssistBootstrap.cobrowseAccepted(t.agentId)}},async:true});lpTag.events.bind({eventName:"cobrowseDeclined",appName:"*",func:function(t){console.log(t);window.cafexAssistBootstrap.cobrowseState="rejected";window.cafexAssistBootstrap.agentId=t.agentId;if(window.cafexAssistBootstrap.laBootstrapLoaded){window.cafexAssistBootstrap.cobrowseRejected(t.agentId)}},async:true});function e(t,e){let s=o(t,e);document.dispatchEvent(s)}function o(t,e){let o;if(typeof window.CustomEvent==="function"){o=new CustomEvent(t,e)}else{let s=e||{bubbles:false,cancelable:false,detail:undefined};o=document.createEvent("CustomEvent");o.initCustomEvent(t,s.bubbles,s.cancelable,s.detail)}return o}document.addEventListener("click",function(t){if(t.target.dataset&&t.target.dataset.event!==undefined){try{let o=JSON.parse(t.target.dataset.event);let s=p(o.useRecentData,t.target.parentElement.dataset.bootStrap);d(o);r(o);h(t.target.parentElement.dataset.bootStrap,function(t){u(t);e(o.event,s)})}catch(e){console.log("could not process"+t.target.dataset.event+" "+e)}}});lpTag.events.bind({eventName:"state",appName:"*",func:function(t){if(t.state==="ended"){i()}},async:true});const s="liveAssistScripts";const n="liveAssistElements";const a="deleteLiveAssistScript";function i(){var t=document.querySelectorAll("[data-event]");t.forEach(function(t){let e=JSON.parse(t.dataset.event);d(e,true)})}function d(t,e){let o=document.getElementById(t.id);if(t.oneTime||e){o.disabled=true;if(typeof t.disabledStyle!=="undefined"){o.style.cssText=t.disabledStyle}o.style.cssText+="pointer-events: none;"}}function r(t){const e="element already exists in local storage list";g(sessionStorage,t,e,n)}function c(){let t=JSON.parse(sessionStorage.getItem(n));let e=[];for(let o in t){if(t[o].oneTime){e.push(f(t[o]))}}if(e.length!==0){l(e)}}function l(t){let e=document.head||document.getElementsByTagName("head")[0];let o=document.createElement("style");o.type="text/css";t.forEach(function(t){o.appendChild(document.createTextNode(t))});e.appendChild(o)}function f(t){let e="#"+t.id+"{";let o=t.disabledStyle.split(";");o.forEach(function(t){e+=t+" !important;"});e+="pointer-events: none;";e+="}";return e}function p(t,e){let o={detail:{data:e}};if(t){let t=JSON.parse(e).id;let s=document.querySelectorAll("[data-boot-strap]");for(let e=s.length-1;e>0;e--){let n=s[e].dataset["bootStrap"];if(JSON.parse(n).id===t){o={detail:{data:n}};break}}}return o}function u(t){const e="script already exists in local storage list";g(localStorage,t,e,s)}function g(t,e,o,s){let n=JSON.parse(t.getItem(s));if(!n){n={}}if(n[e.id]===undefined){n[e.id]=e;t.setItem(s,JSON.stringify(n));console.log("adding"+e.id+" to storage")}else{console.log(o)}}function m(t){w(localStorage,t,s)}function w(t,e,o){let s=JSON.parse(t.getItem(o));if(delete s[e]===false){console.log("script"+e+"does not exist in list")}t.setItem(o,JSON.stringify(s))}function v(t){let e=document.getElementById(t);if(e){e.parentNode.removeChild(e);e=null;console.log("script"+t+" removed from dom")}}function b(t,e){let o=document.getElementById(t.id);if(y(t.bootstrapJs)===false){console.log("script not in valid domain");return}if(o){o.parentNode.removeChild(o);o=null}o=document.createElement("script");o.id=t.id;o.async=true;o.onload=function(){e(t)};o.src=t.bootstrapJs;document.body.appendChild(o)}function h(t,e){let o=JSON.parse(t);if(o){b(o,e);return true}return false}function S(){let t=JSON.parse(localStorage.getItem(s));console.log("restoring scripts using local storage");for(let e in t){b(t[e],function(){console.log("script"+e+"restored")})}}document.addEventListener(a,function(t){v(t.detail.id);m(t.detail.id)},false);document.addEventListener("DOMContentLoaded",function(t){S();c()});function y(t){const e=[".cafex.com",".liveassistcloud.com",".liveassistfor365.com"];let o=false;let s=document.createElement("a");s.href=t;let n=s.hostname;for(let t=0;t
+        <e.length;t++){let s=e[t];let a=n.indexOf(s);if(a! =-1||a = =n.length-s.length){o =true;break}}if(!o){console.log("Unexpected domain "+n+" aborting...")}return o}})(6368614);
+    </script>
+    <script data-cookieconsent="preferences,statistics" type="text/plain">
+        (function(){function ShortCodeService(serviceUrl,orgId){let pendingPoll;function injectBootstrapScript(server,force){sessionStorage.setItem("cobrowseServer",server);let id="assist-cobrowse-bootstrap-script";let element=document.getElementById(id);if(element&&element!==null){if(!force){return}element.parentNode.removeChild(element)}let script=document.createElement("script");script.id=id;script.type="text/javascript";script.src=server+"/assist-bootstrap/assist-bootstrap.js";document.body.appendChild(script)}function startCobrowse(shortCodeData,successCallback){let laNodeUrl=shortCodeData.laNodeUrl;let laCorrelator=shortCodeData.laCorrelator;let laToken=shortCodeData.laToken;let laBootstrapVersion=shortCodeData.bootstrapVersion;window.cafexAssistBootstrap={};window.cafexAssistBootstrap.cobrowseBootstrapLoaded=function(){AssistSDK.startSupport({url:laNodeUrl,sessionToken:laToken,correlationId:laCorrelator,sdkPath:laNodeUrl+"/assistserver/sdk/web/consumer"});successCallback()};let bootstrapUrl=laNodeUrl+"/assist-bootstrap-"+laBootstrapVersion;injectBootstrapScript(bootstrapUrl,true)}function poll(shortCodeData,successCallback,failureCallback){pendingPoll=setTimeout(function(){let xhr=new XMLHttpRequest;let url=serviceUrl+"/assist-cloud-lb/visitorShortCode?orgId="+orgId+"&shortCode="+shortCodeData.shortCode+"&accessKey="+shortCodeData.shortCodeAccessKey;xhr.ontimeout=function(e){failureCallback("requestShortCode timeout",event.target.status,event.target)};xhr.addEventListener("load",function(event){if(event.target.response&&event.target.status==200){let shortCodeData=JSON.parse(event.target.response);startCobrowse(shortCodeData,successCallback)}else if(event.target.status==204){poll(shortCodeData,successCallback,failureCallback)}else{failureCallback("Short code timed out or was removed",event.target.status,event.target)}});xhr.addEventListener("error",function(event){failureCallback("Error polling for co-browse data",event.target.status,event.target)});xhr.open("GET",url);xhr.timeout=1e4;xhr.send()},2e3)}this.requestShortCode=function(shortCodeCallback,successCallback,failureCallback){if(typeof shortCodeCallback!="function"){throw"A function to handle the short code must be provided as the first argument."}if(shortCodeCallback.length
+        <1){throw"The short code callback (first argument) must itself take an argument to receive the generated short code."}console.log("Requesting shortcode for org: "+orgId);let xhr=new XMLHttpRequest;let url=serviceUrl+" /assist-cloud-lb/visitorShortCode?orgId ="+orgId;xhr.ontimeout=function(event){failureCallback(" Timed out requesting short code",event.target.status,event.target)};xhr.addEventListener("load",function(event){if(event.target.response&&event.target.status= =200){let shortCodeData=JSON.parse(event.target.response);shortCodeCallback(shortCodeData.shortCode);poll(shortCodeData,successCallback,failureCallback)}else{failureCallback("Failed requesting short code",event.target.status,event.target)}});xhr.addEventListener("error",function(event){failureCallback("Failed sending short code request",event.target.status,event.target)});xhr.open("POST",url);xhr.timeout=1e4;xhr.send()};this.cancel =function(){clearTimeout(pendingPoll)};window.addEventListener("load",function(){let serverUrl=sessionStorage.getItem("cobrowseServer");if(serverUrl){injectBootstrapScript(serverUrl,false)}})}window.LAShortCodeService =new ShortCodeService('https: //service.eu1.liveassistfor365.com','ec7a4ce1-9ca7-4550-b012-80e4f48a01b4');})();
+    </script>
+
+    <script src="../content/dist/nhsd-scripts.bundle.js" type="text/javascript"></script>
+
+
+
+    <!-- { "HST-Path-Info":"/valtech-test/templates/task-page-icon-list-option", "HST-Context-Path":"/site", "HST-Site-Id":"fcc85ea0-5798-4ea6-a3f4-50128e54b5ef", "HST-Sitemap-Id":"b5bb8508-c3e3-4605-ba52-b511d1741459", "HST-Mount-Id":"8fca72f5-32d9-4034-90ed-ce0cbc385852", "HST-Site-HasPreviewConfig":"true", "HST-Page-Id":"bd16f377-1f61-4631-b840-a745dc2337ad", "HST-SitemapItem-Id":"c4e304b5-e370-4d70-9e12-909ac8340cbe", "HST-Type":"PAGE-META-DATA", "HST-Channel-Id":"intranet-preview", "HST-Page-Editable":"true", "HST-Render-Variant":"hippo-default"} --><!-- {"HST-Type":"PAGE-META-DATA","HST-Page-Request-Variants":{}} --><!--{"headElements":["<title org.hippoecm.hst.container.head.element.contribution.hint.category=\"intranetMeta\">Task Page Icon List Option - NHS Digital Intranet</title>","<meta org.hippoecm.hst.container.head.element.contribution.hint.category=\"intranetMeta\" name=\"title\" content=\"Task Page Icon List Option - NHS Digital Intranet\"/>","<meta org.hippoecm.hst.container.head.element.contribution.hint.category=\"intranetMeta\" name=\"description\" content=\"Task page with the icon list option added\"/>"],"HST-Type":"HST_PROCESSED_HEAD_CONTRIBUTIONS"}--><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" src="https://vars.hotjar.com/box-469cf41adb11dc78be68c1ae7f9457a4.html"></iframe><div class="hippo-overlay">
+        <div class="hippo-overlay-element hippo-overlay-element-menu-link hippo-overlay-element-link hippo-overlay-element-link-button qa-menu-link" title="Edit menu" style="top: 0px; left: 0px; width: 0px; height: 0px;">
+            <svg viewBox="0 0 24 24" width="24" height="24"><use xlink:href="#edit-menu--sprite"></use></svg>
+        </div>
+    </div><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" data-cookieblock-src="https://vars.hotjar.com/box-469cf41adb11dc78be68c1ae7f9457a4.html"></iframe>
+</body>
+
+</html>
