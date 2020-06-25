@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ItemType>GenericProject</ItemType>
+    <ProjectGuid>{5E15779D-0DA0-4C97-A83C-35C6679B2E0C}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Default|AnyCPU' ">
+    <OutputPath>.\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="cpmo\cpmo.html" />
+    <None Include="content\css\custom.css" />
+    <None Include="content\css\nhsuk.css" />
+    <None Include="content\css\eforms.css" />
+    <None Include="content\css\nhsuk-print.css" />
+    <None Include="content\images\NHSDigitalLogo.png" />
+    <None Include="content\images\doc.png" />
+    <None Include="content\images\homepageimage.png" />
+    <None Include="content\images\icon-search-white.png" />
+    <None Include="content\images\video-NO-PLAY-BUTTON.png" />
+    <None Include="content\images\EmployeeOnline.png" />
+    <None Include="content\images\nhs-digital-logo.svg" />
+    <None Include="content\images\intranet-logo.png" />
+    <None Include="content\images\icon-linkedin.png" />
+    <None Include="content\images\hands.png" />
+    <None Include="content\images\video.png" />
+    <None Include="content\images\icon-arrow.svg" />
+    <None Include="content\images\NHSDigitalIntranet.png" />
+    <None Include="content\images\icon-twitter.png" />
+    <None Include="content\js\hotjar-944417.js" />
+    <None Include="content\js\highlighter-copy-button.js" />
+    <None Include="content\js\js" />
+    <None Include="content\js\details-element-polyfill.js" />
+    <None Include="content\js\aria.js" />
+    <None Include="content\js\uc.js" />
+    <None Include="content\js\custom.js" />
+    <None Include="content\js\modules.ec4d468062bd562b1a1c.js" />
+    <None Include="content\js\analytics.js" />
+    <None Include="content\js\breadcrumbs.js" />
+    <None Include="content\js\jsonp" />
+    <None Include="content\js\tag.js" />
+    <None Include="content\js\state.js" />
+    <None Include="content\js\jquery.js" />
+    <None Include="content\fonts\FrutigerLTW01-66BoldItalic.woff2" />
+    <None Include="content\fonts\FrutigerLTW01-65Bold.woff2" />
+    <None Include="content\fonts\FrutigerLTW01-56Italic.woff2" />
+    <None Include="content\fonts\FrutigerLTW01-55Roman.woff2" />
+    <None Include="bloomreach\cp-and-a-team.html" />
+    <None Include="bloomreach\workforce.html" />
+    <None Include="bloomreach\kpi-summary.html" />
+    <None Include="bloomreach\help-improve.html" />
+    <None Include="bloomreach\patterns\statistic.html" />
+    <None Include="bloomreach\content\summary.html" />
+    <None Include="bloomreach\datasheets\size.xlsx" />
+    <None Include="bloomreach\datasheets\age.csv" />
+    <None Include="bloomreach\datasheets\flexibility.xlsx" />
+    <None Include="bloomreach\datasheets\age.xlsx" />
+    <None Include="bloomreach\styles\rag.css" />
+    <None Include="bloomreach\styles\summary-list.css" />
+    <None Include="bloomreach\styles\cards.css" />
+    <None Include="bloomreach\styles\tags.css" />
+    <None Include="kpi\cp-and-a-team.html" />
+    <None Include="kpi\chart-dynamic.html" />
+    <None Include="kpi\age.html" />
+    <None Include="kpi\workforce.html" />
+    <None Include="kpi\kpi-summary-v2.html" />
+    <None Include="kpi\kpi-summary.html" />
+    <None Include="kpi\chart.html" />
+    <None Include="kpi\first-level.html" />
+    <None Include="kpi\diversity.html" />
+    <None Include="pages\team-list.html" />
+    <None Include="pages\task-list.html" />
+    <None Include="pages\task-expenses.html" />
+    <None Include="pages\task-timesheet.html" />
+    <None Include="pages\task-travel.html" />
+    <None Include="pages\task-pensions.html" />
+    <None Include="pages\task-raise-case.html" />
+    <None Include="pages\team-travel.html" />
+    <None Include="pages\team-network-diversity.html" />
+    <None Include="pages\task-vacancies.html" />
+    <None Include="pages\team-org2.html" />
+    <None Include="pages\task-mandatory-training.html" />
+    <None Include="pages\team\cpanda\performance-management.html" />
+    <None Include="search\home.html" />
+    <None Include="search\search-orig.html" />
+    <None Include="search\search-previous.html" />
+    <None Include="search\search-results.html" />
+    <None Include="index.html" />
+    <None Include="README.md" />
+    <None Include="cpmo\lifecycle-stages.html" />
+    <None Include="content\images\refresh.png" />
+  </ItemGroup>
+</Project>

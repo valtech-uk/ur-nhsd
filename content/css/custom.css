@@ -1132,7 +1132,7 @@ input#query-main{
     margin-bottom: 40px;
 }
 
-hide{
+.hide{
     display:none;
 }
 .raglist{
@@ -1174,12 +1174,10 @@ hide{
     background-color: #ddffcc; /* F0F0F0 */
   }
 
-  .card a,
-  .rag a,
-  .raglist a{
-      text-decoration: none;
-      margin:5px;
-  }
+.card a,
+.raglist a {
+    text-decoration: none;
+}
   .rag{
       float: left;
       display:inline-block;
@@ -1201,31 +1199,87 @@ hide{
     background-color:#ddffcc; /* F0F0F0 */
   }
 
-  .rag.darkpurple{
-    background-color: #B01288;
-    color:#fff;
-}
-.rag.darkgreen{
-    background-color: #84B15F;
-    color:#fff;
-}
-.rag.darkred{
-    background-color: #B00933;
-    color:#fff;
-}
-.rag.darkblue{
-    background-color: #6771FF;
-    color:#fff;
-}
-
-.rag.darkorange{
-    background-color: #FC7346;
-    color:#fff;
-}
   /* section for lifecycle stages */
 
-  #stages .rag{
+#stages a.stage{
       min-width: 150px;
       font-size:14px;
       margin-top:0.5em;
-  }
+
+    text-decoration: none;
+    margin-bottom: 10px;
+    line-height: normal;
+
+    float: left;
+    display: inline-block;
+    padding: 5px;
+    background-color: silver;
+    margin-right: 1em;
+
+    text-align: center;
+}
+
+#stages .stage.button {
+    background-color: silver;
+    color: #fff;
+    height:50px;
+}
+#stages .label {
+    font-size:16px;
+    padding-top:0.5em;
+    display:block;
+    width:100%;
+    text-align:center;
+}
+#stages .button.active {
+    background-color: #B00933;
+    color: #fff;
+}
+    #stages .stage.darkpurple {
+        background-color: #B01288;
+        color: #fff;
+    }
+
+    #stages .stage.darkgreen {
+        background-color: #84B15F;
+        color: #fff;
+    }
+
+    #stages .stage.darkred {
+        background-color: #B00933;
+        color: #fff;
+    }
+
+    #stages .stage.darkblue {
+        background-color: #6771FF;
+        color: #fff;
+    }
+
+    #stages .stage.darkorange {
+        background-color: #FC7346;
+        color: #fff;
+    }
+
+
+.panel-grey {
+    border-style:solid;
+    border-width:2px;
+    border-color:silver;
+    min-height:250px;
+    background-color: #eff0f1;
+    margin-top:0;
+    margin-bottom:1em;
+}
+
+.panel-grey h3{
+    font-size:18px;
+    margin-bottom:0.5em;
+    padding-left:0.5em;
+}
+
+    .panel-grey .inline-icon {
+        display: block;
+        float: left;
+        margin-top: 6px;
+        margin-left: 10px;
+    }
