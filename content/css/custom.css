@@ -1283,3 +1283,35 @@ input#query-main{
         margin-top: 6px;
         margin-left: 10px;
     }
+
+#parent {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+    #parent > li {
+        display: inline-block;
+
+
+    }
+
+legend.eforms-fieldgroupname {
+    font-size: 20px !important;
+    
+}
+form label.eforms-label{
+    font-weight:100 !important;
+    font-size:16px !important;
+}
+form .eforms-field {
+    margin-top: 6px !important;
+}
+form label {
+    font-weight: 100 !important;
+    font-size: 16px !important;
+}

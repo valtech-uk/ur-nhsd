@@ -98,5 +98,6 @@
     <None Include="cpmo\pre-discovery-phase.html" />
     <None Include="cpmo\index.html" />
     <None Include="cpmo\standards-and-investment-team.html" />
+    <None Include="cpmo\agile-guidance.html" />
   </ItemGroup>
 </Project>
