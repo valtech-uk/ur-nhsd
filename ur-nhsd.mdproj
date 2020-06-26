@@ -10,7 +10,6 @@
     <OutputPath>.\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="cpmo\cpmo.html" />
     <None Include="content\css\custom.css" />
     <None Include="content\css\nhsuk.css" />
     <None Include="content\css\eforms.css" />
@@ -89,10 +88,15 @@
     <None Include="search\search-results.html" />
     <None Include="index.html" />
     <None Include="README.md" />
-    <None Include="cpmo\lifecycle-stages.html" />
     <None Include="content\images\refresh.png" />
     <None Include="cpmo\chapter.html" />
-    <None Include="cpmo\approach-tool.html" />
     <None Include="content\css\nhsd-intranet.css" />
+    <None Include="bloomreach\template.html" />
+    <None Include="cpmo\approach-tool.html" />
+    <None Include="cpmo\lifecycle-diagram.html" />
+    <None Include="cpmo\discovery-phase.html" />
+    <None Include="cpmo\pre-discovery-phase.html" />
+    <None Include="cpmo\index.html" />
+    <None Include="cpmo\standards-and-investment-team.html" />
   </ItemGroup>
 </Project>

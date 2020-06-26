@@ -1,11 +1,18 @@
 ﻿<Properties StartupConfiguration="{5E15779D-0DA0-4C97-A83C-35C6679B2E0C}|Default">
   <MonoDevelop.Ide.ItemProperties.ur-nhsd PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="cpmo/chapter.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="cpmo/standards-and-investment-team.html">
     <Files>
-      <File FileName="cpmo/lifecycle-stages.html" Line="292" Column="15" />
-      <File FileName="content/css/custom.css" Line="1270" Column="17" />
-      <File FileName="bloomreach/kpi-summary.html" Line="622" Column="1" />
-      <File FileName="cpmo/chapter.html" Line="286" Column="19" />
+      <File FileName="cpmo/chapter.html" Line="456" Column="95" />
+      <File FileName="content/css/custom.css" />
+      <File FileName="kpi/age.html" />
+      <File FileName="kpi/workforce.html" />
+      <File FileName="bloomreach/template.html" Line="402" Column="84" />
+      <File FileName="cpmo/approach-tool.html" Line="400" Column="109" />
+      <File FileName="cpmo/lifecycle-diagram.html" Line="605" Column="120" />
+      <File FileName="cpmo/discovery-stage.html" Line="365" Column="95" />
+      <File FileName="cpmo/pre-discovery-stage.html" Line="365" Column="95" />
+      <File FileName="cpmo/index.html" Line="311" Column="91" />
+      <File FileName="cpmo/standards-and-investment-team.html" Line="225" Column="107" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,8 +25,9 @@
                 <Node name="images" expanded="True" />
               </Node>
               <Node name="cpmo" expanded="True">
-                <Node name="chapter.html" selected="True" />
+                <Node name="standards-and-investment-team.html" selected="True" />
               </Node>
+              <Node name="kpi" expanded="True" />
             </Node>
           </Node>
         </State>

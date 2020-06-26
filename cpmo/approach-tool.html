@@ -177,7 +177,8 @@
         </div>
     </header>
 
-    <script>(function () {
+    <script>
+(function () {
             var oldBrowser = window.addEventListener ? false : true;
             var $header = document.getElementById('header');
             var $nav = document.getElementById('nav');
@@ -303,7 +304,8 @@
 
 
 
-        <script>window.dataLayer.push({ 'data-doc-type': 'Task' });
+        <script>
+window.dataLayer.push({ 'data-doc-type': 'Task' });
             window.dataLayer.push({ 'data-creation-date': '2020-06-22T14:44:46Z' });
             window.dataLayer.push({ 'data-last-modified-date': '2020-06-22T16:14:06Z' });
             window.dataLayer.push({ 'data-author': 'amy.gallagher' });
@@ -340,12 +342,12 @@
 
 
 
-                                    <h1 id="top" class="local-header__title" data-uipath="document.title">Discovery phase </h1>
+                                    <h1 id="top" class="local-header__title" data-uipath="document.title">Assess your approach </h1>
 
 
 
                                     <div class="rich-text-content article-header__subtitle">
-                                        <p>Guidance for the discovery phase in a project lifecycle</p>
+                                        <p>Complete the assessment of approach tool</p>
                                     </div>
                                 </div>
                             </div>
@@ -358,63 +360,7 @@
             </div>
 
 
-            <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide grid-wrapper--chapter-pagination">
-                <div class="chapter-pagination-wrapper">
-                    <div class="grid-wrapper">
-                        <div class="grid-row chapter-pagination-wrapper__skip visually-hidden">
-                            <div class="column column--reset">
-                                <a href="#document-content">???labels.skip-to-content???</a>
-                            </div>
-                        </div>
-
-                        <nav class="chapter-pagination" aria-label="Chapter Navigation">
-                            <ul class="chapter-pagination__list grid-row">
-                                <li class="chapter-pagination__list-item chapter-pagination-item--previous">
-                                    <p>
-                                        <span class="chapter-pagination__direction" aria-hidden="true">Pre Discovery</span>
-                                        <a class="chapter-pagination__link" href="#">
-                                            <span class="chapter-pagination__link-direction visually-hidden">Previous task chapters: </span>
-                                            <span class="chapter-pagination__link-arrow"><img aria-hidden="true" alt="Left Arrow" src="../content/images/left-arrow.svg"></span>
-                                            <!--
-                                            No space between elements -->
-                                            <span class="chapter-pagination__link-page">Previous</span>
-                                        </a>
-                                    </p>
-                                </li>
-                                <li class="chapter-pagination__list-item chapter-pagination-item--current column-one-third">
-                                    <p>
-                                        <span class="chapter-pagination__direction"> </span>
-                                        <a class="chapter-pagination__link" href="#chapter-index">
-                                            <span class="chapter-pagination__link-direction visually-hidden"></span>
-                                            <span class="chapter-pagination__link-arrow"><img aria-hidden="true" alt="Down Arrow" src="../content/images/down-arrow.svg"></span>
-                                            <!--
-                                            No space between elements -->
-                                            <span class="chapter-pagination__link-page">View chapters</span>
-                                        </a>
-                                    </p>
-
-                                </li>
-                                <li class="chapter-pagination__list-item chapter-pagination-item--next column-one-third">
-                                    <p>
-                                        <span class="chapter-pagination__direction" aria-hidden="true">
-                                            Agile phase
-                                        </span>
-                                        <a class="chapter-pagination__link" href="#">
-                                            <span class="chapter-pagination__link-direction visually-hidden">Agile phase: </span>
-                                            <span class="chapter-pagination__link-page">Next</span>
-                                            <!--
-                                            No space between elements -->
-                                            <span class="chapter-pagination__link-arrow"><img aria-hidden="true" alt="Right Arrow" src="../content/images/right-arrow.svg"></span>
-                                        </a>
-                                    </p>
-                                </li>
-                            </ul>
-                        </nav>
-
-                    </div>
-                </div>
-            </div>
-
+ 
 
             <div class="grid-wrapper grid-wrapper--article" aria-label="Document Content">
                 <div class="grid-row">
@@ -451,19 +397,18 @@
                         <div class="article-section">
 
                             <div id="icon-list-title" class="article-section">
-                                <h2 data-uipath="website.contentblock.iconlist.title">What is the Discovery phase?</h2>
+                                <h2 data-uipath="website.contentblock.iconlist.title">Complete the questions</h2>
 
                                 <div data-uipath="website.contentblock.iconlist.introduction">
-                                    <p>Before you commit to building a service, you need to understand the problem that needs to be solved.&nbsp; The required area to Discover is in the NWC.&nbsp; That means learning about:</p>
-                                    <ul>
-                                        <li>your users and what they&rsquo;re trying to achieve</li>
-                                        <li>any constraints you&rsquo;d face making changes to how the service is run - for example because of technology or legislation</li>
-                                        <li>the underlying policy intent you&rsquo;ve been set up to address - this is the thing that government wants to change or make happen</li>
-                                        <li>opportunities to improve things - by sharing data with other teams, for example</li>
-                                    </ul>
-                                    <p>What you learn in this phase is essential as it helps to indicate if you should move forward to the alpha phase or not. You shouldn&rsquo;t start building your service in this phase either, that&rsquo;ll come later</p>
-                                    <p>There&rsquo;s no set time period for a discovery, but around 4 to 8 weeks is typical. The purpose of your discovery should dictate how long you spend on it. Your discovery is finished when you&rsquo;ve decided if you want to move onto alpha or direct to private beta</p>
 
+                                      <figure class="highcharts-figure">
+                                        <div id="container"></div>
+                                        <p class="highcharts-description">
+                                            A spiderweb chart or radar chart is a variant of the polar chart.
+                                            Spiderweb charts are commonly used to compare multivariate data sets,
+                                            like this demo using six variables of comparison.
+                                        </p>
+                                    </figure>
                                 </div>
 
                             </div>
@@ -601,7 +546,88 @@
     </footer>
 
 
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script>
+window.addEventListener("load", function () {
+            Highcharts.chart('container', {
 
+                chart: {
+                    polar: true,
+                    type: 'line'
+                },
+
+                accessibility: {
+                    description: 'A spiderweb chart compares the allocated budget against actual spending within an organization. The spider chart has six spokes. Each spoke represents one of the 6 departments within the organization: sales, marketing, development, customer support, information technology and administration. The chart is interactive, and each data point is displayed upon hovering. The chart clearly shows that 4 of the 6 departments have overspent their budget with Marketing responsible for the greatest overspend of $20,000. The allocated budget and actual spending data points for each department are as follows: Sales. Budget equals $43,000; spending equals $50,000. Marketing. Budget equals $19,000; spending equals $39,000. Development. Budget equals $60,000; spending equals $42,000. Customer support. Budget equals $35,000; spending equals $31,000. Information technology. Budget equals $17,000; spending equals $26,000. Administration. Budget equals $10,000; spending equals $14,000.'
+                },
+
+                title: {
+                    text: 'Budget vs spending',
+                    x: -80
+                },
+
+                pane: {
+                    size: '80%'
+                },
+
+                xAxis: {
+                    categories: ['Sales', 'Marketing', 'Development', 'Customer Support',
+                        'Information Technology', 'Administration'],
+                    tickmarkPlacement: 'on',
+                    lineWidth: 0
+                },
+
+                yAxis: {
+                    gridLineInterpolation: 'polygon',
+                    lineWidth: 0,
+                    min: 0
+                },
+
+                tooltip: {
+                    shared: true,
+                    pointFormat: '<span style="color:{series.color}">{series.name}: <b>${point.y:,.0f}</b><br/>'
+                },
+
+                legend: {
+                    align: 'right',
+                    verticalAlign: 'middle',
+                    layout: 'vertical'
+                },
+
+                series: [{
+                    name: 'Allocated Budget',
+                    data: [43000, 19000, 60000, 35000, 17000, 10000],
+                    pointPlacement: 'on'
+                }, {
+                    name: 'Actual Spending',
+                    data: [50000, 39000, 42000, 31000, 26000, 14000],
+                    pointPlacement: 'on'
+                }],
+
+                responsive: {
+                    rules: [{
+                        condition: {
+                            maxWidth: 500
+                        },
+                        chartOptions: {
+                            legend: {
+                                align: 'center',
+                                verticalAlign: 'bottom',
+                                layout: 'horizontal'
+                            },
+                            pane: {
+                                size: '70%'
+                            }
+                        }
+                    }]
+                }
+
+            });
+
+        });</script>
 
 </body>
 
