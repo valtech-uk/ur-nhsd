@@ -223,11 +223,19 @@
                         </li>
                         <li class="breadcrumb__crumb">
                             <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
-                            <a href="#" class="breadcrumb__link" data-text="ARM">ARM</a>
+                            <a href="../pages/team-list.html" class="breadcrumb__link" data-text="ARM">Teams</a>
                         </li>
                         <li class="breadcrumb__crumb">
                             <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
-                            <span class="breadcrumb__link breadcrumb__link--secondary" data-text="Discovery phase " aria-current="page">Discovery phase </span>
+                            <a href="index.html" class="breadcrumb__link" data-text="ARM">CPMO</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
+                            <a href="standards-and-investment-team.html" class="breadcrumb__link" data-text="ARM">Standards and investment</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
+                            <span class="breadcrumb__link breadcrumb__link--secondary" data-text="Discovery phase " aria-current="page">Assessment of approach </span>
                         </li>
                     </ol>
                 </nav>
@@ -238,99 +246,7 @@
     <main id="main-content">
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Set up equation support from mathjax -->
-        <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS_HTML"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <script>
-window.dataLayer.push({ 'data-doc-type': 'Task' });
-            window.dataLayer.push({ 'data-creation-date': '2020-06-22T14:44:46Z' });
-            window.dataLayer.push({ 'data-last-modified-date': '2020-06-22T16:14:06Z' });
-            window.dataLayer.push({ 'data-author': 'amy.gallagher' });
-            window.dataLayer.push({ 'data-topics': '' });
-            window.dataLayer.push({ 'data-subject': '' });</script>
-
-
-
-        <!-- strip HTML tags -->
-
-
-
-
-
-
-
-
-
         <article class="article article--intranet-task">
-
-
-            <!-- checking whether simulating doc in order to avoid console errors from NewsHub and EventHub docs -->
-
-
-
 
 
             <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide" aria-label="Document Header">
@@ -565,7 +481,7 @@ window.addEventListener("load", function () {
                 },
 
                 title: {
-                    text: 'Budget vs spending',
+                    text: 'Assessment of approach',
                     x: -80
                 },
 
@@ -574,8 +490,8 @@ window.addEventListener("load", function () {
                 },
 
                 xAxis: {
-                    categories: ['Sales', 'Marketing', 'Development', 'Customer Support',
-                        'Information Technology', 'Administration'],
+                    categories: ['Sponsorship and Vision', 'Resources', 'Stakeholders', 'Governance & Standards',
+                        'Expertise', 'Objectives'],
                     tickmarkPlacement: 'on',
                     lineWidth: 0
                 },
@@ -588,7 +504,7 @@ window.addEventListener("load", function () {
 
                 tooltip: {
                     shared: true,
-                    pointFormat: '<span style="color:{series.color}">{series.name}: <b>${point.y:,.0f}</b><br/>'
+                    pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}%</b><br/>'
                 },
 
                 legend: {
@@ -598,12 +514,8 @@ window.addEventListener("load", function () {
                 },
 
                 series: [{
-                    name: 'Allocated Budget',
-                    data: [43000, 19000, 60000, 35000, 17000, 10000],
-                    pointPlacement: 'on'
-                }, {
-                    name: 'Actual Spending',
-                    data: [50000, 39000, 42000, 31000, 26000, 14000],
+                    name: '',
+                    data: [43, 19, 60, 35, 17, 10],
                     pointPlacement: 'on'
                 }],
 
