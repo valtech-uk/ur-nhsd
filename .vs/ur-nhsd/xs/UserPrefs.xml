@@ -1,20 +1,13 @@
 ﻿<Properties StartupConfiguration="{5E15779D-0DA0-4C97-A83C-35C6679B2E0C}|Default">
   <MonoDevelop.Ide.ItemProperties.ur-nhsd PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="cpmo/approach-tool.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="cpmo/lifecycle-diagram.html">
     <Files>
       <File FileName="cpmo/chapter.html" Line="456" Column="95" />
       <File FileName="content/css/custom.css" Line="1316" Column="32" />
-      <File FileName="kpi/age.html" />
-      <File FileName="kpi/workforce.html" />
       <File FileName="bloomreach/template.html" Line="402" Column="84" />
-      <File FileName="cpmo/approach-tool.html" Line="358" Column="151" />
-      <File FileName="cpmo/lifecycle-diagram.html" Line="184" Column="1" />
-      <File FileName="cpmo/discovery-stage.html" Line="427" Column="75" />
-      <File FileName="cpmo/pre-discovery-stage.html" Line="427" Column="31" />
-      <File FileName="cpmo/index.html" Line="192" Column="30" />
-      <File FileName="cpmo/standards-and-investment-team.html" Line="319" Column="1" />
-      <File FileName="pages/team-list.html" Line="275" Column="55" />
-      <File FileName="cpmo/agile-guidance.html" Line="317" Column="63" />
+      <File FileName="cpmo/approach-tool.html" Line="619" Column="45" />
+      <File FileName="pages/team-network-diversity.html" Line="340" Column="39" />
+      <File FileName="cpmo/lifecycle-diagram.html" Line="190" Column="64" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -27,8 +20,9 @@
                 <Node name="images" expanded="True" />
               </Node>
               <Node name="cpmo" expanded="True">
-                <Node name="approach-tool.html" selected="True" />
+                <Node name="lifecycle-diagram.html" selected="True" />
               </Node>
+              <Node name="kpi" expanded="True" />
               <Node name="pages" expanded="True" />
             </Node>
           </Node>
