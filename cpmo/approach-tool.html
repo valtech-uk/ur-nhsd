@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Generic meta tags -->
-    <title>Intranet - Discovery Phase</title>
+    <title>Assessment of approach tool</title>
 
 
     <link rel="preload" href="../content/fonts/FrutigerLTW01-55Roman.woff2" as="font" type="font/woff2" crossorigin>
@@ -604,7 +604,7 @@
 
                         <div class="article-section hide" id="chartarea">
 
-                            <div id="icon-list-title" class="article-section">
+                            <div class="article-section">
                                 <h2 data-uipath="website.contentblock.iconlist.title">Results</h2>
 
                                 <div data-uipath="website.contentblock.iconlist.introduction">
@@ -1022,6 +1022,8 @@
                 var expander = $("#js-questions").find("summary");
                 expander.attr("aria-expanded", "false");
                 $("#nhsuk-questions").attr("aria-hidden", "true");
+                var section = $("#chartarea");
+                $('html,body').animate({ scrollTop: section.offset().top }, 'slow');
             }
         }
 
