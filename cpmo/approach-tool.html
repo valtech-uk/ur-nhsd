@@ -1371,31 +1371,24 @@
     window.addEventListener("load", function () {
         var project_title = "Assessment of approach demo";
         var cache_available = false;
-        var all_answers_available = false;
+        var count_answers = 0;
 
         if (localStorage.getItem("project_title") != null) {
             // we have data
             project_title = localStorage.getItem("project_title");
-            $("#js-projectname").val(project_title);
-            cache_available = load_questions("s1", "s2", "s3") > 0;
-            load_questions("r1", "r2", "r3");
-            load_questions("st1", "st2", "st3");
-            load_questions("g1", "g2", "");
-            load_questions("e1", "e2", "e3");
-            load_questions("o1", "o2", "o3");
-        };
+            if (project_title != null && project_title.length > 0) {
+                cache_available = true;
+                $("#js-projectname").val(project_title);
 
-        if (cache_available == true) {
-            $("#js-projectname").val(project_title);
-
-            if (all_answers_available == true) {
-                $("#btn-assessment").trigger("cllick");
+                count_answers = count_answers + load_questions("s1", "s2", "s3") > 0;
+                count_answers = count_answers + load_questions("r1", "r2", "r3");
+                count_answers = count_answers + load_questions("st1", "st2", "st3");
+                count_answers = count_answers + load_questions("g1", "g2", "");
+                count_answers = count_answers + load_questions("e1", "e2", "e3");
+                count_answers = count_answers + load_questions("o1", "o2", "o3");
             }
-            $("#btn-assessment").removeClass("hide");     
-        }
-        else {
-            open_questions(true);
-        }
+
+        };
 
         $("#btn-questions").on("click", function () {
             open_questions(true);
@@ -1519,6 +1512,20 @@
 
             });
         });
+
+
+        if (cache_available == true) {
+            $("#js-projectname").val(project_title);
+            if (count_answers > 10) {
+                $("#btn-assessment").trigger("click");
+            }
+            else {
+                $("#btn-assessment").removeClass("hide");
+            }
+        }
+        else {
+            open_questions(true);
+        }
 
         function setRadioValue(name1, val1) {
             return $("input[name='" + name1 + "'][value = " + val1 + "]").prop('checked', true);
