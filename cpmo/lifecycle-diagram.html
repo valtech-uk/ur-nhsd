@@ -780,10 +780,9 @@ Add a counter to the multi-steps indicator
                                         </nav>
                                         <nav>
                                             <ol class="cd-multi-steps text-center">
-                                                <li><a href="#"></a></li>
-                                                <li class="visited"><a href="#" id="js-agile">Agile project</a></li>
-                                                <li class="current"><a href="#" id="js-agile-programme">Agile programme</a></li>
-                                                <li class="current"><a href="#" id="js-waterfall-programme">Waterfall programme</a></li>
+                                                <li class="current js-stage"><a href="#" id="js-agile">Agile project</a></li>
+                                                <li class="js-stage"><a href="#" id="js-agile-programme">Agile programme</a></li>
+                                                <li class="js-stage"><a href="#" id="js-waterfall-programme">Waterfall programme</a></li>
                                             </ol>
                                         </nav>
 
@@ -1007,24 +1006,24 @@ Add a counter to the multi-steps indicator
     <script>window.addEventListener("load", function () {
             $("#js-agile").on("click", function (e) {
                 e.preventDefault();
-                $(".button").removeClass("active");
-                $(this).addClass("active");
+                $(".js-stage").removeClass("current");
+                $(this).parent().addClass("current");
                 $("#js-panel-agile").removeClass("hide");
                 $("#js-panel-agile-programme").addClass("hide");
                 $("#js-panel-waterfall-programme").addClass("hide");
             });
             $("#js-agile-programme").on("click", function (e) {
                 e.preventDefault();
-                $(".button").removeClass("active");
-                $(this).addClass("active");
+                $(".js-stage").removeClass("current");;
+                $(this).parent().addClass("current");
                 $("#js-panel-agile").addClass("hide");
                 $("#js-panel-agile-programme").removeClass("hide");
                 $("#js-panel-waterfall-programme").addClass("hide");
             });
             $("#js-waterfall-programme").on("click", function (e) {
                 e.preventDefault();
-                $(".button").removeClass("active");
-                $(this).addClass("active");
+                $(".js-stage").removeClass("current");
+                $(this).parent().addClass("current");
                 $("#js-panel-agile").addClass("hide");
                 $("#js-panel-agile-programme").addClass("hide");
                 $("#js-panel-waterfall-programme").removeClass("hide");
