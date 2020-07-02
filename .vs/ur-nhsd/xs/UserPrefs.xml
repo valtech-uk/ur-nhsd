@@ -1,28 +1,29 @@
 ﻿<Properties StartupConfiguration="{5E15779D-0DA0-4C97-A83C-35C6679B2E0C}|Default">
   <MonoDevelop.Ide.ItemProperties.ur-nhsd PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="cpmo/index.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="cpmo/approach-tool.html">
     <Files>
       <File FileName="cpmo/chapter.html" Line="456" Column="95" />
-      <File FileName="content/css/custom.css" Line="1271" Column="23" />
+      <File FileName="content/css/custom.css" />
       <File FileName="bloomreach/template.html" />
-      <File FileName="cpmo/approach-tool.html" Line="1518" Column="53" />
+      <File FileName="cpmo/approach-tool.html" Line="1147" Column="103" />
       <File FileName="pages/team-network-diversity.html" />
-      <File FileName="cpmo/lifecycle-diagram.html" Line="793" Column="81" />
-      <File FileName="cpmo/standards-and-investment-team.html" Line="316" Column="148" />
-      <File FileName="cpmo/index.html" Line="299" Column="71" />
+      <File FileName="cpmo/lifecycle-diagram.html" />
+      <File FileName="cpmo/standards-and-investment-team.html" />
+      <File FileName="cpmo/index.html" />
+      <File FileName="bloomreach/help-improve.html" />
+      <File FileName="bloomreach/content/summary.html" />
+      <File FileName="bloomreach/patterns/statistic.html" />
+      <File FileName="kpi/workforce.html" />
+      <File FileName="cpmo/agile-guidance.html" />
+      <File FileName="cpmo/lessons-learned.html" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ur-nhsd" expanded="True">
             <Node name="ur-nhsd" expanded="True">
-              <Node name="bloomreach" expanded="True" />
-              <Node name="content" expanded="True">
-                <Node name="css" expanded="True" />
-                <Node name="images" expanded="True" />
-              </Node>
               <Node name="cpmo" expanded="True">
-                <Node name="index.html" selected="True" />
+                <Node name="approach-tool.html" selected="True" />
               </Node>
               <Node name="kpi" expanded="True" />
               <Node name="pages" expanded="True" />

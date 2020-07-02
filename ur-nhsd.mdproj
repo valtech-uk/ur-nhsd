@@ -99,5 +99,6 @@
     <None Include="cpmo\index.html" />
     <None Include="cpmo\standards-and-investment-team.html" />
     <None Include="cpmo\agile-guidance.html" />
+    <None Include="cpmo\lessons-learned.html" />
   </ItemGroup>
 </Project>
