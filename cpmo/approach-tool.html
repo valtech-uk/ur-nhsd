@@ -298,7 +298,10 @@
                                                     <a href="#questionsarea" aria-label="Scroll to 'Section'" title="Scroll to 'Section'" class="active">Questions</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#lessonslearned" aria-label="Scroll to 'Section'" title="Scroll to 'Section'">Lessons learned</a>
+                                                    <a href="#chartarea" aria-label="Scroll to 'Section'" title="Scroll to 'Section'">Results</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#lessonslearned" aria-label="Scroll to 'Section'" title="Scroll to 'Section'">What to do next</a>
                                                 </li>
                                                 <li>
                                                     <a href="#dates" aria-label="Scroll to 'Dates'" title="Scroll to 'Dates'" class=" ">Dates</a>
@@ -1135,21 +1138,22 @@
                             </div>
                         </div>
 
+                        
 
-
-                        <div class="article-section" id="lessonslearned">
+                        <div class="article-section hide" id="lessonslearned">
 
                             <div id="guidance" class="article-section">
-                                <h2 data-uipath="website.contentblock.iconlist.title">Guidance</h2>
+                                <h2 data-uipath="website.contentblock.iconlist.title">What to do next</h2>
+                                <p class="hide" id="overallscore"></p>
 
-                                <div data-uipath="website.contentblock.iconlist.introduction">
-                                    <p>Guidance to help you resolve issues raised by a low score in any of the statement areas</p>
-                                    <p><a href="lessons-learned.html">View the lessons learned</a></p>
+                                    <div data-uipath="website.contentblock.iconlist.introduction">
+                                        <p>Review the guidance to help you resolve issues raised by a low score in any of the statement areas<br/>
+                                        <a href="lessons-learned.html">View the lessons learned</a></p>
+
+                                    </div>
 
                                 </div>
-
                             </div>
-                        </div>
                         <div class="article-section" id="feedback">
                             <div class="grid-row">
                                 <div class="column column--one-half">
@@ -1338,34 +1342,47 @@
             };
 
             $("#chartarea").removeClass("hide");
+            $("#lessonslearned").removeClass("hide");
 
             open_questions(false);
 
+            var overall_score = 0;
+
             var value_sponsorship = (getRadioValues("s1", "s2", "s3") / 12) * 100;
-            $("#s-score").text(value_sponsorship);
+            $("#s-score").text(value_sponsorship.toFixed());
             $("#s-confidence").text(getConfidence(value_sponsorship));
+            $("#s-confidence").addClass(getConfidence(value_sponsorship).replace(/\s+/g, '-').toLowerCase());
+            overall_score += value_sponsorship;
 
             var value_resources = (getRadioValues("r1", "r2", "r3") / 12) * 100;
-            $("#r-score").text(value_resources);
+            $("#r-score").text(value_resources.toFixed());
             $("#r-confidence").text(getConfidence(value_resources));
+            overall_score += value_resources;
 
             var value_stakeholder = (getRadioValues("st1", "st2", "st3") / 12) * 100;
-            $("#st-score").text(value_stakeholder);
+            $("#st-score").text(value_stakeholder.toFixed());
             $("#st-confidence").text(getConfidence(value_stakeholder));
+            overall_score += value_stakeholder;
 
             var value_governance = (getRadioValues("g1", "g2", "") / 8) * 100;
-            $("#g-score").text(value_governance);
+            $("#g-score").text(value_governance.toFixed());
             $("#g-confidence").text(getConfidence(value_governance));
+            overall_score += value_governance;
 
             var value_expertise = (getRadioValues("e1", "e2", "e3") / 12) * 100;
-            $("#e-score").text(value_expertise);
+            $("#e-score").text(value_expertise.toFixed());
             $("#e-confidence").text(getConfidence(value_expertise));
+            overall_score += value_expertise;
 
             var value_objectives = (getRadioValues("o1", "o2", "o3") / 12) * 100;
-            $("#o-score").text(value_objectives);
+            $("#o-score").text(value_objectives.toFixed());
             $("#o-confidence").text(getConfidence(value_objectives));
+            overall_score += value_objectives;
 
-
+            if ((overall_score / 8) < 75) {
+                $("#overallscore").removeClass("hide");
+                $("#overallscore").text("Your overall score is " + (overall_score / 8).toFixed() + "%. As this is below 75% you'll need to check the guidance for how to improve some areas.");
+            }
             $("#lessonslearned").removeClass("hide");
 
             Highcharts.chart('container', {
