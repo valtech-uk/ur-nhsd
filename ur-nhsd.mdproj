@@ -105,5 +105,7 @@
     <None Include="risk\workshops.html" />
     <None Include="risk\risk-process.html" />
     <None Include="risk\assess-risk.html" />
+    <None Include="content\interactive-images\diagram1.svg" />
+    <None Include="content\interactive-images\diagram2.svg" />
   </ItemGroup>
 </Project>

@@ -443,7 +443,8 @@
                                 <h4>Results</h4>
                                 <h2 class="js-score-main js-score-title" id="scoretitle"></h2>
                                 <p>The risk level for <strong id="risk-name"></strong> is 
-                                <strong class="js-score-title"></strong> and scores <strong><span class="score" id="score"></span>/25</strong> for risk.</p>
+                                <strong class="js-score-title"></strong> and scores <strong>
+                                    <span class="score" id="score"></span>/25</strong> for risk.</p>
 
                                 <h4>What to do next</h4>
                                 <p class="hide" id="overallscore"></p>
@@ -632,11 +633,16 @@
                 var value = getRadioValues("c1", "i");
                 $("#score").text(value.toFixed());
                 var scoreclass = getScorename(value).replace(/\s+/g, '-').toLowerCase();
-                $("#score").removeClass().addClass(scoreclass);
-
+                $("#score").removeClass(function (index, className) {
+                    return (className.match(/\btext-\S+/g) || []).join(' ');
+                });
+                $("#score").addClass('text-' + scoreclass);
                 var scoretitle = getScorename(value);
                 $(".js-score-title").html(scoretitle);
-                $(".js-score-main").removeClass('text-' + scoreclass).addClass('text-' + scoreclass);
+                $(".js-score-main").removeClass(function (index, className) {
+                    return (className.match(/\btext-\S+/g) || []).join(' ');
+                });
+                $(".js-score-main").addClass('text-' + scoreclass);
 
 
                 $("#overallscore").removeClass("hide");

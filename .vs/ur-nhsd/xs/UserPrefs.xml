@@ -5,26 +5,31 @@
       <File FileName="cpmo/chapter.html" Line="456" Column="95" />
       <File FileName="content/css/custom.css" />
       <File FileName="bloomreach/template.html" />
-      <File FileName="cpmo/approach-tool.html" />
+      <File FileName="cpmo/approach-tool.html" Line="1177" Column="1" />
       <File FileName="pages/team-network-diversity.html" />
       <File FileName="cpmo/lifecycle-diagram.html" />
-      <File FileName="cpmo/standards-and-investment-team.html" Line="261" Column="91" />
+      <File FileName="cpmo/standards-and-investment-team.html" Line="46" Column="14" />
       <File FileName="cpmo/index.html" />
       <File FileName="bloomreach/help-improve.html" />
       <File FileName="bloomreach/content/summary.html" />
       <File FileName="bloomreach/patterns/statistic.html" />
       <File FileName="kpi/workforce.html" />
-      <File FileName="cpmo/agile-guidance.html" />
-      <File FileName="cpmo/lessons-learned.html" />
+      <File FileName="cpmo/agile-guidance.html" Line="411" Column="45" />
+      <File FileName="cpmo/lessons-learned.html" Line="423" Column="45" />
       <File FileName="cpmo/pre-discovery-phase.html" Line="370" Column="27" />
       <File FileName="cpmo/discovery-phase.html" Line="376" Column="50" />
-      <File FileName="risk/assess-risk.html" Line="1" Column="1" />
+      <File FileName="content/interactive-images/diagram1.svg" Line="2" Column="1" />
+      <File FileName="risk/assess-risk.html" Line="48" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ur-nhsd" expanded="True">
             <Node name="ur-nhsd" expanded="True">
+              <Node name="content" expanded="True">
+                <Node name="interactive-images" expanded="True" />
+              </Node>
+              <Node name="cpmo" expanded="True" />
               <Node name="risk" expanded="True">
                 <Node name="assess-risk.html" selected="True" />
               </Node>
