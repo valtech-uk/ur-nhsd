@@ -1320,3 +1320,34 @@ form label {
 .galleryItems__card img{
     width:100%;
 }
+
+
+.expander.expander-most details summary span {
+    background-image: url(../icons/expander-plus-icon.svg);
+}
+
+.expander.expander-most details[open] summary span {
+    background-image: url(../icons/expander-minus-icon.svg) !important
+}
+
+.statistic {
+    width: auto;
+}
+
+.statistic--sm {
+    padding: 27px 28px 22px;
+}
+
+.statistic--sm .statistic__numberStat {
+    font-size: 34px;
+}
+.statistics-section--sm {
+    padding-top: 0;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.statistic--sm .statistic__number,
+.statistic--sm .statistic__number-output {
+    word-break: normal;
+}
