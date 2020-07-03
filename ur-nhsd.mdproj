@@ -100,5 +100,10 @@
     <None Include="cpmo\standards-and-investment-team.html" />
     <None Include="cpmo\agile-guidance.html" />
     <None Include="cpmo\lessons-learned.html" />
+    <None Include="risk\index.html" />
+    <None Include="risk\managing-risk.html" />
+    <None Include="risk\workshops.html" />
+    <None Include="risk\risk-process.html" />
+    <None Include="risk\assess-risk.html" />
   </ItemGroup>
 </Project>

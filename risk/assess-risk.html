@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" class="no-js">
 
 <head>
@@ -38,7 +38,42 @@
     <script defer src="../content/js/aria.js"></script>
     <script defer src="../content/js/details-element-polyfill.js"></script>
     <script src="../content/js/custom.js"></script>
+    <style type="text/css">
 
+        .very-high {
+            background-color: red;
+            color: #000;
+        }
+        .high {
+            background-color: orange;
+            color: #000;
+        }
+
+        .medium {
+            background-color: yellow;
+            color: #000;
+        }
+
+        .low {
+            background-color: lightgreen;
+            color: #fff;
+        }
+
+        .very-low {
+            background-color: green;
+            color: #fff;
+        }
+
+        .eforms label {
+            min-width: 36px;
+        }
+
+        .eforms input[type=radio] {
+            margin: 0 !important;
+            top: 0 !important;
+            position: relative;
+        }
+    </style>
 
 </head>
 
@@ -47,7 +82,7 @@
         <defs>
             <symbol viewBox="0 0 24 24" id="add--sprite">
                 <path d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
+                <path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10c17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
             </symbol>
             <symbol viewBox="0 0 24 24" id="edit-document--sprite">
                 <g>
@@ -100,7 +135,7 @@
             </symbol>
             <symbol viewBox="0 0 24 24" id="not-allowed--sprite">
                 <path d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8 0-1.85.63-3.55 1.69-4.9L16.9 18.31C15.55 19.37 13.85 20 12 20zm6.31-3.1L7.1 5.69C8.45 4.63 10.15 4 12 4c4.42 0 8 3.58 8 8 0 1.85-.63 3.55-1.69 4.9z"></path>
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10c17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8 0-1.85.63-3.55 1.69-4.9L16.9 18.31C15.55 19.37 13.85 20 12 20zm6.31-3.1L7.1 5.69C8.45 4.63 10.15 4 12 4c4.42 0 8 3.58 8 8 0 1.85-.63 3.55-1.69 4.9z"></path>
             </symbol>
             <symbol viewBox="0 0 24 24" id="plus--sprite">
                 <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
@@ -196,7 +231,7 @@
                         </li>
                     </ol>
                 </nav>
-               
+
             </div>
         </div>
     </div>
@@ -246,7 +281,7 @@
                                         <h2 class="article-section-nav__title">Page contents</h2>
                                         <nav>
                                             <ol class="article-section-nav__list">
-                                                 <li>
+                                                <li>
                                                     <a href="#top" aria-label="Scroll to 'Top of page'" title="Scroll to 'Top of page'" class=" ">Top of page</a>
                                                 </li>
                                                 <li>
@@ -271,26 +306,207 @@
                     </div>
 
 
+                    <div class="column column--two-thirds page-block page-block--main">
 
-                        <div class="article-section" id="dates">
-                            <h2>Dates</h2>
-                            <div class="detail-list-grid detail-list-grid--regular">
-                                <dl class="detail-list">
-                                    <dt class="detail-list__key">Review date:</dt>
-                                    <dd class="detail-list__value">21 August 2020</dd>
-                                </dl>
+                        <div class="article-section">
 
-                                <dl class="detail-list">
-                                    <dt class="detail-list__key">Last modified:</dt>
-                                    <dd class="detail-list__value">
-                                        22 June 2020 5:14 pm
-                                    </dd>
-                                </dl>
+                            <div id="questionsarea" class="article-section">
+                                <p>Do you have any risks that you want to consider?</p>
+                                <form class="eforms form" style="margin-top:0 !important">
+
+                                    <div id="page0" class="eforms-page conditionally-visible" style="margin-top:0">
+                                        <fieldset name="group_prefix" class="eforms-fieldgroup">
+                                            <legend class="eforms-fieldgroupname hide">Project</legend>
+
+                                            <div class="eforms-field">
+                                                <label for="group_prefix__Your_organisation" class="eforms-label">What is the area of concern? <span class="eforms-req"></span></label>
+                                                <input type="text" name="riskname" id="js-riskname" class="" autocomplete="off" value="" size="40">
+                                                <div class="eforms-field__error-message visually-hidden"></div>
+                                                <span class="eforms-hint">This is used only to make your results readable and is not visible to ARM or anyone else in NHS Digital</span>
+                                            </div>
+
+                                        </fieldset>
+
+
+
+                                        <fieldset name="group_prefix" class="eforms-fieldgroup">
+                                            <legend class="eforms-fieldgroupname">Certainty</legend>
+
+                                            <div class="eforms-field">
+                                                <label class="eforms-label">How likely is this to cause a problem?<span class="eforms-req"></span></label>
+                                                <ul class="radiogroup" id="parent">
+
+                                                    <li>
+                                                        <label for="c1-0">
+                                                            <input type="radio" name="c1" id="c1-0" class="" value="1" checked>
+                                                            Unlikely
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="c1-1">
+                                                            <input type="radio" name="c1" id="c1-1" class="" value="2">
+                                                            Rare
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="c1-2">
+                                                            <input type="radio" name="c1" id="c1-2" class="" value="3">
+                                                            Possible
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="c1-3">
+                                                            <input type="radio" name="c1" id="c1-3" class="" value="4">
+                                                            Likely
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="c1-4">
+                                                            <input type="radio" name="c1" id="c1-4" class="" value="5">
+                                                            Certain
+                                                        </label>
+                                                    </li>
+
+                                                </ul>
+                                                <div class="eforms-field__error-message visually-hidden"></div>
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset name="group_prefix" class="eforms-fieldgroup">
+                                            <legend class="eforms-fieldgroupname">Impact</legend>
+
+                                            <div class="eforms-field">
+                                                <label class="eforms-label">What impact will this have?<span class="eforms-req"></span></label>
+                                                <ul class="radiogroup" id="parent">
+
+                                                    <li>
+                                                        <label for="i-0">
+                                                            <input type="radio" name="i" id="i-0" class="" value="1" checked>
+                                                            Insignificant
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="i-1">
+                                                            <input type="radio" name="i" id="i-1" class="" value="2">
+                                                            Minor
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="i-2">
+                                                            <input type="radio" name="i" id="i-2" class="" value="3">
+                                                            Moderate
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="i-3">
+                                                            <input type="radio" name="i" id="i-3" class="" value="4">
+                                                            Major
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="i-4">
+                                                            <input type="radio" name="i" id="i-4" class="" value="5">
+                                                            Catastrophe
+                                                        </label>
+                                                    </li>
+
+                                                </ul>
+                                                <div class="eforms-field__error-message visually-hidden"></div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="eforms-buttons">
+                                        <a class="button" value="Run assessment" id="btn-calculate">Calculate</a>
+                                    </div>
+
+                                </form>
+
+
                             </div>
                         </div>
-                        <div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1002px; height: 839px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div>
+
+
+                        <div class="article-section hide" id="js-results">
+
+
+                            <div class="article-section">
+                                <h2 data-uipath="website.contentblock.iconlist.title">Results</h2>
+
+
+
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <th>Area</th>
+                                            <th>Score</th>
+                                        </tr>
+                                        <tr>
+                                            <td id="risk-name"></td>
+                                            <td id="score"></td>
+                                        </tr>
+
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div id="guidance" class="article-section">
+                                <h2 data-uipath="website.contentblock.iconlist.title">What to do next</h2>
+                                <p class="hide" id="overallscore"></p>
+
+                                <div data-uipath="website.contentblock.iconlist.introduction">
+                                    <p class="score very-low">
+Well done! Your risk assessment means you don't have to take action
+                                    </p>
+                                    <p class="score low hide">
+                                        A reasonable result
+                                    </p>
+                                    <p class="score medium hide">
+                                        You may need to take some action to highlight the risk
+                                    </p>
+                                    <p class="score high hide">
+                                        Not ideal, make sure you raise this
+                                    </p>
+                                    <p class="score very-high hide">
+                                        You should seek to raise this risk
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    <div class="article-section" id="feedback">
+                        <div>
+                            <div>
+                                <h2>Help us improve</h2>
+                                <p>If you have problems with the information on this page, please contact the <a href="standards-and-investment-team.html">Standards and investment </a> team.</p>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="article-section" id="dates">
+                        <h2>Dates</h2>
+                        <div class="detail-list-grid detail-list-grid--regular">
+                            <dl class="detail-list">
+                                <dt class="detail-list__key">Review date:</dt>
+                                <dd class="detail-list__value">21 August 2020</dd>
+                            </dl>
+
+                            <dl class="detail-list">
+                                <dt class="detail-list__key">Last modified:</dt>
+                                <dd class="detail-list__value">
+                                    22 June 2020 5:14 pm
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1002px; height: 839px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div>
                 </div>
+
+            </div>
+
             </div>
 
 
@@ -401,6 +617,116 @@
         </div>
     </footer>
 
+    <script>window.addEventListener("load", function () {
+            var risk_name = "Area of concern";
+            var cache_available = false;
+            var count_answers = 0;
+
+            if (localStorage.getItem("risk_name") != null) {
+                // we have data
+                risk_name = localStorage.getItem("risk_name");
+                if (risk_name != null && risk_name.length > 0) {
+                    cache_available = true;
+                    $("#js-riskname").val(risk_name);
+
+                    count_answers = load_questions("c1", "i1", "");
+
+                }
+
+            };
+
+            $("#btn-calculate").on("click", function () {
+                if ($("#js-riskname").val().length > 0) {
+                    risk_name = $("#js-riskname").val();
+                    localStorage.setItem("risk_name", risk_name);
+                    save_questions("c1", "i");
+
+                };
+
+                $("#js-results").removeClass("hide");
+
+                var overall_score = 0;
+
+                $("#risk-name").text(risk_name);
+                var value = getRadioValues("c1", "i");
+                $("#score").text(value.toFixed());
+                var scoreclass = getScorename(value).replace(/\s+/g, '-').toLowerCase();
+                $("#score").removeClass().addClass(scoreclass);
+
+                $("#overallscore").removeClass("hide");
+
+                $("p.score").addClass("hide");
+                $("p." + scoreclass).removeClass("hide");
+
+
+
+
+            });
+
+
+
+
+            function setRadioValue(name1, val1) {
+                return $("input[name='" + name1 + "'][value = " + val1 + "]").prop('checked', true);
+            }
+
+            function getRadioValue(name1) {
+                return $("input[name='" + name1 + "']:checked").val();
+            }
+
+            function getRadioValues(name1, name2) {
+                var value1 = 0;
+                var value2 = 0;
+                if (name1 != null && name1.length > 0) {
+                    value1 = $("input[name='" + name1 + "']:checked").val();
+                }
+                if (name2 != null && name2.length > 0) {
+                    value2 = parseInt($("input[name='" + name2 + "']:checked").val());
+                }
+
+                return value1 * value2;
+            }
+
+            function getScorename(value) {
+                var scorename = "Very low";
+                if (value >= 7) {
+                    scorename = "Low";
+                }
+                if (value >= 10) {
+                    scorename = "Medium";
+                }
+                if (value >= 17) {
+                    scorename = "High";
+                }
+                if (value >= 21) {
+                    scorename = "Very high";
+                }
+                return scorename;
+            }
+
+            function load_questions(saved1, saved2) {
+                var numloaded = 0;
+                if (localStorage.getItem(saved1) != null) {
+                    setRadioValue(saved1, localStorage.getItem(saved1));
+                    numloaded++;
+                }
+                if (localStorage.getItem(saved2) != null) {
+                    setRadioValue(saved2, localStorage.getItem(saved2));
+                    numloaded++;
+                }
+                return numloaded;
+            }
+
+            function save_questions(saved1, saved2) {
+
+                localStorage.setItem(saved1, getRadioValue(saved1));
+                localStorage.setItem(saved2, getRadioValue(saved2));
+
+            }
+
+
+
+        });</script>
 </body>
 
 </html>
