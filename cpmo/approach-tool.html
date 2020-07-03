@@ -1173,7 +1173,7 @@
 
                                     <div data-uipath="website.contentblock.iconlist.introduction">
                                         <p>Review the guidance to help you resolve issues raised by a low score in any of the statement areas<br/>
-                                        <a href="lessons-learned.html">View the lessons learned</a></p>
+                                        <a href="lessons-learned.html">View guidance</a></p>
 
                                     </div>
 
@@ -1376,37 +1376,37 @@
             var value_sponsorship = (getRadioValues("s1", "s2", "s3") / 12) * 100;
             $("#s-score").text(value_sponsorship.toFixed());
             $("#s-confidence").text(getConfidence(value_sponsorship));
-            $("#s-confidence").addClass(getConfidence(value_sponsorship).replace(/\s+/g, '-').toLowerCase());
+            $("#s-confidence").removeClass().addClass(getConfidence(value_sponsorship).replace(/\s+/g, '-').toLowerCase());
             overall_score += value_sponsorship;
 
             var value_resources = (getRadioValues("r1", "r2", "r3") / 12) * 100;
             $("#r-score").text(value_resources.toFixed());
             $("#r-confidence").text(getConfidence(value_resources));
-            $("#r-confidence").addClass(getConfidence(value_resources).replace(/\s+/g, '-').toLowerCase());
+            $("#r-confidence").removeClass().addClass(getConfidence(value_resources).replace(/\s+/g, '-').toLowerCase());
             overall_score += value_resources;
 
             var value_stakeholder = (getRadioValues("st1", "st2", "st3") / 12) * 100;
             $("#st-score").text(value_stakeholder.toFixed());
             $("#st-confidence").text(getConfidence(value_stakeholder));
-            $("#st-confidence").addClass(getConfidence(value_stakeholder).replace(/\s+/g, '-').toLowerCase());
+            $("#st-confidence").removeClass().addClass(getConfidence(value_stakeholder).replace(/\s+/g, '-').toLowerCase());
             overall_score += value_stakeholder;
 
             var value_governance = (getRadioValues("g1", "g2", "") / 8) * 100;
             $("#g-score").text(value_governance.toFixed());
             $("#g-confidence").text(getConfidence(value_governance));
-            $("#g-confidence").addClass(getConfidence(value_governance).replace(/\s+/g, '-').toLowerCase());
+            $("#g-confidence").removeClass().addClass(getConfidence(value_governance).replace(/\s+/g, '-').toLowerCase());
             overall_score += value_governance;
 
             var value_expertise = (getRadioValues("e1", "e2", "e3") / 12) * 100;
             $("#e-score").text(value_expertise.toFixed());
             $("#e-confidence").text(getConfidence(value_expertise));
-            $("#e-confidence").addClass(getConfidence(value_expertise).replace(/\s+/g, '-').toLowerCase());
+            $("#e-confidence").removeClass().addClass(getConfidence(value_expertise).replace(/\s+/g, '-').toLowerCase());
             overall_score += value_expertise;
 
             var value_objectives = (getRadioValues("o1", "o2", "o3") / 12) * 100;
             $("#o-score").text(value_objectives.toFixed());
             $("#o-confidence").text(getConfidence(value_objectives));
-            $("#o-confidence").addClass(getConfidence(value_objectives).replace(/\s+/g, '-').toLowerCase());
+            $("#o-confidence").removeClass().addClass(getConfidence(value_objectives).replace(/\s+/g, '-').toLowerCase());
             overall_score += value_objectives;
 
             if ((overall_score / 8) < 75) {

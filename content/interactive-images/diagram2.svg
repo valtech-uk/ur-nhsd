@@ -17,11 +17,13 @@
                         </text>
                     </g>
                     <g id="Arrow-2-Copy">
+                    <a href="pre-discovery-phase.html">
                         <polygon id="Path-Copy-3" fill="#5156CA" style="mix-blend-mode: color;" points="0 0 29.2338491 0 29.2338491 72 0 72 25.9190465 36"></polygon>
                         <path d="M213,0 L213,72 L238.919047,36 L213,0 Z M29,0 L213,0 L213,72 L29,72 L29,0 Z" id="Path-3" fill="#5156CA"></path>
                         <text id="Pre-discovery" font-family="Helvetica-Bold, Helvetica" font-size="18" font-weight="bold" fill="#FFFFFF">
                             <tspan x="44" y="43">Pre discovery</tspan>
                         </text>
+                    </a>
                     </g>
                     <g id="assessment" transform="translate(0.000000, 110.000000)">
                         <polygon id="Path-Copy-7" fill="#5156CA" style="mix-blend-mode: color;" points="0 0 29.2338491 0 29.2338491 72 0 72 25.9190465 36"></polygon>
@@ -45,10 +47,12 @@
                         </text>
                     </g>
                     <g id="assessment-copy-6" transform="translate(502.000000, 116.000000)">
+                    <a href="discovery-phase.html">
                         <path d="M213,0 L213,72 L238.919047,36 L213,0 Z M29,0 L213,0 L213,72 L29,72 L29,0 Z" id="Path-3" fill="#005EB8"></path>
                         <text id="Discovery" font-family="Helvetica-Bold, Helvetica" font-size="18" font-weight="bold" fill="#FFFFFF">
                             <tspan x="59" y="43">Discovery</tspan>
                         </text>
+                        </a>
                     </g>
                     <g id="assessment-copy-3" transform="translate(502.000000, 308.000000)">
                         <path d="M213,0 L213,72 L238.919047,36 L213,0 Z M29,0 L213,0 L213,72 L29,72 L29,0 Z" id="Path-3" fill="#5156CA"></path>
