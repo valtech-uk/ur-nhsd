@@ -40,28 +40,35 @@
     <script src="../content/js/custom.js"></script>
     <style type="text/css">
 
-        .very-high {
-            background-color: red;
-            color: #000;
-        }
-        .high {
-            background-color: orange;
-            color: #000;
+        #scoretitle {
+            display: inline-block;
+            padding: 3px 8px;
         }
 
-        .medium {
-            background-color: yellow;
-            color: #000;
+        .text-very-high {
+            color: #942514;
+            background: #f6d7d2;
         }
 
-        .low {
-            background-color: lightgreen;
-            color: #fff;
+
+        .text-high {
+            color: #6e3619;
+            background: #fcd6c3;
         }
 
-        .very-low {
-            background-color: green;
-            color: #fff;
+        .text-medium {
+            color: #594d00;
+            background: #fff7bf;
+        }
+
+        .text-low {
+            color: #10403c;
+            background: #bfe3e0;
+        }
+
+        .text-very-low {
+            color: #005a30;
+            background: #cce2d8;
         }
 
         .eforms label {
@@ -246,9 +253,6 @@
             <!-- checking whether simulating doc in order to avoid console errors from NewsHub and EventHub docs -->
 
 
-
-
-
             <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide" aria-label="Document Header">
                 <div class="local-header article-header article-header--with-icon">
                     <div class="grid-wrapper">
@@ -311,7 +315,7 @@
                         <div class="article-section">
 
                             <div id="questionsarea" class="article-section">
-                                <p>Do you have any risks that you want to consider?</p>
+                                <h3>Do you have any risks that you want to consider?</h3>
                                 <form class="eforms form" style="margin-top:0 !important">
 
                                     <div id="page0" class="eforms-page conditionally-visible" style="margin-top:0">
@@ -322,7 +326,7 @@
                                                 <label for="group_prefix__Your_organisation" class="eforms-label">What is the area of concern? <span class="eforms-req"></span></label>
                                                 <input type="text" name="riskname" id="js-riskname" class="" autocomplete="off" value="" size="40">
                                                 <div class="eforms-field__error-message visually-hidden"></div>
-                                                <span class="eforms-hint">This is used only to make your results readable and is not visible to ARM or anyone else in NHS Digital</span>
+                                                <span class="eforms-hint">This is only used to make your results readable and is not visible to anyone in NHS Digital</span>
                                             </div>
 
                                         </fieldset>
@@ -339,13 +343,13 @@
                                                     <li>
                                                         <label for="c1-0">
                                                             <input type="radio" name="c1" id="c1-0" class="" value="1" checked>
-                                                            Unlikely
+                                                            Rare
                                                         </label>
                                                     </li>
                                                     <li>
                                                         <label for="c1-1">
                                                             <input type="radio" name="c1" id="c1-1" class="" value="2">
-                                                            Rare
+                                                            Unlikely
                                                         </label>
                                                     </li>
                                                     <li>
@@ -376,7 +380,8 @@
                                             <legend class="eforms-fieldgroupname">Impact</legend>
 
                                             <div class="eforms-field">
-                                                <label class="eforms-label">What impact will this have?<span class="eforms-req"></span></label>
+                                                <label class="eforms-label">What impact could this problem have?<span class="eforms-req"></span></label>
+                                                <span class="eforms-hint">For example could it appear in local news?</span>
                                                 <ul class="radiogroup" id="parent">
 
                                                     <li>
@@ -431,57 +436,31 @@
 
 
                             <div class="article-section">
-                                <h2 data-uipath="website.contentblock.iconlist.title">Results</h2>
+                                <h4>Results</h4>
+                                <h2 class="js-score-main js-score-title" id="scoretitle"></h2>
+                                <p>The risk level for <strong id="risk-name"></strong> is 
+                                <strong class="js-score-title"></strong> and scores <strong><span class="score" id="score"></span>/25</strong> for risk.</p>
 
-
-
-                                <div>
-                                    <table>
-                                        <tr>
-                                            <th>Area</th>
-                                            <th>Score</th>
-                                        </tr>
-                                        <tr>
-                                            <td id="risk-name"></td>
-                                            <td id="score"></td>
-                                        </tr>
-
-                                    </table>
-                                </div>
-                            </div>
-
-                            <div id="guidance" class="article-section">
-                                <h2 data-uipath="website.contentblock.iconlist.title">What to do next</h2>
+                                <h4>What to do next</h4>
                                 <p class="hide" id="overallscore"></p>
-
-                                <div data-uipath="website.contentblock.iconlist.introduction">
-                                    <p class="score very-low">
-Well done! Your risk assessment means you don't have to take action
-                                    </p>
-                                    <p class="score low hide">
-                                        A reasonable result
-                                    </p>
-                                    <p class="score medium hide">
-                                        You may need to take some action to highlight the risk
-                                    </p>
-                                    <p class="score high hide">
-                                        Not ideal, make sure you raise this
-                                    </p>
-                                    <p class="score very-high hide">
-                                        You should seek to raise this risk
-                                    </p>
+                                <div>
+                                    <p class="score very-low">Well done! Your risk assessment means you don't have to take action</p>
+                                    <p class="score low hide">A reasonable result</p>
+                                    <p class="score medium hide">You may need to take some action to highlight the risk</p>
+                                    <p class="score high hide">Not ideal, make sure you raise this</p>
+                                    <p class="score very-high hide">You should seek to raise this risk</p>
                                 </div>
 
                             </div>
                         </div>
 
-
+ 
 
                     <div class="article-section" id="feedback">
                         <div>
                             <div>
                                 <h2>Help us improve</h2>
-                                <p>If you have problems with the information on this page, please contact the <a href="standards-and-investment-team.html">Standards and investment </a> team.</p>
+                                <p>If you have problems with the information on this page, please contact the <a href="risk/index.html">Corporate risk management </a> team.</p>
                             </div>
                         </div>
                     </div>
@@ -650,6 +629,11 @@ Well done! Your risk assessment means you don't have to take action
                 $("#score").text(value.toFixed());
                 var scoreclass = getScorename(value).replace(/\s+/g, '-').toLowerCase();
                 $("#score").removeClass().addClass(scoreclass);
+
+                var scoretitle = getScorename(value);
+                $(".js-score-title").html(scoretitle);
+                $(".js-score-main").removeClass('text-' + scoreclass).addClass('text-' + scoreclass);
+
 
                 $("#overallscore").removeClass("hide");
 
