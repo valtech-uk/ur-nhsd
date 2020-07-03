@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1061px" height="524px" viewBox="0 0 1061 524" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard</title>
+    <defs>
+        <polygon id="path-1" points="439 116 439 188 464 152"></polygon>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Lifecycle" transform="translate(11.000000, 9.000000)">
+            <g id="Group-4">
+                <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" x="255" y="91" width="185" height="217"></rect>
+                <rect id="Rectangle-Copy-12" stroke="#979797" fill="#D8D8D8" x="492" y="91" width="277" height="413"></rect>
+                <g id="Group-2" transform="translate(283.000000, 116.000000)">
+                    <rect id="Rectangle" stroke="#5156CA" stroke-width="2" fill="#FFFFFF" x="0" y="0" width="127" height="72"></rect>
+                    <text id="Agile" fill="#232323" fill-rule="nonzero" font-family="Helvetica-Bold, Helvetica" font-size="18" font-weight="bold">
+                        <tspan x="29" y="43">Agile</tspan>
+                    </text>
+                </g>
+                <g id="Arrow-2-Copy">
+                    <polygon id="Path-Copy-3" fill="#5156CA" style="mix-blend-mode: color;" points="0 0 29.2338491 0 29.2338491 72 0 72 25.9190465 36"></polygon>
+                    <path d="M213,0 L213,72 L238.919047,36 L213,0 Z M29,0 L213,0 L213,72 L29,72 L29,0 Z" id="Path-3" fill="#5156CA"></path>
+                    <text id="Pre-discovery" font-family="Helvetica-Bold, Helvetica" font-size="18" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="44" y="43">Pre discovery</tspan>
+                    </text>
+                </g>
+                <g id="assessment" transform="translate(0.000000, 110.000000)">
+                    <polygon id="Path-Copy-7" fill="#5156CA" style="mix-blend-mode: color;" points="0 0 29.2338491 0 29.2338491 72 0 72 25.9190465 36"></polygon>
+                    <path d="M213,0 L213,72 L238.919047,36 L213,0 Z M29,0 L213,0 L213,72 L29,72 L29,0 Z" id="Path-3" fill="#5156CA"></path>
+                    <text id="Strategic-assessment" font-family="Helvetica-Bold, Helvetica" font-size="18" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="44" y="32">Strategic </tspan>
+                        <tspan x="44" y="54">assessment</tspan>
+                    </text>
+                </g>
+                <g id="assessment-copy" transform="translate(797.000000, 404.000000)">
+                    <polygon id="Path-Copy-8" fill="#5156CA" style="mix-blend-mode: color;" points="0 0 29.2338491 0 29.2338491 72 0 72 25.9190465 36"></polygon>
+                    <path d="M213,0 L213,72 L238.919047,36 L213,0 Z M29,0 L213,0 L213,72 L29,72 L29,0 Z" id="Path-3" fill="#5156CA"></path>
+                    <text id="Retire" font-family="Helvetica-Bold, Helvetica" font-size="18" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="44" y="43">Retire</tspan>
+                    </text>
+                </g>
+                <g id="assessment-copy-2" transform="translate(502.000000, 212.000000)">
+                    <path d="M213,0 L213,72 L238.919047,36 L213,0 Z M29,0 L213,0 L213,72 L29,72 L29,0 Z" id="Path-3" fill="#5156CA"></path>
+                    <text id="Alpha" font-family="Helvetica-Bold, Helvetica" font-size="18" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="59" y="43">Alpha</tspan>
+                    </text>
+                </g>
+                <g id="assessment-copy-6" transform="translate(502.000000, 116.000000)">
+                    <path d="M213,0 L213,72 L238.919047,36 L213,0 Z M29,0 L213,0 L213,72 L29,72 L29,0 Z" id="Path-3" fill="#5156CA"></path>
+                    <text id="Discovery" font-family="Helvetica-Bold, Helvetica" font-size="18" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="59" y="43">Discovery</tspan>
+                    </text>
+                </g>
+                <g id="assessment-copy-3" transform="translate(502.000000, 308.000000)">
+                    <path d="M213,0 L213,72 L238.919047,36 L213,0 Z M29,0 L213,0 L213,72 L29,72 L29,0 Z" id="Path-3" fill="#5156CA"></path>
+                    <text id="Beta" font-family="Helvetica-Bold, Helvetica" font-size="18" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="59" y="43">Beta</tspan>
+                    </text>
+                </g>
+                <g id="assessment-copy-4" transform="translate(502.000000, 404.000000)">
+                    <path d="M213,0 L213,72 L238.919047,36 L213,0 Z M29,0 L213,0 L213,72 L29,72 L29,0 Z" id="Path-3" fill="#5156CA"></path>
+                    <text id="Live" font-family="Helvetica-Bold, Helvetica" font-size="18" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="59" y="43">Live</tspan>
+                    </text>
+                </g>
+                <g id="Group-2-Copy-2" transform="translate(284.000000, 206.000000)">
+                    <rect id="Rectangle" stroke="#979797" fill="#DAD9D9" x="0" y="0" width="127" height="72"></rect>
+                    <text id="Waterfall" fill="#232323" fill-rule="nonzero" font-family="Helvetica-Bold, Helvetica" font-size="18" font-weight="bold">
+                        <tspan x="25" y="43">Waterfall</tspan>
+                    </text>
+                </g>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Path-2-Copy-14" stroke="#979797" fill="#D8D8D8" xlink:href="#path-1"></use>
+            </g>
+            <rect id="Rectangle" stroke="#DDDDDD" fill="#D8D8D8" x="437" y="114" width="2" height="77"></rect>
+        </g>
+    </g>
+</svg>
