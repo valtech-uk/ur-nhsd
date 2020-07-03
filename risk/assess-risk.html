@@ -628,9 +628,7 @@ Well done! Your risk assessment means you don't have to take action
                 if (risk_name != null && risk_name.length > 0) {
                     cache_available = true;
                     $("#js-riskname").val(risk_name);
-
-                    count_answers = load_questions("c1", "i1", "");
-
+                    count_answers = load_questions("c1", "i1");
                 }
 
             };
@@ -658,13 +656,13 @@ Well done! Your risk assessment means you don't have to take action
                 $("p.score").addClass("hide");
                 $("p." + scoreclass).removeClass("hide");
 
-
-
-
             });
 
 
+            if (cache_available == true) {
+                $("#btn-calculate").trigger("click");
 
+            }
 
             function setRadioValue(name1, val1) {
                 return $("input[name='" + name1 + "'][value = " + val1 + "]").prop('checked', true);
