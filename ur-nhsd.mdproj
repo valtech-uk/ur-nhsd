@@ -126,5 +126,7 @@
     <None Include="content\icons\calendar.svg" />
     <None Include="content\icons\dial.svg" />
     <None Include="content\icons\illustration.svg" />
+    <None Include="cpmo\alpha-phase.html" />
+    <None Include="cpmo\private-beta.html" />
   </ItemGroup>
 </Project>
