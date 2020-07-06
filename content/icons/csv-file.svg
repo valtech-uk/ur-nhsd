@@ -2,20 +2,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" height="60" id="Layer_1" viewBox="0 0 240 240" width="60">
   <title>ICONS Sets_v4_FileTypes_4</title>
   <g id="CSV">
-    <path d="M46.14,206.45V33.55a6.12,6.12,0,0,1,6.15-6.15H163.46l37,37v142a6.12,6.12,0,0,1-6.15,6.15h-142A6.2,6.2,0,0,1,46.14,206.45Z" style="fill: none;stroke: #ffb81c;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
-    <line style="fill: none;stroke: #ffb81c;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" x1="163.46" x2="200.47" y1="27.4" y2="64.42"/>
-    <polyline points="200.47 64.42 163.46 64.42 163.46 27.4" style="fill: none;stroke: #ffb81c;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
-    <text style="font-size: 42px;fill: #ffb81c;font-family: ArialMT, Arial" transform="translate(80.63 190.01)">CSV</text>
+    <path d="M46.14,206.45V33.55a6.12,6.12,0,0,1,6.15-6.15H163.46l37,37v142a6.12,6.12,0,0,1-6.15,6.15h-142A6.2,6.2,0,0,1,46.14,206.45Z" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <line style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" x1="163.46" x2="200.47" y1="27.4" y2="64.42"/>
+    <polyline points="200.47 64.42 163.46 64.42 163.46 27.4" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <text style="font-size: 42px;fill: #005EB8;font-family: ArialMT, Arial" transform="translate(80.63 190.01)">CSV</text>
     <g data-name="csv icon" id="csv_icon">
-      <rect height="12.96" style="fill: none;stroke: #ffb81c;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" width="27.06" x="69.62" y="63.35"/>
-      <rect height="12.96" style="fill: none;stroke: #ffb81c;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" width="26.68" x="70" y="87.36"/>
-      <rect height="12.96" style="fill: none;stroke: #ffb81c;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" width="26.68" x="70" y="111.75"/>
-      <rect height="12.96" style="fill: none;stroke: #ffb81c;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" width="27.06" x="109.63" y="63.35"/>
-      <rect height="12.96" style="fill: none;stroke: #ffb81c;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" width="26.68" x="110.01" y="87.36"/>
-      <rect height="12.96" style="fill: none;stroke: #ffb81c;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" width="26.68" x="110.01" y="111.75"/>
-      <rect height="12.96" style="fill: none;stroke: #ffb81c;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" width="26.68" x="150.03" y="87.36"/>
-      <rect height="12.96" style="fill: none;stroke: #ffb81c;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" width="26.68" x="150.03" y="111.75"/>
-      <polyline points="176.7 76.31 149.65 76.31 149.65 63.35 156.37 63.35" style="fill: none;stroke: #ffb81c;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+      <rect height="12.96" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" width="27.06" x="69.62" y="63.35"/>
+      <rect height="12.96" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" width="26.68" x="70" y="87.36"/>
+      <rect height="12.96" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" width="26.68" x="70" y="111.75"/>
+      <rect height="12.96" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" width="27.06" x="109.63" y="63.35"/>
+      <rect height="12.96" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" width="26.68" x="110.01" y="87.36"/>
+      <rect height="12.96" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" width="26.68" x="110.01" y="111.75"/>
+      <rect height="12.96" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" width="26.68" x="150.03" y="87.36"/>
+      <rect height="12.96" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" width="26.68" x="150.03" y="111.75"/>
+      <polyline points="176.7 76.31 149.65 76.31 149.65 63.35 156.37 63.35" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
     </g>
   </g>
 </svg>
