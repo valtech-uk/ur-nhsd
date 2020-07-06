@@ -40,7 +40,8 @@
     <script src="../content/js/custom.js"></script>
     <style type="text/css">
 
-        #scoretitle {
+        #scoretitle,
+        .score-tag {
             display: inline-block;
             padding: 3px 8px;
         }
@@ -238,7 +239,7 @@
                         </li>
                         <li class="breadcrumb__crumb">
                             <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
-                            <span class="breadcrumb__link breadcrumb__link--secondary" data-text="Discovery phase " aria-current="page">Assess your risk </span>
+                            <span class="breadcrumb__link breadcrumb__link--secondary" data-text="Discovery phase " aria-current="page">Risk assessment calculator</span>
                         </li>
                     </ol>
                 </nav>
@@ -264,9 +265,9 @@
                             <div class="grid-row">
                                 <div class="column--two-thirds column--reset">
 
-                                    <h1 id="top" class="local-header__title" data-uipath="document.title">Assess your risk</h1>
+                                    <h1 id="top" class="local-header__title" data-uipath="document.title">Risk assessment calculator</h1>
                                     <div class="rich-text-content article-header__subtitle">
-                                        <p>Understand the level of risk.</p>
+                                        <p>Understand the level of risk with our online calculator.</p>
                                     </div>
                                 </div>
                             </div>
@@ -296,7 +297,7 @@
                                                     <a href="#introduction" aria-label="Scroll to 'Section'" title="Scroll to 'Section'" class="active">Risk assessment calculator</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#how-score" aria-label="Scroll to 'Section'" title="Scroll to 'Section'">How we score risk</a>
+                                                    <a href="#how-score" aria-label="Scroll to 'Section'" title="Scroll to 'Section'">Scoring risk</a>
                                                 </li>
                                             </ol>
                                         </nav>
@@ -313,7 +314,7 @@
                         <div class="article-section">
 
                             <div id="questionsarea" class="article-section">
-                                <h3>Do you have any risks that you want to consider?</h3>
+                                <h2>Think about a risk to your project</h2>
                                 <form class="eforms form" style="margin-top:0 !important">
 
                                     <div id="page0" class="eforms-page conditionally-visible" style="margin-top:0">
@@ -321,10 +322,10 @@
                                             <legend class="eforms-fieldgroupname hide">Project</legend>
 
                                             <div class="eforms-field">
-                                                <label for="group_prefix__Your_organisation" class="eforms-label">What is the area of concern? <span class="eforms-req"></span></label>
-                                                <input type="text" name="riskname" id="js-riskname" class="" autocomplete="off" value="" size="40">
+                                                <label for="group_prefix__Your_organisation" class="eforms-label bold">What is the risk? <span class="eforms-req"></span></label>
+                                                <input type="text" name="riskname" id="js-riskname" class="" autocomplete="off" value="" style="max-width: 30em;">
                                                 <div class="eforms-field__error-message visually-hidden"></div>
-                                                <span class="eforms-hint">This is only used to make your results readable and is not visible to anyone in NHS Digital</span>
+                                                <span class="eforms-hint">This is only used to make your results readable and is not visible to anyone in NHS Digital.</span>
                                             </div>
 
                                         </fieldset>
@@ -332,10 +333,12 @@
 
 
                                         <fieldset name="group_prefix" class="eforms-fieldgroup">
-                                            <legend class="eforms-fieldgroupname">Certainty</legend>
+                                            <legend class="eforms-fieldgroupname" style="margin: 0;">Likelihood</legend>
 
                                             <div class="eforms-field">
-                                                <label class="eforms-label">How likely is this to cause a problem?<span class="eforms-req"></span></label>
+                                                <label class="eforms-label">
+                                                    How likely is it to cause a problem?<span class="eforms-req"></span>
+                                                </label>
                                                 <ul class="radiogroup" id="parent">
 
                                                     <li>
@@ -375,11 +378,11 @@
                                         </fieldset>
 
                                         <fieldset name="group_prefix" class="eforms-fieldgroup">
-                                            <legend class="eforms-fieldgroupname">Impact</legend>
+                                            <legend class="eforms-fieldgroupname" style="margin: 0;">Impact</legend>
 
                                             <div class="eforms-field">
-                                                <label class="eforms-label">What impact could this problem have?<span class="eforms-req"></span></label>
-                                                <span class="eforms-hint">For example could it appear in local news?</span>
+                                                <label class="eforms-label">What impact could it have?<span class="eforms-req"></span></label>
+                                                <span class="eforms-hint">For example: could it cause financial issues or appear in the local news?</span>
                                                 <ul class="radiogroup" id="parent">
 
                                                     <li>
@@ -434,30 +437,113 @@
 
 
                             <div class="article-section">
-                                <h4>Results</h4>
+                                <h3>Assessment result</h3>
                                 <h2 class="js-score-main js-score-title" id="scoretitle"></h2>
                                 <p>The risk level for <strong id="risk-name"></strong> is 
                                 <strong class="js-score-title"></strong> and scores <strong>
                                     <span class="score" id="score"></span>/25</strong> for risk.</p>
 
-                                <h4>What to do next</h4>
-                                <p class="hide" id="overallscore"></p>
-                                <div>
-                                    <p class="score very-low">Well done! Your risk assessment means you don't have to take action</p>
-                                    <p class="score low hide">A reasonable result</p>
-                                    <p class="score medium hide">You may need to take some action to highlight the risk</p>
-                                    <p class="score high hide">Not ideal, make sure you raise this</p>
-                                    <p class="score very-high hide">You should seek to raise this risk</p>
+                                <div class="emphasis-box emphasis-box-emphasis" aria-labelledby="emphasis-emphasis-493baba4">
+                                    <div class="emphasis-box__image">
+                                        <img src="../content/icons/warning.svg?colour=005EB8" alt="This is important" width="100" height="100">
+                                    </div>
+                                    <div class="emphasis-box__content" style="margin-top: 0;">
+                                        <strong role="heading" class="emphasis-box__heading" id="emphasis-emphasis-493baba4" data-uipath="website.contentblock.emphasis.heading">What to do next?</strong>
+                                        <div data-uipath="website.contentblock.emphasis.content">
+                                            <p class="hide" id="overallscore"></p>
+                                            <div>
+                                                <p class="score very-low">Well done! Your risk assessment means you don't have to take action.</p>
+                                                <p class="score low hide">A reasonable result, try to understand more about this risk.</p>
+                                                <p class="score medium hide">You should take some action to highlight the risk.</p>
+                                                <p class="score high hide">Not ideal, make sure you think about how you can reduce this risk.</p>
+                                                <p class="score very-high hide">You need to act! <a href="risk-process.html">Create a plan and record this risk</a>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
                         </div>
-                        
+
                         <div class="article-section" id="how-score">
                             <div>
                                 <div>
-                                    <h2>How we score risk</h2>
-                                    <p>ddd</p>
+                                    <h2>Scoring risk</h2>
+                                    <p>Without a way to score risk, teams would continually struggle to communicate about how to 
+                                    allocate resources appropriately in order to minimize costs and impact to our business.</p>
+
+                                    <p>Risk at NHS Digital is scored on a scale from 1 to 25. 1 is the lowest risk score, 25 is the highest risk score.</p>
+
+                                    <details>
+                                        <summary aria-expanded="false" aria-controls="details-content-1">
+                                            <span>See the full risk assessment matrix</span>
+                                        </summary>
+                                        <div class="details-body" aria-hidden="true" id="details-content-1">
+
+
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <td>&nbsp;</td>
+                                                <th colspan="5">Likelihood &rarr;</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                                <th>Impact &darr;</th>
+                                                <td>1</td>
+                                                <td>2</td>
+                                                <td>3</td>
+                                                <td>4</td>
+                                                <td>5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td><span class="score-tag text-medium">Medium</span></td>
+                                                <td><span class="score-tag text-high">High</span></td>
+                                                <td><span class="score-tag text-very-high">Very high</span></td>
+                                                <td><span class="score-tag text-very-high">Very high</span></td>
+                                                <td><span class="score-tag text-very-high">Very high</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><span class="score-tag text-medium">Medium</span></td>
+                                                <td><span class="score-tag text-medium">Medium</span></td>
+                                                <td><span class="score-tag text-high">High</span></td>
+                                                <td><span class="score-tag text-very-high">Very high</span></td>
+                                                <td><span class="score-tag text-very-high">Very high</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td><span class="score-tag text-low">Low</span></td>
+                                                <td><span class="score-tag text-medium">Medium</span></td>
+                                                <td><span class="score-tag text-medium">Medium</span></td>
+                                                <td><span class="score-tag text-high">High</span></td>
+                                                <td><span class="score-tag text-high">High</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td><span class="score-tag text-very-low">Very low</span></td>
+                                                <td><span class="score-tag text-low">Low</span></td>
+                                                <td><span class="score-tag text-low">Low</span></td>
+                                                <td><span class="score-tag text-medium">Medium</span></td>
+                                                <td><span class="score-tag text-medium">Medium</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><span class="score-tag text-very-low">Very low</span></td>
+                                                <td><span class="score-tag text-very-low">Very low</span></td>
+                                                <td><span class="score-tag text-very-low">Very low</span></td>
+                                                <td><span class="score-tag text-very-low">Very low</span></td>
+                                                <td><span class="score-tag text-very-low">Very low</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+
+                                        </div>
+                                    </details>
+
                                 </div>
                             </div>
                         </div>
@@ -627,6 +713,10 @@
                 };
 
                 $("#js-results").removeClass("hide");
+
+                var section = $("#js-results");
+                $('html,body').animate({ scrollTop: section.offset().top }, 'slow');
+
 
                 var overall_score = 0;
 

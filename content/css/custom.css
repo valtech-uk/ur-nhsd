@@ -1421,3 +1421,11 @@ form label {
 .nhs-timeline__entry .nhs-timeline__body {
     display: block;
 }
+
+
+.emphasis-box__heading {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 36px;
+}
