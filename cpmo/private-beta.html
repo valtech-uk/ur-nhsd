@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Generic meta tags -->
-    <title>Intranet - CPMO</title>
+    <title>Intranet - Private Beta Phase</title>
 
 
     <link rel="preload" href="../content/fonts/FrutigerLTW01-55Roman.woff2" as="font" type="font/woff2" crossorigin>
@@ -177,6 +177,40 @@
         </div>
     </header>
 
+    <script>(function () {
+            var oldBrowser = window.addEventListener ? false : true;
+            var $header = document.getElementById('header');
+            var $nav = document.getElementById('nav');
+            var $navToggle = document.getElementById('navToggle');
+            function handleToggleClick() {
+                if ($header.className.indexOf('menu-open') >= 0) {
+                    $header.className = $header.className.replace('menu-open', '');
+                } else {
+                    $header.className += ' menu-open';
+                }
+                $header.className = $header.className.replace(/^\s+|\s+$/g, '');
+            }
+            function init() {
+                if (!oldBrowser) {
+                    $navToggle.addEventListener('click', handleToggleClick);
+                    window.addEventListener('resize', onResize);
+                } else {
+                    $navToggle.attachEvent('onclick', handleToggleClick);
+                    window.attachEvent('onresize', onResize);
+                }
+            }
+            function onResize() {
+                if (window.innerWidth > 1024 && $header.className.indexOf('menu-open') >= 0) {
+                    handleToggleClick();
+                }
+            }
+            init();
+        }())</script>
+
+
+
+
+
 
     <div class="grid-wrapper">
         <div class="grid-row">
@@ -192,11 +226,18 @@
                         </li>
                         <li class="breadcrumb__crumb">
                             <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
-                            <span class="breadcrumb__link breadcrumb__link--secondary" data-text="Discovery phase " aria-current="page">CPMO </span>
+                            <a href="index.html" class="breadcrumb__link" data-text="ARM">CPMO</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
+                            <a href="standards-and-investment-team.html" class="breadcrumb__link" data-text="ARM">Standards and investment</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
+                            <span class="breadcrumb__link breadcrumb__link--secondary" data-text="Private Beta phase " aria-current="page">Private Beta phase </span>
                         </li>
                     </ol>
                 </nav>
-               
             </div>
         </div>
     </div>
@@ -207,13 +248,6 @@
 
         <article class="article article--intranet-task">
 
-
-            <!-- checking whether simulating doc in order to avoid console errors from NewsHub and EventHub docs -->
-
-
-
-
-
             <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide" aria-label="Document Header">
                 <div class="local-header article-header article-header--with-icon">
                     <div class="grid-wrapper">
@@ -223,12 +257,12 @@
 
 
 
-                                    <h1 id="top" class="local-header__title" data-uipath="document.title">Corporate portfolio management office </h1>
+                                    <h1 id="top" class="local-header__title" data-uipath="document.title">Private Beta phase </h1>
 
 
 
                                     <div class="rich-text-content article-header__subtitle">
-                                        <p>We supply excellence and leadership in the provision of portfolio management services to facilitate successful delivery of NHS Digital’s programmes and projects</p>
+                                        <p>Guidance for the Private Beta phase in a project lifecycle</p>
                                     </div>
                                 </div>
                             </div>
@@ -241,6 +275,62 @@
             </div>
 
 
+            <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide grid-wrapper--chapter-pagination">
+                <div class="chapter-pagination-wrapper">
+                    <div class="grid-wrapper">
+                        <div class="grid-row chapter-pagination-wrapper__skip visually-hidden">
+                            <div class="column column--reset">
+                                <a href="#document-content">???labels.skip-to-content???</a>
+                            </div>
+                        </div>
+
+                        <nav class="chapter-pagination" aria-label="Chapter Navigation">
+                            <ul class="chapter-pagination__list grid-row">
+                                <li class="chapter-pagination__list-item chapter-pagination-item--previous">
+                                    <p>
+                                        <span class="chapter-pagination__direction" aria-hidden="true">Alpha</span>
+                                        <a class="chapter-pagination__link" href="alpha-phase.html">
+                                            <span class="chapter-pagination__link-direction visually-hidden">Previous task chapters: </span>
+                                            <span class="chapter-pagination__link-arrow"><img aria-hidden="true" alt="Left Arrow" src="../content/images/left-arrow.svg"></span>
+                                            <!--
+                                    No space between elements -->
+                                            <span class="chapter-pagination__link-page">Previous</span>
+                                        </a>
+                                    </p>
+                                </li>
+                                <li class="chapter-pagination__list-item chapter-pagination-item--current column-one-third">
+                                    <p>
+                                        <span class="chapter-pagination__direction"> </span>
+                                        <a class="chapter-pagination__link" href="#chapter-index">
+                                            <span class="chapter-pagination__link-direction visually-hidden"></span>
+                                            <span class="chapter-pagination__link-arrow"><img aria-hidden="true" alt="Down Arrow" src="../content/images/down-arrow.svg"></span>
+                                            <!--
+                                    No space between elements -->
+                                            <span class="chapter-pagination__link-page">View chapters</span>
+                                        </a>
+                                    </p>
+
+                                </li>
+                                <li class="chapter-pagination__list-item chapter-pagination-item--next column-one-third">
+                                    <p>
+                                        <span class="chapter-pagination__direction" aria-hidden="true">
+                                            Public Beta phase
+                                        </span>
+                                        <a class="chapter-pagination__link" href="#">
+                                            <span class="chapter-pagination__link-direction visually-hidden">Public beta: </span>
+                                            <span class="chapter-pagination__link-page">Next</span>
+                                            <!--
+                                    No space between elements -->
+                                            <span class="chapter-pagination__link-arrow"><img aria-hidden="true" alt="Right Arrow" src="../content/images/right-arrow.svg"></span>
+                                        </a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
 
 
             <div class="grid-wrapper grid-wrapper--article" aria-label="Document Content">
@@ -258,7 +348,13 @@
                                                     <a href="#top" aria-label="Scroll to 'Top of page'" title="Scroll to 'Top of page'" class=" ">Top of page</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#icon-list-title" aria-label="Scroll to 'Section'" title="Scroll to 'Section'" class="active">Main area</a>
+                                                    <a href="#introduction" aria-label="Scroll to 'Section'" title="Scroll to 'Section'" class="active">What is the discovery phase?</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#do" aria-label="Scroll to 'Section'" title="Scroll to 'Section'" class="">What do I need to do?</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#next" aria-label="Scroll to 'Section'" title="Scroll to 'Section'" class="">How to move to the next phase</a>
                                                 </li>
                                                 <li>
                                                     <a href="#dates" aria-label="Scroll to 'Dates'" title="Scroll to 'Dates'" class=" ">Dates</a>
@@ -277,96 +373,107 @@
 
                         <div class="article-section">
 
-                            <div id="icon-list-title" class="article-section">
-                                <h2 data-uipath="website.contentblock.iconlist.title">How can we help you?</h2>
+                            <div id="introduction" class="article-section">
+                                <h2 data-uipath="website.contentblock.iconlist.title">What is the Beta phase?</h2>
 
                                 <div data-uipath="website.contentblock.iconlist.introduction">
-                                    <p>Our teams provide products and services to ensure robust portfolio management, corporate and operational governance.</p>
-                               
-
+                                    <p>The beta phase is where you take your best idea from alpha and start building it for real. It also involves thinking about how your service will integrate with (or start to replace) existing services, and preparing for the transition to live.</p>
+                                    <p>Structure your beta phase so you can roll out the service to real users - while minimising risk and maximising the potential to learn and iterate the service. Make sure that</p>
+                                    <p>the service team has the capacity to sustain that learning and iteration throughout the beta period and support staff are able to cope with new users who might struggle to use the service in ways you haven&rsquo;t foreseen</p>
+                                    <p>You&rsquo;ll start out in &lsquo;private beta&rsquo;. This involves inviting a limited number of people to use your service so you can get feedback and improve it.</p>
                                 </div>
 
                             </div>
                         </div>
 
 
+                        <div class="article-section">
+
+                            <div id="do" class="article-section">
+                                <h2 data-uipath="website.contentblock.iconlist.title">What do I need to do?</h2>
+
+                                <div data-uipath="website.contentblock.iconlist.introduction">
+
+                                    <ol>
+                                        <li>
+                                            <p>You will need to provide an investment justification if the funding does not sufficiently cover your Private Beta phase.</p>
+                                            <p>You need to provide sufficient information to the <a href="" #">Technology and Finance Performance Board (TFPB)</a> to enable them to consider the case for funding approval</p>
+                                            <p><a href="#">Review business process</a> </p>
+                                        </li>
+                                        <li>
+                                            <div>Provide your project documentation, typically this will be in Confluence and Jira or a similar tool:</div>
+                                            <ul>
+                                                <li>User Stories, Story Point Estimation &amp; Sprint Plan &nbsp;</li>
+                                                <li>Retrospective Review and Discovery Outputs&nbsp; &nbsp;</li>
+                                                <li>Initial Roadmap/ Sprint schedule for next stages and key inter-dependencies</li>
+                                                <li>High level Burndown Charts &nbsp;</li>
+                                                <li>Product Backlogs &amp; Complexity estimate&nbsp;</li>
+                                                <li>Draft Technical Spikes&nbsp;</li>
+                                                <li>Risk / Issue Log &amp; <a href="#">Risk Potential Assessment</a></li>
+                                                <li>Project Board Terms of Reference&nbsp;</li>
+                                                <li>Project Definition &nbsp;</li>
+                                                <li>Basic Highlight Report (dependency on reporting to define)&nbsp;</li>
+                                                <li><a href="#">Programme Initiation Document (PID) including delivery team responsibility &amp; structure matrix</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ol>
+
+                                    <div class="emphasis-box emphasis-box-emphasis" aria-labelledby="emphasis-emphasis-dfb54826">
+
+                                        <div class="emphasis-box__content">
+                                            <strong role="heading" class="emphasis-box__heading" id="emphasis-emphasis-dfb54826" data-uipath="website.contentblock.emphasis.heading">
+                                                GDS spend controls
+                                            </strong>
+
+                                            <div data-uipath="website.contentblock.emphasis.content">
+                                                <p>You will need GDS approval at the beginning of each agile phase before you can start any work.&nbsp;</p>
+                                                <p><a href="#">Complete the GDS Self Assessment form</a></p>
+                                                <p>Check the <a href="#">Spend Controls Guidance</a></p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
 
                         <div class="article-section">
-                            <div class="grid-row galleryItems">
 
+                            <div id="next" class="article-section">
+                                <h2 data-uipath="website.contentblock.iconlist.title">How to move to the next phase</h2>
 
-                                <div class="column column--one-half galleryItems__item">
-                                    <h3 class="galleryItems__heading">Standards &amp; investment</h3>
-                                    <div class="galleryItems__card">
+                                <div data-uipath="website.contentblock.iconlist.introduction">
+                                    <p>To move into the Private Beta phase you will need:</p>
+                                    <ul>
+                                        <li>Complete your <strong><em><a href="https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work">GDS Service Assessment</a></em></strong></li>
+                                        <li>Cabinet Office Spend (GDS) Approval of Private Beta Phase</li>
+                                        <li>EAB / Design Authority confirmation of enterprise/architectural direction</li>
+                                        <li>IJ Approval for next phase or <a href="#">new work comission</a></li>
+                                    </ul>
+                                    <p></p>
 
+                                    <div class="emphasis-box emphasis-box-emphasis" aria-labelledby="emphasis-emphasis-dfb54826">
 
-                                        <img src="../content/images/invest-compass.jpg" alt="Gallery item 1 alt text">
+                                        <div class="emphasis-box__content">
+                                            <strong role="heading" class="emphasis-box__heading" id="emphasis-emphasis-dfb54826" data-uipath="website.contentblock.emphasis.heading">
+                                                GDS spend controls
+                                            </strong>
 
-                                        <div class="galleryItems__description">
-                                            <p>We establish the portfolio management standards, including lifecycle stages and gates for NHS Digital's change programmes.</p>
-                                            <p><a href="standards-and-investment-team.html">Standards and investment team</a></p>
+                                            <div data-uipath="website.contentblock.emphasis.content">
+                                                <p>You will need GDS approval at the beginning of each agile phase before you can start any work.&nbsp;</p>
+                                                <p><a href="#">Complete the GDS Self Assessment form</a></p>
+                                                <p>Check the <a href="#">Spend Controls Guidance</a></p>
+
+                                            </div>
                                         </div>
-
                                     </div>
-
-                                    <ol class="list list--reset visually-hidden">
-                                        <li class="attachment visually-hidden" itemprop="hasPart" itemscope="" itemtype="http://schema.org/MediaObject">
-                                            <a href="#" class="block-link" onclick="" onkeyup="return vjsu.onKeyUp(event)">
-                                                <div class="block-link__header">
-                                                    <span class="icon icon--pdf icon--2x" aria-hidden="true"></span>
-                                                </div>
-                                                <div class="block-link__body">
-                                                    <span class="block-link__title">Related file file name</span>
-                                                    <meta itemprop="encodingFormat" content="application/pdf">
-                                                    <span class="block-link__meta regular">[pdf, <span class="fileSize">size: <span itemprop="contentSize">829.8 kB</span></span>]</span>
-
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ol>
 
                                 </div>
 
-
-                                <div class="column column--one-half galleryItems__item">
-                                    <h3 class="galleryItems__heading">Insights and oversights</h3>
-                                    <div class="galleryItems__card">
-
-
-                                        <img src="../content/images/analyse-and-report.png" alt="Gallery item 2 alt text">
-
-                                        <div class="galleryItems__description">
-                                            <p>We deliver an organisation and system-wide portfolio reporting service, and associated advice and guidance.
-                                            </p>
-                                            <p class="visually-hidden">We work with governance bodies on the performance, risks and issues in the portfolio and analysis for governance and assurance</p>
-                                            <p><a href="#">Insights and oversights team</a></p>
-                                        </div>
-
-                                    </div>
-
-                                    <ol class="list list--reset">
-                                    </ol>
-
-                                </div>
-                                <div class="clearfix"></div>
-
-
-                                <div class="column column--one-half galleryItems__item visually-hidden">
-                                    <div class="galleryItems__card">
-
-
-                                        <img src="image.png" alt="Gallery item 3 alt text">
-
-                                        <div class="galleryItems__description">
-                                            <p>Gallery item 3 description.&nbsp; No title has been added for this one.</p>
-                                        </div>
-
-                                    </div>
-
-                                    <ol class="list list--reset">
-                                    </ol>
-
-                                </div>
                             </div>
 
                         </div>
@@ -392,14 +499,13 @@
                 </div>
             </div>
 
-
-            <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide  visually-hidden" id="chapter-index">
+            <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide" id="chapter-index">
                 <div class="chapter-nav">
                     <div class="grid-wrapper">
 
                         <div class="grid-row">
                             <div class="column column--reset">
-                                <h2 class="chapter-nav__title">Task chapters</h2>
+                                <h2 class="chapter-nav__title">Lifecycle chapters</h2>
                             </div>
                         </div>
 
@@ -407,16 +513,16 @@
                             <div class="column column--one-half column--left">
                                 <ol class="list list--reset cta-list chapter-index">
                                     <li class="chapter-index__item">
-                                        <a class="chapter-index__link" href="../pages/task-page-general" title="Overall Task Page With Children">Overall Task Page With Children</a>
+                                        <a class="chapter-index__link" href="lifecycle-diagram.html" title="Overall Task Page With Children">Lifecycle overview</a>
+                                    </li>
+                                    <li class="chapter-index__item visually-hidden">
+                                        <a class="chapter-index__link" href="pre-dsicovery-phase.html" title="Examples of buttons">Pre-discovery phase</a>
+                                    </li>
+                                    <li class="chapter-index__item chapter-index__item--current">
+                                        <p class="chapter-index__current-item">Discovery phase </p>
                                     </li>
                                     <li class="chapter-index__item">
-                                        <a class="chapter-index__link" href="../pages/task-page-buttons" title="Examples of buttons">Examples of buttons</a>
-                                    </li>
-                                    <li class="chapter-index__item">
-                                        <a class="chapter-index__link" href="../pages/task-page-sections-" title="Examples of the section ">Examples of the section </a>
-                                    </li>
-                                    <li class="chapter-index__item">
-                                        <a class="chapter-index__link" href="../pages/task-page-emphasis-box-" title="Emphasis box examples">Emphasis box examples</a>
+                                        <a class="chapter-index__link" href="#" title="Emphasis box examples">Private Beta phase</a>
                                     </li>
                                 </ol>
                             </div>
@@ -424,13 +530,16 @@
                             <div class="column column--one-half column--right">
                                 <ol class="list list--reset cta-list chapter-index" start="5">
                                     <li class="chapter-index__item">
-                                        <a class="chapter-index__link" href="../pages/task-page-check-list-" title="Task Page Check Lists Examples">Task Page Check Lists Examples</a>
-                                    </li>
-                                    <li class="chapter-index__item chapter-index__item--current">
-                                        <p class="chapter-index__current-item">Page </p>
+                                        <a class="chapter-index__link" href="#" title="Task Page Check Lists Examples">Private Private Beta phase</a>
                                     </li>
                                     <li class="chapter-index__item">
-                                        <a class="chapter-index__link" href="../pages/task-page-gallery-" title="Task Page Gallery Items Title">Task Page Gallery Items Title</a>
+                                        <a class="chapter-index__link" href="#" title="Task Page Gallery Items Title">Public Private Beta phase</a>
+                                    </li>
+                                    <li class="chapter-index__item">
+                                        <a class="chapter-index__link" href="#" title="Task Page Gallery Items Title">Live phase</a>
+                                    </li>
+                                    <li class="chapter-index__item">
+                                        <a class="chapter-index__link" href="#" title="Task Page Gallery Items Title">Close project</a>
                                     </li>
                                 </ol>
                             </div>
@@ -501,33 +610,7 @@
     </footer>
 
 
-    <script>window.addEventListener("load", function () {
-            $("#js-agile").on("click", function (e) {
-                e.preventDefault();
-                $(".button").removeClass("active");
-                $(this).addClass("active");
-                $("#js-panel-agile").removeClass("hide");
-                $("#js-panel-agile-programme").addClass("hide");
-                $("#js-panel-waterfall-programme").addClass("hide");
-            });
-            $("#js-agile-programme").on("click", function (e) {
-                e.preventDefault();
-                $(".button").removeClass("active");
-                $(this).addClass("active");
-                $("#js-panel-agile").addClass("hide");
-                $("#js-panel-agile-programme").removeClass("hide");
-                $("#js-panel-waterfall-programme").addClass("hide");
-            });
-            $("#js-waterfall-programme").on("click", function (e) {
-                e.preventDefault();
-                $(".button").removeClass("active");
-                $(this).addClass("active");
-                $("#js-panel-agile").addClass("hide");
-                $("#js-panel-agile-programme").addClass("hide");
-                $("#js-panel-waterfall-programme").removeClass("hide");
-            })
 
-        });</script>
 
 </body>
 

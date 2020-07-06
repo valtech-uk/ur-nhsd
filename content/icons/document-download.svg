@@ -3,14 +3,14 @@
   <title>ICONS Sets_v3</title>
   <g data-name="Page download" id="Page_download">
     <g>
-      <path d="M132.4,189.8h-85a5.44,5.44,0,0,1-5.4-5.4V32.6a5.38,5.38,0,0,1,5.4-5.4H145l32.5,32.5v70.39" style="fill: none;stroke: #ffb81c;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
-      <line style="fill: none;stroke: #ffb81c;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" x1="145" x2="177.5" y1="27.2" y2="59.7"/>
-      <polyline points="177.5 59.7 145 59.7 145 27.2" style="fill: none;stroke: #ffb81c;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
-      <line style="fill: none;stroke: #ffb81c;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" x1="69.2" x2="150.5" y1="81.4" y2="81.4"/>
-      <line style="fill: none;stroke: #ffb81c;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" x1="69.2" x2="150.5" y1="107.9" y2="107.9"/>
-      <line style="fill: none;stroke: #ffb81c;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" x1="69.2" x2="150.5" y1="134.4" y2="134.4"/>
-      <line style="fill: none;stroke: #ffb81c;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" x1="69.2" x2="114.3" y1="159.9" y2="159.9"/>
+      <path d="M132.4,189.8h-85a5.44,5.44,0,0,1-5.4-5.4V32.6a5.38,5.38,0,0,1,5.4-5.4H145l32.5,32.5v70.39" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+      <line style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" x1="145" x2="177.5" y1="27.2" y2="59.7"/>
+      <polyline points="177.5 59.7 145 59.7 145 27.2" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+      <line style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" x1="69.2" x2="150.5" y1="81.4" y2="81.4"/>
+      <line style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" x1="69.2" x2="150.5" y1="107.9" y2="107.9"/>
+      <line style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" x1="69.2" x2="150.5" y1="134.4" y2="134.4"/>
+      <line style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px" x1="69.2" x2="114.3" y1="159.9" y2="159.9"/>
     </g>
-    <polyline points="145.15 183.58 161.37 183.58 161.37 143.2 201.83 143.2 201.83 183.58 218.05 183.58 181.6 220.04 145.15 183.58 181.6 220.04" style="fill: none;stroke: #ffb81c;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <polyline points="145.15 183.58 161.37 183.58 161.37 143.2 201.83 143.2 201.83 183.58 218.05 183.58 181.6 220.04 145.15 183.58 181.6 220.04" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
   </g>
 </svg>

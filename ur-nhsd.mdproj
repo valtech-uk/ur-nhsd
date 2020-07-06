@@ -107,5 +107,26 @@
     <None Include="risk\assess-risk.html" />
     <None Include="content\interactive-images\diagram1.svg" />
     <None Include="content\interactive-images\diagram2.svg" />
+    <None Include="cpmo\new-work-comission-process.html" />
+    <None Include="cpmo\lifecycle-diagram %28copy%29.html" />
+    <None Include="content\icons\cog.svg" />
+    <None Include="content\icons\expander-minus-icon.svg" />
+    <None Include="content\icons\connections.svg" />
+    <None Include="content\icons\flow-chart.svg" />
+    <None Include="content\icons\dial-high.svg" />
+    <None Include="content\icons\bar-chart.svg" />
+    <None Include="content\icons\csv-file.svg" />
+    <None Include="content\icons\document.svg" />
+    <None Include="content\icons\cogs.svg" />
+    <None Include="content\icons\document-download.svg" />
+    <None Include="content\icons\line-chart2.svg" />
+    <None Include="content\icons\document-settings.svg" />
+    <None Include="content\icons\compass.svg" />
+    <None Include="content\icons\expander-plus-icon.svg" />
+    <None Include="content\icons\calendar.svg" />
+    <None Include="content\icons\dial.svg" />
+    <None Include="content\icons\illustration.svg" />
+    <None Include="cpmo\alpha-phase.html" />
+    <None Include="cpmo\private-beta.html" />
   </ItemGroup>
 </Project>
