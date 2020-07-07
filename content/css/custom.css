@@ -1351,3 +1351,81 @@ form label {
 .statistic--sm .statistic__number-output {
     word-break: normal;
 }
+
+
+.mw-char {
+    max-width: 65ch;
+}
+
+.nhs-timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nhs-timeline__entry {
+    border-left: 3px solid #005EB8;
+    margin: 0;
+    padding-left: 1em;
+    padding-bottom: 2em !important;
+    position: relative;
+}
+
+.nhs-timeline__entry--dash {
+    border-left-style: dashed;
+}
+
+.nhs-timeline__entry::before,
+.nhs-timeline__entry::after {
+    background-color: #005EB8;
+    content: ' ';
+    display: none;
+}
+
+.nhs-timeline__entry::before {
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: .8em;
+    width: 10px;
+}
+
+.nhs-timeline__entry::after {
+    height: 3px;
+    left: -11px;
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+}
+
+.nhs-timeline__entry:last-child::after {
+    display: block;
+}
+
+.nhs-timeline__entry .nhs-timeline__title {
+    display: block;
+    font-weight: 700;
+}
+
+.nhs-timeline__entry .nhs-timeline__author,
+.nhs-timeline__entry .nhs-timeline__date {
+    color: #6f777b;
+    display: block;
+}
+
+.nhs-timeline__entry .nhs-timeline__info {
+    margin-top: 0;
+}
+
+.nhs-timeline__entry .nhs-timeline__body {
+    display: block;
+}
+
+
+.emphasis-box__heading {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 36px;
+}
