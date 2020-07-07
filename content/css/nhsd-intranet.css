@@ -2056,11 +2056,11 @@ th[role=columnheader]:not([data-sort-method=none]):hover:after, th[role=columnhe
 }
 
 .icon--pdf {
-    background-image: url(../images/icon/pdf_36x44.svg)
+    background-image: url(../icons/file.svg)
 }
 
 .icon--doc, .icon--docm, .icon--docx, .icon--odt, .icon--rtf, .icon--word {
-    background-image: url(../images/icon/wrd_36x44.svg)
+    background-image: url(../icons/file.svg)
 }
 
 .icon--odp, .icon--otp, .icon--ppsx, .icon--ppt, .icon--pptm, .icon--pptx {
@@ -2088,11 +2088,11 @@ th[role=columnheader]:not([data-sort-method=none]):hover:after, th[role=columnhe
 }
 
 .icon--html, .icon--xhtml {
-    background-image: url(../images/icon/html.svg)
+    background-image: url(../icons/web_60.svg)
 }
 
 .icon--gif, .icon--image, .icon--jpg, .icon--png, .icon--svg {
-    background-image: url(../images/icon/Image_36x44.svg)
+    background-image: url(../icons/image.svg)
 }
 
 .icon--jar {
