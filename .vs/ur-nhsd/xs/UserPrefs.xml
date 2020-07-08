@@ -1,17 +1,18 @@
 ﻿<Properties StartupConfiguration="{5E15779D-0DA0-4C97-A83C-35C6679B2E0C}|Default">
   <MonoDevelop.Ide.ItemProperties.ur-nhsd PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="cpmo/index.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="cpmo/lifecycle-diagram.html">
     <Files>
-      <File FileName="cpmo/standards-and-investment-team.html" Line="546" Column="64" />
+      <File FileName="cpmo/standards-and-investment-team.html" Line="443" Column="108" />
       <File FileName="cpmo/pre-discovery-phase.html" />
       <File FileName="cpmo/discovery-phase.html" />
       <File FileName="cpmo/private-beta.html" />
       <File FileName="cpmo/alpha-phase.html" />
       <File FileName="cpmo/lessons-learned.html" />
-      <File FileName="cpmo/new-work-commission-process.html" />
+      <File FileName="cpmo/new-work-commission-process.html" Line="358" Column="82" />
       <File FileName="content/css/nhsd-intranet.css" />
-      <File FileName="cpmo/board-dates.html" Line="763" Column="106" />
-      <File FileName="cpmo/index.html" Line="332" Column="72" />
+      <File FileName="cpmo/board-dates.html" Line="790" Column="65" />
+      <File FileName="cpmo/index.html" Line="381" Column="101" />
+      <File FileName="cpmo/lifecycle-diagram.html" Line="11" Column="42" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,7 +26,7 @@
                 <Node name="interactive-images" expanded="True" />
               </Node>
               <Node name="cpmo" expanded="True">
-                <Node name="index.html" selected="True" />
+                <Node name="lifecycle-diagram.html" selected="True" />
               </Node>
               <Node name="pages" expanded="True" />
               <Node name="risk" expanded="True" />
