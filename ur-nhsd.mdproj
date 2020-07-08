@@ -99,7 +99,7 @@
     <None Include="cpmo\index.html" />
     <None Include="cpmo\standards-and-investment-team.html" />
     <None Include="cpmo\agile-guidance.html" />
-    <None Include="cpmo\lessons-learned.html" />
+    <None Include="cpmo\approach-tool-guidance.html" />
     <None Include="risk\index.html" />
     <None Include="risk\managing-risk.html" />
     <None Include="risk\workshops.html" />
@@ -129,5 +129,6 @@
     <None Include="cpmo\private-beta.html" />
     <None Include="cpmo\new-work-commission-process.html" />
     <None Include="cpmo\board-dates.html" />
+    <None Include="cpmo\contact-cpmo.html" />
   </ItemGroup>
 </Project>
