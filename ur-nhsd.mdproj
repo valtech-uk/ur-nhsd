@@ -128,5 +128,6 @@
     <None Include="cpmo\alpha-phase.html" />
     <None Include="cpmo\private-beta.html" />
     <None Include="cpmo\new-work-commission-process.html" />
+    <None Include="cpmo\board-dates.html" />
   </ItemGroup>
 </Project>
