@@ -130,5 +130,7 @@
     <None Include="cpmo\new-work-commission-process.html" />
     <None Include="cpmo\board-dates.html" />
     <None Include="cpmo\contact-cpmo.html" />
+    <None Include="risk\identify-risk.html" />
+    <None Include="risk\assess-risk-2.html" />
   </ItemGroup>
 </Project>

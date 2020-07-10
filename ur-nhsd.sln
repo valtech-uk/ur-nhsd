@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "ur-nhsd", "ur-nhsd.mdproj", "{5E15779D-0DA0-4C97-A83C-35C6679B2E0C}"
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "ur-nhsd-1", "ur-nhsd-1.mdproj", "{5E15779D-0DA0-4C97-A83C-35C6679B2E0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
