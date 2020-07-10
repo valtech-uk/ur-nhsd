@@ -1352,6 +1352,27 @@ form label {
     word-break: normal;
 }
 
+.statistics-section--bold .statistic--colour-5 .statistic__information,
+.statistics-section--bold .statistic--colour-6 .statistic__information {
+    border-color: currentColor;
+    color: currentColor;
+}
+
+.statistics-section--bold .statistic--colour-5,
+.statistics-section--bold .statistic--colour-6 {
+    border: none;
+}
+
+.statistics-section--bold .statistic--colour-5 {
+    color: #fff;
+    background-image: linear-gradient(56deg,#9c7809 9%,#cc7b03);
+}
+
+.statistics-section--bold .statistic--colour-6 {
+    color: #fff;
+    background-image: linear-gradient(56deg,#a01309 9%,#ca0303);
+}
+
 
 .mw-char {
     max-width: 65ch;

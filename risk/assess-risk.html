@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Generic meta tags -->
-    <title>Intranet - Discovery Phase</title>
+    <title>Identify risk</title>
 
 
     <link rel="preload" href="../content/fonts/FrutigerLTW01-55Roman.woff2" as="font" type="font/woff2" crossorigin>
@@ -38,50 +38,7 @@
     <script defer src="../content/js/aria.js"></script>
     <script defer src="../content/js/details-element-polyfill.js"></script>
     <script src="../content/js/custom.js"></script>
-    <style type="text/css">
 
-        #scoretitle,
-        .score-tag {
-            display: inline-block;
-            padding: 3px 8px;
-        }
-
-        .text-very-high {
-            color: #942514;
-            background: #f6d7d2;
-        }
-
-
-        .text-high {
-            color: #6e3619;
-            background: #fcd6c3;
-        }
-
-        .text-medium {
-            color: #594d00;
-            background: #fff7bf;
-        }
-
-        .text-low {
-            color: #10403c;
-            background: #bfe3e0;
-        }
-
-        .text-very-low {
-            color: #005a30;
-            background: #cce2d8;
-        }
-
-        .eforms label {
-            min-width: 36px;
-        }
-
-        .eforms input[type=radio] {
-            margin: 0 !important;
-            top: 0 !important;
-            position: relative;
-        }
-    </style>
 
 </head>
 
@@ -90,7 +47,7 @@
         <defs>
             <symbol viewBox="0 0 24 24" id="add--sprite">
                 <path d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10c17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
+                <path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
             </symbol>
             <symbol viewBox="0 0 24 24" id="edit-document--sprite">
                 <g>
@@ -143,7 +100,7 @@
             </symbol>
             <symbol viewBox="0 0 24 24" id="not-allowed--sprite">
                 <path d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10c17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8 0-1.85.63-3.55 1.69-4.9L16.9 18.31C15.55 19.37 13.85 20 12 20zm6.31-3.1L7.1 5.69C8.45 4.63 10.15 4 12 4c4.42 0 8 3.58 8 8 0 1.85-.63 3.55-1.69 4.9z"></path>
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8 0-1.85.63-3.55 1.69-4.9L16.9 18.31C15.55 19.37 13.85 20 12 20zm6.31-3.1L7.1 5.69C8.45 4.63 10.15 4 12 4c4.42 0 8 3.58 8 8 0 1.85-.63 3.55-1.69 4.9z"></path>
             </symbol>
             <symbol viewBox="0 0 24 24" id="plus--sprite">
                 <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
@@ -231,19 +188,19 @@
                         </li>
                         <li class="breadcrumb__crumb">
                             <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
-                            <a href="../pages/team-list.html" class="breadcrumb__link" data-text="ARM">Teams</a>
+                            <a href="../pages/team-list.html" class="breadcrumb__link" data-text="Teams">Teams</a>
                         </li>
                         <li class="breadcrumb__crumb">
                             <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
-                            <a href="../risk/index.html" class="breadcrumb__link" data-text="ARM">Corporate risk management team</a>
+                            <a href="../risk/index.html" class="breadcrumb__link" data-text="Corporate risk management">Corporate risk management team</a>
                         </li>
                         <li class="breadcrumb__crumb">
                             <img src="../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
-                            <span class="breadcrumb__link breadcrumb__link--secondary" data-text="Discovery phase " aria-current="page">Risk assessment calculator</span>
+                            <span class="breadcrumb__link breadcrumb__link--secondary" data-text="Assess Risk" aria-current="page">Assess risk</span>
                         </li>
                     </ol>
                 </nav>
-
+               
             </div>
         </div>
     </div>
@@ -258,6 +215,9 @@
             <!-- checking whether simulating doc in order to avoid console errors from NewsHub and EventHub docs -->
 
 
+
+
+
             <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide" aria-label="Document Header">
                 <div class="local-header article-header article-header--with-icon">
                     <div class="grid-wrapper">
@@ -265,9 +225,9 @@
                             <div class="grid-row">
                                 <div class="column--two-thirds column--reset">
 
-                                    <h1 id="top" class="local-header__title" data-uipath="document.title">Risk assessment calculator</h1>
+                                    <h1 id="top" class="local-header__title" data-uipath="document.title">Assess risk</h1>
                                     <div class="rich-text-content article-header__subtitle">
-                                        <p>Understand the level of risk with our online calculator.</p>
+                                        <p>Support and guidance to help you assess risks in your project.</p>
                                     </div>
                                 </div>
                             </div>
@@ -278,6 +238,64 @@
                     </div>
                 </div>
             </div>
+
+            <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide grid-wrapper--chapter-pagination">
+                <div class="chapter-pagination-wrapper">
+                    <div class="grid-wrapper">
+                        <div class="grid-row chapter-pagination-wrapper__skip visually-hidden">
+                            <div class="column column--reset">
+                                <a href="#document-content">???labels.skip-to-content???</a>
+                            </div>
+                        </div>
+
+                        <nav class="chapter-pagination" aria-label="Chapter Navigation">
+                            <ul class="chapter-pagination__list grid-row">
+                                <li class="chapter-pagination__list-item chapter-pagination-item--previous">
+                                    <p>
+                                        <span class="chapter-pagination__direction" aria-hidden="true">Identify risk</span>
+                                        <a class="chapter-pagination__link" href="identify-risk.html">
+                                            <span class="chapter-pagination__link-direction visually-hidden">Previous task chapters: </span>
+                                            <span class="chapter-pagination__link-arrow"><img aria-hidden="true" alt="Left Arrow" src="../content/images/left-arrow.svg"></span>
+                                            <!--
+                                    No space between elements -->
+                                            <span class="chapter-pagination__link-page">Previous</span>
+                                        </a>
+                                    </p>
+                                </li>
+                                <li class="chapter-pagination__list-item chapter-pagination-item--current column-one-third">
+                                    <p>
+                                        <span class="chapter-pagination__direction"> </span>
+                                        <a class="chapter-pagination__link" href="#chapter-index">
+                                            <span class="chapter-pagination__link-direction visually-hidden"></span>
+                                            <span class="chapter-pagination__link-arrow"><img aria-hidden="true" alt="Down Arrow" src="../content/images/down-arrow.svg"></span>
+                                            <!--
+                                    No space between elements -->
+                                            <span class="chapter-pagination__link-page">View chapters</span>
+                                        </a>
+                                    </p>
+
+                                </li>
+                                <li class="chapter-pagination__list-item chapter-pagination-item--next column-one-third">
+                                    <p>
+                                        <span class="chapter-pagination__direction" aria-hidden="true">
+                                            Create an action plan
+                                        </span>
+                                        <a class="chapter-pagination__link" href="create-action-plan.html">
+                                            <span class="chapter-pagination__link-direction visually-hidden">Create an action plan: </span>
+                                            <span class="chapter-pagination__link-page">Next</span>
+                                            <!--
+                                    No space between elements -->
+                                            <span class="chapter-pagination__link-arrow"><img aria-hidden="true" alt="Right Arrow" src="../content/images/right-arrow.svg"></span>
+                                        </a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+
 
             <div class="grid-wrapper grid-wrapper--article" aria-label="Document Content">
                 <div class="grid-row">
@@ -290,14 +308,20 @@
                                         <h2 class="article-section-nav__title">Page contents</h2>
                                         <nav>
                                             <ol class="article-section-nav__list">
-                                                <li>
+                                                 <li>
                                                     <a href="#top" aria-label="Scroll to 'Top of page'" title="Scroll to 'Top of page'" class=" ">Top of page</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#introduction" aria-label="Scroll to 'Section'" title="Scroll to 'Section'" class="active">Risk assessment calculator</a>
+                                                    <a href="#need" aria-label="Scroll to 'Section'" title="Scroll to 'Section'" class="active">Is there a need?</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#how-score" aria-label="Scroll to 'Section'" title="Scroll to 'Section'">Scoring risk</a>
+                                                    <a href="#when" aria-label="Scroll to 'Section'" title="Scroll to 'Section'">When to identify risk</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#how" aria-label="Scroll to 'Section'" title="Scroll to 'Section'">How to identify risk</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#dates" aria-label="Scroll to 'Dates'" title="Scroll to 'Dates'" class=" ">Page dates</a>
                                                 </li>
                                             </ol>
                                         </nav>
@@ -308,286 +332,112 @@
                         </div>
                     </div>
 
-
                     <div class="column column--two-thirds page-block page-block--main">
 
                         <div class="article-section">
 
-                            <div id="questionsarea" class="article-section">
-                                <h2>Think about a risk to your project</h2>
-                                <form class="eforms form" style="margin-top:0 !important">
+                            <div id="need" class="article-section">
+                                <h2>Is there a need?</h2>
 
-                                    <div id="page0" class="eforms-page conditionally-visible" style="margin-top:0">
-                                        <fieldset name="group_prefix" class="eforms-fieldgroup">
-                                            <legend class="eforms-fieldgroupname hide">Project</legend>
-
-                                            <div class="eforms-field">
-                                                <label for="group_prefix__Your_organisation" class="eforms-label bold">What is the risk? <span class="eforms-req"></span></label>
-                                                <input type="text" name="riskname" id="js-riskname" class="" autocomplete="off" value="" style="max-width: 30em;">
-                                                <div class="eforms-field__error-message visually-hidden"></div>
-                                                <span class="eforms-hint">This is only used to make your results readable and is not visible to anyone in NHS Digital.</span>
-                                            </div>
-
-                                        </fieldset>
-
-
-
-                                        <fieldset name="group_prefix" class="eforms-fieldgroup">
-                                            <legend class="eforms-fieldgroupname" style="margin: 0;">Likelihood</legend>
-
-                                            <div class="eforms-field">
-                                                <label class="eforms-label">
-                                                    How likely is it to cause a problem?<span class="eforms-req"></span>
-                                                </label>
-                                                <ul class="radiogroup" id="parent">
-
-                                                    <li>
-                                                        <label for="c1-0">
-                                                            <input type="radio" name="c1" id="c1-0" class="" value="1" checked>
-                                                            Rare
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label for="c1-1">
-                                                            <input type="radio" name="c1" id="c1-1" class="" value="2">
-                                                            Unlikely
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label for="c1-2">
-                                                            <input type="radio" name="c1" id="c1-2" class="" value="3">
-                                                            Possible
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label for="c1-3">
-                                                            <input type="radio" name="c1" id="c1-3" class="" value="4">
-                                                            Likely
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label for="c1-4">
-                                                            <input type="radio" name="c1" id="c1-4" class="" value="5">
-                                                            Certain
-                                                        </label>
-                                                    </li>
-
-                                                </ul>
-                                                <div class="eforms-field__error-message visually-hidden"></div>
-                                            </div>
-                                        </fieldset>
-
-                                        <fieldset name="group_prefix" class="eforms-fieldgroup">
-                                            <legend class="eforms-fieldgroupname" style="margin: 0;">Impact</legend>
-
-                                            <div class="eforms-field">
-                                                <label class="eforms-label">What impact could it have?<span class="eforms-req"></span></label>
-                                                <span class="eforms-hint">For example: could it cause financial issues or appear in the local news?</span>
-                                                <ul class="radiogroup" id="parent">
-
-                                                    <li>
-                                                        <label for="i-0">
-                                                            <input type="radio" name="i" id="i-0" class="" value="1" checked>
-                                                            Insignificant
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label for="i-1">
-                                                            <input type="radio" name="i" id="i-1" class="" value="2">
-                                                            Minor
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label for="i-2">
-                                                            <input type="radio" name="i" id="i-2" class="" value="3">
-                                                            Moderate
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label for="i-3">
-                                                            <input type="radio" name="i" id="i-3" class="" value="4">
-                                                            Major
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label for="i-4">
-                                                            <input type="radio" name="i" id="i-4" class="" value="5">
-                                                            Catastrophe
-                                                        </label>
-                                                    </li>
-
-                                                </ul>
-                                                <div class="eforms-field__error-message visually-hidden"></div>
-                                            </div>
-                                        </fieldset>
-                                    </div>
-
-                                    <div class="eforms-buttons">
-                                        <a class="button" value="Run assessment" id="btn-calculate">Calculate</a>
-                                    </div>
-
-                                </form>
-
-
-                            </div>
-                        </div>
-
-
-                        <div class="article-section hide" id="js-results">
-
-
-                            <div class="article-section">
-                                <h3>Assessment result</h3>
-                                <h2 class="js-score-main js-score-title" id="scoretitle"></h2>
-                                <p>The risk level for <strong id="risk-name"></strong> is 
-                                <strong class="js-score-title"></strong> and scores <strong>
-                                    <span class="score" id="score"></span>/25</strong> for risk.</p>
-
-                                <div class="emphasis-box emphasis-box-emphasis" aria-labelledby="emphasis-emphasis-493baba4">
-                                    <div class="emphasis-box__image">
-                                        <img src="../content/icons/warning.svg?colour=005EB8" alt="This is important" width="100" height="100">
-                                    </div>
-                                    <div class="emphasis-box__content" style="margin-top: 0;">
-                                        <strong role="heading" class="emphasis-box__heading" id="emphasis-emphasis-493baba4" data-uipath="website.contentblock.emphasis.heading">What to do next?</strong>
-                                        <div data-uipath="website.contentblock.emphasis.content">
-                                            <p class="hide" id="overallscore"></p>
-                                            <div>
-                                                <p class="score very-low">Well done! Your risk assessment means you don't have to take action.</p>
-                                                <p class="score low hide">A reasonable result, try to understand more about this risk.</p>
-                                                <p class="score medium hide">You should take some action to highlight the risk.</p>
-                                                <p class="score high hide">Not ideal, make sure you think about how you can reduce this risk.</p>
-                                                <p class="score very-high hide">You need to act! <a href="risk-process.html">Create a plan and record this risk</a>.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="article-section" id="how-score">
-                            <div>
                                 <div>
-                                    <h2>Scoring risk</h2>
-                                    <p>Without a way to score risk, teams would continually struggle to communicate about how to 
-                                    allocate resources appropriately in order to minimize costs and impact to our business.</p>
 
-                                    <p>Risk at NHS Digital is scored on a scale from 1 to 25. 1 is the lowest risk score, 25 is the highest risk score.</p>
-
-                                    <details>
-                                        <summary aria-expanded="false" aria-controls="details-content-1">
-                                            <span>See the full risk assessment matrix</span>
-                                        </summary>
-                                        <div class="details-body" aria-hidden="true" id="details-content-1">
-
-
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <td>&nbsp;</td>
-                                                <th colspan="5">Likelihood &rarr;</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                                <th>Impact &darr;</th>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>3</td>
-                                                <td>4</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td><span class="score-tag text-medium">Medium</span></td>
-                                                <td><span class="score-tag text-high">High</span></td>
-                                                <td><span class="score-tag text-very-high">Very high</span></td>
-                                                <td><span class="score-tag text-very-high">Very high</span></td>
-                                                <td><span class="score-tag text-very-high">Very high</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td><span class="score-tag text-medium">Medium</span></td>
-                                                <td><span class="score-tag text-medium">Medium</span></td>
-                                                <td><span class="score-tag text-high">High</span></td>
-                                                <td><span class="score-tag text-very-high">Very high</span></td>
-                                                <td><span class="score-tag text-very-high">Very high</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td><span class="score-tag text-low">Low</span></td>
-                                                <td><span class="score-tag text-medium">Medium</span></td>
-                                                <td><span class="score-tag text-medium">Medium</span></td>
-                                                <td><span class="score-tag text-high">High</span></td>
-                                                <td><span class="score-tag text-high">High</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td><span class="score-tag text-very-low">Very low</span></td>
-                                                <td><span class="score-tag text-low">Low</span></td>
-                                                <td><span class="score-tag text-low">Low</span></td>
-                                                <td><span class="score-tag text-medium">Medium</span></td>
-                                                <td><span class="score-tag text-medium">Medium</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>1</td>
-                                                <td><span class="score-tag text-very-low">Very low</span></td>
-                                                <td><span class="score-tag text-very-low">Very low</span></td>
-                                                <td><span class="score-tag text-very-low">Very low</span></td>
-                                                <td><span class="score-tag text-very-low">Very low</span></td>
-                                                <td><span class="score-tag text-very-low">Very low</span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    
-
-                                        </div>
-                                    </details>
-
+                                    <p>Risk identification is the critical first step of the <a href="risk-process.html">risk management process</a>. Its goal is early and continuous 
+                                    identification of risks.</p>
+                                    <p>Work with your team to identify the risks that threaten your delivery.</p>
+                                    <p>Before planning a risk strategy, first consider if you need to identify any risks at all. What is it you are 
+                                    working on that is risky? What would the impact be if you don't have a strategy?</p>
+                            
                                 </div>
+
                             </div>
                         </div>
 
-                    <div class="article-section" id="feedback">
-                        <div>
-                            <div>
-                                <h2>Help us improve</h2>
-                                <p>If you have problems with the information on this page, please contact the <a href="risk/index.html">Corporate risk management </a> team.</p>
+                        <div class="article-section">
+
+                            <div id="need" class="article-section">
+                                <h2>When to identify risk?</h2>
+
+                                <div>
+                                    <p>Risk exposure is highest at the start of a project. Uncertainty is high because there is less information 
+                                    in the beginning of projects.</p>
+
+                                    <h3>Identify risks:</h3>
+                                    <ul>
+                                        <li>Early in the project
+                                        <li>As an iteration
+                                        <li>On a consistent frequency such as weekly
+                                        <li>When change control is happening
+                                        <li>When reaching major milestones
+                                    </ul>
+                                    
+                                    <h3>For agile projects, consider some extra times for identifying risks:</h3>
+                                    <ul>
+                                        <li>Sprint planning
+                                        <li>Release planning
+                                        <li>Daily standup meetings
+                                        <li>Before each sprint
+                                    </ul>
+                            
+                                </div>
+
                             </div>
                         </div>
-                    </div>
 
-                    <div class="article-section" id="dates">
-                        <h2>Dates</h2>
-                        <div class="detail-list-grid detail-list-grid--regular">
-                            <dl class="detail-list">
-                                <dt class="detail-list__key">Review date:</dt>
-                                <dd class="detail-list__value">21 August 2020</dd>
-                            </dl>
+                        <div class="article-section">
 
-                            <dl class="detail-list">
-                                <dt class="detail-list__key">Last modified:</dt>
-                                <dd class="detail-list__value">
-                                    22 June 2020 5:14 pm
-                                </dd>
-                            </dl>
+                            <div id="how" class="article-section">
+                                <h2>How to identify risk</h2>
+
+                                <div>
+                                    <h3>The Bowtie method</h3>
+                                    <p>This is a method to help identify risk.</p>
+                                    <ul>
+                                        <li>Scope – think about cause the event itself and the impact it might have
+                                        <li>Perspective – what does the landscape look like? What is the focus?
+                                        <li>Story – think about the cause of the event, why did it happen or could it happen?
+                                        <li>Impact – other projects or triggers that your project depends on, or are a beneficiary of your project outcomes.
+                                    </ul>
+                                    <p><a href="#">Find out more about the Bowtie method</a></p>
+                                    <p><a href="#">Download the Bowtie template</a></p>
+                            
+                                </div>
+
+                            </div>
                         </div>
+
+
+                        <div class="article-section" id="dates">
+                            <h2>Dates</h2>
+                            <div class="detail-list-grid detail-list-grid--regular">
+                                <dl class="detail-list">
+                                    <dt class="detail-list__key">Review date:</dt>
+                                    <dd class="detail-list__value">21 August 2020</dd>
+                                </dl>
+
+                                <dl class="detail-list">
+                                    <dt class="detail-list__key">Last modified:</dt>
+                                    <dd class="detail-list__value">
+                                        22 June 2020 5:14 pm
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+
                     </div>
-                    <div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1002px; height: 839px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div>
+
+
+                    </div>
                 </div>
-
-            </div>
-
             </div>
 
 
-            <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide  visually-hidden" id="chapter-index">
+            <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide" id="chapter-index">
                 <div class="chapter-nav">
                     <div class="grid-wrapper">
 
                         <div class="grid-row">
                             <div class="column column--reset">
-                                <h2 class="chapter-nav__title">Task chapters</h2>
+                                <h2 class="chapter-nav__title">The risk process chapters</h2>
                             </div>
                         </div>
 
@@ -595,16 +445,16 @@
                             <div class="column column--one-half column--left">
                                 <ol class="list list--reset cta-list chapter-index">
                                     <li class="chapter-index__item">
-                                        <a class="chapter-index__link" href="../pages/task-page-general" title="Overall Task Page With Children">Overall Task Page With Children</a>
+                                        <a class="chapter-index__link" href="risk-process.html" title="The risk process overview">The risk process overview</a>
+                                    </li>
+                                    <li class="chapter-index__item chapter-index__item--current">
+                                        <p class="chapter-index__current-item">Identify risk</p>
                                     </li>
                                     <li class="chapter-index__item">
-                                        <a class="chapter-index__link" href="../pages/task-page-buttons" title="Examples of buttons">Examples of buttons</a>
+                                        <a class="chapter-index__link" href="assess-risk.html" title="Assess a risk ">Assess risk</a>
                                     </li>
                                     <li class="chapter-index__item">
-                                        <a class="chapter-index__link" href="../pages/task-page-sections-" title="Examples of the section ">Examples of the section </a>
-                                    </li>
-                                    <li class="chapter-index__item">
-                                        <a class="chapter-index__link" href="../pages/task-page-emphasis-box-" title="Emphasis box examples">Emphasis box examples</a>
+                                        <a class="chapter-index__link" href="create-action-plan.html" title="Create an action plan">Create an action plan</a>
                                     </li>
                                 </ol>
                             </div>
@@ -612,13 +462,13 @@
                             <div class="column column--one-half column--right">
                                 <ol class="list list--reset cta-list chapter-index" start="5">
                                     <li class="chapter-index__item">
-                                        <a class="chapter-index__link" href="../pages/task-page-check-list-" title="Task Page Check Lists Examples">Task Page Check Lists Examples</a>
-                                    </li>
-                                    <li class="chapter-index__item chapter-index__item--current">
-                                        <p class="chapter-index__current-item">Page </p>
+                                        <a class="chapter-index__link" href="record-risk.html" title="Record a risk">Record a risk</a>
                                     </li>
                                     <li class="chapter-index__item">
-                                        <a class="chapter-index__link" href="../pages/task-page-gallery-" title="Task Page Gallery Items Title">Task Page Gallery Items Title</a>
+                                        <a class="chapter-index__link" href="#" title="Monitor risk">Monitor risk</a>
+                                    </li>
+                                    <li class="chapter-index__item">
+                                        <a class="chapter-index__link" href="#" title="Close a risk">Close a risk</a>
                                     </li>
                                 </ol>
                             </div>
@@ -626,6 +476,7 @@
                     </div>
                 </div>
             </div>
+
         </article>
     </main>
 
@@ -688,128 +539,6 @@
         </div>
     </footer>
 
-    <script>window.addEventListener("load", function () {
-            var risk_name = "Area of concern";
-            var cache_available = false;
-            var count_answers = 0;
-
-            if (localStorage.getItem("risk_name") != null) {
-                // we have data
-                risk_name = localStorage.getItem("risk_name");
-                if (risk_name != null && risk_name.length > 0) {
-                    cache_available = true;
-                    $("#js-riskname").val(risk_name);
-                    count_answers = load_questions("c1", "i1");
-                }
-
-            };
-
-            $("#btn-calculate").on("click", function () {
-                if ($("#js-riskname").val().length > 0) {
-                    risk_name = $("#js-riskname").val();
-                    localStorage.setItem("risk_name", risk_name);
-                    save_questions("c1", "i");
-
-                };
-
-                $("#js-results").removeClass("hide");
-
-                var section = $("#js-results");
-                $('html,body').animate({ scrollTop: section.offset().top }, 'slow');
-
-
-                var overall_score = 0;
-
-                $("#risk-name").text(risk_name);
-                var value = getRadioValues("c1", "i");
-                $("#score").text(value.toFixed());
-                var scoreclass = getScorename(value).replace(/\s+/g, '-').toLowerCase();
-                $("#score").removeClass(function (index, className) {
-                    return (className.match(/\btext-\S+/g) || []).join(' ');
-                });
-                $("#score").addClass('text-' + scoreclass);
-                var scoretitle = getScorename(value);
-                $(".js-score-title").html(scoretitle);
-                $(".js-score-main").removeClass(function (index, className) {
-                    return (className.match(/\btext-\S+/g) || []).join(' ');
-                });
-                $(".js-score-main").addClass('text-' + scoreclass);
-
-
-                $("#overallscore").removeClass("hide");
-
-                $("p.score").addClass("hide");
-                $("p." + scoreclass).removeClass("hide");
-
-            });
-
-
-            if (cache_available == true) {
-                $("#btn-calculate").trigger("click");
-
-            }
-
-            function setRadioValue(name1, val1) {
-                return $("input[name='" + name1 + "'][value = " + val1 + "]").prop('checked', true);
-            }
-
-            function getRadioValue(name1) {
-                return $("input[name='" + name1 + "']:checked").val();
-            }
-
-            function getRadioValues(name1, name2) {
-                var value1 = 0;
-                var value2 = 0;
-                if (name1 != null && name1.length > 0) {
-                    value1 = $("input[name='" + name1 + "']:checked").val();
-                }
-                if (name2 != null && name2.length > 0) {
-                    value2 = parseInt($("input[name='" + name2 + "']:checked").val());
-                }
-
-                return value1 * value2;
-            }
-
-            function getScorename(value) {
-                var scorename = "Very low";
-                if (value >= 7) {
-                    scorename = "Low";
-                }
-                if (value >= 10) {
-                    scorename = "Medium";
-                }
-                if (value >= 17) {
-                    scorename = "High";
-                }
-                if (value >= 21) {
-                    scorename = "Very high";
-                }
-                return scorename;
-            }
-
-            function load_questions(saved1, saved2) {
-                var numloaded = 0;
-                if (localStorage.getItem(saved1) != null) {
-                    setRadioValue(saved1, localStorage.getItem(saved1));
-                    numloaded++;
-                }
-                if (localStorage.getItem(saved2) != null) {
-                    setRadioValue(saved2, localStorage.getItem(saved2));
-                    numloaded++;
-                }
-                return numloaded;
-            }
-
-            function save_questions(saved1, saved2) {
-
-                localStorage.setItem(saved1, getRadioValue(saved1));
-                localStorage.setItem(saved2, getRadioValue(saved2));
-
-            }
-
-
-
-        });</script>
 </body>
 
 </html>
