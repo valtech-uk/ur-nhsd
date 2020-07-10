@@ -3,18 +3,17 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="cpmo/contact-cpmo.html">
     <Files>
       <File FileName="cpmo/standards-and-investment-team.html" Line="386" Column="51" />
-      <File FileName="cpmo/pre-discovery-phase.html" Line="493" Column="47" />
-      <File FileName="cpmo/discovery-phase.html" Line="8" Column="73" />
+      <File FileName="cpmo/pre-discovery-phase.html" />
+      <File FileName="cpmo/discovery-phase.html" />
       <File FileName="cpmo/private-beta.html" />
-      <File FileName="cpmo/alpha-phase.html" Line="1" Column="1" />
-      <File FileName="cpmo/lessons-learned.html" Line="789" Column="25" />
-      <File FileName="cpmo/new-work-commission-process.html" Line="269" Column="393" />
+      <File FileName="cpmo/alpha-phase.html" />
+      <File FileName="cpmo/new-work-commission-process.html" />
       <File FileName="content/css/nhsd-intranet.css" />
-      <File FileName="cpmo/board-dates.html" Line="779" Column="62" />
-      <File FileName="cpmo/index.html" Line="381" Column="101" />
-      <File FileName="cpmo/lifecycle-diagram.html" Line="915" Column="85" />
-      <File FileName="cpmo/chapter.html" Line="584" Column="1" />
-      <File FileName="cpmo/contact-cpmo.html" Line="1" Column="1" />
+      <File FileName="cpmo/board-dates.html" />
+      <File FileName="cpmo/index.html" />
+      <File FileName="cpmo/lifecycle-diagram.html" />
+      <File FileName="cpmo/chapter.html" />
+      <File FileName="cpmo/contact-cpmo.html" Line="382" Column="100" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
