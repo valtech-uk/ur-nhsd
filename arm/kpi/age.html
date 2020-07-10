@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Generic meta tags -->
+    <title>Intranet - Org2</title>
+    <meta name="title" content="Intranet - Org2" />
+    
+
+    <link rel="preload" href="../../content/fonts/FrutigerLTW01-55Roman.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../content/fonts/FrutigerLTW01-56Italic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../content/fonts/FrutigerLTW01-65Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../content/fonts/FrutigerLTW01-66BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+
+    <meta name="theme-color" content="#ffffff">
+
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="../../content/css/nhsuk.css" type="text/css" />
+    <!--<![endif]-->
+    <!--[if IE 6]>
+    <link rel="stylesheet" href="../../content/css/nhsuk-ie6.css" media="screen" type="text/css"/>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="../../content/css/nhsuk-ie7.css" media="screen" type="text/css"/>
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" href="../../content/css/nhsuk-ie8.css" media="screen" type="text/css"/>
+    <![endif]-->
+
+    <link rel="stylesheet" href="../../content/css/custom.css" type="text/css" />
+
+    <script src="../../content/js/jquery.js"></script>
+    <!--<script defer src="../../content/js/breadcrumbs.js"></script>-->
+    <script defer src="../../content/js/highlighter-copy-button.js"></script>
+    <script defer src="../../content/js/aria.js"></script>
+    <script defer src="../../content/js/details-element-polyfill.js"></script>
+<script src="../../content/js/custom.js"></script>
+
+
+</head>
+
+<body class="debugs">
+    <a href="#main-content" class="nhsd-skip-link">Skip to main content</a>
+    <header class="site-header" id="header">
+        <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide">
+            <div class="grid-row">
+                <div class="column column--reset">
+                    <div class="grid-wrapper grid-wrapper--collapse">
+                        <div class="grid-row">
+                            <div class="column column--18-75 column--reset" id="logo-container">
+                                <a class="site-header-a__logo" href="../search/home.html"><img src="../../content/images/nhs-digital-logo.svg" alt="NHS Digital logo" class="site-header__logo"/></a>
+                                <a class="intranet-logo" href="../search/home.html"><img src="../../content/images/intranet-logo.png"/></a>
+                            </div>
+
+
+                            <div class="main-nav">
+                                <div class="main-nav__burger" id="navToggle">
+                                    <button class="main-nav__burger-button" aria-label="Navigation menu">
+                                        <span class="main-nav__burger-line">&nbsp;</span>
+                                        <span class="main-nav__burger-line">&nbsp;</span>
+                                        <span class="main-nav__burger-line">&nbsp;</span>
+                                    </button>
+                                </div>
+
+                                <div class="column column--81-25  column--reset">
+                                    <div class="main-nav__menu">
+                                        <div class="site-header__search-wrapper">
+
+                                            <form role="search" method="get" action=/search class="search-strip" aria-label="???search-banner.title???" id="search">
+                                                <div class="search-strip__contents">
+                                                    <div class="search-strip__table-cell">
+                                                        <input type="text" name="query" id="query" class="search-strip__input" placeholder="Search" value="" aria-label="Search">
+                                                        <label for="query" class="visually-hidden">Search</label>
+                                                    </div>
+                                                    <div class="search-strip__table-cell search-strip__table-cell--button">
+                                                        <button data-uipath="search.button" class="search-strip__button" aria-label="Search">
+                                                            <img src="../../content/images/icon-search-white.png" alt="Magnifying glass" />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+
+                                        <nav>
+                                            <ol class="list list--reset list--inline">
+                                                <li class="active"><a href="../pages/task-list.html">Tasks</a></li>
+                                                <li class="active"><a href="../pages/team-list.html" class="active">Teams and networks</a></li>
+                                                <li><a href="#">News, events and blogs</a></li>
+                                                <li><a href="#">Collaborate</a></li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script>(function () {
+            var oldBrowser = window.addEventListener ? false : true;
+            var $header = document.getElementById('header');
+            var $nav = document.getElementById('nav');
+            var $navToggle = document.getElementById('navToggle');
+
+            function handleToggleClick() {
+                if ($header.className.indexOf('menu-open') >= 0) {
+                    $header.className = $header.className.replace('menu-open', '');
+                } else {
+                    $header.className += ' menu-open';
+                }
+                $header.className = $header.className.replace(/^\s+|\s+$/g, '');
+            }
+
+            function init() {
+                if (!oldBrowser) {
+                    $navToggle.addEventListener('click', handleToggleClick);
+                    window.addEventListener('resize', onResize);
+                } else {
+                    $navToggle.attachEvent('onclick', handleToggleClick);
+                    window.attachEvent('onresize', onResize);
+                }
+            }
+
+            function onResize() {
+                if (window.innerWidth > 1024 && $header.className.indexOf('menu-open') >= 0) {
+                    handleToggleClick();
+                }
+            }
+            init();
+        }())</script>
+
+
+
+
+
+
+    <div class="grid-wrapper">
+        <div class="grid-row">
+            <div class="column column--reset">
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb__crumb">
+                            <a href="../search/home.html" class="breadcrumb__link" data-text="NHS Digital">Intranet</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true" />
+                            <a href="../pages/team-list.html" class="breadcrumb__link" data-text="Systems and services">Teams and networks</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true" />
+                            <a href="cp-and-a-team.html" class="breadcrumb__link" data-text="Systems and services">Corporate performance &amp; analysis</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true" />
+                            <a href="kpi-summary.html" class="breadcrumb__link breadcrumb__link--secondary"  aria-current="page">Key performance indicators</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true" />
+                            <a href="workforce.html" class="breadcrumb__link breadcrumb__link--secondary" aria-current="page">Workforce</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true" />
+                            <a href="diversity.html" class="breadcrumb__link breadcrumb__link--secondary" aria-current="page">Diversity</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true" />
+                            <span class="breadcrumb__link breadcrumb__link--secondary" aria-current="page">Age</span>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content">
+
+        <article class="article article--service">
+
+            <div class="grid-wrapper grid-wrapper--article">
+
+                <div class="grid-row">
+
+                    <div class="column column--two-thirds page-block page-block--main">
+                        <div class="article-section">
+                            <div class="nhsuk-back-link">
+                                <a class="nhsuk-back-link__link" href="diversity.html">
+                                    <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                                    </svg>
+                                    Go back to Diversity</a>
+                            </div>
+
+                           
+
+                            <h1>Age</h1>
+                            <p>This page shows information about how our Workforce age KPI is currently performing.</p>
+
+                            <div class="nhsuk-review-date">
+                                <p class="nhsuk-body-s">
+                                    Last reviewed: 6 February 2020<br>
+                                    Next review due: 6 August 2020
+                                </p>
+                            </div>
+
+                            
+
+                            <dl class="nhsuk-summary-list">
+
+                                <div class="nhsuk-summary-list__row">
+                                    <dt class="nhsuk-summary-list__key">Owner</dt>
+                                    <dd class="nhsuk-summary-list__value"><a href="#">Julie Pinder</a></dd>
+                                </div>
+
+                                <div class="nhsuk-summary-list__row">
+                                    <dt class="nhsuk-summary-list__key">Summary</dt>
+                                    <dd class="nhsuk-summary-list__value">
+                                        <p>
+                                        Our Academy strategy will work towards changing the age demographic alongside the work we are 
+                                        doing to reach out into the education system and work with students from a younger age.
+                                        </p>
+                                    </dd>
+                                </div>
+                            </dl>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-wrapper grid-wrapper--article">
+                <h2>Percentage of people by salary bands</h2>
+                <div class="grid-row">
+                    <div class="column column--one-quarter">
+                        <h3>Personal salary</h3>
+                        <div id="age-personal" class="chart" style="width:100%; height:300px;"></div>
+                    </div>
+
+                    <div class="column column--one-quarter">
+                        <h3>Medical</h3>
+                        <div id="age-medical" class="chart" style="width:100%; height:300px;"></div>
+                    </div>
+
+                    <div class="column column--one-quarter">
+                        <h3>ESM 1-3</h3>
+                        <div id="age-esm" class="chart" style="width:100%; height:300px;"></div>
+                    </div>
+
+                    <div class="column column--one-quarter">
+                        <h3>Band 9</h3>
+                        <div id="age-9" class="chart" style="width:100%; height:300px;"></div>
+                    </div>
+
+                    <div class="column column--one-quarter">
+                        <h3>Band 8D</h3>
+                        <div id="age-8d" class="chart" style="width:100%; height:300px;"></div>
+                    </div>
+
+                    <div class="column column--one-quarter">
+                        <h3>Band 8C</h3>
+                        <div id="age-8c" class="chart" style="width:100%; height:300px;"></div>
+                    </div>
+
+                    <div class="column column--one-quarter">
+                        <h3>Band 8B</h3>
+                        <div id="age-8b" class="chart" style="width:100%; height:300px;"></div>
+                    </div>
+
+                    <div class="column column--one-quarter">
+                        <h3>Band 8A</h3>
+                        <div id="age-8a" class="chart" style="width:100%; height:300px;"></div>
+                    </div>
+
+                    <div class="column column--one-quarter">
+                        <h3>Band 7</h3>
+                        <div id="age-7" class="chart" style="width:100%; height:300px;"></div>
+                    </div>
+
+                    <div class="column column--one-quarter">
+                        <h3>Band 6</h3>
+                        <div id="age-6" class="chart" style="width:100%; height:300px;"></div>
+                    </div>
+
+                    <div class="column column--one-quarter">
+                        <h3>Band 5</h3>
+                        <div id="age-5" class="chart" style="width:100%; height:300px;"></div>
+                    </div>
+
+                    <div class="column column--one-quarter">
+                        <h3>Band 4</h3>
+                        <div id="age-4" class="chart" style="width:100%; height:300px;"></div>
+                    </div>
+
+                    <div class="column column--one-quarter">
+                        <h3>Band 3</h3>
+                        <div id="age-3" class="chart" style="width:100%; height:300px;"></div>
+                    </div>
+
+                    <div class="column column--one-quarter">
+                        <h3>Band 2</h3>
+                        <div id="age-2" class="chart" style="width:100%; height:300px;"></div>
+                    </div>
+
+                    <div class="column column--one-quarter">
+                        <h3>Band (blank)</h3>
+                        <div id="age-blank" class="chart" style="width:100%; height:300px;"></div>
+                    </div>
+
+                    <div class="column column--one-quarter">
+                        <h3>Other</h3>
+                        <div id="age-other" class="chart" style="width:100%; height:300px;"></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <div class="grid-wrapper grid-wrapper--article">
+
+  
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <hr />
+            <br>
+            <div class="grid-row">
+                <div class="column column--one-half">
+                    <h2>Help us improve</h2>
+                    <p>If you have problems with the information on this page, please contact the <a href="cp-and-a-team.html">corporate performance and analysis</a> team.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+
+    <footer class="site-footer white-links" id="footer">
+        <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide">
+            <div class="grid-row">
+                <div class="column column--reset">
+
+                    <div class="site-footer__section site-footer__section--top">
+                        <div class="grid-wrapper grid-wrapper--collapse">
+                            <div class="grid-row">
+                                <div class="column column--three-quarters column--left">
+                                    <nav class="site-footer__menu site-footer__menu--1">
+                                        <h2 class="list__header">About NHS Digital</h2>
+                                        <ul class="list list--reset list--close">
+                                            <li><a href="/about-nhs-digital">About us</a></li>
+                                            <li><a href="/about-nhs-digital/corporate-information-and-documents/our-strategy">Our strategy</a></li>
+                                            <li><a href="/about-nhs-digital/corporate-information-and-documents/nhs-digital-s-annual-reports-and-accounts">Annual report and accounts</a></li>
+                                            <li><a href="/about-nhs-digital/corporate-information-and-documents/nhs-digital-business-plan-2018--19">Our business plan</a></li>
+                                            <li><a href="/news-and-events">News and events</a></li>
+                                            <li><a href="/about-nhs-digital/our-work/keeping-patient-data-safe/how-we-look-after-your-health-and-care-information">How we look after your information</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                                <div class="column column--one-quarter column--right">
+                                    <nav class="site-footer__menu site-footer__menu--3">
+                                        <ul class="list list--reset list--close">
+                                            <li><a href="/about-nhs-digital/contact-us">Contact us</a></li>
+                                            <li><a href="/news-and-events/press-office">Press office</a></li>
+                                            <li><a href="/about-nhs-digital/contact-us/freedom-of-information">Freedom of information</a></li>
+                                            <li><a href="/about-nhs-digital/careers">Careers</a></li>
+                                            <li class="last-item"><a href="/forms/tell-us-what-you-think-of-our-website" title="Provide website feedback">Tell us what you think of our website</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="site-footer__section site-footer__section--bottom">
+                        <div class="grid-wrapper grid-wrapper--collapse">
+                            <div class="grid-row">
+                                <div class="column column--left">
+                                    <nav class="site-footer__menu site-footer__menu--4">
+                                        <ul class="list list--inline list--reset">
+                                            <li><a href="/about-nhs-digital/privacy-and-cookies">Privacy and cookies</a></li>
+                                            <li><a href="/about-nhs-digital/terms-and-conditions">Terms and conditions</a></li>
+                                            <li><a href="/about-nhs-digital/accessibility">Accessibility</a></li>
+                                            <li><a href="javascript:Cookiebot.renew()">Cookie consent</a></li>
+                                        </ul>
+                                    </nav>
+
+                                    <div class="site-footer__menu site-footer__menu--5">
+                                        <ul class="list list--inline list--reset">
+                                            <li>
+                                                <a href="https://www.linkedin.com/company/nhs-digital" onClick="logGoogleAnalyticsEvent('Link click', 'Footer', 'https://www.linkedin.com/company/nhs-digital')" onKeyUp="return vjsu.onKeyUp(event)">
+                                                    <img src="../../content/images/icon-linkedin.png" alt="LinkedIn logo" class="image-icon" /><span>LinkedIn</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://twitter.com/NHSDigital" onClick="logGoogleAnalyticsEvent('Link click', 'Footer', 'https://twitter.com/NHSDigital')" onKeyUp="return vjsu.onKeyUp(event)">
+                                                    <img src="../../content/images/icon-twitter.png" alt="Twitter logo" class="image-icon" /><span>Twitter</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    var ageChart1 = Highcharts.chart('age-personal', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Personal salary by age'
+        },
+        xAxis: {
+            categories: ['16-24', '25-34', '35-49', '50-64', '65', 'Unknown']
+        },
+        yAxis: {
+            title: {
+                text: '% Percentage'
+            }
+        },
+        series: [{
+            name: 'Age',
+            data: [0, 0, 50, 50, 0, 0]
+        }]
+    });
+
+    var ageChart2 = Highcharts.chart('age-other', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Other salary by age'
+        },
+        xAxis: {
+            categories: ['16-24', '25-34', '35-49', '50-64', '65', 'Unknown']
+        },
+        yAxis: {
+            title: {
+                text: '% Percentage'
+            }
+        },
+        series: [{
+            name: 'Age',
+            data: [0, 0, 39.1, 47.8, 13.1, 0]
+        }]
+    });
+
+    var ageChart3 = Highcharts.chart('age-medical', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Medical salary by age'
+        },
+        xAxis: {
+            categories: ['16-24', '25-34', '35-49', '50-64', '65', 'Unknown']
+        },
+        yAxis: {
+            title: {
+                text: '% Percentage'
+            }
+        },
+        series: [{
+            name: 'Age',
+            data: [0, 0, 25, 25, 50, 0]
+        }]
+    });
+
+    var ageChart4 = Highcharts.chart('age-esm', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'ESM 1-3 by age'
+        },
+        xAxis: {
+            categories: ['16-24', '25-34', '35-49', '50-64', '65', 'Unknown']
+        },
+        yAxis: {
+            title: {
+                text: '% Percentage'
+            }
+        },
+        series: [{
+            name: 'Age',
+            data: [0, 0, 58.8, 41.2, 0, 0]
+        }]
+    });
+
+    var ageChart5 = Highcharts.chart('age-9', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Salary band 9 by age'
+        },
+        xAxis: {
+            categories: ['16-24', '25-34', '35-49', '50-64', '65', 'Unknown']
+        },
+        yAxis: {
+            title: {
+                text: '% Percentage'
+            }
+        },
+        series: [{
+            name: 'Age',
+            data: [0, 0, 63.6, 34.1, 2.3, 0]
+        }]
+    });
+
+    var ageChart6 = Highcharts.chart('age-8d', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Age'
+        },
+        xAxis: {
+            categories: ['16-24', '25-34', '35-49', '50-64', '65', 'Unknown']
+        },
+        yAxis: {
+            title: {
+                text: '% Percentage'
+            }
+        },
+        series: [{
+            name: 'Age',
+            data: [0, 0, 50, 50, 0, 0]
+        }]
+    });
+
+    var ageChart7 = Highcharts.chart('age-8c', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Age'
+        },
+        xAxis: {
+            categories: ['16-24', '25-34', '35-49', '50-64', '65', 'Unknown']
+        },
+        yAxis: {
+            title: {
+                text: '% Percentage'
+            }
+        },
+        series: [{
+            name: 'Age',
+            data: [0, 0, 50, 50, 0, 0]
+        }]
+    });
+
+    var ageChart8 = Highcharts.chart('age-8b', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Age'
+        },
+        xAxis: {
+            categories: ['16-24', '25-34', '35-49', '50-64', '65', 'Unknown']
+        },
+        yAxis: {
+            title: {
+                text: '% Percentage'
+            }
+        },
+        series: [{
+            name: 'Age',
+            data: [0, 0, 50, 50, 0, 0]
+        }]
+    });
+
+    var ageChart9 = Highcharts.chart('age-8a', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Age'
+        },
+        xAxis: {
+            categories: ['16-24', '25-34', '35-49', '50-64', '65', 'Unknown']
+        },
+        yAxis: {
+            title: {
+                text: '% Percentage'
+            }
+        },
+        series: [{
+            name: 'Age',
+            data: [0, 0, 50, 50, 0, 0]
+        }]
+    });
+
+    var ageChart10 = Highcharts.chart('age-7', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Age'
+        },
+        xAxis: {
+            categories: ['16-24', '25-34', '35-49', '50-64', '65', 'Unknown']
+        },
+        yAxis: {
+            title: {
+                text: '% Percentage'
+            }
+        },
+        series: [{
+            name: 'Age',
+            data: [0, 0, 50, 50, 0, 0]
+        }]
+    });
+
+    var ageChart11 = Highcharts.chart('age-6', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Age'
+        },
+        xAxis: {
+            categories: ['16-24', '25-34', '35-49', '50-64', '65', 'Unknown']
+        },
+        yAxis: {
+            title: {
+                text: '% Percentage'
+            }
+        },
+        series: [{
+            name: 'Age',
+            data: [0, 0, 50, 50, 0, 0]
+        }]
+    });
+
+    var ageChart12 = Highcharts.chart('age-5', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Age'
+        },
+        xAxis: {
+            categories: ['16-24', '25-34', '35-49', '50-64', '65', 'Unknown']
+        },
+        yAxis: {
+            title: {
+                text: '% Percentage'
+            }
+        },
+        series: [{
+            name: 'Age',
+            data: [0, 0, 50, 50, 0, 0]
+        }]
+    });
+
+    var ageChart13 = Highcharts.chart('age-4', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Age'
+        },
+        xAxis: {
+            categories: ['16-24', '25-34', '35-49', '50-64', '65', 'Unknown']
+        },
+        yAxis: {
+            title: {
+                text: '% Percentage'
+            }
+        },
+        series: [{
+            name: 'Age',
+            data: [0, 0, 50, 50, 0, 0]
+        }]
+    });
+
+    var ageChart14 = Highcharts.chart('age-3', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Age'
+        },
+        xAxis: {
+            categories: ['16-24', '25-34', '35-49', '50-64', '65', 'Unknown']
+        },
+        yAxis: {
+            title: {
+                text: '% Percentage'
+            }
+        },
+        series: [{
+            name: 'Age',
+            data: [0, 0, 50, 50, 0, 0]
+        }]
+    });
+
+    var ageChart15 = Highcharts.chart('age-2', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Age'
+        },
+        xAxis: {
+            categories: ['16-24', '25-34', '35-49', '50-64', '65', 'Unknown']
+        },
+        yAxis: {
+            title: {
+                text: '% Percentage'
+            }
+        },
+        series: [{
+            name: 'Age',
+            data: [0, 0, 50, 50, 0, 0]
+        }]
+    });
+
+    var ageChart16 = Highcharts.chart('age-blank', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Age'
+        },
+        xAxis: {
+            categories: ['16-24', '25-34', '35-49', '50-64', '65', 'Unknown']
+        },
+        yAxis: {
+            title: {
+                text: '% Percentage'
+            }
+        },
+        series: [{
+            name: 'Age',
+            data: [0, 0, 50, 50, 0, 0]
+        }]
+    });
+
+});
+</script>
+    
+
+   
+
+</body>
+
+</html>
