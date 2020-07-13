@@ -1,29 +1,23 @@
 ﻿<Properties StartupConfiguration="{5E15779D-0DA0-4C97-A83C-35C6679B2E0C}|Default">
   <MonoDevelop.Ide.ItemProperties.ur-nhsd-1 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="risk/assess-risk-2.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="arm/cpmo/index.html">
     <Files>
-      <File FileName="cpmo/standards-and-investment-team.html" Line="386" Column="51" />
-      <File FileName="cpmo/pre-discovery-phase.html" />
-      <File FileName="cpmo/discovery-phase.html" Line="1" Column="1" />
-      <File FileName="cpmo/private-beta.html" />
-      <File FileName="cpmo/alpha-phase.html" />
-      <File FileName="cpmo/new-work-commission-process.html" />
-      <File FileName="content/css/nhsd-intranet.css" />
-      <File FileName="cpmo/board-dates.html" />
-      <File FileName="cpmo/index.html" />
-      <File FileName="cpmo/lifecycle-diagram.html" />
-      <File FileName="cpmo/chapter.html" />
-      <File FileName="cpmo/contact-cpmo.html" />
-      <File FileName="risk/assess-risk-2.html" Line="534" Column="56" />
+      <File FileName="content/css/nhsd-intranet.css" Line="1" Column="1" />
+      <File FileName="arm/cpmo/index.html" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ur-nhsd" expanded="True">
             <Node name="ur-nhsd-1" expanded="True">
-              <Node name="cpmo" expanded="True" />
-              <Node name="risk" expanded="True">
-                <Node name="assess-risk-2.html" selected="True" />
+              <Node name="arm" expanded="True">
+                <Node name="cpmo" expanded="True">
+                  <Node name="index.html" selected="True" />
+                </Node>
+                <Node name="risk" expanded="True" />
+              </Node>
+              <Node name="content" expanded="True">
+                <Node name="css" expanded="True" />
               </Node>
             </Node>
           </Node>
