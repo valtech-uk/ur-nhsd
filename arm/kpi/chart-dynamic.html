@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Generic meta tags -->
+    <title>Intranet - Org2</title>
+    <meta name="title" content="Intranet - Org2" />
+    
+
+    <link rel="preload" href="../../content/fonts/FrutigerLTW01-55Roman.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../content/fonts/FrutigerLTW01-56Italic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../content/fonts/FrutigerLTW01-65Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../content/fonts/FrutigerLTW01-66BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+
+    <meta name="theme-color" content="#ffffff">
+
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="../../content/css/nhsuk.css" type="text/css" />
+    <!--<![endif]-->
+    <!--[if IE 6]>
+    <link rel="stylesheet" href="../../content/css/nhsuk-ie6.css" media="screen" type="text/css"/>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="../../content/css/nhsuk-ie7.css" media="screen" type="text/css"/>
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" href="../../content/css/nhsuk-ie8.css" media="screen" type="text/css"/>
+    <![endif]-->
+
+    <link rel="stylesheet" href="../../content/css/custom.css" type="text/css" />
+
+    <script src="../../content/js/jquery.js"></script>
+    <script defer src="../../content/js/breadcrumbs.js"></script>
+    <script defer src="../../content/js/highlighter-copy-button.js"></script>
+    <script defer src="../../content/js/aria.js"></script>
+    <script defer src="../../content/js/details-element-polyfill.js"></script>
+<script src="../../content/js/custom.js"></script>
+
+<script>
+$(function () {
+        //create a variable so we can pass the values dynamically
+        var chartype         = 'bar';
+        var chartTitle        = 'Browser Chart';
+        var    chartCategories = ['Africa', 'America', 'Asia', 'Europe', 'Oceania'];
+        var chartData        = [{name: 'Year 1800',data: [107, 31, 635, 203, 2]}, {name: 'Year 1900',data: [133, 156, 947, 408, 6]}, {name: 'Year 2008',data: [973, 914, 4054, 732, 34]}];
+        //On page load call the function setDynamicChart and pass the variables
+        setDynamicChart(chartype, chartTitle, chartCategories, chartData);
+        //jQuery part - On Click call the function setDynamicChart(dynval) and pass title, chart type, category, data
+        $('.option').click(function(){
+            //get the value from 'a' tag
+            var chartype = $(this).attr('id');
+            if(chartype == 'data1'){
+                chartype         = 'bar';
+                chartTitle        = 'Browser Chart';
+                chartCategories = ['Africa', 'America', 'Asia', 'Europe', 'Oceania'];
+                chartData        = [{name: 'Year 1800',data: [107, 31, 635, 203, 2]}, {name: 'Year 1900',data: [133, 156, 947, 408, 6]}, {name: 'Year 2008',data: [973, 914, 4054, 732, 34]}];
+                setDynamicChart(chartype, chartTitle, chartCategories, chartData);
+            }else if(chartype == 'data2'){
+                chartype         = 'line';
+                chartTitle        = 'Monthly Average Temperature';
+                chartCategories = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun','Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                chartData        = [{name: 'Tokyo', data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]}, {name: 'New York', data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]}, {name: 'Berlin',data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]}, {name: 'London',data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]}];
+                setDynamicChart(chartype, chartTitle, chartCategories, chartData);
+            }else if(chartype == 'data3'){
+                chartype         = 'column';
+                chartTitle        = 'Monthly Average Rainfall';
+                chartCategories = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun','Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                chartData        = [{name: 'Tokyo',data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]}, {name: 'New York',data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]}, {name: 'London',data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]}, {name: 'Berlin',data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]}];
+                setDynamicChart(chartype, chartTitle, chartCategories, chartData);
+            }else if(chartype == 'data4'){
+                chartype         = 'line';
+                chartTitle        = 'Monthly Average Temperature';
+                chartData        = [{type: 'pie',name: 'Browser share',data: [['Firefox',   45.0],['IE',       26.8],{name: 'Chrome',y: 12.8,sliced: true,selected: true},['Safari',    8.5],['Opera',     6.2],['Others',   0.7]]}];                
+                setDynamicChart(chartype, chartTitle, chartCategories, chartData);
+            }
+        });
+        //function is created so we pass the value dynamically and be able to refresh the HighCharts on every click
+        function setDynamicChart(chartype, chartTitle, chartCategories, chartData){
+            $('#container').highcharts({
+                chart: {
+                    type: chartype
+                },
+                title: {
+                    text: chartTitle
+                },
+                xAxis: {
+                    categories: chartCategories
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Value'
+                    }
+                },
+                plotOptions: {
+                    //this need only for pie chart
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer'
+                    }
+                },
+                series: chartData
+            });
+        }
+    });
+</script>
+
+</head>
+
+<body class="debugs">
+    <a href="#main-content" class="nhsd-skip-link">Skip to main content</a>
+    <header class="site-header" id="header">
+        <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide">
+            <div class="grid-row">
+                <div class="column column--reset">
+                    <div class="grid-wrapper grid-wrapper--collapse">
+                        <div class="grid-row">
+                            <div class="column column--18-75 column--reset" id="logo-container">
+                                <a class="site-header-a__logo" href="../search/home.html"><img src="../../content/images/nhs-digital-logo.svg" alt="NHS Digital logo" class="site-header__logo"/></a>
+                                <a class="intranet-logo" href="../search/home.html"><img src="../../content/images/intranet-logo.png"/></a>
+                            </div>
+
+
+                            <div class="main-nav">
+                                <div class="main-nav__burger" id="navToggle">
+                                    <button class="main-nav__burger-button" aria-label="Navigation menu">
+                                        <span class="main-nav__burger-line">&nbsp;</span>
+                                        <span class="main-nav__burger-line">&nbsp;</span>
+                                        <span class="main-nav__burger-line">&nbsp;</span>
+                                    </button>
+                                </div>
+
+                                <div class="column column--81-25  column--reset">
+                                    <div class="main-nav__menu">
+                                        <div class="site-header__search-wrapper">
+
+                                            <form role="search" method="get" action=/search class="search-strip" aria-label="???search-banner.title???" id="search">
+                                                <div class="search-strip__contents">
+                                                    <div class="search-strip__table-cell">
+                                                        <input type="text" name="query" id="query" class="search-strip__input" placeholder="Search" value="" aria-label="Search">
+                                                        <label for="query" class="visually-hidden">Search</label>
+                                                    </div>
+                                                    <div class="search-strip__table-cell search-strip__table-cell--button">
+                                                        <button data-uipath="search.button" class="search-strip__button" aria-label="Search">
+                                                            <img src="../../content/images/icon-search-white.png" alt="Magnifying glass" />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+
+                                        <nav>
+                                            <ol class="list list--reset list--inline">
+                                                <li class="active"><a href="../pages/task-list.html">Tasks</a></li>
+                                                <li class="active"><a href="../pages/team-list.html" class="active">Teams and networks</a></li>
+                                                <li><a href="#">News, events and blogs</a></li>
+                                                <li><a href="#">Collaborate</a></li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script>(function () {
+            var oldBrowser = window.addEventListener ? false : true;
+            var $header = document.getElementById('header');
+            var $nav = document.getElementById('nav');
+            var $navToggle = document.getElementById('navToggle');
+
+            function handleToggleClick() {
+                if ($header.className.indexOf('menu-open') >= 0) {
+                    $header.className = $header.className.replace('menu-open', '');
+                } else {
+                    $header.className += ' menu-open';
+                }
+                $header.className = $header.className.replace(/^\s+|\s+$/g, '');
+            }
+
+            function init() {
+                if (!oldBrowser) {
+                    $navToggle.addEventListener('click', handleToggleClick);
+                    window.addEventListener('resize', onResize);
+                } else {
+                    $navToggle.attachEvent('onclick', handleToggleClick);
+                    window.attachEvent('onresize', onResize);
+                }
+            }
+
+            function onResize() {
+                if (window.innerWidth > 1024 && $header.className.indexOf('menu-open') >= 0) {
+                    handleToggleClick();
+                }
+            }
+            init();
+        }())</script>
+
+
+
+
+
+
+    <div class="grid-wrapper">
+        <div class="grid-row">
+            <div class="column column--reset">
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb__crumb">
+                            <a href="../search/home.html" class="breadcrumb__link" data-text="NHS Digital">Intranet</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true" />
+                            <a href="team-list.html" class="breadcrumb__link" data-text="Systems and services">Teams and networks</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true" />
+                            <a href="cp-and-a-team.html" class="breadcrumb__link" data-text="Corporate performance &amp; analysis">Corporate performance &amp; analysis</a> 
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content">
+
+        <article class="article article--service">
+
+            <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide" aria-label="Document Header">
+                <div class="local-header article-header article-header--with-icon">
+                    <div class="grid-wrapper">
+                        <div class="article-header__inner">
+                            <div class="grid-row">
+                                <div class="">
+                                    <!-- column  two-thirds column reset -->
+
+                                    <h1 id="top" class="local-header__title">Chart example</h1>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="grid-wrapper grid-wrapper--article">
+
+
+                <div class="grid-row">
+
+                    <div class="column column--one-third page-block page-block--sidebar article-section-nav-outer-wrapper">
+                        <!-- start sticky-nav -->
+                        <div id="sticky-nav">
+
+                            <div class="article-section-nav-wrapper">
+                                <div class="article-section-nav">
+Dynamic chart
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end sticky-nav -->
+                    </div>
+
+                    <div class="column column--two-thirds page-block page-block--main">
+                     <div id="about" class="article-section">
+                          
+    <a href="javascript:void(0);" class="option" id="data1">Data 1</a>
+    <a href="javascript:void(0);" class="option" id="data2">Data 2</a>
+    <a href="javascript:void(0);" class="option" id="data3">Data 3</a>
+    <a href="javascript:void(0);" class="option" id="data4">Data 4</a>
+</div>
+<div id="chart" class="article-section">
+<div id="container"></div>
+</div>
+
+
+                        <div class="article-section muted no-border no-top-padding">
+                            Last edited: 12 June 2020 08:30 am
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+
+
+
+
+
+    <footer class="site-footer white-links" id="footer">
+        <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide">
+            <div class="grid-row">
+                <div class="column column--reset">
+
+                    <div class="site-footer__section site-footer__section--top">
+                        <div class="grid-wrapper grid-wrapper--collapse">
+                            <div class="grid-row">
+                                <div class="column column--three-quarters column--left">
+                                    <nav class="site-footer__menu site-footer__menu--1">
+                                        <h2 class="list__header">About NHS Digital</h2>
+                                        <ul class="list list--reset list--close">
+                                            <li><a href="/about-nhs-digital">About us</a></li>
+                                            <li><a href="/about-nhs-digital/corporate-information-and-documents/our-strategy">Our strategy</a></li>
+                                            <li><a href="/about-nhs-digital/corporate-information-and-documents/nhs-digital-s-annual-reports-and-accounts">Annual report and accounts</a></li>
+                                            <li><a href="/about-nhs-digital/corporate-information-and-documents/nhs-digital-business-plan-2018--19">Our business plan</a></li>
+                                            <li><a href="/news-and-events">News and events</a></li>
+                                            <li><a href="/about-nhs-digital/our-work/keeping-patient-data-safe/how-we-look-after-your-health-and-care-information">How we look after your information</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                                <div class="column column--one-quarter column--right">
+                                    <nav class="site-footer__menu site-footer__menu--3">
+                                        <ul class="list list--reset list--close">
+                                            <li><a href="/about-nhs-digital/contact-us">Contact us</a></li>
+                                            <li><a href="/news-and-events/press-office">Press office</a></li>
+                                            <li><a href="/about-nhs-digital/contact-us/freedom-of-information">Freedom of information</a></li>
+                                            <li><a href="/about-nhs-digital/careers">Careers</a></li>
+                                            <li class="last-item"><a href="/forms/tell-us-what-you-think-of-our-website" title="Provide website feedback">Tell us what you think of our website</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="site-footer__section site-footer__section--bottom">
+                        <div class="grid-wrapper grid-wrapper--collapse">
+                            <div class="grid-row">
+                                <div class="column column--left">
+                                    <nav class="site-footer__menu site-footer__menu--4">
+                                        <ul class="list list--inline list--reset">
+                                            <li><a href="/about-nhs-digital/privacy-and-cookies">Privacy and cookies</a></li>
+                                            <li><a href="/about-nhs-digital/terms-and-conditions">Terms and conditions</a></li>
+                                            <li><a href="/about-nhs-digital/accessibility">Accessibility</a></li>
+                                            <li><a href="javascript:Cookiebot.renew()">Cookie consent</a></li>
+                                        </ul>
+                                    </nav>
+
+                                    <div class="site-footer__menu site-footer__menu--5">
+                                        <ul class="list list--inline list--reset">
+                                            <li>
+                                                <a href="https://www.linkedin.com/company/nhs-digital" onClick="logGoogleAnalyticsEvent('Link click', 'Footer', 'https://www.linkedin.com/company/nhs-digital')" onKeyUp="return vjsu.onKeyUp(event)">
+                                                    <img src="../../content/images/icon-linkedin.png" alt="LinkedIn logo" class="image-icon" /><span>LinkedIn</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://twitter.com/NHSDigital" onClick="logGoogleAnalyticsEvent('Link click', 'Footer', 'https://twitter.com/NHSDigital')" onKeyUp="return vjsu.onKeyUp(event)">
+                                                    <img src="../../content/images/icon-twitter.png" alt="Twitter logo" class="image-icon" /><span>Twitter</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+        var myChart = Highcharts.chart('container', {
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'Fruit Consumption'
+            },
+            xAxis: {
+                categories: ['Apples', 'Bananas', 'Oranges']
+            },
+            yAxis: {
+                title: {
+                    text: 'Fruit eaten'
+                }
+            },
+            series: [{
+                name: 'Jane',
+                data: [1, 0, 4]
+            }, {
+                name: 'John',
+                data: [5, 7, 3]
+            }]
+        });
+    });
+
+    </script>
+    
+
+   
+
+</body>
+
+</html>
