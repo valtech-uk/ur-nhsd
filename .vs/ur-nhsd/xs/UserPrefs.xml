@@ -4,7 +4,7 @@
     <Files>
       <File FileName="cpmo/standards-and-investment-team.html" Line="386" Column="51" />
       <File FileName="cpmo/pre-discovery-phase.html" />
-      <File FileName="cpmo/discovery-phase.html" />
+      <File FileName="cpmo/discovery-phase.html" Line="1" Column="1" />
       <File FileName="cpmo/private-beta.html" />
       <File FileName="cpmo/alpha-phase.html" />
       <File FileName="cpmo/new-work-commission-process.html" />
@@ -13,17 +13,15 @@
       <File FileName="cpmo/index.html" />
       <File FileName="cpmo/lifecycle-diagram.html" />
       <File FileName="cpmo/chapter.html" />
-      <File FileName="cpmo/contact-cpmo.html" Line="382" Column="100" />
-      <File FileName="risk/assess-risk-2.html" Line="89" Column="5" />
+      <File FileName="cpmo/contact-cpmo.html" />
+      <File FileName="risk/assess-risk-2.html" Line="534" Column="56" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ur-nhsd" expanded="True">
-            <Node name="ur-nhsd" expanded="True">
-              <Node name="content" expanded="True">
-                <Node name="interactive-images" expanded="True" />
-              </Node>
+            <Node name="ur-nhsd-1" expanded="True">
+              <Node name="cpmo" expanded="True" />
               <Node name="risk" expanded="True">
                 <Node name="assess-risk-2.html" selected="True" />
               </Node>

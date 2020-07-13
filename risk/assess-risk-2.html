@@ -82,28 +82,26 @@
             position: relative;
         }
 
-        ul.radiogroup {
+        ul.radiogroup-prev {
             margin-left:-30%;
             width: 130%;
             display: table;
             table-layout: fixed;
         }
 
-         ul li {
+         ul.radio-inline li {
                 display: table-cell;
                 vertical-align:top;
             }
 
-                ul li label {
-                    display: block;
-                }
+        #form-risk ul li label {
+            display: block;
+        }
 
-        p.small-text {
+                
+        .small-text {
             font-size: 0.8em;
-            margin-right:0.5em;
             line-height: 1.2em;
-            word-wrap: break-word;
-            white-space: normal;
         }
     </style>
 
@@ -339,15 +337,13 @@
 
                             <div id="questionsarea" class="article-section">
                                 <h2>Think about a risk to your project</h2>
-                                <form class="eforms form" style="margin-top:0 !important">
+                                <form class="eforms form" style="margin-top:0 !important" id="form-risk">
 
 
                                     <div id="page0" class="eforms-page conditionally-visible" style="margin-top:0">
 
 
                                         <!-- Risk type here -->
-
-
 
                                         <fieldset name="group_prefix" class="eforms-fieldgroup">
                                             <legend class="eforms-fieldgroupname hide">Risk</legend>
@@ -414,48 +410,367 @@
                                             <div class="eforms-field">
                                                 <label class="eforms-label">What impact could it have?<span class="eforms-req"></span></label>
 
+
                                                 <div id='type-cost'>
                                                     <h3>Cost</h3>
                                                     <ul class='radiogroup'>
-                                                        <li id='type-cost-option-1'>
+                                                        <li id='type-cost-option-1' class='grid-row'>
                                                             <label for='cost-1'>
-                                                                <input type='radio' name='cost' id='cost-1' value='1' checked>
-                                                                <strong>Very low</strong><br />
-                                                                <p class='small-text'>Corporate/ Executive Portfolio <£1m <br/>Division/Programme: <br/><£100k <br/>Functional Unit/Project: <£50k <br/>-or- <br/>Up to 3% of budget</p>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='cost' id='cost-1' value='1' checked>
+                                                                    <strong>Very low</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Corporate/ Executive Portfolio <£1m <br/>Division/Programme: <br/><£100k <br/>Functional Unit/Project: <£50k <br/>-or- <br/>Up to 3% of budget
+                                                                </span>
                                                             </label>
                                                         </li>
                                                         <li id='type-cost-option-2'>
                                                             <label for='cost-2'>
-                                                                <input type='radio' name='cost' id='cost-2' value='2'>
-                                                                <strong>Low</strong><br />
-                                                                <p class='small-text'>Corporate/ Executive Portfolio: £1m - <br />£10m <br />Division/Programme: <br />£100k - £1m <br />Functional Unit/Project: £50k - <br />£100k <br />-or- <br />Up to 5% of budget</p>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='cost' id='cost-2' value='2'>
+                                                                    <strong>Low</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Corporate/ Executive Portfolio: £1m - <br />£10m <br />Division/Programme: <br />£100k - £1m <br />Functional Unit/Project: £50k - <br />£100k <br />-or- <br />Up to 5% of budget
+                                                                </span>
                                                             </label>
                                                         </li>
                                                         <li id='type-cost-option-3'>
                                                             <label for='cost-3'>
-                                                                <input type='radio' name='cost' id='cost-3' value='3'>
-                                                                <strong>Medium</strong><br />
-                                                                <p class='small-text'>Corporate/ Executive Portfolio: £10m - <br />£50m <br />Division/Programme: <br />£1m-£5m <br />Functional Unit/Project: £100k- <br />£500k <br />-or- <br />Up to 7% of budget</p>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='cost' id='cost-3' value='3'>
+                                                                    <strong>Medium</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Corporate/ Executive Portfolio: £10m - <br />£50m <br />Division/Programme: <br />£1m-£5m <br />Functional Unit/Project: £100k- <br />£500k <br />-or- <br />Up to 7% of budget
+                                                                </span>
                                                             </label>
                                                         </li>
                                                         <li id='type-cost-option-4'>
                                                             <label for='cost-4'>
-                                                                <input type='radio' name='cost' id='cost-4' value='4'>
-                                                                <strong>High</strong><br />
-                                                                <p class='small-text'>Corporate/ Executive Portfolio: £50m - <br />£100m <br />Division/Programme: <br />£5m-10m <br />Functional Unit/Project: £500k- <br />£1m <br />-or- <br />Up to 10% of budget</p>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='cost' id='cost-4' value='4'>
+                                                                    <strong>High</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Corporate/ Executive Portfolio: £50m - <br />£100m <br />Division/Programme: <br />£5m-10m <br />Functional Unit/Project: £500k- <br />£1m <br />-or- <br />Up to 10% of budget
+                                                                </span>
                                                             </label>
                                                         </li>
                                                         <li id='type-cost-option-5'>
                                                             <label for='cost-5'>
-                                                                <input type='radio' name='cost' id='cost-5' value='5'>
-                                                                <strong>Very high</strong><br />
-                                                                <p class='small-text'>Corporate/ Executive Portfolio: >£100m <br />Division/Programme: <br />>£10m <br />Functional Unit/Project: >£1m <br />-or- <br />Over 10% of budget</p>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='cost' id='cost-5' value='5'>
+                                                                    <strong>Very high</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Corporate/ Executive Portfolio: >£100m <br />Division/Programme: <br />>£10m <br />Functional Unit/Project: >£1m <br />-or- <br />Over 10% of budget
+                                                                </span>
                                                             </label>
                                                         </li>
                                                     </ul>
                                                 </div>
-
-
+                                                <div id='type-quality'>
+                                                    <h3>Quality</h3>
+                                                    <ul class='radiogroup'>
+                                                        <li id='type-quality-option-1' class='grid-row'>
+                                                            <label for='quality-1'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='quality' id='quality-1' value='1' checked>
+                                                                    <strong>Very low</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Minor impact on single functionality/ capability <br />-or- <br />Minor weaknesses (observation) identified at Gateway review or audit
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li id='type-quality-option-2'>
+                                                            <label for='quality-2'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='quality' id='quality-2' value='2'>
+                                                                    <strong>Low</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Failure to achieve a single deliverable to time/ cost/ quality <br />-or- <br />Minor impact on multiple functionalities/ capabilities or moderate impact on single functionality/ capability <br />-or- <br />Moderate weakness (GREEN) identified at Gateway review or audit
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li id='type-quality-option-3'>
+                                                            <label for='quality-3'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='quality' id='quality-3' value='3'>
+                                                                    <strong>Medium</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Failure to achieve multiple deliverables to time/ cost/ quality <br />-or- <br />Moderate impact on multiple functionalities/ capabilities <br />-or- <br />Severe weaknesses (AMBER) identified at Gateway review or audit
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li id='type-quality-option-4'>
+                                                            <label for='quality-4'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='quality' id='quality-4' value='4'>
+                                                                    <strong>High</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Failure to achieve a single key deliverable to time/ cost/ quality <br />-or- <br />Major impact on single functionality/ capability <br />-or- <br />Critical weaknesses (RED) identified at Gateway review or audit
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li id='type-quality-option-5'>
+                                                            <label for='quality-5'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='quality' id='quality-5' value='5'>
+                                                                    <strong>Very high</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Failure to achieve multiple key deliverables to time/ cost/ quality <br />-or- <br />Major impact on multiple functionalities/ capabilities <br />-or- <br />Failure to pass Gateway review or audit
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div id='type-schedule'>
+                                                    <h3>Schedule</h3>
+                                                    <ul class='radiogroup'>
+                                                        <li id='type-schedule-option-1' class='grid-row'>
+                                                            <label for='schedule-1'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='schedule' id='schedule-1' value='1' checked>
+                                                                    <strong>Very low</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    <1-week delay <br/>-or- <br/>3% delay in plan <br/>-or- <br/>Impacts project non- critical path milestone (within tolerance)
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li id='type-schedule-option-2'>
+                                                            <label for='schedule-2'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='schedule' id='schedule-2' value='2'>
+                                                                    <strong>Low</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    1-2 weeks delay <br />-or- <br />5% delay in plan <br />-or- <br />Impacts project non- critical path milestone (out of tolerance
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li id='type-schedule-option-3'>
+                                                            <label for='schedule-3'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='schedule' id='schedule-3' value='3'>
+                                                                    <strong>Medium</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    3-5 weeks delay <br />-or- <br />7% delay in plan <br />-or- <br />Impacts project critical path milestone
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li id='type-schedule-option-4'>
+                                                            <label for='schedule-4'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='schedule' id='schedule-4' value='4'>
+                                                                    <strong>High</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    6-12 weeks delay <br />-or- <br />10% delay in plan <br />-or- <br />Impacts Programme non-critical path milestone
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li id='type-schedule-option-5'>
+                                                            <label for='schedule-5'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='schedule' id='schedule-5' value='5'>
+                                                                    <strong>Very high</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    >12 weeks delay <br />-or- <br />Over 10% delay in plan <br />-or- <br />Impacts Programme critical path milestone
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div id='type-benefits'>
+                                                    <h3>Benefits</h3>
+                                                    <ul class='radiogroup'>
+                                                        <li id='type-benefits-option-1' class='grid-row'>
+                                                            <label for='benefits-1'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='benefits' id='benefits-1' value='1' checked>
+                                                                    <strong>Very low</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Minor impact on single programme benefit <br />-or- <br />3% reduction in forecast benefit
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li id='type-benefits-option-2'>
+                                                            <label for='benefits-2'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='benefits' id='benefits-2' value='2'>
+                                                                    <strong>Low</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Minor impact on multiple benefits or moderate impact on single programme benefit <br />-or- <br />5% reduction in forecast benefit
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li id='type-benefits-option-3'>
+                                                            <label for='benefits-3'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='benefits' id='benefits-3' value='3'>
+                                                                    <strong>Medium</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Moderate impact on multiple programme benefits <br />-or- <br />7% reduction in forecast benefit
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li id='type-benefits-option-4'>
+                                                            <label for='benefits-4'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='benefits' id='benefits-4' value='4'>
+                                                                    <strong>High</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Major impact on single key strategic benefit <br />-or- <br />10% reduction in forecast benefit
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li id='type-benefits-option-5'>
+                                                            <label for='benefits-5'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='benefits' id='benefits-5' value='5'>
+                                                                    <strong>Very high</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Major impact on multiple strategic benefits <br />-or- <br />Over 10% reduction in forecast benefit
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div id='type-reputation'>
+                                                    <h3>Reputation</h3>
+                                                    <ul class='radiogroup'>
+                                                        <li id='type-reputation-option-1' class='grid-row'>
+                                                            <label for='reputation-1'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='reputation' id='reputation-1' value='1' checked>
+                                                                    <strong>Very low</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Requires Deputy Director's/ Project Manager’s response <br />-or- <br />Results in local news coverage <br />-or- <br />Little or no social media coverage
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li id='type-reputation-option-2'>
+                                                            <label for='reputation-2'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='reputation' id='reputation-2' value='2'>
+                                                                    <strong>Low</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Requires Director's/ Programme Manager’s response <br />-or- <br />Results in regional news coverage <br />-or- <br />Minimal social media coverage
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li id='type-reputation-option-3'>
+                                                            <label for='reputation-3'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='reputation' id='reputation-3' value='3'>
+                                                                    <strong>Medium</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Requires Executive Director's response <br />-or- <br />Results in national news coverage <br />-or- <br />Moderate social media coverage
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li id='type-reputation-option-4'>
+                                                            <label for='reputation-4'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='reputation' id='reputation-4' value='4'>
+                                                                    <strong>High</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Requires Chief Executive’s response <br />-or- <br />Results in prolonged national news coverage <br />-or- <br />Significant social media coverage
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li id='type-reputation-option-5'>
+                                                            <label for='reputation-5'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='reputation' id='reputation-5' value='5'>
+                                                                    <strong>Very high</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Requires Ministerial response <br />-or- <br />Results in international news coverage <br />-or- <br />Social media coverage goes “viral”
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div id='type-people'>
+                                                    <h3>People</h3>
+                                                    <ul class='radiogroup'>
+                                                        <li id='type-people-option-1' class='grid-row'>
+                                                            <label for='people-1'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='people' id='people-1' value='1' checked>
+                                                                    <strong>Very low</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Minor effect on an individual patient/staff/public.requiring no/minimal intervention or treatment.<br />Will indirectly lead to multiple minor injuries/illness <br /><br />No time off work
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li id='type-people-option-2'>
+                                                            <label for='people-2'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='people' id='people-2' value='2'>
+                                                                    <strong>Low</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Minor injury or illness, requiring minor intervention.<br />Will indirectly lead to multiple moderate injuries/illness  <br /><br />Requiring time off work for >3 days<br />-and/or -<br />Hospital stay 1-3 days<br /><br /><5% patients /staff/ public affected
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li id='type-people-option-3'>
+                                                            <label for='people-3'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='people' id='people-3' value='3'>
+                                                                    <strong>Medium</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Moderate injury requiring professional intervention.<br />Will indirectly lead to multiple major injuries/illness <br /><br />Requiring time off work for 4-14 days <br />-and/or -<br />Hospital stay by 4-15 days <br /><br />RIDDOR/agency reportable incident<br /> <br />6-10% patients /staff/ public affected
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li id='type-people-option-4'>
+                                                            <label for='people-4'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='people' id='people-4' value='4'>
+                                                                    <strong>High</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Major injury leading to long-term incapacity/disability.<br />Mismanagement of patient care with long-term effects<br /><br />Will indirectly lead to a single fatality<br /><br />Requiring time off work for >14 days <br />-and/or -<br />Hospital stay by >15 days <br /><br />11-15% patients /staff/ public affected
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                        <li id='type-people-option-5'>
+                                                            <label for='people-5'>
+                                                                <span class='column column--one-third'>
+                                                                    <input type='radio' name='people' id='people-5' value='5'>
+                                                                    <strong>Very high</strong>
+                                                                </span>
+                                                                <span class='column column--two-thirds small-text'>
+                                                                    Incident leading to death <br />-or-<br />Multiple permanent injuries or irreversible health effects<br />Will indirectly lead to multiple fatalities<br /><br />>15% patients /staff/ public affected
+                                                                </span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
 
                                                 <div class="eforms-field__error-message visually-hidden"></div>
                                             </div>
