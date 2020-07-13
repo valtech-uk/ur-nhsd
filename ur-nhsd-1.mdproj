@@ -167,5 +167,6 @@
     <None Include="arm\risk\assess-risk-calculator.html" />
     <None Include="arm\risk\create-action-plan.html" />
     <None Include="arm\cpmo\reporting-team.html" />
+    <None Include="arm\cpmo\reporting-team %28copy%29.html" />
   </ItemGroup>
 </Project>
