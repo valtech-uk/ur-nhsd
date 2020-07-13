@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Generic meta tags -->
-    <title>Intranet - CPMO</title>
+    <title>Intranet - Reporting</title>
 
 
     <link rel="preload" href="../../content/fonts/FrutigerLTW01-55Roman.woff2" as="font" type="font/woff2" crossorigin>
@@ -39,7 +39,28 @@
     <script defer src="../../content/js/details-element-polyfill.js"></script>
     <script src="../../content/js/custom.js"></script>
 
+    <style type="text/css">
+        /* As SVG does not provide a default visual style for links,
+   it's considered best practice to add some */
 
+        @namespace svg url(http://www.w3.org/2000/svg);
+        /* Necessary to select only SVG <a> elements, and not also HTML’s.
+   See warning below */
+
+        svg|a:link, svg|a:visited {
+            cursor: pointer;
+        }
+
+        svg|a text,
+        text svg|a {
+            fill: white; /* Even for text, SVG uses fill over color */
+            text-decoration: underline;
+        }
+
+        svg|a:hover, svg|a:active {
+            outline: dotted 1px white;
+        }
+    </style>
 </head>
 
 <body class="debugs">
@@ -192,11 +213,14 @@
                         </li>
                         <li class="breadcrumb__crumb">
                             <img src="../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
-                            <span class="breadcrumb__link breadcrumb__link--secondary" data-text="Discovery phase " aria-current="page">CPMO </span>
+                            <a href="index.html" class="breadcrumb__link" data-text="ARM">CPMO</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
+                            <span class="breadcrumb__link breadcrumb__link--secondary" data-text="Discovery phase " aria-current="page">Portfolio Reporting &amp; analytics</span>
                         </li>
                     </ol>
                 </nav>
-               
             </div>
         </div>
     </div>
@@ -223,12 +247,14 @@
 
 
 
-                                    <h1 id="top" class="local-header__title" data-uipath="document.title">Corporate portfolio management office </h1>
+                                    <h1 id="top" class="local-header__title" data-uipath="document.title">Portfolio Reporting &amp; analytics team</h1>
 
 
 
                                     <div class="rich-text-content article-header__subtitle">
-                                        <p>We supply excellence and leadership in the provision of portfolio management services to facilitate successful delivery of NHS Digital’s programmes and projects</p>
+                                        <p>
+                                            We deliver an organisation and system-wide portfolio reporting service, aimed at improving the quality of reporting across NHS Digital.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -257,8 +283,16 @@
                                                 <li>
                                                     <a href="#top" aria-label="Scroll to 'Top of page'" title="Scroll to 'Top of page'" class=" ">Top of page</a>
                                                 </li>
+
+
                                                 <li>
-                                                    <a href="#icon-list-title" aria-label="Scroll to 'Section'" title="Scroll to 'Section'" class="active">Main area</a>
+                                                    <a href="#help" aria-label="Scroll to 'Section'" title="Scroll to 'Section'" class="active">What would you like help with?</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#team" aria-label="Scroll to 'Section'" title="Scroll to 'Section'">Who is in the team?</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#contact-us" aria-label="Scroll to 'Section'" title="Scroll to 'Section'">Contact us</a>
                                                 </li>
                                                 <li>
                                                     <a href="#dates" aria-label="Scroll to 'Dates'" title="Scroll to 'Dates'" class=" ">Dates</a>
@@ -275,24 +309,74 @@
 
                     <div class="column column--two-thirds page-block page-block--main">
 
+
                         <div class="article-section">
 
-                            <div id="icon-list-title" class="article-section">
-                                <h2 data-uipath="website.contentblock.iconlist.title">What's new?</h2>
+                            <div id="help" class="article-section">
+                                <h2 data-uipath="website.contentblock.iconlist.title">What would you like help with?</h2>
 
                                 <div data-uipath="website.contentblock.iconlist.introduction">
-                                    <table style="width:100%">
-                                        <tbody>
-                                            <tr>
-                                                <td role="columnheader"><h5><a href="#">Benefits reporting app rollout update</a></h5></td>
-                                                <td role="columnheader"><h5><a href="#">Changes to Highlight reporting in August</a></h5></td>
-                                            </tr>
-                                            <tr>
-                                                <td><h5><a href="#">New Change control request service</a></h5></td>
-                                                <td><h5><a href="#">Process change announcement</a></h5></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <div class="iconList">
+
+                                        <!-- iconListItem -->
+                                        <div class="iconList__item">
+                                            <div class="iconList__icon">
+                                                <img class="iconList__icon__img" aria-hidden="true" src="../../content/icons/dial.svg" alt="Icon list title" width="100" height="100">
+                                            </div>
+
+                                            <div class="iconList__content">
+                                                <div class="iconList__title" data-uipath="website.contentblock.iconlistitem.heading">Create programme highlight report</div>
+
+                                                <div class="iconList__body" data-uipath="website.contentblock.iconlistitem.description">
+                                                    <p>
+                                                        Use these tools to help you prepare your report<br />
+                                                        <a href="#">Create highlight report</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- iconListItem -->
+                                        <div class="iconList__item">
+                                            <div class="iconList__icon">
+                                                <img class="iconList__icon__img" aria-hidden="true" src="../../content/icons/dial.svg" alt="Icon list title" width="100" height="100">
+                                            </div>
+
+                                            <div class="iconList__content">
+                                                <div class="iconList__title" data-uipath="website.contentblock.iconlistitem.heading">Update programme milestones, benefits and dependencies</div>
+
+                                                <div class="iconList__body" data-uipath="website.contentblock.iconlistitem.description">
+                                                    <p>
+                                                        Use online tools to update programme milestones and dependencies<br />
+                                                        <a href="new-work-commission-process.html">Update programme reporting data</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <!-- iconListItem -->
+                                        <div class="iconList__item hide">
+                                            <div class="iconList__icon">
+                                                <img class="iconList__icon__img" aria-hidden="true" src="../../content/icons/connections.svg?colour=005EB8" alt="Icon list title" width="100" height="100">
+                                            </div>
+
+                                            <div class="iconList__content">
+                                                <div class="iconList__title" data-uipath="website.contentblock.iconlistitem.heading">Agile guidance and best practice</div>
+
+                                                <div class="iconList__body" data-uipath="website.contentblock.iconlistitem.description">
+                                                    <p>
+                                                        Best practice guidance when you run an agile project<br />
+                                                        <a href="agile-guidance.html">Agile project guidance</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
 
                                 </div>
 
@@ -300,147 +384,110 @@
                         </div>
 
 
+                        <div id="download-item" class="article-section">
 
-                        <div class="article-section">
-                            <div class="grid-row galleryItems">
-                                <h2 data-uipath="website.contentblock.iconlist.title">Meet the teams</h2>
+                            <h2 data-uipath="website.contentblock.download.title">Resources</h2>
 
-                                <div data-uipath="website.contentblock.iconlist.introduction">
-                                    <p>Our teams provide products and services to ensure robust portfolio management, corporate and operational governance.</p>
+                            <div data-uipath="website.contentblock.download.description"><p>Download reporting resources</p></div>
 
-
-                                </div>
-
-                                <div class="column column--one-half galleryItems__item">
-                                    <h3 class="galleryItems__heading">
-                                        Standards &amp; investment
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </h3>
-                                    <div class="galleryItems__card">
+                            <div class="article-section--list">
+                                <div class="grid-row">
+                                    <div class="column column--reset">
+                                        <ul class="list list--reset cta-list cta-list--sections">
+                                            <li>
+                                                <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
 
 
-                                        <img src="../../content/images/invest-compass.jpg" alt="Gallery item 1 alt text">
 
-                                        <div class="galleryItems__description">
-                                            <p>We establish the portfolio management standards, including lifecycle stages and gates for NHS Digital's change programmes.</p>
-                                            <p><a href="standards-and-investment-team.html">Standards and investment team</a></p>
-                                        </div>
+                                                <a href="agile-guidance.html" class="block-link">
+                                                    <div class="block-link__header">
+                                                        <span class="icon icon--2x icon--html" aria-hidden="true"></span>
+                                                    </div>
+                                                    <div class="block-link__body">
+                                                        <span class="block-link__title">Item name</span>
+                                                        <p class="cta__text">Details</p>
+                                                    </div>
+                                                </a>
 
+                                            </li>
+
+                                        </ul>
                                     </div>
-
-                                    <ol class="list list--reset visually-hidden">
-                                        <li class="attachment visually-hidden" itemprop="hasPart" itemscope="" itemtype="http://schema.org/MediaObject">
-                                            <a href="#" class="block-link" onclick="" onkeyup="return vjsu.onKeyUp(event)">
-                                                <div class="block-link__header">
-                                                    <span class="icon icon--pdf icon--2x" aria-hidden="true"></span>
-                                                </div>
-                                                <div class="block-link__body">
-                                                    <span class="block-link__title">Related file file name</span>
-                                                    <meta itemprop="encodingFormat" content="application/pdf">
-                                                    <span class="block-link__meta regular">[pdf, <span class="fileSize">size: <span itemprop="contentSize">829.8 kB</span></span>]</span>
-
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ol>
-
-                                </div>
-
-
-                                <div class="column column--one-half galleryItems__item">
-                                    <h3 class="galleryItems__heading">Portfolio Reporting &amp; Analytics</h3>
-                                    <div class="galleryItems__card">
-
-
-                                        <img src="../../content/images/analyse-and-report.png" alt="Gallery item 2 alt text">
-
-                                        <div class="galleryItems__description">
-                                            <p>
-                                                We deliver an organisation and system-wide portfolio reporting service, aimed at improving the quality of reporting across NHS Digital.
-                                            </p>
-                                            <p class="visually-hidden">We work with governance bodies on the performance, risks and issues in the portfolio and analysis for governance and assurance</p>
-                                            <p><a href="reporting-team.html">Portfolio Reporting &amp; Analytics team</a></p>
-                                        </div>
-
-                                    </div>
-
-                                    <ol class="list list--reset">
-                                    </ol>
-
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="column column--one-half galleryItems__item">
-                                    <h3 class="galleryItems__heading">Portfolio Partnering</h3>
-                                    <div class="galleryItems__card">
-
-
-                                        <img src="../../content/images/partnering.png" alt="Gallery item 2 alt text">
-
-                                        <div class="galleryItems__description">
-                                            <p>
-                                                We build relationships with programme delivery teams, providing best practice portfolio management support.
-
-                                            </p>
-                                            <p class="visually-hidden">We work with governance bodies on the performance, risks and issues in the portfolio and analysis for governance and assurance</p>
-                                            <p><a href="partnering-team.html">Portfolio Partnering team</a></p>
-                                        </div>
-
-                                    </div>
-
-                                    <ol class="list list--reset">
-                                    </ol>
-
-                                </div>
-
-                                <div class="clearfix"></div>
-
-
-                                <div class="column column--one-half galleryItems__item visually-hidden">
-                                    <div class="galleryItems__card">
-
-
-                                        <img src="image.png" alt="Gallery item 3 alt text">
-
-                                        <div class="galleryItems__description">
-                                            <p>Gallery item 3 description.&nbsp; No title has been added for this one.</p>
-                                        </div>
-
-                                    </div>
-
-                                    <ol class="list list--reset">
-                                    </ol>
-
                                 </div>
                             </div>
 
-                        </div>
-
-                        <div id="team" class="article-section">
-                            <h2 data-uipath="website.contentblock.iconlist.title">Who is in the team?</h2>
-
-                            <div class="blog-authors__item">
-
-                                <div class="blog-authors__icon">
-                                    <img class="blog-authors__icon__img" src="../../content/images/dean.jpg" alt="NHS Digital blog">
-                                </div>
-
-                                <div class="blog-authors__content">
-                                    <div class="blog-authors__title">
-                                        <a class="cta__title cta__button" href="#">Dean McGarr</a>
-                                    </div>
-                                    <div class="blog-authors__body">
-      
-                                        <p>
-                                            Programme Head<br />
-                                            <a href="mailto:emma.queenan@nhs.net">dean.mcgarr@nhs.net</a>
-                                        </p>
-                                    </div>
-                                </div>
-
-                            </div>  
 
                         </div>
 
+                        <div class="article-section">
+
+                            <div id="team" class="article-section">
+                                <h2 data-uipath="website.contentblock.iconlist.title">Who is in the team?</h2>
+
+
+                               
+                                <div class="blog-authors__item">
+
+                                    <div class="blog-authors__icon">
+                                        <img class="blog-authors__icon__img" src="../../content/images/grey.jpg" alt="NHS Digital blog">
+                                    </div>
+
+                                    <div class="blog-authors__content">
+                                        <div class="blog-authors__title">
+                                            <a class="cta__title cta__button" href="#">Anthony Walkley</a>
+                                        </div>
+                                        <div class="blog-authors__body">
+                                            <p>
+                                                Programme Manager<br />
+                                                <a href="mailto:emma.queenan@nhs.net">anthony.walkley@nhs.net</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-authors__item">
+
+                                    <div class="blog-authors__icon">
+                                        <img class="blog-authors__icon__img" src="../../content/images/grey.jpg" alt="NHS Digital blog">
+                                    </div>
+
+                                    <div class="blog-authors__content">
+                                        <div class="blog-authors__title">
+                                            <a class="cta__title cta__button" href="#">Other</a>
+                                        </div>
+                                        <div class="blog-authors__body">
+                                            <p>
+                                                Details here<br />
+                                                <a href="mailto:emma.queenan@nhs.net">name.name@nhs.net</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                            <div id="contact-us" class="article-section ">
+
+                                <h2 data-uipath="website.contentblock.section.title">Contact us</h2>
+
+         
+                            <div class="emphasis-box emphasis-box-emphasis" aria-label="Highlighted Information">
+
+                                <div class="emphasis-box__content">
+
+                                    <div data-uipath="website.contentblock.emphasis.content">
+                                        <p>Contact us for help with your programme reporting.</p>
+
+                                        <p>Email us at <a href="mailto:corporateportfoliomanagementoffice@nhs.net">corporateportfoliomanagementoffice@nhs.net</a>. &nbsp;</p>
+
+                                     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
                         <div class="article-section" id="dates">
                             <h2>Dates</h2>
                             <div class="detail-list-grid detail-list-grid--regular">
