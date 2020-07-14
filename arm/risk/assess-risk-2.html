@@ -344,7 +344,7 @@
 
                                             <div class="eforms-field">
                                                 <label for="select-type" class="eforms-label">What type of risk is this?<span class="eforms-req"></span></label>
-                                                <select name="select-type" class="js-select-type">
+                                                <select name="select-type" class="js-select-type" style="width:200px">
                                                     <option value="" selected="selected">(risk type)</option>
                                                     <option value="cost">Cost</option>
                                                     <option value="quality">Quality</option>
@@ -355,14 +355,15 @@
                                                     <option value="security">Information Security</option>
                                                 </select>
                                                 <div class="eforms-field__error-message visually-hidden"></div>
-                                                <span class="eforms-hint">choose the closest match or "other"</span>
+                                                <span class="eforms-hint"></span>
                                             </div>
 
-                                            <fieldset name="group_prefix" class="eforms-fieldgroup">
+
+                                            <fieldset name="group_prefix" class="js-riskname eforms-fieldgroup">
                                                 <legend class="eforms-fieldgroupname hide">Risk</legend>
 
                                                 <div class="eforms-field">
-                                                    <label for="riskname" class="eforms-label bold">What is the risk? <span class="eforms-req"></span></label>
+                                                    <label for="riskname" class="eforms-label bold">What is a brief description of the risk? <span class="eforms-req"></span></label>
                                                     <input type="text" name="riskname" class="js-riskname" autocomplete="off" value="" style="max-width: 30em;">
                                                     <div class="eforms-field__error-message visually-hidden"></div>
                                                     <span class="eforms-hint"></span>
@@ -370,9 +371,7 @@
 
                                             </fieldset>
 
-
-
-                                            <fieldset name="group_prefix" class="eforms-fieldgroup">
+                                            <fieldset name="group_prefix" class="js-likelihood eforms-fieldgroup">
                                                 <legend class="eforms-fieldgroupname" style="margin: 0;">Likelihood</legend>
 
                                                 <div class="eforms-field">
@@ -417,14 +416,13 @@
                                                 </div>
                                             </fieldset>
 
-                                            <fieldset name="group_prefix" class="eforms-fieldgroup">
+                                            <fieldset name="group_prefix" class="js-impact eforms-fieldgroup">
                                                 <legend class="eforms-fieldgroupname" style="margin: 0;">Impact</legend>
 
                                                 <div id="impact-groups" class="eforms-field">
-                                                    <label class="eforms-label">What impact could it have?<span class="eforms-req"></span></label>
-
+                                                    
                                                     <div class='js-impact-group js-type-cost'>
-                                                        <h3>Cost</h3>
+                                                        <label class='js-impact-label eforms-label'>What impact could it have on cost?<span class='eforms-req'></span></label>
                                                         <ul class='radiogroup'>
                                                             <li class='type-cost-option-1 grid-row'>
                                                                 <label for='cost-1'>
@@ -484,7 +482,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class='js-impact-group js-type-quality'>
-                                                        <h3>Quality</h3>
+                                                        <label class='js-impact-label eforms-label'>What impact could it have on quality?<span class='eforms-req'></span></label>
                                                         <ul class='radiogroup'>
                                                             <li class='type-quality-option-1 grid-row'>
                                                                 <label for='quality-1'>
@@ -544,7 +542,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class='js-impact-group js-type-schedule'>
-                                                        <h3>Schedule</h3>
+                                                        <label class='js-impact-label eforms-label'>What impact could it have on the schedule?<span class='eforms-req'></span></label>
                                                         <ul class='radiogroup'>
                                                             <li class='type-schedule-option-1 grid-row'>
                                                                 <label for='schedule-1'>
@@ -604,7 +602,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class='js-impact-group js-type-benefits'>
-                                                        <h3>Benefits</h3>
+                                                        <label class='js-impact-label eforms-label'>What impact could it hav on benefits?<span class='eforms-req'></span></label>
                                                         <ul class='radiogroup'>
                                                             <li class='type-benefits-option-1 grid-row'>
                                                                 <label for='benefits-1'>
@@ -664,7 +662,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class='js-impact-group js-type-reputation'>
-                                                        <h3>Reputation</h3>
+                                                        <label class='js-impact-label eforms-label'>What impact could it have on reputation?<span class='eforms-req'></span></label>
                                                         <ul class='radiogroup'>
                                                             <li class='type-reputation-option-1 grid-row'>
                                                                 <label for='reputation-1'>
@@ -724,7 +722,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class='js-impact-group js-type-people'>
-                                                        <h3>People</h3>
+                                                        <label class='js-impact-label eforms-label'>What impact could it have on people / clinicians?<span class='eforms-req'></span></label>
                                                         <ul class='radiogroup'>
                                                             <li class='type-people-option-1 grid-row'>
                                                                 <label for='people-1'>
@@ -784,7 +782,7 @@
                                                         </ul>
                                                     </div>
                                                     <div class='js-impact-group js-type-security'>
-                                                        <h3>Security</h3>
+                                                        <label class='js-impact-label eforms-label'>What impact could it have on information security?<span class='eforms-req'></span></label>
                                                         <ul class='radiogroup'>
                                                             <li class='type-security-option-1 grid-row'>
                                                                 <label for='security-1'>
@@ -849,7 +847,7 @@
                                         </div>
                                     </div>
 
-                                    <a href="#" class="js-add-risk">Add risk</a>
+                                    <h4><a href="#" class="js-add-risk hide">Add another risk</a></h4>
                                     <div class="eforms-buttons">
                                         <a class="button" value="Run assessment" id="btn-calculate">Calculate</a>
                                     </div>
@@ -1138,16 +1136,25 @@
 
 
             $(".js-impact-group").addClass("hide");
-            //$(".js-impact-group").first().attr("id", "js-impact-1");
+
+    $(".js-riskname").addClass("hide");
+    $(".js-likelihood").addClass("hide");
+    $(".js-impact").addClass("hide");
 
             $(".js-select-type").change(function () {
                 var type = $(this).val();
                 if (type != null) {
                     var section = $(this).closest(".js-risk-section");
                     section.find(".js-type-" + type).removeClass("hide");
+
+                    section.find(".js-riskname").removeClass("hide");
+                    section.find(".js-likelihood").removeClass("hide");
+                    section.find(".js-impact").removeClass("hide");
+                    $(".js-add-risk").removeClass("hide");
                 }
             });
 
+    var sectionid = "js-risk-1";
 
     $(".js-add-risk").click(function (e) {
         e.preventDefault();
@@ -1156,14 +1163,147 @@
                 if (countrisks > 2) {
                     countrisks = countrisks - 1;
                 }
-                var newobj = risk1.clone().attr("id", "js-risk-" + countrisks);
+                sectionid = "js-risk-" + countrisks;
+                var newobj = risk1.clone().attr("id", sectionid);
                 var riskheading = "<h4>Risk " + countrisks + "</h4>";
                 $("#js-risk-container").append(riskheading);
                 $("#js-risk-container").append(newobj);
-                $("#js-risk-2").find("input.js-riskname").val("");
-            });
+                var section = $("#" + sectionid);
+                section.find(".js-select-type").val("");
+                section.find("input.js-riskname").val("");
+                section.find(".js-riskname").removeClass("hide");
+                section.find(".js-likelihood").removeClass("hide");
+                section.find(".js-impact").removeClass("hide");
 
-        });</script>
+                $(".js-select-type").change(function () {
+                    var type = $(this).val();
+                    var section = $("#" + sectionid);
+                    if (type != null) {
+                        section.find(".js-impact-group").addClass("hide");
+                        section.find(".js-type-" + type).removeClass("hide");
+
+                        section.find(".js-riskname").removeClass("hide");
+                        section.find(".js-likelihood").removeClass("hide");
+                        section.find(".js-impact").removeClass("hide");
+                        $(".js-add-risk").removeClass("hide");
+                    }
+                });
+    });
+
+
+
+    $("#btn-calculate").on("click", function () {
+     // loop over all the risk items and output their colour
+
+
+        if ($("#js-riskname").val().length > 0) {
+            risk_name = $("#js-riskname").val();
+            localStorage.setItem("risk_name", risk_name);
+            save_questions("c1", "i");
+
+        };
+
+        $("#js-results").removeClass("hide");
+
+        var section = $("#js-results");
+        $('html,body').animate({ scrollTop: section.offset().top }, 'slow');
+
+
+        var overall_score = 0;
+
+        $("#risk-name").text(risk_name);
+        var value = getRadioValues("c1", "i");
+        $("#score").text(value.toFixed());
+        var scoreclass = getScorename(value).replace(/\s+/g, '-').toLowerCase();
+        $("#score").removeClass(function (index, className) {
+            return (className.match(/\btext-\S+/g) || []).join(' ');
+        });
+        $("#score").addClass('text-' + scoreclass);
+        var scoretitle = getScorename(value);
+        $(".js-score-title").html(scoretitle);
+        $(".js-score-main").removeClass(function (index, className) {
+            return (className.match(/\btext-\S+/g) || []).join(' ');
+        });
+        $(".js-score-main").addClass('text-' + scoreclass);
+
+
+        $("#overallscore").removeClass("hide");
+
+        $("p.score").addClass("hide");
+        $("p." + scoreclass).removeClass("hide");
+
+    });
+
+
+    if (cache_available == true) {
+        $("#btn-calculate").trigger("click");
+
+    }
+
+    function setRadioValue(name1, val1) {
+        return $("input[name='" + name1 + "'][value = " + val1 + "]").prop('checked', true);
+    }
+
+    function getRadioValue(name1) {
+        return $("input[name='" + name1 + "']:checked").val();
+    }
+
+    function getRadioValues(name1, name2) {
+        var value1 = 0;
+        var value2 = 0;
+        if (name1 != null && name1.length > 0) {
+            value1 = $("input[name='" + name1 + "']:checked").val();
+        }
+        if (name2 != null && name2.length > 0) {
+            value2 = parseInt($("input[name='" + name2 + "']:checked").val());
+        }
+
+        return value1 * value2;
+    }
+
+    function getScorename(value) {
+        var scorename = "Very low";
+        if (value >= 7) {
+            scorename = "Low";
+        }
+        if (value >= 10) {
+            scorename = "Medium";
+        }
+        if (value >= 17) {
+            scorename = "High";
+        }
+        if (value >= 21) {
+            scorename = "Very high";
+        }
+        return scorename;
+    }
+
+    function load_questions(saved1, saved2) {
+        var numloaded = 0;
+        if (localStorage.getItem(saved1) != null) {
+            setRadioValue(saved1, localStorage.getItem(saved1));
+            numloaded++;
+        }
+        if (localStorage.getItem(saved2) != null) {
+            setRadioValue(saved2, localStorage.getItem(saved2));
+            numloaded++;
+        }
+        return numloaded;
+    }
+
+    function save_questions(saved1, saved2) {
+
+        localStorage.setItem(saved1, getRadioValue(saved1));
+        localStorage.setItem(saved2, getRadioValue(saved2));
+
+    }
+
+});
+
+
+
+
+    </script>
 </body>
 
 </html>
