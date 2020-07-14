@@ -1450,3 +1450,105 @@ form label {
     font-size: 26px;
     line-height: 36px;
 }
+
+#scoretitle,
+.score-tag {
+    font-weight: bold;
+    display: inline-block;
+    padding: 3px 8px;
+}
+
+.text-very-high {
+    color: #942514;
+    background: #f6d7d2;
+}
+
+
+.text-high {
+    color: #6e3619;
+    background: #fcd6c3;
+}
+
+.text-medium {
+    color: #594d00;
+    background: #fff7bf;
+}
+
+.text-low {
+    color: #10403c;
+    background: #bfe3e0;
+}
+
+.text-very-low {
+    color: #005a30;
+    background: #cce2d8;
+}
+
+.eforms .radiogroup {
+
+}
+
+.eforms .radiogroup li {
+    clear: left;
+    display: block;
+    margin-bottom: 8px;
+    min-height: 40px;
+    padding: 0 0 0 40px;
+    position: relative;
+}
+.eforms .radiogroup label::before {
+    background: #fff;
+    border: 2px solid #4c6272;
+    border-radius: 50%;
+    box-sizing: border-box;
+    content: '';
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+}
+
+.eforms .radiogroup label::after {
+    background: #4c6272;
+    border: 10px solid #212b32;
+    border-radius: 50%;
+    content: '';
+    height: 0;
+    left: 10px;
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    width: 0
+}
+
+.nhsuk-radios__input:focus+.nhsuk-radios__label::before {
+    border: 4px solid #212b32;
+    box-shadow: 0 0 0 4px #ffeb3b;
+    outline: 4px solid transparent;
+    outline-offset: 4px
+}
+
+.nhsuk-radios__input:checked+.nhsuk-radios__label::after {
+    opacity: 1
+}
+
+.nhsuk-radios__input:disabled,.nhsuk-radios__input:disabled+.nhsuk-radios__label {
+    cursor: default
+}
+
+.nhsuk-radios__input:disabled+.nhsuk-radios__label {
+    opacity: .5
+}
+
+.eforms .radiogroup input {
+    cursor: pointer;
+    height: 40px;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+    z-index: 1;
+}
