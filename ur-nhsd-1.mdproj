@@ -167,7 +167,11 @@
     <None Include="arm\risk\assess-risk-calculator.html" />
     <None Include="arm\risk\create-action-plan.html" />
     <None Include="arm\cpmo\reporting-team.html" />
-    <None Include="arm\cpmo\partnering-team.html" />
     <None Include="EmptyTextFile.txt" />
+    <None Include="arm\cpmo\portfolio-partnering\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="arm\cpmo\standards-and-investment\" />
+    <Folder Include="arm\cpmo\portfolio-partnering\" />
   </ItemGroup>
 </Project>
