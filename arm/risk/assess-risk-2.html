@@ -375,7 +375,7 @@
                                                     <span class="eforms-hint"></span>
                                                 </div>
 
-                                                <fieldset name="group_prefix" class="js-riskname-section eforms-fieldgroup">
+                                                <fieldset name="group_prefix" class="js-riskname-section eforms-fieldgroup hide">
                                                     <legend class="eforms-fieldgroupname hide">Risk</legend>
 
                                                     <div class="eforms-field">
@@ -387,7 +387,7 @@
 
                                                 </fieldset>
 
-                                                <fieldset name="group_prefix" class="js-likelihood eforms-fieldgroup">
+                                                <fieldset name="group_prefix" class="js-likelihood eforms-fieldgroup hide">
                                                     <legend class="eforms-fieldgroupname" style="margin: 0;">Likelihood</legend>
 
                                                     <div class="eforms-field">
@@ -432,17 +432,17 @@
                                                     </div>
                                                 </fieldset>
 
-                                                <fieldset name="group_prefix" class="js-impact eforms-fieldgroup">
+                                                <fieldset name="group_prefix" class="js-impact eforms-fieldgroup hide">
                                                     <legend class="eforms-fieldgroupname js-impact-title" style="margin: 0;">Impact <span class="js-impact-type"></span></legend>
 
                                                     <div id="impact-groups" class="eforms-field">
-                                                        <div class='js-impact-group js-type-cost'>
+                                                        <div class='js-impact-group js-type-cost hide'>
                                                             <label class='js-impact-label eforms-label'>What impact could it have on cost?<span class='eforms-req'></span></label>
                                                             <ul class='radiogroup'>
                                                                 <li class='type-cost-option-1 grid-row'>
-                                                                    <label for='cost-1'>
+                                                                    <label for='risk-0-cost-1'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='cost' id='cost-1' value='1'>
+                                                                            <input type='radio' name='risk-0-cost' id='risk-0-cost-1' value='1'>
                                                                             <strong>Very low</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -451,9 +451,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-cost-option-2'>
-                                                                    <label for='cost-2'>
+                                                                    <label for='risk-0-cost-2'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='cost' id='cost-2' value='2'>
+                                                                            <input type='radio' name='risk-0-cost' id='risk-0-cost-2' value='2'>
                                                                             <strong>Low</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -462,9 +462,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-cost-option-3'>
-                                                                    <label for='cost-3'>
+                                                                    <label for='risk-0-cost-3'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='cost' id='cost-3' value='3'>
+                                                                            <input type='radio' name='risk-0-cost' id='risk-0-cost-3' value='3'>
                                                                             <strong>Medium</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -473,9 +473,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-cost-option-4'>
-                                                                    <label for='cost-4'>
+                                                                    <label for='risk-0-cost-4'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='cost' id='cost-4' value='4'>
+                                                                            <input type='radio' name='risk-0-cost' id='risk-0-cost-4' value='4'>
                                                                             <strong>High</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -484,9 +484,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-cost-option-5'>
-                                                                    <label for='cost-5'>
+                                                                    <label for='risk-0-cost-5'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='cost' id='cost-5' value='5'>
+                                                                            <input type='radio' name='risk-0-cost' id='risk-0-cost-5' value='5'>
                                                                             <strong>Very high</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -500,9 +500,9 @@
                                                             <label class='js-impact-label eforms-label'>What impact could it have on quality?<span class='eforms-req'></span></label>
                                                             <ul class='radiogroup'>
                                                                 <li class='type-quality-option-1 grid-row'>
-                                                                    <label for='quality-1'>
+                                                                    <label for='risk-0-quality-1'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='quality' id='quality-1' value='1'>
+                                                                            <input type='radio' name='risk-0-quality' id='risk-0-quality-1' value='1'>
                                                                             <strong>Very low</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -511,9 +511,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-quality-option-2'>
-                                                                    <label for='quality-2'>
+                                                                    <label for='risk-0-quality-2'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='quality' id='quality-2' value='2'>
+                                                                            <input type='radio' name='risk-0-quality' id='risk-0-quality-2' value='2'>
                                                                             <strong>Low</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -522,9 +522,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-quality-option-3'>
-                                                                    <label for='quality-3'>
+                                                                    <label for='risk-0-quality-3'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='quality' id='quality-3' value='3'>
+                                                                            <input type='radio' name='risk-0-quality' id='risk-0-quality-3' value='3'>
                                                                             <strong>Medium</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -533,9 +533,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-quality-option-4'>
-                                                                    <label for='quality-4'>
+                                                                    <label for='risk-0-quality-4'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='quality' id='quality-4' value='4'>
+                                                                            <input type='radio' name='risk-0-quality' id='risk-0-quality-4' value='4'>
                                                                             <strong>High</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -544,9 +544,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-quality-option-5'>
-                                                                    <label for='quality-5'>
+                                                                    <label for='risk-0-quality-5'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='quality' id='quality-5' value='5'>
+                                                                            <input type='radio' name='risk-0-quality' id='risk-0-quality-5' value='5'>
                                                                             <strong>Very high</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -560,9 +560,9 @@
                                                             <label class='js-impact-label eforms-label'>What impact could it have on the schedule?<span class='eforms-req'></span></label>
                                                             <ul class='radiogroup'>
                                                                 <li class='type-schedule-option-1 grid-row'>
-                                                                    <label for='schedule-1'>
+                                                                    <label for='risk-0-schedule-1'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='schedule' id='schedule-1' value='1'>
+                                                                            <input type='radio' name='risk-0-schedule' id='risk-0-schedule-1' value='1'>
                                                                             <strong>Very low</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -571,9 +571,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-schedule-option-2'>
-                                                                    <label for='schedule-2'>
+                                                                    <label for='risk-0-schedule-2'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='schedule' id='schedule-2' value='2'>
+                                                                            <input type='radio' name='risk-0-schedule' id='risk-0-schedule-2' value='2'>
                                                                             <strong>Low</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -582,9 +582,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-schedule-option-3'>
-                                                                    <label for='schedule-3'>
+                                                                    <label for='risk-0-schedule-3'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='schedule' id='schedule-3' value='3'>
+                                                                            <input type='radio' name='risk-0-schedule' id='risk-0-schedule-3' value='3'>
                                                                             <strong>Medium</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -593,9 +593,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-schedule-option-4'>
-                                                                    <label for='schedule-4'>
+                                                                    <label for='risk-0-schedule-4'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='schedule' id='schedule-4' value='4'>
+                                                                            <input type='radio' name='risk-0-schedule' id='risk-0-schedule-4' value='4'>
                                                                             <strong>High</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -604,9 +604,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-schedule-option-5'>
-                                                                    <label for='schedule-5'>
+                                                                    <label for='risk-0-schedule-5'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='schedule' id='schedule-5' value='5'>
+                                                                            <input type='radio' name='risk-0-schedule' id='risk-0-schedule-5' value='5'>
                                                                             <strong>Very high</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -620,9 +620,9 @@
                                                             <label class='js-impact-label eforms-label'>What impact could it hav on benefits?<span class='eforms-req'></span></label>
                                                             <ul class='radiogroup'>
                                                                 <li class='type-benefits-option-1 grid-row'>
-                                                                    <label for='benefits-1'>
+                                                                    <label for='risk-0-benefits-1'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='benefits' id='benefits-1' value='1'>
+                                                                            <input type='radio' name='risk-0-benefits' id='risk-0-benefits-1' value='1'>
                                                                             <strong>Very low</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -631,9 +631,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-benefits-option-2'>
-                                                                    <label for='benefits-2'>
+                                                                    <label for='risk-0-benefits-2'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='benefits' id='benefits-2' value='2'>
+                                                                            <input type='radio' name='risk-0-benefits' id='risk-0-benefits-2' value='2'>
                                                                             <strong>Low</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -642,9 +642,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-benefits-option-3'>
-                                                                    <label for='benefits-3'>
+                                                                    <label for='risk-0-benefits-3'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='benefits' id='benefits-3' value='3'>
+                                                                            <input type='radio' name='risk-0-benefits' id='risk-0-benefits-3' value='3'>
                                                                             <strong>Medium</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -653,9 +653,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-benefits-option-4'>
-                                                                    <label for='benefits-4'>
+                                                                    <label for='risk-0-benefits-4'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='benefits' id='benefits-4' value='4'>
+                                                                            <input type='radio' name='risk-0-benefits' id='risk-0-benefits-4' value='4'>
                                                                             <strong>High</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -664,9 +664,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-benefits-option-5'>
-                                                                    <label for='benefits-5'>
+                                                                    <label for='risk-0-benefits-5'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='benefits' id='benefits-5' value='5'>
+                                                                            <input type='radio' name='risk-0-benefits' id='risk-0-benefits-5' value='5'>
                                                                             <strong>Very high</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -680,9 +680,9 @@
                                                             <label class='js-impact-label eforms-label'>What impact could it have on reputation?<span class='eforms-req'></span></label>
                                                             <ul class='radiogroup'>
                                                                 <li class='type-reputation-option-1 grid-row'>
-                                                                    <label for='reputation-1'>
+                                                                    <label for='risk-0-reputation-1'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='reputation' id='reputation-1' value='1'>
+                                                                            <input type='radio' name='risk-0-reputation' id='risk-0-reputation-1' value='1'>
                                                                             <strong>Very low</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -691,9 +691,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-reputation-option-2'>
-                                                                    <label for='reputation-2'>
+                                                                    <label for='risk-0-reputation-2'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='reputation' id='reputation-2' value='2'>
+                                                                            <input type='radio' name='risk-0-reputation' id='risk-0-reputation-2' value='2'>
                                                                             <strong>Low</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -702,9 +702,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-reputation-option-3'>
-                                                                    <label for='reputation-3'>
+                                                                    <label for='risk-0-reputation-3'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='reputation' id='reputation-3' value='3'>
+                                                                            <input type='radio' name='risk-0-reputation' id='risk-0-reputation-3' value='3'>
                                                                             <strong>Medium</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -713,9 +713,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-reputation-option-4'>
-                                                                    <label for='reputation-4'>
+                                                                    <label for='risk-0-reputation-4'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='reputation' id='reputation-4' value='4'>
+                                                                            <input type='radio' name='risk-0-reputation' id='risk-0-reputation-4' value='4'>
                                                                             <strong>High</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -724,9 +724,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-reputation-option-5'>
-                                                                    <label for='reputation-5'>
+                                                                    <label for='risk-0-reputation-5'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='reputation' id='reputation-5' value='5'>
+                                                                            <input type='radio' name='risk-0-reputation' id='risk-0-reputation-5' value='5'>
                                                                             <strong>Very high</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -740,9 +740,9 @@
                                                             <label class='js-impact-label eforms-label'>What impact could it have on people / clinicians?<span class='eforms-req'></span></label>
                                                             <ul class='radiogroup'>
                                                                 <li class='type-people-option-1 grid-row'>
-                                                                    <label for='people-1'>
+                                                                    <label for='risk-0-people-1'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='people' id='people-1' value='1'>
+                                                                            <input type='radio' name='risk-0-people' id='risk-0-people-1' value='1'>
                                                                             <strong>Very low</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -751,9 +751,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-people-option-2'>
-                                                                    <label for='people-2'>
+                                                                    <label for='risk-0-people-2'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='people' id='people-2' value='2'>
+                                                                            <input type='radio' name='risk-0-people' id='risk-0-people-2' value='2'>
                                                                             <strong>Low</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -762,9 +762,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-people-option-3'>
-                                                                    <label for='people-3'>
+                                                                    <label for='risk-0-people-3'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='people' id='people-3' value='3'>
+                                                                            <input type='radio' name='risk-0-people' id='risk-0-people-3' value='3'>
                                                                             <strong>Medium</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -773,9 +773,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-people-option-4'>
-                                                                    <label for='people-4'>
+                                                                    <label for='risk-0-people-4'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='people' id='people-4' value='4'>
+                                                                            <input type='radio' name='risk-0-people' id='risk-0-people-4' value='4'>
                                                                             <strong>High</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -784,9 +784,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-people-option-5'>
-                                                                    <label for='people-5'>
+                                                                    <label for='risk-0-people-5'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='people' id='people-5' value='5'>
+                                                                            <input type='radio' name='risk-0-people' id='risk-0-people-5' value='5'>
                                                                             <strong>Very high</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -800,9 +800,9 @@
                                                             <label class='js-impact-label eforms-label'>What impact could it have on information security?<span class='eforms-req'></span></label>
                                                             <ul class='radiogroup'>
                                                                 <li class='type-security-option-1 grid-row'>
-                                                                    <label for='security-1'>
+                                                                    <label for='risk-0-security-1'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='security' id='security-1' value='1'>
+                                                                            <input type='radio' name='risk-0-security' id='risk-0-security-1' value='1'>
                                                                             <strong>Very low</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -811,9 +811,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-security-option-2'>
-                                                                    <label for='security-2'>
+                                                                    <label for='risk-0-security-2'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='security' id='security-2' value='2'>
+                                                                            <input type='radio' name='risk-0-security' id='risk-0-security-2' value='2'>
                                                                             <strong>Low</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -822,9 +822,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-security-option-3'>
-                                                                    <label for='security-3'>
+                                                                    <label for='risk-0-security-3'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='security' id='security-3' value='3'>
+                                                                            <input type='radio' name='risk-0-security' id='risk-0-security-3' value='3'>
                                                                             <strong>Medium</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -833,9 +833,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-security-option-4'>
-                                                                    <label for='security-4'>
+                                                                    <label for='risk-0-security-4'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='security' id='security-4' value='4'>
+                                                                            <input type='radio' name='risk-0-security' id='risk-0-security-4' value='4'>
                                                                             <strong>High</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -844,9 +844,9 @@
                                                                     </label>
                                                                 </li>
                                                                 <li class='type-security-option-5'>
-                                                                    <label for='security-5'>
+                                                                    <label for='risk-0-security-5'>
                                                                         <span class='column column--one-third'>
-                                                                            <input type='radio' name='security' id='security-5' value='5'>
+                                                                            <input type='radio' name='risk-0-security' id='risk-0-security-5' value='5'>
                                                                             <strong>Very high</strong>
                                                                         </span>
                                                                         <span class='column column--two-thirds small-text'>
@@ -1155,11 +1155,6 @@
             var count_answers = 0;
 
 
-            $(".js-impact-group").addClass("hide");
-            $(".js-riskname-section").addClass("hide");
-            $(".js-likelihood").addClass("hide");
-            $(".js-impact").addClass("hide");
-
             var sectionid = "risk-0";
             var numrisks = 0;
             var risk0 = $("#js-risk-0");
@@ -1176,14 +1171,12 @@
                 $("#js-risk-container").append(newobj);
                 var section = $("#js-" + sectionid);
                 section.find(".js-risk-number").text(numrisks);
-                section.find(".js-select-type").val("");
-                section.find("input.js-riskname").val("");
-                section.find(".js-riskname-section").addClass("hide");
-                section.find(".js-likelihood").addClass("hide");
 
                 section.find("input[type='radio']").each(function () {
-                    this.id = this.id.replace("risk-0", sectionid);
-                    this.name = this.name.replace("risk-0", sectionid);
+                    if (this.id != null && this.name != null) {
+                        this.id = this.id.replace("risk-0", sectionid);
+                        this.name = this.name.replace("risk-0", sectionid);
+                    }
                 });
                 section.find("li label").each(function () {
                     if ($(this).attr("for") != null && $(this).attr("for").length > 6) {
@@ -1197,7 +1190,7 @@
                     if (type != null) {
                         section.find(".js-impact").removeClass("hide");
                         section.find(".js-impact-type").text(type);
-                        section.find(".js-impact-group").addClass("hide");
+                        section.find(".js-impact-group").addClass("hide"); // hide any that are open
                         section.find(".js-type-" + type).removeClass("hide");
 
                         section.find(".js-riskname-section").removeClass("hide");
@@ -1207,10 +1200,10 @@
                     }
                 });
 
-                $(".btn-calculate").on("click", function () {
+                $(".btn-calculate").on("click", function (e) {
                     var section = $(this).closest(".js-risk-section");
+                    e.preventDefault();
                     sectionid = section.attr("id").substring(3, section.attr("id").length);
-
                     if (section != null) {
                         section.find(".js-edit").addClass("hide");
                         var risk_name = section.find("input.js-riskname").val();
@@ -1218,17 +1211,15 @@
 
                         $(".js-overall-results").removeClass("hide");
 
-                        var results = section.find(".js-results");
-                        results.removeClass("hide");
                         section.find(".js-label-riskname").text(risk_name);
                         section.find(".js-risktitle").addClass("hide");
                         section.find(".js-expand-risk").removeClass("hide");
 
-                        var overall_score = 0;
-
+                        var results = section.find(".js-results");
+                        results.removeClass("hide");
                         results.find(".risk-name").text(risk_name);
 
-                        var value = getRadioValues(sectionid + "-l", impact_type);
+                        var value = getRadioValues(sectionid + "-l", sectionid + "-" + impact_type);
                         results.find(".score").text(value.toFixed());
                         var scoreclass = getScorename(value).replace(/\s+/g, '-').toLowerCase();
                         results.find(".score").removeClass(function (index, className) {
@@ -1241,10 +1232,7 @@
                             return (className.match(/\btext-\S+/g) || []).join(' ');
                         });
                         results.find(".js-score-main").addClass('text-' + scoreclass);
-
-
                         results.find(".overallscore").removeClass("hide");
-
                         results.find("p.score").addClass("hide");
                         results.find("p." + scoreclass).removeClass("hide");
 
@@ -1258,7 +1246,7 @@
                     var section = $(this).closest(".js-risk-section");
                     section.find(".js-edit").removeClass("hide");
                     var results = section.find(".js-results");
-                    results.addeClass("hide");
+                    results.addClass("hide");
                     section.find(".js-risktitle").removeClass("hide");
                     section.find(".js-expand-risk").addClass("hide");
 
