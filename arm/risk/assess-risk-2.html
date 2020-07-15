@@ -40,6 +40,7 @@
     <script src="../../content/js/custom.js"></script>
     <style type="text/css">
 
+
         #scoretitle,
         .score-tag {
             display: inline-block;
@@ -340,8 +341,8 @@
                                 <form class="eforms form" style="margin-top:0 !important" id="form-risk">
 
                                     <div id="js-risk-container">
-                                        <div id="js-risk-1" class="js-risk-section eforms-page" style="margin-top:0">
-
+                                        <div id="js-risk-0" class="js-risk-section eforms-page hide" style="margin-top:0">
+                                            <h4>Risk <span class="js-risk-number">0</span></h4>
                                             <div class="eforms-field">
                                                 <label for="select-type" class="eforms-label">What type of risk is this?<span class="eforms-req"></span></label>
                                                 <select name="select-type" class="js-select-type" style="width:200px">
@@ -359,7 +360,7 @@
                                             </div>
 
 
-                                            <fieldset name="group_prefix" class="js-riskname eforms-fieldgroup">
+                                            <fieldset name="group_prefix" class="js-riskname-section eforms-fieldgroup">
                                                 <legend class="eforms-fieldgroupname hide">Risk</legend>
 
                                                 <div class="eforms-field">
@@ -381,32 +382,32 @@
                                                     <ul class="radiogroup" id="parent">
 
                                                         <li>
-                                                            <label for="c1-0">
-                                                                <input type="radio" name="c1" id="c1-0" class="" value="1" checked>
+                                                            <label for="risk-0-l-0">
+                                                                <input type="radio" name="risk-0-l" id="risk-0-l-0" class="" value="1">
                                                                 Rare
                                                             </label>
                                                         </li>
                                                         <li>
-                                                            <label for="c1-1">
-                                                                <input type="radio" name="c1" id="c1-1" class="" value="2">
+                                                            <label for="risk-0-l-1">
+                                                                <input type="radio" name="risk-0-l" id="risk-0-l-1" class="" value="2">
                                                                 Unlikely
                                                             </label>
                                                         </li>
                                                         <li>
-                                                            <label for="c1-2">
-                                                                <input type="radio" name="c1" id="c1-2" class="" value="3">
+                                                            <label for="risk-0-l-2">
+                                                                <input type="radio" name="risk-0-l" id="risk-0-l-2" class="" value="3">
                                                                 Possible
                                                             </label>
                                                         </li>
                                                         <li>
-                                                            <label for="c1-3">
-                                                                <input type="radio" name="c1" id="c1-3" class="" value="4">
+                                                            <label for="risk-0-l-3">
+                                                                <input type="radio" name="risk-0-l" id="risk-0-l-3" class="" value="4">
                                                                 Likely
                                                             </label>
                                                         </li>
                                                         <li>
-                                                            <label for="c1-4">
-                                                                <input type="radio" name="c1" id="c1-4" class="" value="5">
+                                                            <label for="risk-0-l-4">
+                                                                <input type="radio" name="risk-0-l" id="risk-0-l-4" class="" value="5">
                                                                 Certain
                                                             </label>
                                                         </li>
@@ -420,14 +421,14 @@
                                                 <legend class="eforms-fieldgroupname" style="margin: 0;">Impact</legend>
 
                                                 <div id="impact-groups" class="eforms-field">
-                                                    
+
                                                     <div class='js-impact-group js-type-cost'>
                                                         <label class='js-impact-label eforms-label'>What impact could it have on cost?<span class='eforms-req'></span></label>
                                                         <ul class='radiogroup'>
                                                             <li class='type-cost-option-1 grid-row'>
                                                                 <label for='cost-1'>
                                                                     <span class='column column--one-third'>
-                                                                        <input type='radio' name='cost' id='cost-1' value='1' checked>
+                                                                        <input type='radio' name='cost' id='cost-1' value='1'>
                                                                         <strong>Very low</strong>
                                                                     </span>
                                                                     <span class='column column--two-thirds small-text'>
@@ -487,7 +488,7 @@
                                                             <li class='type-quality-option-1 grid-row'>
                                                                 <label for='quality-1'>
                                                                     <span class='column column--one-third'>
-                                                                        <input type='radio' name='quality' id='quality-1' value='1' checked>
+                                                                        <input type='radio' name='quality' id='quality-1' value='1'>
                                                                         <strong>Very low</strong>
                                                                     </span>
                                                                     <span class='column column--two-thirds small-text'>
@@ -547,7 +548,7 @@
                                                             <li class='type-schedule-option-1 grid-row'>
                                                                 <label for='schedule-1'>
                                                                     <span class='column column--one-third'>
-                                                                        <input type='radio' name='schedule' id='schedule-1' value='1' checked>
+                                                                        <input type='radio' name='schedule' id='schedule-1' value='1'>
                                                                         <strong>Very low</strong>
                                                                     </span>
                                                                     <span class='column column--two-thirds small-text'>
@@ -607,7 +608,7 @@
                                                             <li class='type-benefits-option-1 grid-row'>
                                                                 <label for='benefits-1'>
                                                                     <span class='column column--one-third'>
-                                                                        <input type='radio' name='benefits' id='benefits-1' value='1' checked>
+                                                                        <input type='radio' name='benefits' id='benefits-1' value='1'>
                                                                         <strong>Very low</strong>
                                                                     </span>
                                                                     <span class='column column--two-thirds small-text'>
@@ -667,7 +668,7 @@
                                                             <li class='type-reputation-option-1 grid-row'>
                                                                 <label for='reputation-1'>
                                                                     <span class='column column--one-third'>
-                                                                        <input type='radio' name='reputation' id='reputation-1' value='1' checked>
+                                                                        <input type='radio' name='reputation' id='reputation-1' value='1'>
                                                                         <strong>Very low</strong>
                                                                     </span>
                                                                     <span class='column column--two-thirds small-text'>
@@ -727,7 +728,7 @@
                                                             <li class='type-people-option-1 grid-row'>
                                                                 <label for='people-1'>
                                                                     <span class='column column--one-third'>
-                                                                        <input type='radio' name='people' id='people-1' value='1' checked>
+                                                                        <input type='radio' name='people' id='people-1' value='1'>
                                                                         <strong>Very low</strong>
                                                                     </span>
                                                                     <span class='column column--two-thirds small-text'>
@@ -787,7 +788,7 @@
                                                             <li class='type-security-option-1 grid-row'>
                                                                 <label for='security-1'>
                                                                     <span class='column column--one-third'>
-                                                                        <input type='radio' name='security' id='security-1' value='1' checked>
+                                                                        <input type='radio' name='security' id='security-1' value='1'>
                                                                         <strong>Very low</strong>
                                                                     </span>
                                                                     <span class='column column--two-thirds small-text'>
@@ -847,10 +848,10 @@
                                         </div>
                                     </div>
 
-                                    <h4><a href="#" class="js-add-risk hide">Add another risk</a></h4>
                                     <div class="eforms-buttons">
-                                        <a class="button" value="Run assessment" id="btn-calculate">Calculate</a>
+                                        <a class="button" value="Run assessment" id="btn-calculate">Continue</a>
                                     </div>
+                                    <h4><a href="#" class="js-add-risk hide">Add another risk</a></h4>
 
                                 </form>
 
@@ -860,15 +861,13 @@
 
 
                         <div class="article-section hide" id="js-results">
-
-
                             <div class="article-section">
                                 <h3>Assessment result</h3>
-                                <h2 class="js-score-main js-score-title" id="scoretitle"></h2>
+                                <h2 class="js-score-main js-score-title"></h2>
                                 <p>
-                                    The risk level for <strong id="risk-name"></strong> is
+                                    The risk level for <strong class="risk-name"></strong> is
                                     <strong class="js-score-title"></strong> and scores <strong>
-                                        <span class="score" id="score"></span>/25
+                                        <span class="score"></span>/25
                                     </strong> for risk.
                                 </p>
 
@@ -879,7 +878,7 @@
                                     <div class="emphasis-box__content" style="margin-top: 0;">
                                         <strong role="heading" class="emphasis-box__heading" id="emphasis-emphasis-493baba4" data-uipath="website.contentblock.emphasis.heading">What to do next?</strong>
                                         <div data-uipath="website.contentblock.emphasis.content">
-                                            <p class="hide" id="overallscore"></p>
+                                            <p class="hide overallscore"></p>
                                             <div>
                                                 <p class="score very-low">Well done! Your risk assessment means you don't have to take action.</p>
                                                 <p class="score low hide">A reasonable result, try to understand more about this risk.</p>
@@ -1136,174 +1135,152 @@
 
 
             $(".js-impact-group").addClass("hide");
+            $(".js-riskname-section").addClass("hide");
+            $(".js-likelihood").addClass("hide");
+            $(".js-impact").addClass("hide");
 
-    $(".js-riskname").addClass("hide");
-    $(".js-likelihood").addClass("hide");
-    $(".js-impact").addClass("hide");
+            var sectionid = "risk-0";
+            var countrisks = 0;
+            var risk0 = $("#js-risk-0");
+            var regex = /^(.+?)(\d+)$/i;
 
-            $(".js-select-type").change(function () {
-                var type = $(this).val();
-                if (type != null) {
-                    var section = $(this).closest(".js-risk-section");
-                    section.find(".js-type-" + type).removeClass("hide");
+            $(".js-add-risk").click(function (e) {
+                e.preventDefault();
 
-                    section.find(".js-riskname").removeClass("hide");
-                    section.find(".js-likelihood").removeClass("hide");
-                    section.find(".js-impact").removeClass("hide");
-                    $(".js-add-risk").removeClass("hide");
-                }
-            });
+                countrisks = $("#js-risk-container").children().length;
+                sectionid = "risk-" + countrisks;
+       
+                var newobj = risk0.clone().attr("id", "js-" + sectionid).removeClass("hide");
 
-    var sectionid = "js-risk-1";
-
-    $(".js-add-risk").click(function (e) {
-        e.preventDefault();
-                var risk1 = $("#js-risk-1");
-                    var countrisks = $("#js-risk-container").children().length + 1;
-                if (countrisks > 2) {
-                    countrisks = countrisks - 1;
-                }
-                sectionid = "js-risk-" + countrisks;
-                var newobj = risk1.clone().attr("id", sectionid);
-                var riskheading = "<h4>Risk " + countrisks + "</h4>";
-                $("#js-risk-container").append(riskheading);
                 $("#js-risk-container").append(newobj);
-                var section = $("#" + sectionid);
+                var section = $("#js-" + sectionid);
+                section.find(".js-risk-number").text(countrisks);
                 section.find(".js-select-type").val("");
                 section.find("input.js-riskname").val("");
-                section.find(".js-riskname").removeClass("hide");
-                section.find(".js-likelihood").removeClass("hide");
-                section.find(".js-impact").removeClass("hide");
+                section.find(".js-riskname-section").addClass("hide");
+                section.find(".js-likelihood").addClass("hide");
+
+                section.find("input[type='radio']").each(function () {
+                    this.id = this.id.replace("risk-0", sectionid);
+                    this.name = this.name.replace("risk-0", sectionid);
+                });
+                section.find("li label").each(function () {
+                    if ($(this).attr("for") != null && $(this).attr("for").length > 6) {
+                        $(this).attr("for", $(this).attr("for").replace("risk-0", sectionid));
+                    }
+                });
 
                 $(".js-select-type").change(function () {
                     var type = $(this).val();
-                    var section = $("#" + sectionid);
+                    var section = $("#js-" + sectionid);
                     if (type != null) {
+                        section.find(".js-impact").removeClass("hide");
                         section.find(".js-impact-group").addClass("hide");
                         section.find(".js-type-" + type).removeClass("hide");
 
-                        section.find(".js-riskname").removeClass("hide");
+                        section.find(".js-riskname-section").removeClass("hide");
                         section.find(".js-likelihood").removeClass("hide");
                         section.find(".js-impact").removeClass("hide");
                         $(".js-add-risk").removeClass("hide");
                     }
                 });
-    });
+            });
+
+    $(".js-add-risk").trigger("click"); // create first empty one
+
+            $("#btn-calculate").on("click", function () {
+
+                var numrisks = $("#js-risk-container .js-risk-section").length;
+
+                $("#js-risk-container .js-risk-section").each(function (i, obj) {
+                    var risk_name = $(this).find("input.js-riskname").val();
+                    var results = $("#js-results");
+                    var overall_score = 0;
+
+                    results.find(".risk-name").text(risk_name);
+
+                    var value = getRadioValues("risk-1-l", "i");
+                    results.find(".score").text(value.toFixed());
+                    var scoreclass = getScorename(value).replace(/\s+/g, '-').toLowerCase();
+                    results.find(".score").removeClass(function (index, className) {
+                        return (className.match(/\btext-\S+/g) || []).join(' ');
+                    });
+                    results.find(".score").addClass('text-' + scoreclass);
+                    var scoretitle = getScorename(value);
+                    results.find(".js-score-title").html(scoretitle);
+                    results.find(".js-score-main").removeClass(function (index, className) {
+                        return (className.match(/\btext-\S+/g) || []).join(' ');
+                    });
+                    results.find(".js-score-main").addClass('text-' + scoreclass);
 
 
+                    results.find(".overallscore").removeClass("hide");
 
-    $("#btn-calculate").on("click", function () {
-     // loop over all the risk items and output their colour
+                    results.find("p.score").addClass("hide");
+                    results.find("p." + scoreclass).removeClass("hide");
+                });
 
+            });
 
-        if ($("#js-riskname").val().length > 0) {
-            risk_name = $("#js-riskname").val();
-            localStorage.setItem("risk_name", risk_name);
-            save_questions("c1", "i");
+            function setRadioValue(name1, val1) {
+                return $("input[name='" + name1 + "'][value = " + val1 + "]").prop('checked', true);
+            }
 
-        };
+            function getRadioValue(name1) {
+                return $("input[name='" + name1 + "']:checked").val();
+            }
 
-        $("#js-results").removeClass("hide");
+            function getRadioValues(name1, name2) {
+                var value1 = 0;
+                var value2 = 0;
+                if (name1 != null && name1.length > 0) {
+                    value1 = $("input[name='" + name1 + "']:checked").val();
+                }
+                if (name2 != null && name2.length > 0) {
+                    value2 = parseInt($("input[name='" + name2 + "']:checked").val());
+                }
 
-        var section = $("#js-results");
-        $('html,body').animate({ scrollTop: section.offset().top }, 'slow');
+                return value1 * value2;
+            }
 
+            function getScorename(value) {
+                var scorename = "Very low";
+                if (value >= 7) {
+                    scorename = "Low";
+                }
+                if (value >= 10) {
+                    scorename = "Medium";
+                }
+                if (value >= 17) {
+                    scorename = "High";
+                }
+                if (value >= 21) {
+                    scorename = "Very high";
+                }
+                return scorename;
+            }
 
-        var overall_score = 0;
+            function load_questions(saved1, saved2) {
+                var numloaded = 0;
+                if (localStorage.getItem(saved1) != null) {
+                    setRadioValue(saved1, localStorage.getItem(saved1));
+                    numloaded++;
+                }
+                if (localStorage.getItem(saved2) != null) {
+                    setRadioValue(saved2, localStorage.getItem(saved2));
+                    numloaded++;
+                }
+                return numloaded;
+            }
 
-        $("#risk-name").text(risk_name);
-        var value = getRadioValues("c1", "i");
-        $("#score").text(value.toFixed());
-        var scoreclass = getScorename(value).replace(/\s+/g, '-').toLowerCase();
-        $("#score").removeClass(function (index, className) {
-            return (className.match(/\btext-\S+/g) || []).join(' ');
-        });
-        $("#score").addClass('text-' + scoreclass);
-        var scoretitle = getScorename(value);
-        $(".js-score-title").html(scoretitle);
-        $(".js-score-main").removeClass(function (index, className) {
-            return (className.match(/\btext-\S+/g) || []).join(' ');
-        });
-        $(".js-score-main").addClass('text-' + scoreclass);
+            function save_questions(saved1, saved2) {
 
+                localStorage.setItem(saved1, getRadioValue(saved1));
+                localStorage.setItem(saved2, getRadioValue(saved2));
 
-        $("#overallscore").removeClass("hide");
+            }
 
-        $("p.score").addClass("hide");
-        $("p." + scoreclass).removeClass("hide");
-
-    });
-
-
-    if (cache_available == true) {
-        $("#btn-calculate").trigger("click");
-
-    }
-
-    function setRadioValue(name1, val1) {
-        return $("input[name='" + name1 + "'][value = " + val1 + "]").prop('checked', true);
-    }
-
-    function getRadioValue(name1) {
-        return $("input[name='" + name1 + "']:checked").val();
-    }
-
-    function getRadioValues(name1, name2) {
-        var value1 = 0;
-        var value2 = 0;
-        if (name1 != null && name1.length > 0) {
-            value1 = $("input[name='" + name1 + "']:checked").val();
-        }
-        if (name2 != null && name2.length > 0) {
-            value2 = parseInt($("input[name='" + name2 + "']:checked").val());
-        }
-
-        return value1 * value2;
-    }
-
-    function getScorename(value) {
-        var scorename = "Very low";
-        if (value >= 7) {
-            scorename = "Low";
-        }
-        if (value >= 10) {
-            scorename = "Medium";
-        }
-        if (value >= 17) {
-            scorename = "High";
-        }
-        if (value >= 21) {
-            scorename = "Very high";
-        }
-        return scorename;
-    }
-
-    function load_questions(saved1, saved2) {
-        var numloaded = 0;
-        if (localStorage.getItem(saved1) != null) {
-            setRadioValue(saved1, localStorage.getItem(saved1));
-            numloaded++;
-        }
-        if (localStorage.getItem(saved2) != null) {
-            setRadioValue(saved2, localStorage.getItem(saved2));
-            numloaded++;
-        }
-        return numloaded;
-    }
-
-    function save_questions(saved1, saved2) {
-
-        localStorage.setItem(saved1, getRadioValue(saved1));
-        localStorage.setItem(saved2, getRadioValue(saved2));
-
-    }
-
-});
-
-
-
-
-    </script>
+        });</script>
 </body>
 
 </html>
