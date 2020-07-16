@@ -334,8 +334,9 @@
 
                     <div class="column column--two-thirds page-block page-block--main">
 
-                        <div class="article-section" id="js-risk-assessment-wrapper">
+                        <div class="article-section">
                             <h2>Risk calculator</h2>
+                            <div id="js-risk-assessment-wrapper"></div>
                         </div>
 
                         <div class="article-section" id="how-score">
@@ -527,16 +528,14 @@
                                 <h4 class="js-risktitle">Risk <span class="js-risk-number">0</span> <span class="js-label-riskname"></span></h4>
                             -->
 
-                                <div class="grid-row expander">
-                                    <div class="column column--two-thirds">
-                                        <a href="#" class="js-expand-risk hide">
-                                            <h4>Risk <span class="js-risk-number">0</span> - <span class="js-label-riskname"></span></h4>
-                                        </a>
+                                <div class="expander">
+                                    <h4 class="hide">Risk <span class="js-risk-number">0</span> - <span class="js-label-riskname"></span></h4>
+                                    
+                                    <div class="hide js-results">
+                                        <p>The risk level for risk <span class="js-risk-number">0</span>: <strong class="js-label-riskname"></strong> is <span class="js-score-title js-score-main score-tag"></span>
+                                        and scores <span class="score score-tag"></span>/25 for risk – <a href="#" class="js-expand-risk">Change</a>.</p>
                                     </div>
-                                    <div class="column column--one-third hide js-results">
-                                        <span class="js-score-title js-score-main score-tag"></span>
-                                        <p>Risk score <span class="score score-tag"></span>/25</p>
-                                    </div>
+                                    
                                 </div>
 
                                 <div class="js-edit">
@@ -602,222 +601,157 @@
                                         <legend class="js-impact-title visually-hidden" style="margin: 0;">Impact <span class="js-impact-type"></span></legend>
 
                                         <div id="impact-groups">
-                                            <div class='js-impact-group js-type-cost hide'>
+                                            <div class='js-impact-group js-type-cost hide nhsuk-form-group'>
                                                 <label class='js-impact-label'>What impact could it have on cost?</label>
                                                 <div class="nhsuk-radios">
                                                     <div class="type-cost-option-1 nhsuk-radios__item">
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-cost' id='risk-0-cost-1' value='1'>
                                                         <label class="nhsuk-label nhsuk-radios__label"  for='risk-0-cost-1'>Very low</label>
-                                                        <span class="nhsuk-hint nhsuk-radios__hint">
-                                                            Corporate/ Executive Portfolio <£1m
-                                                            Division/Programme: <£100k 
-                                                            Functional Unit/Project: <£50k
-                                                            -or- Up to 3% of budget
-                                                        </span>
+                                                        <span class="nhsuk-hint nhsuk-radios__hint">For example, the risk could impact up to 3% of the budget.</span>
                                                     </div>
                                                     <div class='type-cost-option-2 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-cost' id='risk-0-cost-2' value='2'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-cost-2'>Low</label>
-                                                        <span class="nhsuk-hint nhsuk-radios__hint">
-                                                                Corporate/ Executive Portfolio: £1m - £10m
-                                                                Division/Programme: £100k - £1m
-                                                                Functional Unit/Project: £50k - £100k
-                                                                -or- Up to 5% of budget
-                                                        </span>
+                                                        <span class="nhsuk-hint nhsuk-radios__hint">For example, the risk could impact between 3% to 5% of the budget.</span>
                                                     </div>
                                                     <div class='type-cost-option-3 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-cost' id='risk-0-cost-3' value='3'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-cost-3'>Medium</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Corporate/ Executive Portfolio: £10m - £50m
-                                                            Division/Programme: £1m-£5m
-                                                            Functional Unit/Project: £100k - £500k
-                                                            -or- Up to 7% of budget
-                                                        </span>
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, the risk could impact between 5% to 7% of the budget.</span>
                                                     </div>
 
                                                     <div class='type-cost-option-4 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-cost' id='risk-0-cost-4' value='4'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-cost-4'>High</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Corporate/ Executive Portfolio: £50m - £100m
-                                                            Division/Programme: £5m-10m
-                                                            Functional Unit/Project: £500k- £1m
-                                                            -or- Up to 10% of budget
-                                                        </span>
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, the risk could impact between 7% to 10% of the budget.</span>
                                                     </div>
 
                                                     <div class='type-cost-option-5 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-cost' id='risk-0-cost-5' value='5'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-cost-5'>Very high</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Corporate/ Executive Portfolio: >£100m
-                                                            Division/Programme: >£10m
-                                                            Functional Unit/Project: >£1m
-                                                            -or- Over 10% of budget
-                                                        </span>
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, the risk could impact over 10% of the budget.</span>
                                                     </div>
 
                                                 </div>
                                             </div>
-                                            <div class='js-impact-group js-type-quality'>
+                                            <div class='js-impact-group js-type-quality nhsuk-form-group'>
                                                 <label class='js-impact-label'>What impact could it have on quality?</label>
 
                                                 <div class="nhsuk-radios">
                                                     <div class='type-quality-option-1 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-quality' id='risk-0-quality-1' value='1'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-quality-1'>Very low</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Minor impact on single functionality/ capability
-                                                            -or- Minor weaknesses (observation) identified at Gateway review or audit
-                                                        </span>
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, a minor impact on a single function or capability.</span>
                                                     </div>
 
                                                     <div class='type-quality-option-2 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-quality' id='risk-0-quality-2' value='2'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-quality-2'>Low</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Failure to achieve a single deliverable to time/ cost/ quality -or- 
-                                                            Minor impact on multiple functionalities/ capabilities or moderate impact on single functionality/ capability 
-                                                            -or- Moderate weakness (GREEN) identified at Gateway review or audit
-                                                        </span>
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, a minor impact on multiple functions or capabilities. <br>
+                                                        Or a moderate impact on a single function or capability.</span>
                                                     </div>
 
                                                     <div class='type-quality-option-3 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-quality' id='risk-0-quality-3' value='3'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-quality-3'>Medium</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Failure to achieve multiple deliverables to time/ cost/ quality 
-                                                            -or- Moderate impact on multiple functionalities/ capabilities
-                                                            -or- Severe weaknesses (AMBER) identified at Gateway review or audit
-                                                        </span>
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, a moderate impact on multiple functions or capabilities.</span>
                                                     </div>
 
                                                     <div class='type-quality-option-4 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-quality' id='risk-0-quality-4' value='4'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-quality-4'>High</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Failure to achieve a single key deliverable to time/ cost/ quality 
-                                                            -or- Major impact on single functionality/ capability
-                                                            -or- Critical weaknesses (RED) identified at Gateway review or audit
-                                                        </span>
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, a major impact on a single function or capability.</span>                                                        </span>
                                                     </div>
 
                                                     <div class='type-quality-option-5 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-quality' id='risk-0-quality-5' value='5'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-quality-5'>Very high</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Failure to achieve multiple key deliverables to time/ cost/ quality
-                                                            -or- Major impact on multiple functionalities/ capabilities
-                                                            -or- Failure to pass Gateway review or audit
-                                                        </span> 
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, a major impact on multiple functions or capabilities.</span> 
                                                     </div>
 
                                                 </div>
                                             </div>
-                                            <div class='js-impact-group js-type-schedule'>
+                                            <div class='js-impact-group js-type-schedule nhsuk-form-group'>
                                                 <label class='js-impact-label'>What impact could it have on the schedule?</label>
                                                 <div class='nhsuk-radios'>
                                                     <div class='type-schedule-option-1 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-schedule' id='risk-0-schedule-1' value='1'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-schedule-1'>Very low</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            less than 1-week delay <br/>-or- <br/>3% delay in plan <br/>-or- <br/>Impacts project non- critical path milestone (within tolerance)
-                                                        </span>
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, less than a weeks delay.</span>
                                                     </div>
 
                                                     <div class='type-schedule-option-2 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-schedule' id='risk-0-schedule-2' value='2'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-schedule-2'>Low</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            1-2 weeks delay
-                                                            -or- 5% delay in plan
-                                                            -or- Impacts project non- critical path milestone (out of tolerance)
-                                                        </span>
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, a 1-2 weeks delay.</span>
                                                     </div>
 
                                                     <div class='type-schedule-option-3 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-schedule' id='risk-0-schedule-3' value='3'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-schedule-3'>Medium</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            3-5 weeks delay
-                                                            -or- 7% delay in plan
-                                                            -or- Impacts project critical path milestone
-                                                        </span>
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, a 3-5 weeks delay.</span>
                                                     </div>
 
                                                     <div class='type-schedule-option-4 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-schedule' id='risk-0-schedule-4' value='4'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-schedule-4'>High</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            6-12 weeks delay
-                                                            -or- 10% delay in plan
-                                                            -or- Impacts Programme non-critical path milestone
-                                                        </span>
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, a 6-12 weeks delay.</span>
                                                     </div>
 
                                                     <div class='type-schedule-option-5 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-schedule' id='risk-0-schedule-5' value='5'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-schedule-5'>Very high</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            >12 weeks delay <br />-or- <br />Over 10% delay in plan <br />-or- <br />Impacts Programme critical path milestone
-                                                        </span>
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, more than 12 weeks delay.</span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class='js-impact-group js-type-benefits'>
-                                                <label class='js-impact-label eforms-label'>What impact could it hav on benefits?</label>
+                                            <div class='js-impact-group js-type-benefits nhsuk-form-group'>
+                                                <label class='js-impact-label eforms-label'>What impact could it have on benefits?</label>
                                                 <div class='nhsuk-radios'>
                                                     <div class='type-benefits-option-1 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-benefits' id='risk-0-benefits-1' value='1'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-benefits-1'>Very low</label>
                                                         <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Minor impact on single programme benefit <br />-or- <br />3% reduction in forecast benefit
+                                                            For example, a minor impact on a single programme benefit or a 3% reduction in forecast benefit.
                                                         </span>
                                                     </div>
 
                                                     <div class='type-benefits-option-2 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-benefits' id='risk-0-benefits-2' value='2'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-benefits-2'>Low</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Minor impact on multiple benefits or moderate impact on single programme benefit <br />-or- <br />5% reduction in forecast benefit
-                                                        </span>
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, a minor impact on multiple benefits or a moderate impact on single programme benefit.<br>
+                                                        Or a 5% reduction in forecast benefit.</span>
                                                     </div>
 
                                                     <div class='type-benefits-option-3 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-benefits' id='risk-0-benefits-3' value='3'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-benefits-3'>Medium</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Moderate impact on multiple programme benefits <br />-or- <br />7% reduction in forecast benefit
-                                                        </span>
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, a moderate impact on multiple programme benefits or a 7% reduction in forecast benefit.</span>
                                                     </div>
 
                                                     <div class='type-benefits-option-4 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-benefits' id='risk-0-benefits-4' value='4'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-benefits-4'>High</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Major impact on single key strategic benefit <br />-or- <br />10% reduction in forecast benefit
-                                                        </span>
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, a major impact on a single key strategic benefit or a 10% reduction in forecast benefit.</span>
                                                     </div>
 
                                                     <div class='type-benefits-option-5 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-benefits' id='risk-0-benefits-5' value='5'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-benefits-5'>Very high</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Major impact on multiple strategic benefits <br />-or- <br />Over 10% reduction in forecast benefit
-                                                        </span>
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, a major impact on multiple strategic benefits or over 10% reduction in forecast benefit.</span>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <div class='js-impact-group js-type-reputation'>
+                                            <div class='js-impact-group js-type-reputation nhsuk-form-group'>
                                                 <label class='js-impact-label'>What impact could it have on reputation?</label>
                                                 <div class='nhsuk-radios'>
                                                     <div class='type-reputation-option-1 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-reputation' id='risk-0-reputation-1' value='1'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-reputation-1'>Very low</label>
                                                         <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Requires Deputy Director's/ Project Manager’s response <br />-or- <br />Results in local news coverage <br />-or- <br />Little or no social media coverage
+                                                            For example, requires Deputy Director's response, results in local news coverage. <br />
+                                                            Or there will be little or no social media coverage.
                                                         </span>
                                                     </div>
 
@@ -825,7 +759,8 @@
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-reputation' id='risk-0-reputation-2' value='2'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-reputation-2'>Low</label>
                                                         <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Requires Director's/ Programme Manager’s response <br />-or- <br />Results in regional news coverage <br />-or- <br />Minimal social media coverage
+                                                            For example, requires Director's response, results in regional news coverage. <br />
+                                                            Or there will be minimal social media coverage.
                                                         </span>
                                                     </div>
 
@@ -833,7 +768,8 @@
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-reputation' id='risk-0-reputation-3' value='3'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-reputation-3'>Medium</label>
                                                         <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Requires Executive Director's response <br />-or- <br />Results in national news coverage <br />-or- <br />Moderate social media coverage
+                                                            For example, requires Executive Director's response, results in national news coverage. <br />
+                                                            Or there will be moderate social media coverage.
                                                         </span>
                                                     </div>
 
@@ -841,7 +777,8 @@
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-reputation' id='risk-0-reputation-4' value='4'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-reputation-4'>High</label>
                                                         <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Requires Chief Executive’s response <br />-or- <br />Results in prolonged national news coverage <br />-or- <br />Significant social media coverage
+                                                            For example, requires Chief Executive’s response, results in prolonged national news coverage.<br>
+                                                            Or there will be a lot of social media coverage.
                                                         </span>
                                                     </div>
 
@@ -849,19 +786,21 @@
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-reputation' id='risk-0-reputation-5' value='5'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-reputation-5'>Very high</label>
                                                         <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Requires Ministerial response <br />-or- <br />Results in international news coverage <br />-or- <br />Social media coverage goes “viral”
+                                                            For example, requires Ministerial response, results in international news coverage.<br>
+                                                            Or social media coverage goes “viral”.
                                                         </span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class='js-impact-group js-type-people'>
-                                                <label class='js-impact-label eforms-label'>What impact could it have on people / clinicians?</label>
+                                            <div class='js-impact-group js-type-people nhsuk-form-group'>
+                                                <label class='js-impact-label eforms-label'>What impact could it have on people or clinicians?</label>
                                                 <div class='nhsuk-radios'>
                                                     <div class='type-people-option-1 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-people' id='risk-0-people-1' value='1'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-people-1'>Very low</label>
                                                         <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Minor effect on an individual patient/staff/public.requiring no/minimal intervention or treatment.<br />Will indirectly lead to multiple minor injuries/illness <br /><br />No time off work
+                                                            For example, there could be a minor effect on a person which would need none or a small amount of treatment.
+                                                            Or could indirectly lead to multiple minor injuries or illness. <br />No time off work would be needed.
                                                         </span>
                                                     </div>
 
@@ -869,7 +808,9 @@
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-people' id='risk-0-people-2' value='2'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-people-2'>Low</label>
                                                         <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Minor injury or illness, requiring minor intervention.<br />Will indirectly lead to multiple moderate injuries/illness  <br /><br />Requiring time off work for >3 days<br />-and/or -<br />Hospital stay 1-3 days<br /><br /><5% patients /staff/ public affected
+                                                            For example, there could be a minor injury or illness which would need a small amount of treatment.<br />
+                                                            Or could indirectly lead to multiple moderate injuries or illness.  <br />
+                                                            Someone could need time off work for over 3 days, or a Hospital stay for 1-3 days.
                                                         </span>
                                                     </div>
 
@@ -877,7 +818,9 @@
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-people' id='risk-0-people-3' value='3'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-people-3'>Medium</label>
                                                         <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Moderate injury requiring professional intervention.<br />Will indirectly lead to multiple major injuries/illness <br /><br />Requiring time off work for 4-14 days <br />-and/or -<br />Hospital stay by 4-15 days <br /><br />RIDDOR/agency reportable incident<br /> <br />6-10% patients /staff/ public affected
+                                                            For example, there could be a moderate injury requiring professional treatment.<br />
+                                                            Or could indirectly lead to multiple major injuries or illness. <br />
+                                                            Someone could need time off work for 4-14 days, or a Hospital stay by 4-15 days.
                                                         </span>
                                                     </div>
 
@@ -885,7 +828,9 @@
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-people' id='risk-0-people-4' value='4'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-people-4'>High</label>
                                                         <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Major injury leading to long-term incapacity/disability.<br />Mismanagement of patient care with long-term effects<br /><br />Will indirectly lead to a single fatality<br /><br />Requiring time off work for >14 days <br />-and/or -<br />Hospital stay by >15 days <br /><br />11-15% patients /staff/ public affected
+                                                            For example, there could be a major injury leading to a long-term issue or disability.<br />
+                                                            Or could indirectly lead to a single death.<br />
+                                                            Someone could need time off work for more than 14 days, or a Hospital stay of more than 15 days.
                                                         </span>
                                                     </div>
 
@@ -893,20 +838,22 @@
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-people' id='risk-0-people-5' value='5'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-people-5'>Very high</label>
                                                         <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Incident leading to death <br />-or-<br />Multiple permanent injuries or irreversible health effects<br />Will indirectly lead to multiple fatalities<br /><br />>15% patients /staff/ public affected
+                                                            For example, there could be an incident leading to death or multiple permanent injuries.<br />
+                                                            Or could indirectly lead to multiple deaths.
                                                         </span>
                                                     </div>
 
                                                 </div>
                                             </div>
-                                            <div class='js-impact-group js-type-security'>
+                                            <div class='js-impact-group js-type-security nhsuk-form-group'>
                                                 <label class='js-impact-label eforms-label'>What impact could it have on information security?</label>
                                                 <div class='nhsuk-radios'>
                                                     <div class='type-security-option-1 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-security' id='risk-0-security-1' value='1'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-security-1'>Very low</label>
                                                         <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            No adverse effect on personal data.<br />There is absolute certainty that no adverse effect can arise from the breach
+                                                            For example, there will be no personal data loss.<br />
+                                                            There is certainty that no issue can arise from a potential breach.
                                                         </span>
                                                     </div>
 
@@ -914,7 +861,9 @@
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-security' id='risk-0-security-2' value='2'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-security-2'>Low</label>
                                                         <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Potentially some minor adverse effect or any incident involving vulnerable groups even if no adverse effect occurred<br /><br />A minor adverse effect may be the cancellation of a procedure but does not involve any additional suffering. It may also include possible inconvenience to those who need the data to do their job.
+                                                            For example, there could be some minor effect or any incident involving vulnerable groups even if no adverse effect occurred.<br />
+                                                            <br />A minor adverse effect may be the cancellation of a procedure.
+                                                            It may also include possible inconvenience to those who need the data to do their job.
                                                         </span>
                                                     </div>
 
@@ -922,7 +871,8 @@
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-security' id='risk-0-security-3' value='3'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-security-3'>Medium</label>
                                                         <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Potentially some adverse effect.<br /><br />An adverse effect may be release of confidential information into the public domain leading to embarrassment or it prevents someone from doing their job such as a cancelled procedure that has the potential of prolonging suffering but does not lead to a decline in health.
+                                                            For example, there could be some serious effect such as the release of confidential information into the public domain.<br>
+                                                            It could also prevent someone from doing their job.
                                                         </span>
                                                     </div>
 
@@ -930,16 +880,16 @@
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-security' id='risk-0-security-4' value='4'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-security-4'>High</label>
                                                         <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Potentially Pain and suffering/ financial loss<br /><br />There has been reported suffering and decline in health arising from the breach or there has been some financial detriment occurred. Loss of bank details leading to loss of funds. There is a loss of employment.
+                                                            For example, a person could suffer pain from financial loss.<br />
+                                                            There has been reported suffering and decline in health arising from the risk.
+                                                            There could be a loss of bank details leading to loss of money.
                                                         </span>
                                                     </div>
 
                                                     <div class='type-security-option-5 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-security' id='risk-0-security-5' value='5'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-security-5'>Very high</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>
-                                                            Death/ catastrophic event.<br /><br />A person dies or suffers a catastrophic occurrence
-                                                        </span>
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, a death or catastrophic event.</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1148,7 +1098,7 @@
                         results.find("p.score").addClass("hide");
                         results.find("p." + scoreclass).removeClass("hide");
 
-                        $('html,body').animate({ scrollTop: section.offset().top }, 'slow');
+                        // $('html,body').animate({ scrollTop: section.offset().top }, 'slow');
                     };
                     //  Iterate over all ? $("#js-risk-container .js-risk-section").each(function (i, obj) {
                 });
@@ -1162,7 +1112,7 @@
                     section.find(".js-risktitle").removeClass("hide");
                     section.find(".js-expand-risk").addClass("hide");
 
-                    $('html,body').animate({ scrollTop: section.offset().top }, 'slow');
+                    // $('html,body').animate({ scrollTop: section.offset().top }, 'slow');
                 });
 
             });
