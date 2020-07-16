@@ -155,9 +155,11 @@
     <None Include="EmptyTextFile.txt" />
     <None Include="arm\cpmo\portfolio-partnering\index.html" />
     <None Include="arm\cpmo\reporting\index.html" />
-    <None Include="arm\cpmo\portfolio-partnering\change-control-task.html" />
-    <None Include="arm\cpmo\portfolio-partnering\milestone-guidance.html" />
     <None Include="arm\cpmo\news\highlight-reporting-changes.html" />
+    <None Include="arm\cpmo\resources\Benefits-HLR-App-guide.docx" />
+    <None Include="arm\cpmo\resources\milestone-guidance.html" />
+    <None Include="arm\cpmo\resources\change-control-task.html" />
+    <None Include="arm\cpmo\resources\benefits-hlr-app-guide.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="arm\cpmo\standards-and-investment\" />
