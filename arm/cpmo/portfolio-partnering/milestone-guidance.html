@@ -8,38 +8,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Generic meta tags -->
-    <title>Intranet - CPMO</title>
+    <title>Intranet - milestone guidance</title>
 
 
-    <link rel="preload" href="../../content/fonts/FrutigerLTW01-55Roman.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../../content/fonts/FrutigerLTW01-56Italic.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../../content/fonts/FrutigerLTW01-65Bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../../content/fonts/FrutigerLTW01-66BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../content/fonts/FrutigerLTW01-55Roman.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../content/fonts/FrutigerLTW01-56Italic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../content/fonts/FrutigerLTW01-65Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../content/fonts/FrutigerLTW01-66BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
 
     <meta name="theme-color" content="#ffffff">
 
     <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="../../content/css/nhsd-intranet.css" type="text/css" />
+    <link rel="stylesheet" href="../../../content/css/nhsd-intranet.css" type="text/css" />
     <!--<![endif]-->
     <!--[if IE 6]>
-    <link rel="stylesheet" href="../../content/css/nhsuk-ie6.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="../../../content/css/nhsuk-ie6.css" media="screen" type="text/css"/>
     <![endif]-->
     <!--[if IE 7]>
-    <link rel="stylesheet" href="../../content/css/nhsuk-ie7.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="../../../content/css/nhsuk-ie7.css" media="screen" type="text/css"/>
     <![endif]-->
     <!--[if IE 8]>
-    <link rel="stylesheet" href="../../content/css/nhsuk-ie8.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="../../../content/css/nhsuk-ie8.css" media="screen" type="text/css"/>
     <![endif]-->
-    <link rel="stylesheet" href="../../content/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="../../../content/css/custom.css" type="text/css" />
 
-    <script src="../../content/js/jquery.js"></script>
-    <!--<script defer src="../../content/js/breadcrumbs.js"></script>-->
-    <script defer src="../../content/js/highlighter-copy-button.js"></script>
-    <script defer src="../../content/js/aria.js"></script>
-    <script defer src="../../content/js/details-element-polyfill.js"></script>
-    <script src="../../content/js/custom.js"></script>
+    <script src="../../../content/js/jquery.js"></script>
+    <!--<script defer src="../../../content/js/breadcrumbs.js"></script>-->
+    <script defer src="../../../content/js/highlighter-copy-button.js"></script>
+    <script defer src="../../../content/js/aria.js"></script>
+    <script defer src="../../../content/js/details-element-polyfill.js"></script>
+    <script src="../../../content/js/custom.js"></script>
 
+    <style type="text/css">
+        /* As SVG does not provide a default visual style for links,
+   it's considered best practice to add some */
 
+        @namespace svg url(http://www.w3.org/2000/svg);
+        /* Necessary to select only SVG <a> elements, and not also HTML’s.
+   See warning below */
+
+        svg|a:link, svg|a:visited {
+            cursor: pointer;
+        }
+
+        svg|a text,
+        text svg|a {
+            fill: white; /* Even for text, SVG uses fill over color */
+            text-decoration: underline;
+        }
+
+        svg|a:hover, svg|a:active {
+            outline: dotted 1px white;
+        }
+    </style>
 </head>
 
 <body class="debugs">
@@ -122,7 +143,7 @@
                         <div class="grid-row">
                             <div class="column column--18-75 column--reset">
                                 <a class="site-header__waffle-link" href="https://www.office.com/" target="_blank" aria-label="Office 365"><span class="ms-Icon ms-Icon--WaffleOffice365"></span></a>
-                                <a class="site-header-a__logo" href="../search/home.html"><img src="../../content/images/nhs-digital-intranet-logo.svg" alt="NHS Digital Intranet logo" class="site-header__logo"></a>
+                                <a class="site-header-a__logo" href="../../search/home.html"><img src="../../../content/images/nhs-digital-intranet-logo.svg" alt="NHS Digital Intranet logo" class="site-header__logo"></a>
                             </div>
 
 
@@ -137,7 +158,7 @@
                                             </div>
                                             <div class="search-strip__table-cell search-strip__table-cell--button">
                                                 <button data-uipath="search.button" class="search-strip__button" aria-label="Search">
-                                                    <img src="../../content/images/icon-search-white.png" alt="Magnifying glass" />
+                                                    <img src="../../../content/images/icon-search-white.png" alt="Magnifying glass" />
                                                 </button>
                                             </div>
                                         </div>
@@ -159,8 +180,8 @@
                                         <div class="main-nav__menu">
                                             <nav>
                                                 <ol class="list list--reset list--inline">
-                                                    <li><a href="../pages/task-list.html">Tasks</a></li>
-                                                    <li class="active"><a href="../pages/team-list.html" class="active">Teams and networks</a></li>
+                                                    <li class="active"><a href="../../pages/task-list.html">Tasks</a></li>
+                                                    <li><a href="../../pages/team-list.html" class="active">Teams and networks</a></li>
                                                     <li><a href="#">News &amp; Announcements</a></li>
                                                     <li><a href="#">Collaborate</a></li>
                                                 </ol>
@@ -184,19 +205,18 @@
                 <nav aria-label="Breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb__crumb">
-                            <a href="../search/home.html" class="breadcrumb__link" data-text="NHS Digital">NHS Digital</a>
+                            <a href="../../search/home.html" class="breadcrumb__link" data-text="NHS Digital">NHS Digital</a>
                         </li>
                         <li class="breadcrumb__crumb">
-                            <img src="../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
-                            <a href="../pages/team-list.html" class="breadcrumb__link" data-text="ARM">Teams</a>
+                            <img src="../../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
+                            <a href="../index.html" class="breadcrumb__link" data-text="ARM">CPMO</a>
                         </li>
                         <li class="breadcrumb__crumb">
-                            <img src="../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
-                            <span class="breadcrumb__link breadcrumb__link--secondary" data-text="Discovery phase " aria-current="page">CPMO </span>
+                            <img src="../../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
+                            <span class="breadcrumb__link breadcrumb__link--secondary" data-text="Discovery phase " aria-current="page">Milestone guidance</span>
                         </li>
                     </ol>
                 </nav>
-               
             </div>
         </div>
     </div>
@@ -223,12 +243,15 @@
 
 
 
-                                    <h1 id="top" class="local-header__title" data-uipath="document.title">Corporate portfolio management office </h1>
+                                    <h1 id="top" class="local-header__title" data-uipath="document.title">Milestone guidance</h1>
 
 
 
                                     <div class="rich-text-content article-header__subtitle">
-                                        <p>We supply excellence and leadership in the provision of portfolio management services to facilitate successful delivery of NHS Digital’s programmes and projects</p>
+                                        <p>
+                                            You need to raise a request each time a change is forecast to fall outside of agreed tolerance levels for your programme.
+                                        </p>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -257,11 +280,16 @@
                                                 <li>
                                                     <a href="#top" aria-label="Scroll to 'Top of page'" title="Scroll to 'Top of page'" class=" ">Top of page</a>
                                                 </li>
+
+
                                                 <li>
-                                                    <a href="#new" aria-label="Scroll to 'Section'" title="Scroll to 'Section'" class="active">What's new</a>
+                                                    <a href="#help" aria-label="Scroll to 'Section'" title="Scroll to 'Section'" class="active">Introduction</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#teams" aria-label="Scroll to 'Section'" title="Scroll to 'Section'" class="active">Meet the teams</a>
+                                                    <a href="#steps" aria-label="Scroll to 'Section'" title="Scroll to 'Section'">Definitions</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#contact-us" aria-label="Scroll to 'Section'" title="Scroll to 'Section'">Contact us</a>
                                                 </li>
                                                 <li>
                                                     <a href="#dates" aria-label="Scroll to 'Dates'" title="Scroll to 'Dates'" class=" ">Dates</a>
@@ -278,172 +306,125 @@
 
                     <div class="column column--two-thirds page-block page-block--main">
 
-                        <div id="news-and-updates" class="article-section ">
-
-                            <h2 data-uipath="website.contentblock.section.title">News and updates</h2>
-
-                            <div data-uipath="website.contentblock.section.content" class="rich-text-content">
-                                <p>
-                                    <a href="/site/_cmsinternal/intranet/teams/cpmo/news/highlight-reporting-changes">Highlight report changes in August</a>&nbsp;<br>
-                                    Changes to the way you report milestone changes
-                                </p>
-
-                                <p>
-                                    <a href="/site/_cmsinternal/intranet/teams/cpmo/news/highlight-reporting-changes">Benefits reporting app rollout update</a>&nbsp;<br>
-                                    Report Benefits in SysHub
-                                </p>
-                                <p>
-                                    <a href="/site/_cmsinternal/intranet/teams/cpmo/news/highlight-reporting-changes">New Change control request service</a>&nbsp;<br>
-                                    Changes to the way you log change requests
-                                </p>
-
-                            </div>
-                        </div>
-
-
-
-
                         <div class="article-section">
-                            <div class="grid-row galleryItems">
-                                <h2 data-uipath="website.contentblock.iconlist.title">Meet the teams</h2>
 
-                                <div data-uipath="website.contentblock.iconlist.introduction">
-                                    <p>Our teams provide products and services to ensure robust portfolio management, corporate and operational governance.</p>
+                            <div id="help" class="article-section">
+                                <p>&nbsp;</p>
+                                <h2>Introduction</h2>
+                                <p>Planning takes place at multiple levels within a programme and the types of milestones with their associated levelling determine the appropriate audiences for effective milestone reporting. The top-level milestones enable:</p>
+                                <ul>
+                                    <li>A common language for communications across the portfolio and between programmes</li>
+                                    <li>An understanding of Interdependencies between programmes</li>
+                                    <li>Progress of the portfolio to be managed by the various governance bodies</li>
+                                    <li>Provides an effective baseline for change control</li>
+                                    <li>Recognition of a key achievement</li>
+                                </ul>
+                                <h2>Definitions<strong>&nbsp;</strong></h2>
+                                <p><strong>Milestone</strong></p>
+                                <p>A significant event such as completion of key Work Packages, a technical stage, or a management stage.</p>
+                                <p><strong>Outcome </strong></p>
+                                <p>The result of a change, normally affecting real world behaviour or circumstances.</p>
+                                <p><strong>Output</strong></p>
+                                <p>The tangible of intangible artefact produced, constructed, or created as a result of a planned activity.</p>
+                                <p><strong>Benefits </strong></p>
+                                <p>The measurable improvement resulting from outcome perceived as advantageous by one or more stakeholders.</p>
+                                <p>&nbsp;</p>
+                                <h3>What is the difference between an Output and an Outcome?&nbsp;</h3>
+                                <p>Outputs are the artefacts delivered by projects such as new systems / capability.&nbsp; An Outcome is a <strong>result </strong>of change which affects real world behaviour/circumstances and may lead to one or more benefits.&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <h3>What is the difference between an Outcome and a Benefit?</h3>
+                                <p>An Outcome is a result of change which affects real world behaviour/circumstances and may lead to one or more benefits.&nbsp; Outcomes are achieved as a result of the work done by projects and other activities creating outputs and new/enhanced organisational capability. Benefits are the measurable improvements resulting from, and enabled by, the outcomes.</p>
+                                <p>The below is an example of what this could look like&hellip;</p>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td width="179">
+                                                <p><strong>Type</strong></p>
+                                            </td>
+                                            <td width="422">
+                                                <p><strong>Example</strong></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+                                                <p>Key Deliverable / Output</p>
+                                            </td>
+                                            <td width="422">
+                                                <p>New SMS capability deployed for GP appointment reminders</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+                                                <p>Outcome (The Result)</p>
+                                            </td>
+                                            <td width="422">
+                                                <p>More citizens are attending their appointments after receiving an SMS reminder</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179">
+                                                <p>Benefit</p>
+                                            </td>
+                                            <td width="422">
+                                                <p>Reduction of 20% of missed appointment leading increased.&nbsp; Customer satisfaction increased by 10%</p>
+                                                <p>The waiting time for new appointments is reduced by 1 day</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h2>Planning Levels</h2>
+                                <p>Within NHSD, there are currently 2 levels of planning which are to be applied consistently across the portfolio:</p>
+                                <h3>Tier 1 &ndash; Level 1 - Outcomes</h3>
+                                <p><strong>Type of milestones: </strong>Highest level, start/end, outcomes linked to commitments</p>
+                                <p><strong>Use</strong>: The planning detail that this level is based on outcomes.&nbsp; For example;&nbsp; NHS Long Term Plan Commitments / SoS Tech Vision Outcomes / Other Key Ministerial Commitments.&nbsp; These are long term, covering the full duration of programmes in the portfolio, and at the programme vision level.</p>
+                                <h3>Tier 1 &ndash; Level 2 &ndash; Key Deliverables / Outputs</h3>
+                                <p><strong>Type of milestones: </strong>Key programmes milestones/deliverables supporting / enabling delivery of Tier 1 Level 1</p>
+                                <p><strong>Use</strong>. Some examples are: Initiation, Closure, Transition to Service, Key Benefits Realised, Ministerial / GDS / HMT Approvals, Key Event / Deliverable / Target achieved.</p>
+                                <h2>Lower levels</h2>
+                                <p>Lower planning tiers and levels have been defined in the NHSX draft planning framework.&nbsp; This is draft and subject to change; therefore, programmes are to continue planning lower levels as they do today.&nbsp; Any changes to planning levels will be communication by the Corporate Portfolio Management Office.</p>
+                                <h2>Baselines &amp; Governance</h2>
+                                <p>A milestone is baselined at the point in which it is approved by the most senior approval forum.&nbsp; This means that future changes to the scope, description and date of the baselined milestone would need to go through the change control process [link].</p>
+                                <p>Only Tier 1 (Level 1 &amp; 2) milestones are formally baselined.</p>
+                                <p>To submit a new milestone or amend a milestone, please contact your CPMO Business Partner or alternatively email the CPMO [email] who will support you through this process and monitor the progress through to formal approval.</p>
+                                <h2>Forecasts</h2>
+                                <p>Once a milestone is baselined, you will need to report whether this is on track each month in a monthly highlight report.&nbsp; The forecast date should be your best estimate of when the milestone is likely to be achieved.&nbsp; For milestones that have recently been baselined the forecast date is highly likely to match the baseline date.</p>
+                                <p>A milestone forecast date should be regularly monitored and managed, always reflecting a future date, never remaining in the past.</p>
+                                <h2>Slippage</h2>
+                                <p>The difference between when a milestone was originally baselined and when it was delivered, is monitored to help other programmes plan.&nbsp; This information provides us with key information (lessons learned) for similar programmes and reduces the impact of optimism bias.</p>
+                                <h2>Hints and tips for writing a milestone&hellip;</h2>
+                                <ol>
+                                    <li>Keep it clear and understandable by a wide audience</li>
+                                    <li>Limit the use of acronyms</li>
+                                    <li>Make is specific to what is the achievement / target</li>
+                                    <li>Make it absolute &ndash; you should be able to say if a milestone has or has not been achieved. Avoid words like &lsquo;in progress&rsquo;</li>
+                                </ol>
 
-
-                                </div>
-
-                                <div class="column column--one-half galleryItems__item">
-                                    <h3 class="galleryItems__heading">
-                                        Standards &amp; investment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                                    </h3>
-                                    <div class="galleryItems__card">
-
-
-                                        <img src="../../content/images/invest-compass.jpg" alt="Gallery item 1 alt text">
-
-                                        <div class="galleryItems__description">
-                                            <p>We establish the portfolio management standards, including lifecycle stages and gates for NHS Digital's change programmes.</p>
-                                            <p><a href="standards-and-investment-team.html">Standards and investment team</a></p>
-                                        </div>
-
-                                    </div>
-
-                                    <ol class="list list--reset visually-hidden">
-                                        <li class="attachment visually-hidden" itemprop="hasPart" itemscope="" itemtype="http://schema.org/MediaObject">
-                                            <a href="#" class="block-link" onclick="" onkeyup="return vjsu.onKeyUp(event)">
-                                                <div class="block-link__header">
-                                                    <span class="icon icon--pdf icon--2x" aria-hidden="true"></span>
-                                                </div>
-                                                <div class="block-link__body">
-                                                    <span class="block-link__title">Related filename</span>
-                                                    <meta itemprop="encodingFormat" content="application/pdf">
-                                                    <span class="block-link__meta regular">[pdf, <span class="fileSize">size: <span itemprop="contentSize">829.8 kB</span></span>]</span>
-
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ol>
-
-                                </div>
-
-
-                                <div class="column column--one-half galleryItems__item">
-                                    <h3 class="galleryItems__heading">Portfolio Reporting &amp; Analytics</h3>
-                                    <div class="galleryItems__card">
-
-
-                                        <img src="../../content/images/analyse-and-report.png" alt="Gallery item 2 alt text">
-
-                                        <div class="galleryItems__description">
-                                            <p>
-                                                We deliver a system-wide portfolio reporting service, aimed at improving the quality of reporting across NHS Digital.
-                                            </p>
-                                            <p class="visually-hidden">We work with governance bodies on the performance, risks and issues in the portfolio and analysis for governance and assurance</p>
-                                            <p><a href="reporting/index.html">Portfolio reporting &amp; analytics</a></p>
-                                        </div>
-
-                                    </div>
-
-                                    <ol class="list list--reset">
-                                    </ol>
-
-                                </div>
-
-                                <div class="clearfix"></div>
-                                <div class="column column--one-half galleryItems__item">
-                                    <h3 class="galleryItems__heading">Portfolio partnering</h3>
-                                    <div class="galleryItems__card">
-
-
-                                        <img src="../../content/images/partnering.png" alt="Gallery item 2 alt text">
-
-                                        <div class="galleryItems__description">
-                                            <p>
-                                                We build relationships with programme delivery teams, providing best practice portfolio management support.
-
-                                            </p>
-                                            <p class="visually-hidden">We work with governance bodies on the performance, risks and issues in the portfolio and analysis for governance and assurance</p>
-                                            <p><a href="portfolio-partnering/index.html">Portfolio partnering team</a></p>
-                                        </div>
-
-                                    </div>
-
-                                    <ol class="list list--reset">
-                                    </ol>
-
-                                </div>
-
-
-                                <div class="clearfix"></div>
-
-
-
-                                <div class="column column--one-half galleryItems__item visually-hidden">
-                                    <div class="galleryItems__card">
-
-
-                                        <img src="image.png" alt="Gallery item 3 alt text">
-
-                                        <div class="galleryItems__description">
-                                            <p>Gallery item 3 description.&nbsp; No title has been added for this one.</p>
-                                        </div>
-
-                                    </div>
-
-                                    <ol class="list list--reset">
-                                    </ol>
-
-                                </div>
                             </div>
 
                         </div>
 
-                        <div id="team" class="article-section">
-                            <h2 data-uipath="website.contentblock.iconlist.title">Who is in the team?</h2>
 
-                            <div class="blog-authors__item">
 
-                                <div class="blog-authors__icon">
-                                    <img class="blog-authors__icon__img" src="../../content/images/dean.jpg" alt="NHS Digital blog">
-                                </div>
+                       
+                        <div id="contact-us" class="article-section ">
 
-                                <div class="blog-authors__content">
-                                    <div class="blog-authors__title">
-                                        <a class="cta__title cta__button" href="#">Dean McGarr</a>
+                            <h2 data-uipath="website.contentblock.section.title">Contact us</h2>
+
+
+                            <div class="emphasis-box emphasis-box-emphasis" aria-label="Highlighted Information">
+
+                                <div class="emphasis-box__content">
+
+                                    <div data-uipath="website.contentblock.emphasis.content">
+                                        <p>Contact the <a href="../reporting/index.html">reporting team</a> or your <a href="../portfolio-partnering/index.html">portfolio partner</a> for help</p>
+
+                                        <h3>Help us improve</h3>
+                                        <p>If you have any questions or feedback, complete our online form:</p>
+                                        <p><a href="../contact-cpmo.html">CPMO contact form</a></p>
+
                                     </div>
-                                    <div class="blog-authors__body">
-
-                                        <p>
-                                            Programme Head<br />
-                                            <a href="mailto:emma.queenan@nhs.net">dean.mcgarr@nhs.net</a>
-                                        </p>
-                                    </div>
                                 </div>
-
                             </div>
-
                         </div>
 
                         <div class="article-section" id="dates">
@@ -482,16 +463,16 @@
                             <div class="column column--one-half column--left">
                                 <ol class="list list--reset cta-list chapter-index">
                                     <li class="chapter-index__item">
-                                        <a class="chapter-index__link" href="../pages/task-page-general" title="Overall Task Page With Children">Overall Task Page With Children</a>
+                                        <a class="chapter-index__link" href="../../pages/task-page-general" title="Overall Task Page With Children">Overall Task Page With Children</a>
                                     </li>
                                     <li class="chapter-index__item">
-                                        <a class="chapter-index__link" href="../pages/task-page-buttons" title="Examples of buttons">Examples of buttons</a>
+                                        <a class="chapter-index__link" href="../../pages/task-page-buttons" title="Examples of buttons">Examples of buttons</a>
                                     </li>
                                     <li class="chapter-index__item">
-                                        <a class="chapter-index__link" href="../pages/task-page-sections-" title="Examples of the section ">Examples of the section </a>
+                                        <a class="chapter-index__link" href="../../pages/task-page-sections-" title="Examples of the section ">Examples of the section </a>
                                     </li>
                                     <li class="chapter-index__item">
-                                        <a class="chapter-index__link" href="../pages/task-page-emphasis-box-" title="Emphasis box examples">Emphasis box examples</a>
+                                        <a class="chapter-index__link" href="../../pages/task-page-emphasis-box-" title="Emphasis box examples">Emphasis box examples</a>
                                     </li>
                                 </ol>
                             </div>
@@ -499,13 +480,13 @@
                             <div class="column column--one-half column--right">
                                 <ol class="list list--reset cta-list chapter-index" start="5">
                                     <li class="chapter-index__item">
-                                        <a class="chapter-index__link" href="../pages/task-page-check-list-" title="Task Page Check Lists Examples">Task Page Check Lists Examples</a>
+                                        <a class="chapter-index__link" href="../../pages/task-page-check-list-" title="Task Page Check Lists Examples">Task Page Check Lists Examples</a>
                                     </li>
                                     <li class="chapter-index__item chapter-index__item--current">
                                         <p class="chapter-index__current-item">Page </p>
                                     </li>
                                     <li class="chapter-index__item">
-                                        <a class="chapter-index__link" href="../pages/task-page-gallery-" title="Task Page Gallery Items Title">Task Page Gallery Items Title</a>
+                                        <a class="chapter-index__link" href="../../pages/task-page-gallery-" title="Task Page Gallery Items Title">Task Page Gallery Items Title</a>
                                     </li>
                                 </ol>
                             </div>
