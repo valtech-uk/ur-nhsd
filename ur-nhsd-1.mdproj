@@ -46,20 +46,6 @@
     <None Include="content\fonts\FrutigerLTW01-65Bold.woff2" />
     <None Include="content\fonts\FrutigerLTW01-56Italic.woff2" />
     <None Include="content\fonts\FrutigerLTW01-55Roman.woff2" />
-    <None Include="bloomreach\cp-and-a-team.html" />
-    <None Include="bloomreach\workforce.html" />
-    <None Include="bloomreach\kpi-summary.html" />
-    <None Include="bloomreach\help-improve.html" />
-    <None Include="bloomreach\patterns\statistic.html" />
-    <None Include="bloomreach\content\summary.html" />
-    <None Include="bloomreach\datasheets\size.xlsx" />
-    <None Include="bloomreach\datasheets\age.csv" />
-    <None Include="bloomreach\datasheets\flexibility.xlsx" />
-    <None Include="bloomreach\datasheets\age.xlsx" />
-    <None Include="bloomreach\styles\rag.css" />
-    <None Include="bloomreach\styles\summary-list.css" />
-    <None Include="bloomreach\styles\cards.css" />
-    <None Include="bloomreach\styles\tags.css" />
     <None Include="kpi\cp-and-a-team.html" />
     <None Include="kpi\chart-dynamic.html" />
     <None Include="kpi\age.html" />
@@ -90,7 +76,6 @@
     <None Include="README.md" />
     <None Include="content\images\refresh.png" />
     <None Include="content\css\nhsd-intranet.css" />
-    <None Include="bloomreach\template.html" />
     <None Include="content\interactive-images\diagram1.svg" />
     <None Include="content\interactive-images\diagram2.svg" />
     <None Include="content\icons\cog.svg" />
@@ -169,9 +154,16 @@
     <None Include="arm\cpmo\reporting-team.html" />
     <None Include="EmptyTextFile.txt" />
     <None Include="arm\cpmo\portfolio-partnering\index.html" />
+    <None Include="arm\cpmo\reporting\index.html" />
+    <None Include="arm\cpmo\portfolio-partnering\change-control-task.html" />
+    <None Include="arm\cpmo\portfolio-partnering\milestone-guidance.html" />
+    <None Include="arm\cpmo\news\highlight-reporting-changes.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="arm\cpmo\standards-and-investment\" />
     <Folder Include="arm\cpmo\portfolio-partnering\" />
+    <Folder Include="arm\cpmo\reporting\" />
+    <Folder Include="arm\cpmo\news\" />
+    <Folder Include="arm\cpmo\resources\" />
   </ItemGroup>
 </Project>
