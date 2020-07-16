@@ -157,11 +157,13 @@
     <None Include="arm\cpmo\reporting\index.html" />
     <None Include="arm\cpmo\portfolio-partnering\change-control-task.html" />
     <None Include="arm\cpmo\portfolio-partnering\milestone-guidance.html" />
+    <None Include="arm\cpmo\news\highlight-reporting-changes.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="arm\cpmo\standards-and-investment\" />
     <Folder Include="arm\cpmo\portfolio-partnering\" />
     <Folder Include="arm\cpmo\reporting\" />
     <Folder Include="arm\cpmo\news\" />
+    <Folder Include="arm\cpmo\resources\" />
   </ItemGroup>
 </Project>
