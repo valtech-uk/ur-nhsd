@@ -1,0 +1,324 @@
+<div class="grid-wrapper grid-wrapper--article">
+<div class="grid-row">
+<div class="column column--one-third page-block page-block--sidebar">
+</div>
+<div class="column column--two-thirds page-block page-block--main">
+
+<div class="article-section">
+
+                            <div id="questionsarea" class="article-section">
+                                <h2>Think about a risk to your project</h2>
+                                <form class="eforms form" style="margin-top:0 !important">
+
+                                    <div id="page0" class="eforms-page conditionally-visible" style="margin-top:0">
+                                        <fieldset name="group_prefix" class="eforms-fieldgroup">
+                                            <legend class="eforms-fieldgroupname hide">Project</legend>
+
+                                            <div class="eforms-field">
+                                                <label for="group_prefix__Your_organisation" class="eforms-label bold">What is the risk? <span class="eforms-req"></span></label>
+                                                <input type="text" name="riskname" id="js-riskname" class="" autocomplete="off" value="" style="max-width: 30em;">
+                                                <div class="eforms-field__error-message visually-hidden"></div>
+                                                <span class="eforms-hint">This is only used to make your results readable and is not visible to anyone in NHS Digital.</span>
+                                            </div>
+
+                                        </fieldset>
+
+
+
+                                        <fieldset name="group_prefix" class="eforms-fieldgroup">
+                                            <legend class="eforms-fieldgroupname" style="margin: 0;">Likelihood</legend>
+
+                                            <div class="eforms-field">
+                                                <label class="eforms-label">
+                                                    How likely is it to cause a problem?<span class="eforms-req"></span>
+                                                </label>
+                                                <ul class="radiogroup" id="parent">
+
+                                                    <li>
+                                                        <label for="c1-0">
+                                                            <input type="radio" name="c1" id="c1-0" class="" value="1" checked>
+                                                            Rare
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="c1-1">
+                                                            <input type="radio" name="c1" id="c1-1" class="" value="2">
+                                                            Unlikely
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="c1-2">
+                                                            <input type="radio" name="c1" id="c1-2" class="" value="3">
+                                                            Possible
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="c1-3">
+                                                            <input type="radio" name="c1" id="c1-3" class="" value="4">
+                                                            Likely
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="c1-4">
+                                                            <input type="radio" name="c1" id="c1-4" class="" value="5">
+                                                            Certain
+                                                        </label>
+                                                    </li>
+
+                                                </ul>
+                                                <div class="eforms-field__error-message visually-hidden"></div>
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset name="group_prefix" class="eforms-fieldgroup">
+                                            <legend class="eforms-fieldgroupname" style="margin: 0;">Impact</legend>
+
+                                            <div class="eforms-field">
+                                                <label class="eforms-label">What impact could it have?<span class="eforms-req"></span></label>
+                                                <span class="eforms-hint">For example: could it cause financial issues or appear in the local news?</span>
+                                                <ul class="radiogroup" id="parent">
+
+                                                    <li>
+                                                        <label for="i-0">
+                                                            <input type="radio" name="i" id="i-0" class="" value="1" checked>
+                                                            Insignificant
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="i-1">
+                                                            <input type="radio" name="i" id="i-1" class="" value="2">
+                                                            Minor
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="i-2">
+                                                            <input type="radio" name="i" id="i-2" class="" value="3">
+                                                            Moderate
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="i-3">
+                                                            <input type="radio" name="i" id="i-3" class="" value="4">
+                                                            Major
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="i-4">
+                                                            <input type="radio" name="i" id="i-4" class="" value="5">
+                                                            Catastrophe
+                                                        </label>
+                                                    </li>
+
+                                                </ul>
+                                                <div class="eforms-field__error-message visually-hidden"></div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="eforms-buttons">
+                                        <a class="button" value="Run assessment" id="btn-calculate">Calculate</a>
+                                    </div>
+
+                                </form>
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="article-section hide" id="js-results">
+
+
+                            <div class="article-section">
+                                <h3>Assessment result</h3>
+                                <h2 class="js-score-main js-score-title" id="scoretitle"></h2>
+                                <p>The risk level for <strong id="risk-name"></strong> is 
+                                <strong class="js-score-title"></strong> and scores <strong>
+                                    <span class="score" id="score"></span>/25</strong> for risk.</p>
+
+                                <div class="emphasis-box emphasis-box-emphasis" aria-labelledby="emphasis-emphasis-493baba4">
+                                    <div class="emphasis-box__image">
+                                        <img src="/site/_cmsinternal/svg-magic/binaries/content/gallery/website/icons/universal/warning.svg?colour=005eb8" alt="This is important" width="100" height="100">
+                                    </div>
+                                    <div class="emphasis-box__content" style="margin-top: 0;">
+                                        <strong role="heading" class="emphasis-box__heading" id="emphasis-emphasis-493baba4" data-uipath="website.contentblock.emphasis.heading">What to do next?</strong>
+                                        <div data-uipath="website.contentblock.emphasis.content">
+                                            <p class="hide" id="overallscore"></p>
+                                            <div>
+                                                <p class="score very-low">Well done! Your risk assessment means you don't have to take action.</p>
+                                                <p class="score low hide">A reasonable result, try to understand more about this risk.</p>
+                                                <p class="score medium hide">You should take some action to highlight the risk.</p>
+                                                <p class="score high hide">Not ideal, make sure you think about how you can reduce this risk.</p>
+                                                <p class="score very-high hide">You need to act! <a href="risk-process.html">Create a plan and record this risk</a>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+</div>
+</div>
+</div>
+
+<style>
+.hide{
+    display:none;
+}
+
+#scoretitle,
+.score-tag {
+    font-weight: bold;
+    display: inline-block;
+    padding: 3px 8px;
+}
+
+.text-very-high {
+    color: #942514;
+    background: #f6d7d2;
+}
+
+.text-high {
+    color: #6e3619;
+    background: #fcd6c3;
+}
+
+.text-medium {
+    color: #594d00;
+    background: #fff7bf;
+}
+
+.text-low {
+    color: #10403c;
+    background: #bfe3e0;
+}
+
+.text-very-low {
+    color: #005a30;
+    background: #cce2d8;
+}
+</style>
+
+
+    <script>window.addEventListener("load", function () {
+            var risk_name = "Area of concern";
+            var cache_available = false;
+            var count_answers = 0;
+
+            if (localStorage.getItem("risk_name") != null) {
+                // we have data
+                risk_name = localStorage.getItem("risk_name");
+                if (risk_name != null && risk_name.length > 0) {
+                    cache_available = true;
+                    $("#js-riskname").val(risk_name);
+                    count_answers = load_questions("c1", "i1");
+                }
+
+            };
+
+            $("#btn-calculate").on("click", function () {
+                if ($("#js-riskname").val().length > 0) {
+                    risk_name = $("#js-riskname").val();
+                    localStorage.setItem("risk_name", risk_name);
+                    save_questions("c1", "i");
+
+                };
+
+                $("#js-results").removeClass("hide");
+
+                var section = $("#js-results");
+                $('html,body').animate({ scrollTop: section.offset().top }, 'slow');
+
+
+                var overall_score = 0;
+
+                $("#risk-name").text(risk_name);
+                var value = getRadioValues("c1", "i");
+                $("#score").text(value.toFixed());
+                var scoreclass = getScorename(value).replace(/\s+/g, '-').toLowerCase();
+                $("#score").removeClass(function (index, className) {
+                    return (className.match(/\btext-\S+/g) || []).join(' ');
+                });
+                $("#score").addClass('text-' + scoreclass);
+                var scoretitle = getScorename(value);
+                $(".js-score-title").html(scoretitle);
+                $(".js-score-main").removeClass(function (index, className) {
+                    return (className.match(/\btext-\S+/g) || []).join(' ');
+                });
+                $(".js-score-main").addClass('text-' + scoreclass);
+
+
+                $("#overallscore").removeClass("hide");
+
+                $("p.score").addClass("hide");
+                $("p." + scoreclass).removeClass("hide");
+
+            });
+
+
+            if (cache_available == true) {
+                $("#btn-calculate").trigger("click");
+
+            }
+
+            function setRadioValue(name1, val1) {
+                return $("input[name='" + name1 + "'][value = " + val1 + "]").prop('checked', true);
+            }
+
+            function getRadioValue(name1) {
+                return $("input[name='" + name1 + "']:checked").val();
+            }
+
+            function getRadioValues(name1, name2) {
+                var value1 = 0;
+                var value2 = 0;
+                if (name1 != null && name1.length > 0) {
+                    value1 = $("input[name='" + name1 + "']:checked").val();
+                }
+                if (name2 != null && name2.length > 0) {
+                    value2 = parseInt($("input[name='" + name2 + "']:checked").val());
+                }
+
+                return value1 * value2;
+            }
+
+            function getScorename(value) {
+                var scorename = "Very low";
+                if (value >= 7) {
+                    scorename = "Low";
+                }
+                if (value >= 10) {
+                    scorename = "Medium";
+                }
+                if (value >= 17) {
+                    scorename = "High";
+                }
+                if (value >= 21) {
+                    scorename = "Very high";
+                }
+                return scorename;
+            }
+
+            function load_questions(saved1, saved2) {
+                var numloaded = 0;
+                if (localStorage.getItem(saved1) != null) {
+                    setRadioValue(saved1, localStorage.getItem(saved1));
+                    numloaded++;
+                }
+                if (localStorage.getItem(saved2) != null) {
+                    setRadioValue(saved2, localStorage.getItem(saved2));
+                    numloaded++;
+                }
+                return numloaded;
+            }
+
+            function save_questions(saved1, saved2) {
+
+                localStorage.setItem(saved1, getRadioValue(saved1));
+                localStorage.setItem(saved2, getRadioValue(saved2));
+
+            }
+
+
+
+        });</script>
