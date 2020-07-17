@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{5E15779D-0DA0-4C97-A83C-35C6679B2E0C}|Default">
   <MonoDevelop.Ide.ItemProperties.ur-nhsd-1 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="arm/cpmo/resources/benefits-hlr-app-guide.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="arm/cpmo/resources/change-control-task.html">
     <Files>
       <File FileName="arm/cpmo/resources/benefits-hlr-app-guide.html" Line="316" Column="71" />
+      <File FileName="arm/cpmo/resources/change-control-task.html" Line="288" Column="161" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,7 +16,7 @@
                   <Node name="portfolio-partnering" expanded="True" />
                   <Node name="reporting" expanded="True" />
                   <Node name="resources" expanded="True">
-                    <Node name="benefits-hlr-app-guide.html" selected="True" />
+                    <Node name="change-control-task.html" selected="True" />
                   </Node>
                 </Node>
                 <Node name="risk" expanded="True" />
