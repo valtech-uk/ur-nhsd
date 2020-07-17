@@ -95,21 +95,10 @@
     <None Include="content\icons\calendar.svg" />
     <None Include="content\icons\dial.svg" />
     <None Include="content\icons\illustration.svg" />
-    <None Include="arm\cpmo\pre-discovery-phase.html" />
-    <None Include="arm\cpmo\board-dates.html" />
-    <None Include="arm\cpmo\new-work-commission-process.html" />
     <None Include="arm\cpmo\index.html" />
-    <None Include="arm\cpmo\alpha-phase.html" />
-    <None Include="arm\cpmo\approach-tool.html" />
     <None Include="arm\cpmo\contact-cpmo.html" />
-    <None Include="arm\cpmo\private-beta.html" />
-    <None Include="arm\cpmo\approach-tool-guidance.html" />
     <None Include="arm\cpmo\lifecycle-diagram %28copy%29.html" />
     <None Include="arm\cpmo\chapter.html" />
-    <None Include="arm\cpmo\lifecycle-diagram.html" />
-    <None Include="arm\cpmo\discovery-phase.html" />
-    <None Include="arm\cpmo\standards-and-investment-team.html" />
-    <None Include="arm\cpmo\agile-guidance.html" />
     <None Include="arm\bloomreach\cp-and-a-team.html" />
     <None Include="arm\bloomreach\workforce.html" />
     <None Include="arm\bloomreach\kpi-summary.html" />
@@ -151,7 +140,6 @@
     <None Include="arm\risk\assess-risk-2.html" />
     <None Include="arm\risk\assess-risk-calculator.html" />
     <None Include="arm\risk\create-action-plan.html" />
-    <None Include="arm\cpmo\reporting-team.html" />
     <None Include="EmptyTextFile.txt" />
     <None Include="arm\cpmo\portfolio-partnering\index.html" />
     <None Include="arm\cpmo\reporting\index.html" />
@@ -160,6 +148,17 @@
     <None Include="arm\cpmo\resources\milestone-guidance.html" />
     <None Include="arm\cpmo\resources\change-control-task.html" />
     <None Include="arm\cpmo\resources\benefits-hlr-app-guide.html" />
+    <None Include="arm\cpmo\standards-and-investment\agile-guidance.html" />
+    <None Include="arm\cpmo\standards-and-investment\alpha-phase.html" />
+    <None Include="arm\cpmo\standards-and-investment\approach-tool.html" />
+    <None Include="arm\cpmo\standards-and-investment\approach-tool-guidance.html" />
+    <None Include="arm\cpmo\standards-and-investment\board-dates.html" />
+    <None Include="arm\cpmo\standards-and-investment\index.html" />
+    <None Include="arm\cpmo\standards-and-investment\pre-discovery-phase.html" />
+    <None Include="arm\cpmo\standards-and-investment\private-beta.html" />
+    <None Include="arm\cpmo\standards-and-investment\lifecycle-diagram.html" />
+    <None Include="arm\cpmo\standards-and-investment\new-work-commission-process.html" />
+    <None Include="arm\cpmo\standards-and-investment\discovery-phase.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="arm\cpmo\standards-and-investment\" />

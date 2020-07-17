@@ -1,9 +1,18 @@
 ﻿<Properties StartupConfiguration="{5E15779D-0DA0-4C97-A83C-35C6679B2E0C}|Default">
   <MonoDevelop.Ide.ItemProperties.ur-nhsd-1 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="arm/cpmo/resources/change-control-task.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="arm/cpmo/standards-and-investment/approach-tool.html">
     <Files>
-      <File FileName="arm/cpmo/resources/benefits-hlr-app-guide.html" Line="316" Column="71" />
-      <File FileName="arm/cpmo/resources/change-control-task.html" Line="288" Column="161" />
+      <File FileName="arm/cpmo/standards-and-investment/agile-guidance.html" Line="5" Column="16" />
+      <File FileName="arm/cpmo/standards-and-investment/alpha-phase.html" Line="1" Column="1" />
+      <File FileName="arm/cpmo/standards-and-investment/approach-tool.html" Line="260" Column="30" />
+      <File FileName="arm/cpmo/standards-and-investment/approach-tool-guidance.html" Line="1" Column="1" />
+      <File FileName="arm/cpmo/standards-and-investment/board-dates.html" Line="1" Column="1" />
+      <File FileName="arm/cpmo/standards-and-investment/discovery-phase.html" Line="1" Column="1" />
+      <File FileName="arm/cpmo/standards-and-investment/index.html" Line="1" Column="1" />
+      <File FileName="arm/cpmo/standards-and-investment/lifecycle-diagram.html" Line="1" Column="1" />
+      <File FileName="arm/cpmo/standards-and-investment/new-work-commission-process.html" Line="1" Column="1" />
+      <File FileName="arm/cpmo/standards-and-investment/pre-discovery-phase.html" Line="1" Column="1" />
+      <File FileName="arm/cpmo/standards-and-investment/private-beta.html" Line="5" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,8 +24,9 @@
                   <Node name="news" expanded="True" />
                   <Node name="portfolio-partnering" expanded="True" />
                   <Node name="reporting" expanded="True" />
-                  <Node name="resources" expanded="True">
-                    <Node name="change-control-task.html" selected="True" />
+                  <Node name="resources" expanded="True" />
+                  <Node name="standards-and-investment" expanded="True">
+                    <Node name="approach-tool.html" selected="True" />
                   </Node>
                 </Node>
                 <Node name="risk" expanded="True" />
