@@ -424,6 +424,7 @@
                             </div>
                         </div>
 
+
                         <div class="article-section" id="feedback">
                             <div>
                                 <div>
@@ -530,12 +531,41 @@
 
                                 <div class="expander">
                                     <h4 class="hide">Risk <span class="js-risk-number">0</span> - <span class="js-label-riskname"></span></h4>
-                                    
+
                                     <div class="hide js-results">
-                                        <p>The risk level for risk <span class="js-risk-number">0</span>: <strong class="js-label-riskname"></strong> is <span class="js-score-title js-score-main score-tag"></span>
-                                        and scores <span class="score score-tag"></span>/25 for risk – <a href="#" class="js-expand-risk">Change</a>.</p>
+                                        <p>
+                                            The risk level for risk <span class="js-risk-number">0</span>: <strong class="js-label-riskname"></strong> is <span class="js-score-title js-score-main score-tag"></span>
+                                            and scores <span class="score score-tag"></span>/25 for risk – <a href="#" class="js-expand-risk">Change</a>.
+                                        </p>
                                     </div>
-                                    
+
+                                    <!-- main display area for result-->
+                                    <div class="article-section hide js-results">
+                                        <div class="article-section">
+
+                                            <h2 class="js-score-main js-score-title hide"></h2>
+
+                                            <div class="emphasis-box emphasis-box-emphasis" aria-labelledby="emphasis-emphasis-493baba4">
+                                                <div class="emphasis-box__image">
+                                                    <img src="../../content/icons/warning.svg?colour=005EB8" alt="This is important" width="100" height="100">
+                                                </div>
+                                                <div class="emphasis-box__content" style="margin-top: 0;">
+                                                    <strong role="heading" class="emphasis-box__heading" id="emphasis-emphasis-493baba4" data-uipath="website.contentblock.emphasis.heading">What to do next?</strong>
+                                                    <div data-uipath="website.contentblock.emphasis.content">
+                                                        <p class="overallscore"></p>
+                                                        <div>
+                                                            <p class="very-low hide">Well done! Your risk assessment means you don't have to take action.</p>
+                                                            <p class="low hide">A reasonable result, try to understand more about this risk.</p>
+                                                            <p class="medium hide">You should take some action to highlight the risk.</p>
+                                                            <p class="high hide">Not ideal, make sure you think about how you can reduce this risk.</p>
+                                                            <p class="very-high hide">You need to act! <a href="risk-process.html">Create a plan and record this risk</a>.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="js-edit">
@@ -606,7 +636,7 @@
                                                 <div class="nhsuk-radios">
                                                     <div class="type-cost-option-1 nhsuk-radios__item">
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-cost' id='risk-0-cost-1' value='1'>
-                                                        <label class="nhsuk-label nhsuk-radios__label"  for='risk-0-cost-1'>Very low</label>
+                                                        <label class="nhsuk-label nhsuk-radios__label" for='risk-0-cost-1'>Very low</label>
                                                         <span class="nhsuk-hint nhsuk-radios__hint">For example, the risk could impact up to 3% of the budget.</span>
                                                     </div>
                                                     <div class='type-cost-option-2 nhsuk-radios__item'>
@@ -647,8 +677,10 @@
                                                     <div class='type-quality-option-2 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-quality' id='risk-0-quality-2' value='2'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-quality-2'>Low</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, a minor impact on multiple functions or capabilities. <br>
-                                                        Or a moderate impact on a single function or capability.</span>
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>
+                                                            For example, a minor impact on multiple functions or capabilities. <br>
+                                                            Or a moderate impact on a single function or capability.
+                                                        </span>
                                                     </div>
 
                                                     <div class='type-quality-option-3 nhsuk-radios__item'>
@@ -666,7 +698,7 @@
                                                     <div class='type-quality-option-5 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-quality' id='risk-0-quality-5' value='5'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-quality-5'>Very high</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, a major impact on multiple functions or capabilities.</span> 
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, a major impact on multiple functions or capabilities.</span>
                                                     </div>
 
                                                 </div>
@@ -719,8 +751,10 @@
                                                     <div class='type-benefits-option-2 nhsuk-radios__item'>
                                                         <input class="nhsuk-radios__input" type='radio' name='risk-0-benefits' id='risk-0-benefits-2' value='2'>
                                                         <label class="nhsuk-label nhsuk-radios__label" for='risk-0-benefits-2'>Low</label>
-                                                        <span class='nhsuk-hint nhsuk-radios__hint'>For example, a minor impact on multiple benefits or a moderate impact on single programme benefit.<br>
-                                                        Or a 5% reduction in forecast benefit.</span>
+                                                        <span class='nhsuk-hint nhsuk-radios__hint'>
+                                                            For example, a minor impact on multiple benefits or a moderate impact on single programme benefit.<br>
+                                                            Or a 5% reduction in forecast benefit.
+                                                        </span>
                                                     </div>
 
                                                     <div class='type-benefits-option-3 nhsuk-radios__item'>
@@ -900,6 +934,7 @@
                                     <div class="nhsuk-form-group">
                                         <a href="#" class="button btn-calculate">Continue</a>
                                     </div>
+
                                 </div>
 
                             </div>
@@ -911,38 +946,7 @@
 
                 </div>
 
-                <div class="article-section hide js-overall-results" style="display: none;">
-                    <div class="article-section">
-                        <h3>Assessment results</h3>
-                        <h2 class="js-score-main js-score-title"></h2>
-                        <p>
-                            The risk level for <strong class="risk-name"></strong> is
-                            <strong class="js-score-title"></strong> and scores <strong>
-                                <span class="score"></span>/25
-                            </strong> for risk.
-                        </p>
 
-                        <div class="emphasis-box emphasis-box-emphasis" aria-labelledby="emphasis-emphasis-493baba4">
-                            <div class="emphasis-box__image">
-                                <img src="../../content/icons/warning.svg?colour=005EB8" alt="This is important" width="100" height="100">
-                            </div>
-                            <div class="emphasis-box__content" style="margin-top: 0;">
-                                <strong role="heading" class="emphasis-box__heading" id="emphasis-emphasis-493baba4" data-uipath="website.contentblock.emphasis.heading">What to do next?</strong>
-                                <div data-uipath="website.contentblock.emphasis.content">
-                                    <p class="hide overallscore"></p>
-                                    <div>
-                                        <p class="score very-low">Well done! Your risk assessment means you don't have to take action.</p>
-                                        <p class="score low hide">A reasonable result, try to understand more about this risk.</p>
-                                        <p class="score medium hide">You should take some action to highlight the risk.</p>
-                                        <p class="score high hide">Not ideal, make sure you think about how you can reduce this risk.</p>
-                                        <p class="score very-high hide">You need to act! <a href="risk-process.html">Create a plan and record this risk</a>.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
             </div>
 
         </article>
