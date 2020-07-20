@@ -159,6 +159,27 @@
     <None Include="arm\cpmo\standards-and-investment\lifecycle-diagram.html" />
     <None Include="arm\cpmo\standards-and-investment\new-work-commission-process.html" />
     <None Include="arm\cpmo\standards-and-investment\discovery-phase.html" />
+    <None Include="content\icons\document-security.svg" />
+    <None Include="content\icons\document-issue.svg" />
+    <None Include="content\icons\icon-tick.svg" />
+    <None Include="content\icons\web_60.svg" />
+    <None Include="content\icons\image_60.svg" />
+    <None Include="content\icons\image.svg" />
+    <None Include="content\icons\file.svg" />
+    <None Include="content\icons\powerpoint_download.svg" />
+    <None Include="content\icons\image_download.svg" />
+    <None Include="content\icons\text_download.svg" />
+    <None Include="content\icons\document_download.svg" />
+    <None Include="content\icons\pdf_download.svg" />
+    <None Include="content\icons\web.svg" />
+    <None Include="content\icons\warning.svg" />
+    <None Include="content\icons\video-call.svg" />
+    <None Include="content\icons\thoughts.svg" />
+    <None Include="content\icons\support.svg" />
+    <None Include="content\icons\person-admin.svg" />
+    <None Include="content\icons\megaphone.svg" />
+    <None Include="content\icons\globe.svg" />
+    <None Include="content\icons\lightbulb.svg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="arm\cpmo\standards-and-investment\" />
