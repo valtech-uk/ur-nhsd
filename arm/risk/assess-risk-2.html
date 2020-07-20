@@ -540,10 +540,8 @@
                                     </div>
 
                                     <!-- main display area for result-->
-                                    <div class="article-section hide js-results">
+                                    <div class="article-section hide js-results js-box-results">
                                         <div class="article-section">
-
-                                            <h2 class="js-score-main js-score-title hide"></h2>
 
                                             <div class="emphasis-box emphasis-box-emphasis" aria-labelledby="emphasis-emphasis-493baba4">
                                                 <div class="emphasis-box__image">
@@ -554,11 +552,11 @@
                                                     <div data-uipath="website.contentblock.emphasis.content">
                                                         <p class="overallscore"></p>
                                                         <div>
-                                                            <p class="very-low hide">Well done! Your risk assessment means you don't have to take action.</p>
-                                                            <p class="low hide">A reasonable result, try to understand more about this risk.</p>
-                                                            <p class="medium hide">You should take some action to highlight the risk.</p>
-                                                            <p class="high hide">Not ideal, make sure you think about how you can reduce this risk.</p>
-                                                            <p class="very-high hide">You need to act! <a href="risk-process.html">Create a plan and record this risk</a>.</p>
+                                                            <p class="js-result-message very-low hide">Your risk is very low, get some help to <a href="#">idenitfy risks</a>.</p>
+                                                            <p class="js-result-message low hide">Your risk is low, consider reviewing this risk in 6 months - <a href="#">set reminder</a>.</p>
+                                                            <p class="js-result-message medium hide">Your risk is medium, read our guidance on how to <a href="risk-process.html">create a plan</a> to reduce this risk.</p>
+                                                            <p class="js-result-message high hide">Your risk is high, you will need to <a href="risk-process.html">create a plan</a> and <a href="#">record the risk</a>.</p>
+                                                            <p class="js-result-message very-high hide">Your risk is very high. You must <a href="risk-process.html">create a plan</a>, <a href="#">record the risk</a> and review it in 2 weeks - <a href="#">set a reminder</a>.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1087,7 +1085,7 @@
 
                         var value = getRadioValues(sectionid + "-l", sectionid + "-" + impact_type);
                         results.find(".score").text(value.toFixed());
-                        var scoreclass = getScorename(value).replace(/\s+/g, '-').toLowerCase();
+                        var scoreclass = getScoreClass(value);
                         results.find(".score").removeClass(function (index, className) {
                             return (className.match(/\btext-\S+/g) || []).join(' ');
                         });
@@ -1098,9 +1096,10 @@
                             return (className.match(/\btext-\S+/g) || []).join(' ');
                         });
                         results.find(".js-score-main").addClass('text-' + scoreclass);
-                        results.find(".overallscore").removeClass("hide");
-                        results.find("p.score").addClass("hide");
-                        results.find("p." + scoreclass).removeClass("hide");
+                        //results.find(".overallscore").removeClass("hide");
+                        results.find(".js-result-message").addClass("hide");
+                        results.find(".js-result-message." + scoreclass).removeClass("hide");
+ 
 
                         $('html,body').animate({ scrollTop: section.offset().top }, 'slow');
                     };
@@ -1161,6 +1160,11 @@
                 if (value >= 21) {
                     scorename = "Very high";
                 }
+                return scorename;
+            }
+
+            function getScoreClass(value) {
+                var scorename = getScorename(value).replace(/\s/g, "-").toLowerCase();
                 return scorename;
             }
 
