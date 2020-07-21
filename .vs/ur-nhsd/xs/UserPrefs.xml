@@ -1,8 +1,12 @@
 ﻿<Properties StartupConfiguration="{5E15779D-0DA0-4C97-A83C-35C6679B2E0C}|Default">
   <MonoDevelop.Ide.ItemProperties.ur-nhsd-1 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="arm/risk/assess-risk-2.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="arm/risk/index.html">
     <Files>
-      <File FileName="arm/risk/assess-risk-2.html" Line="1099" Column="77" />
+      <File FileName="arm/risk/assess-risk-2.html" Line="578" Column="51" />
+      <File FileName="arm/cpmo/index.html" Line="470" Column="53" />
+      <File FileName="arm/cpmo/standards-and-investment/index.html" Line="299" Column="54" />
+      <File FileName="arm/cpmo/portfolio-partnering/index.html" Line="294" Column="1" />
+      <File FileName="arm/risk/index.html" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,19 +14,9 @@
           <Node name="ur-nhsd" expanded="True">
             <Node name="ur-nhsd-1" expanded="True">
               <Node name="arm" expanded="True">
-                <Node name="cpmo" expanded="True">
-                  <Node name="news" expanded="True" />
-                  <Node name="portfolio-partnering" expanded="True" />
-                  <Node name="reporting" expanded="True" />
-                  <Node name="resources" expanded="True" />
-                  <Node name="standards-and-investment" expanded="True" />
-                </Node>
                 <Node name="risk" expanded="True">
-                  <Node name="assess-risk-2.html" selected="True" />
+                  <Node name="index.html" selected="True" />
                 </Node>
-              </Node>
-              <Node name="content" expanded="True">
-                <Node name="css" expanded="True" />
               </Node>
               <Node name="pages" expanded="True" />
             </Node>
