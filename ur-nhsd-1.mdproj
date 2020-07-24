@@ -180,6 +180,7 @@
     <None Include="content\icons\megaphone.svg" />
     <None Include="content\icons\globe.svg" />
     <None Include="content\icons\lightbulb.svg" />
+    <None Include="arm\cpmo\reporting\portfolios.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="arm\cpmo\standards-and-investment\" />

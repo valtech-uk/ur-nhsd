@@ -1,8 +1,14 @@
 ﻿<Properties StartupConfiguration="{5E15779D-0DA0-4C97-A83C-35C6679B2E0C}|Default">
   <MonoDevelop.Ide.ItemProperties.ur-nhsd-1 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="arm/risk/assess-risk-2.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="arm/cpmo/reporting/index.html">
     <Files>
-      <File FileName="arm/risk/assess-risk-2.html" Line="1099" Column="77" />
+      <File FileName="arm/risk/assess-risk-2.html" Line="578" Column="51" />
+      <File FileName="arm/cpmo/index.html" Line="321" Column="86" />
+      <File FileName="arm/cpmo/standards-and-investment/index.html" />
+      <File FileName="arm/cpmo/portfolio-partnering/index.html" />
+      <File FileName="arm/risk/index.html" Line="398" Column="59" />
+      <File FileName="arm/cpmo/reporting/index.html" Line="331" Column="140" />
+      <File FileName="arm/cpmo/reporting/portfolios.html" Line="556" Column="72" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,19 +17,14 @@
             <Node name="ur-nhsd-1" expanded="True">
               <Node name="arm" expanded="True">
                 <Node name="cpmo" expanded="True">
-                  <Node name="news" expanded="True" />
                   <Node name="portfolio-partnering" expanded="True" />
-                  <Node name="reporting" expanded="True" />
-                  <Node name="resources" expanded="True" />
-                  <Node name="standards-and-investment" expanded="True" />
+                  <Node name="reporting" expanded="True">
+                    <Node name="index.html" selected="True" />
+                  </Node>
                 </Node>
-                <Node name="risk" expanded="True">
-                  <Node name="assess-risk-2.html" selected="True" />
-                </Node>
+                <Node name="risk" expanded="True" />
               </Node>
-              <Node name="content" expanded="True">
-                <Node name="css" expanded="True" />
-              </Node>
+              <Node name="content" expanded="True" />
               <Node name="pages" expanded="True" />
             </Node>
           </Node>
