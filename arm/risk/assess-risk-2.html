@@ -1114,16 +1114,16 @@
 
     <script>window.addEventListener("load", function () {
 
-            // grab emphasis boxes and move them into target
+            /* grab emphasis boxes and move them into target */
             var emphasisLocator = $('#risk-calculator-guidance');
             var emphasisBoxes = emphasisLocator.nextAll('.emphasis-box');
-
+            var emphasisTypes = ["very-low", "low", "medium", "high", "very-high"];
             emphasisLocator.addClass('hide');
             emphasisBoxes.addClass('hide js-result-message').appendTo('.js-box-results');
-            emphasisBoxes.each(function(i){
-                var num = (i%6)+ 1;
-                console.log(num);
-                $(this).addClass(getScoreClass());
+            emphasisBoxes.each(function(i, value){
+                var num = (i % 6);
+                alert(i + " - " + emphasisTypes[i]);
+                $(this).addClass(emphasisTypes[i]);
             });
 
             var wrapper = $(".js-risk-assessment-wrapper");
