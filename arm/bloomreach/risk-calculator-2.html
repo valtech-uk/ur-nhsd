@@ -1,0 +1,985 @@
+<style type="text/css">
+
+
+    #scoretitle,
+    .score-tag {
+        display: inline-block;
+        padding: 3px 8px;
+    }
+
+    .text-very-high {
+        color: #942514;
+        background: #f6d7d2;
+    }
+
+
+    .text-high {
+        color: #6e3619;
+        background: #fcd6c3;
+    }
+
+    .text-medium {
+        color: #594d00;
+        background: #fff7bf;
+    }
+
+    .text-low {
+        color: #10403c;
+        background: #bfe3e0;
+    }
+
+    .text-very-low {
+        color: #005a30;
+        background: #cce2d8;
+    }
+
+    .eforms label {
+        min-width: 36px;
+    }
+
+    .eforms input[type=radio] {
+        margin: 0 !important;
+        top: 0 !important;
+        position: relative;
+    }
+
+    ul.radiogroup-prev {
+        margin-left: -30%;
+        width: 130%;
+        display: table;
+        table-layout: fixed;
+    }
+
+    ul.radio-inline li {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    #form-risk ul li label {
+        display: block;
+    }
+
+
+    .small-text {
+        font-size: 0.8em;
+        line-height: 1.2em;
+    }
+
+
+#questionsarea * + * {
+    margin-top: 0;
+}
+
+.nhsuk-form-group {
+    margin-bottom: 16px
+}
+
+@media (min-width: 40.0625em) {
+    .nhsuk-form-group {
+        margin-bottom:24px
+    }
+}
+
+.nhsuk-form-group .nhsuk-form-group:last-of-type {
+    margin-bottom: 0
+}
+
+
+.nhsuk-label {
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: block;
+    margin-bottom: 4px
+}
+
+
+.nhsuk-select {
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: 2px solid #4c6272;
+    box-sizing: border-box;
+    height: 40px;
+    max-width: 100%;
+    padding: 4px
+}
+
+@media (min-width: 40.0625em) {
+    .nhsuk-select {
+        font-size:19px;
+        font-size: 1.1875rem;
+        line-height: 1.47368
+    }
+}
+
+@media print {
+    .nhsuk-select {
+        font-size: 14pt;
+        line-height: 1.15
+    }
+}
+
+.nhsuk-select:focus {
+    border: 4px solid #212b32;
+    box-shadow: 0 0 0 4px #ffeb3b;
+    outline: 4px solid transparent;
+    outline-offset: 4px
+}
+
+.nhsuk-select option:active,.nhsuk-select option:checked,.nhsuk-select:focus::-ms-value {
+    background-color: #005eb8;
+    color: #fff
+}
+
+
+.nhsuk-input {
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 2px solid #4c6272;
+    border-radius: 0;
+    box-sizing: border-box;
+    height: 40px;
+    margin-top: 0;
+    padding: 4px;
+    width: 100%
+}
+
+@media (min-width: 40.0625em) {
+    .nhsuk-input {
+        font-size:19px;
+        font-size: 1.1875rem;
+        line-height: 1.47368
+    }
+}
+
+@media print {
+    .nhsuk-input {
+        font-size: 14pt;
+        line-height: 1.15
+    }
+}
+
+.nhsuk-input:focus {
+    border: 4px solid #212b32;
+    box-shadow: 0 0 0 4px #ffeb3b;
+    outline: 4px solid transparent;
+    outline-offset: 4px
+}
+
+.nhsuk-input::-webkit-outer-spin-button,
+.nhsuk-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.nhsuk-input[type="number"] {
+    -moz-appearance: textfield
+}
+
+.nhsuk-input--error {
+    border: 4px solid #d5281b
+}
+
+.nhsuk-input--width-30 {
+    max-width: 59ex
+}
+
+.nhsuk-input--width-20 {
+    max-width: 41ex
+}
+
+.nhsuk-input--width-10 {
+    max-width: 23ex
+}
+
+.nhsuk-input--width-5 {
+    max-width: 10.8ex
+}
+
+.nhsuk-input--width-4 {
+    max-width: 9ex
+}
+
+.nhsuk-input--width-3 {
+    max-width: 7.2ex
+}
+
+.nhsuk-input--width-2 {
+    max-width: 5.4ex
+}
+
+
+.nhsuk-hint {
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #4c6272;
+    display: block;
+    margin-bottom: 16px
+}
+
+.nhsuk-radios__item {
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    clear: left;
+    display: block;
+    margin-bottom: 8px;
+    min-height: 40px;
+    padding: 0 0 0 40px;
+    position: relative
+}
+
+.nhsuk-radios__item:last-child,.nhsuk-radios__item:last-of-type {
+    margin-bottom: 0
+}
+
+.nhsuk-radios__input {
+    cursor: pointer;
+    height: 40px;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+    z-index: 1
+}
+
+.nhsuk-radios__label {
+    -ms-touch-action: manipulation;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 8px 12px 4px;
+    touch-action: manipulation
+}
+
+.nhsuk-radios__hint {
+    display: block;
+    padding-left: 12px;
+    padding-right: 12px
+}
+
+.nhsuk-radios__input+.nhsuk-radios__label::before {
+    background: #fff;
+    border: 2px solid #4c6272;
+    border-radius: 50%;
+    box-sizing: border-box;
+    content: '';
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 40px
+}
+
+.nhsuk-radios__input+.nhsuk-radios__label::after {
+    background: #4c6272;
+    border: 10px solid #212b32;
+    border-radius: 50%;
+    content: '';
+    height: 0;
+    left: 10px;
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    width: 0
+}
+
+.nhsuk-radios__input:focus+.nhsuk-radios__label::before {
+    border: 4px solid #212b32;
+    box-shadow: 0 0 0 4px #ffeb3b;
+    outline: 4px solid transparent;
+    outline-offset: 4px
+}
+
+.nhsuk-radios__input:checked+.nhsuk-radios__label::after {
+    opacity: 1
+}
+
+.nhsuk-radios__input:disabled,.nhsuk-radios__input:disabled+.nhsuk-radios__label {
+    cursor: default
+}
+
+.nhsuk-radios__input:disabled+.nhsuk-radios__label {
+    opacity: .5
+}
+
+@media (min-width: 40.0625em) {
+    .nhsuk-radios--inline:after {
+        clear:both;
+        content: '';
+        display: block
+    }
+
+    .nhsuk-radios--inline .nhsuk-radios__item {
+        clear: none;
+        float: left;
+        margin-right: 24px
+    }
+}
+
+.nhsuk-radios--inline.nhsuk-radios--conditional .nhsuk-radios__item {
+    float: none;
+    margin-right: 0
+}
+
+.nhsuk-radios__divider {
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #212b32;
+    margin-bottom: 8px;
+    text-align: center;
+    width: 40px
+}
+
+@media (min-width: 40.0625em) {
+    .nhsuk-radios__divider {
+        font-size:19px;
+        font-size: 1.1875rem;
+        line-height: 1.47368
+    }
+}
+
+@media print {
+    .nhsuk-radios__divider {
+        font-size: 14pt;
+        line-height: 1.15
+    }
+}
+
+.nhsuk-radios__conditional {
+    margin-bottom: 16px;
+    border-left: 4px solid #4c6272;
+    margin-left: 18px;
+    padding-left: 30px
+}
+
+@media (min-width: 40.0625em) {
+    .nhsuk-radios__conditional {
+        margin-bottom:24px
+    }
+}
+
+.nhsuk-radios__conditional>:last-child {
+    margin-bottom: 0
+}
+
+.hide{
+    display:none;
+}
+</style>
+
+
+<div class="js-risk-assessment hide">
+
+    <div id="questionsarea" class="article-section">
+        
+        <form class="form" style="margin-top:0 !important" id="form-risk">
+
+            <div id="js-risk-container">
+                <div id="js-risk-0" class="js-risk-section hide">
+
+                    <div class="expander">
+                        <h4 class="hide">Risk <span class="js-risk-number">0</span> - <span class="js-label-riskname"></span></h4>
+
+                        <div class="hide js-results">
+                            <p>
+                                The risk level for <strong class="js-label-riskname"></strong> is <span class="js-score-title js-score-main score-tag"></span>
+                                and scores <span class="score score-tag"></span>/25 for risk. – <a href="#" class="js-expand-risk">Change</a>.
+                            </p>
+                            <br>
+                        </div>
+
+                        <!-- main display area for result-->
+                        <div class="js-results js-box-results">
+
+                        </div>
+                    </div>
+
+                    <div class="js-edit">
+                        <div class="nhsuk-form-group">
+                            <label for="select-type" class="nhsuk-label">What type of risk are you assessing?</label>
+                            <select name="select-type" class="js-select-type nhsuk-select" style="width:290px">
+                                <option value="" selected="selected">Select risk type</option>
+                                <option value="cost">A risk to cost</option>
+                                <option value="quality">A risk to quality</option>
+                                <option value="schedule">A risk to a schedule</option>
+                                <option value="benefits">A risk to benefits</option>
+                                <option value="reputation">A risk to reputation</option>
+                                <option value="people">A risk to people</option>
+                                <option value="security">A risk to information security</option>
+                            </select>
+                            <div class="visually-hidden"></div>
+                        </div>
+
+                        <fieldset name="group_prefix" class="js-riskname-section eforms-fieldgroup hide">
+                            <legend class="hide">Risk</legend>
+
+                            <div class="nhsuk-form-group">
+                                <label for="riskname" class="nhsuk-label">Give the risk a name</label>
+                                <input type="text" name="riskname" class="js-riskname nhsuk-input" autocomplete="off" value="" style="max-width: 30em;">
+                                <div class="visually-hidden"></div>
+                            </div>
+
+                        </fieldset>
+
+                        <fieldset name="group_prefix" class="js-likelihood hide">
+                            <legend class="visually-hidden">Likelihood</legend>
+
+                            <div class="nhsuk-form-group">
+                                <label class="nhsuk-label">How likely is it to cause a problem?</label>
+
+                                <div class="nhsuk-radios">
+                                    <div class="nhsuk-radios__item">
+                                        <input class="nhsuk-radios__input" id="risk-0-l-0" name="risk-0-l" type="radio" value="1">
+                                        <label class="nhsuk-label nhsuk-radios__label" for="risk-0-l-0">Rare</label>
+                                    </div>
+                                    <div class="nhsuk-radios__item">
+                                        <input class="nhsuk-radios__input" id="risk-0-l-1" name="risk-0-l" type="radio" value="2">
+                                        <label class="nhsuk-label nhsuk-radios__label" for="risk-0-l-1">Unlikely</label>
+                                    </div>
+                                    <div class="nhsuk-radios__item">
+                                        <input class="nhsuk-radios__input" id="risk-0-l-2" name="risk-0-l" type="radio" value="3">
+                                        <label class="nhsuk-label nhsuk-radios__label" for="risk-0-l-2">Possible</label>
+                                    </div>
+                                    <div class="nhsuk-radios__item">
+                                        <input class="nhsuk-radios__input" id="risk-0-l-3" name="risk-0-l" type="radio" value="4">
+                                        <label class="nhsuk-label nhsuk-radios__label" for="risk-0-l-3">Likely</label>
+                                    </div>
+                                    <div class="nhsuk-radios__item">
+                                        <input class="nhsuk-radios__input" id="risk-0-l-4" name="risk-0-l" type="radio" value="5">
+                                        <label class="nhsuk-label nhsuk-radios__label" for="risk-0-l-4">Certain</label>
+                                    </div>
+                                </div>
+                                <div class="visually-hidden"></div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset name="group_prefix" class="js-impact hide">
+                            <legend class="js-impact-title visually-hidden" style="margin: 0;">Impact <span class="js-impact-type"></span></legend>
+
+                            <div id="impact-groups">
+                                <div class='js-impact-group js-type-cost hide nhsuk-form-group'>
+                                    <label class='js-impact-label'>What impact could it have on cost?</label>
+                                    <div class="nhsuk-radios">
+                                        <div class="type-cost-option-1 nhsuk-radios__item">
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-cost' id='risk-0-cost-1' value='1'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-cost-1'>Very low</label>
+                                            <span class="nhsuk-hint nhsuk-radios__hint">For example, the risk could impact up to 3% of the budget.</span>
+                                        </div>
+                                        <div class='type-cost-option-2 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-cost' id='risk-0-cost-2' value='2'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-cost-2'>Low</label>
+                                            <span class="nhsuk-hint nhsuk-radios__hint">For example, the risk could impact between 3% to 5% of the budget.</span>
+                                        </div>
+                                        <div class='type-cost-option-3 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-cost' id='risk-0-cost-3' value='3'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-cost-3'>Medium</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>For example, the risk could impact between 5% to 7% of the budget.</span>
+                                        </div>
+
+                                        <div class='type-cost-option-4 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-cost' id='risk-0-cost-4' value='4'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-cost-4'>High</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>For example, the risk could impact between 7% to 10% of the budget.</span>
+                                        </div>
+
+                                        <div class='type-cost-option-5 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-cost' id='risk-0-cost-5' value='5'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-cost-5'>Very high</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>For example, the risk could impact over 10% of the budget.</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class='js-impact-group js-type-quality nhsuk-form-group'>
+                                    <label class='js-impact-label'>What impact could it have on quality?</label>
+
+                                    <div class="nhsuk-radios">
+                                        <div class='type-quality-option-1 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-quality' id='risk-0-quality-1' value='1'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-quality-1'>Very low</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>For example, a minor impact on a single function or capability.</span>
+                                        </div>
+
+                                        <div class='type-quality-option-2 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-quality' id='risk-0-quality-2' value='2'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-quality-2'>Low</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>
+                                                For example, a minor impact on multiple functions or capabilities. <br>
+                                                Or a moderate impact on a single function or capability.
+                                            </span>
+                                        </div>
+
+                                        <div class='type-quality-option-3 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-quality' id='risk-0-quality-3' value='3'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-quality-3'>Medium</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>For example, a moderate impact on multiple functions or capabilities.</span>
+                                        </div>
+
+                                        <div class='type-quality-option-4 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-quality' id='risk-0-quality-4' value='4'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-quality-4'>High</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>For example, a major impact on a single function or capability.</span>                                                        </span>
+                                        </div>
+
+                                        <div class='type-quality-option-5 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-quality' id='risk-0-quality-5' value='5'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-quality-5'>Very high</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>For example, a major impact on multiple functions or capabilities.</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class='js-impact-group js-type-schedule nhsuk-form-group'>
+                                    <label class='js-impact-label'>What impact could it have on the schedule?</label>
+                                    <div class='nhsuk-radios'>
+                                        <div class='type-schedule-option-1 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-schedule' id='risk-0-schedule-1' value='1'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-schedule-1'>Very low</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>For example, less than a weeks delay.</span>
+                                        </div>
+
+                                        <div class='type-schedule-option-2 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-schedule' id='risk-0-schedule-2' value='2'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-schedule-2'>Low</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>For example, a 1-2 weeks delay.</span>
+                                        </div>
+
+                                        <div class='type-schedule-option-3 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-schedule' id='risk-0-schedule-3' value='3'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-schedule-3'>Medium</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>For example, a 3-5 weeks delay.</span>
+                                        </div>
+
+                                        <div class='type-schedule-option-4 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-schedule' id='risk-0-schedule-4' value='4'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-schedule-4'>High</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>For example, a 6-12 weeks delay.</span>
+                                        </div>
+
+                                        <div class='type-schedule-option-5 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-schedule' id='risk-0-schedule-5' value='5'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-schedule-5'>Very high</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>For example, more than 12 weeks delay.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='js-impact-group js-type-benefits nhsuk-form-group'>
+                                    <label class='js-impact-label eforms-label'>What impact could it have on benefits?</label>
+                                    <div class='nhsuk-radios'>
+                                        <div class='type-benefits-option-1 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-benefits' id='risk-0-benefits-1' value='1'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-benefits-1'>Very low</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>
+                                                For example, a minor impact on a single programme benefit or a 3% reduction in forecast benefit.
+                                            </span>
+                                        </div>
+
+                                        <div class='type-benefits-option-2 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-benefits' id='risk-0-benefits-2' value='2'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-benefits-2'>Low</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>
+                                                For example, a minor impact on multiple benefits or a moderate impact on single programme benefit.<br>
+                                                Or a 5% reduction in forecast benefit.
+                                            </span>
+                                        </div>
+
+                                        <div class='type-benefits-option-3 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-benefits' id='risk-0-benefits-3' value='3'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-benefits-3'>Medium</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>For example, a moderate impact on multiple programme benefits or a 7% reduction in forecast benefit.</span>
+                                        </div>
+
+                                        <div class='type-benefits-option-4 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-benefits' id='risk-0-benefits-4' value='4'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-benefits-4'>High</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>For example, a major impact on a single key strategic benefit or a 10% reduction in forecast benefit.</span>
+                                        </div>
+
+                                        <div class='type-benefits-option-5 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-benefits' id='risk-0-benefits-5' value='5'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-benefits-5'>Very high</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>For example, a major impact on multiple strategic benefits or over 10% reduction in forecast benefit.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class='js-impact-group js-type-reputation nhsuk-form-group'>
+                                    <label class='js-impact-label'>What impact could it have on reputation?</label>
+                                    <div class='nhsuk-radios'>
+                                        <div class='type-reputation-option-1 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-reputation' id='risk-0-reputation-1' value='1'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-reputation-1'>Very low</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>
+                                                For example, requires Deputy Director's response, results in local news coverage. <br />
+                                                Or there will be little or no social media coverage.
+                                            </span>
+                                        </div>
+
+                                        <div class='type-reputation-option-2 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-reputation' id='risk-0-reputation-2' value='2'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-reputation-2'>Low</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>
+                                                For example, requires Director's response, results in regional news coverage. <br />
+                                                Or there will be minimal social media coverage.
+                                            </span>
+                                        </div>
+
+                                        <div class='type-reputation-option-3 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-reputation' id='risk-0-reputation-3' value='3'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-reputation-3'>Medium</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>
+                                                For example, requires Executive Director's response, results in national news coverage. <br />
+                                                Or there will be moderate social media coverage.
+                                            </span>
+                                        </div>
+
+                                        <div class='type-reputation-option-4 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-reputation' id='risk-0-reputation-4' value='4'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-reputation-4'>High</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>
+                                                For example, requires Chief Executive’s response, results in prolonged national news coverage.<br>
+                                                Or there will be a lot of social media coverage.
+                                            </span>
+                                        </div>
+
+                                        <div class='type-reputation-option-5 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-reputation' id='risk-0-reputation-5' value='5'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-reputation-5'>Very high</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>
+                                                For example, requires Ministerial response, results in international news coverage.<br>
+                                                Or social media coverage goes “viral”.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='js-impact-group js-type-people nhsuk-form-group'>
+                                    <label class='js-impact-label eforms-label'>What impact could it have on people or clinicians?</label>
+                                    <div class='nhsuk-radios'>
+                                        <div class='type-people-option-1 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-people' id='risk-0-people-1' value='1'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-people-1'>Very low</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>
+                                                For example, there could be a minor effect on a person which would need none or a small amount of treatment.
+                                                Or could indirectly lead to multiple minor injuries or illness. <br />No time off work would be needed.
+                                            </span>
+                                        </div>
+
+                                        <div class='type-people-option-2 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-people' id='risk-0-people-2' value='2'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-people-2'>Low</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>
+                                                For example, there could be a minor injury or illness which would need a small amount of treatment.<br />
+                                                Or could indirectly lead to multiple moderate injuries or illness.  <br />
+                                                Someone could need time off work for over 3 days, or a Hospital stay for 1-3 days.
+                                            </span>
+                                        </div>
+
+                                        <div class='type-people-option-3 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-people' id='risk-0-people-3' value='3'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-people-3'>Medium</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>
+                                                For example, there could be a moderate injury requiring professional treatment.<br />
+                                                Or could indirectly lead to multiple major injuries or illness. <br />
+                                                Someone could need time off work for 4-14 days, or a Hospital stay by 4-15 days.
+                                            </span>
+                                        </div>
+
+                                        <div class='type-people-option-4 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-people' id='risk-0-people-4' value='4'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-people-4'>High</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>
+                                                For example, there could be a major injury leading to a long-term issue or disability.<br />
+                                                Or could indirectly lead to a single death.<br />
+                                                Someone could need time off work for more than 14 days, or a Hospital stay of more than 15 days.
+                                            </span>
+                                        </div>
+
+                                        <div class='type-people-option-5 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-people' id='risk-0-people-5' value='5'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-people-5'>Very high</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>
+                                                For example, there could be an incident leading to death or multiple permanent injuries.<br />
+                                                Or could indirectly lead to multiple deaths.
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class='js-impact-group js-type-security nhsuk-form-group'>
+                                    <label class='js-impact-label eforms-label'>What impact could it have on information security?</label>
+                                    <div class='nhsuk-radios'>
+                                        <div class='type-security-option-1 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-security' id='risk-0-security-1' value='1'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-security-1'>Very low</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>
+                                                For example, there will be no personal data loss.<br />
+                                                There is certainty that no issue can arise from a potential breach.
+                                            </span>
+                                        </div>
+
+                                        <div class='type-security-option-2 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-security' id='risk-0-security-2' value='2'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-security-2'>Low</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>
+                                                For example, there could be some minor effect or any incident involving vulnerable groups even if no adverse effect occurred.<br />
+                                                <br />A minor adverse effect may be the cancellation of a procedure.
+                                                It may also include possible inconvenience to those who need the data to do their job.
+                                            </span>
+                                        </div>
+
+                                        <div class='type-security-option-3 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-security' id='risk-0-security-3' value='3'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-security-3'>Medium</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>
+                                                For example, there could be some serious effect such as the release of confidential information into the public domain.<br>
+                                                It could also prevent someone from doing their job.
+                                            </span>
+                                        </div>
+
+                                        <div class='type-security-option-4 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-security' id='risk-0-security-4' value='4'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-security-4'>High</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>
+                                                For example, a person could suffer pain from financial loss.<br />
+                                                There has been reported suffering and decline in health arising from the risk.
+                                                There could be a loss of bank details leading to loss of money.
+                                            </span>
+                                        </div>
+
+                                        <div class='type-security-option-5 nhsuk-radios__item'>
+                                            <input class="nhsuk-radios__input" type='radio' name='risk-0-security' id='risk-0-security-5' value='5'>
+                                            <label class="nhsuk-label nhsuk-radios__label" for='risk-0-security-5'>Very high</label>
+                                            <span class='nhsuk-hint nhsuk-radios__hint'>For example, a death or catastrophic event.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </fieldset>
+
+                        <div class="nhsuk-form-group">
+                            <a href="#" class="button btn-calculate">Continue</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <p><a href="#" class="js-add-risk hide">Assess another risk</a></p>
+
+        </form>
+
+    </div>
+
+
+</div>
+
+<script>window.addEventListener("load", function () {
+
+    /* grab emphasis boxes and move them into target */
+    var emphasisLocator = $('#risk-calculator-guidance');
+    var emphasisBoxes = emphasisLocator.nextAll('.emphasis-box');
+    var emphasisTypes = ["very-low", "low", "medium", "high", "very-high"];
+    emphasisLocator.addClass('hide');
+    emphasisBoxes.addClass('hide js-result-message').appendTo('.js-box-results');
+    emphasisBoxes.each(function(i, value){
+        var num = (i % 6);
+        //alert(i + " - " + emphasisTypes[i]);
+        $(this).addClass(emphasisTypes[i]);
+    });
+
+    var wrapper = $(".js-risk-assessment-wrapper");
+
+    $(".js-risk-assessment").appendTo(wrapper).removeClass('hide');
+
+    var risk_name = "Area of concern";
+    var cache_available = false;
+    var count_answers = 0;
+
+
+    var sectionid = "risk-0";
+    var numrisks = 0;
+    var risk0 = $("#js-risk-0");
+    var regex = /^(.+?)(\d+)$/i;
+
+    $(".js-add-risk").click(function (e) {
+        e.preventDefault();
+
+        numrisks = $("#js-risk-container").children().length;
+        sectionid = "risk-" + numrisks;
+
+        var newobj = risk0.clone().attr("id", "js-" + sectionid).removeClass("hide");
+
+        $("#js-risk-container").append(newobj);
+        var section = $("#js-" + sectionid);
+        section.find(".js-risk-number").text(numrisks);
+
+        section.find("input[type='radio']").each(function () {
+            if (this.id != null && this.name != null) {
+                this.id = this.id.replace("risk-0", sectionid);
+                this.name = this.name.replace("risk-0", sectionid);
+            }
+        });
+
+        section.find(".nhsuk-radios__label").each(function () {
+            if ($(this).attr("for") != null && $(this).attr("for").length > 6) {
+                $(this).attr("for", $(this).attr("for").replace("risk-0", sectionid));
+            }
+        });
+
+        $(".js-select-type").change(function () {
+            var type = $(this).val();
+            var section = $("#js-" + sectionid);
+            if (type != null) {
+                section.find(".js-impact").removeClass("hide");
+                section.find(".js-impact-type").text(type);
+                section.find(".js-impact-group").addClass("hide"); // hide any that are open
+                section.find(".js-type-" + type).removeClass("hide");
+
+                section.find(".js-riskname-section").removeClass("hide");
+                section.find(".js-likelihood").removeClass("hide");
+                section.find(".js-impact").removeClass("hide");
+                $(".js-add-risk").removeClass("hide");
+            }
+        });
+
+        $(".btn-calculate").on("click", function (e) {
+            var section = $(this).closest(".js-risk-section");
+            e.preventDefault();
+            sectionid = section.attr("id").substring(3, section.attr("id").length);
+            if (section != null) {
+                section.find(".js-edit").addClass("hide");
+                var risk_name = section.find("input.js-riskname").val();
+                var impact_type = section.find(".js-impact-type").text();
+
+                $(".js-overall-results").removeClass("hide");
+
+                section.find(".js-label-riskname").text(risk_name);
+                section.find(".js-risktitle").addClass("hide");
+                section.find(".js-expand-risk").removeClass("hide");
+
+                var results = section.find(".js-results");
+                results.removeClass("hide");
+                results.find(".risk-name").text(risk_name);
+
+                var value = getRadioValues(sectionid + "-l", sectionid + "-" + impact_type);
+                results.find(".score").text(value.toFixed());
+                var scoreclass = getScoreClass(value);
+                results.find(".score").removeClass(function (index, className) {
+                    return (className.match(/\btext-\S+/g) || []).join(' ');
+                });
+                results.find(".score").addClass('text-' + scoreclass);
+                var scoretitle = getScorename(value);
+                results.find(".js-score-title").html(scoretitle);
+                results.find(".js-score-main").removeClass(function (index, className) {
+                    return (className.match(/\btext-\S+/g) || []).join(' ');
+                });
+                results.find(".js-score-main").addClass('text-' + scoreclass);
+                //results.find(".overallscore").removeClass("hide");
+                results.find(".js-result-message").addClass("hide");
+                results.find(".js-result-message." + scoreclass).removeClass("hide");
+
+
+                $('html,body').animate({ scrollTop: section.offset().top }, 'slow');
+            };
+            //  Iterate over all ? $("#js-risk-container .js-risk-section").each(function (i, obj) {
+        });
+
+
+        $(".js-expand-risk").on("click", function () {
+            var section = $(this).closest(".js-risk-section");
+            section.find(".js-edit").removeClass("hide");
+            var results = section.find(".js-results");
+            results.addClass("hide");
+            section.find(".js-risktitle").removeClass("hide");
+            section.find(".js-expand-risk").addClass("hide");
+
+            $('html,body').animate({ scrollTop: section.offset().top }, 'slow');
+        });
+
+    });
+
+    $(".js-add-risk").trigger("click");
+
+        function setRadioValue(name1, val1) {
+            return $("input[name='" + name1 + "'][value = " + val1 + "]").prop('checked', true);
+        }
+
+        function getRadioValue(name1) {
+            return $("input[name='" + name1 + "']:checked").val();
+        }
+
+        function getRadioValues(name1, name2) {
+            var value1 = 0;
+            var value2 = 0;
+            if (name1 != null && name1.length > 0) {
+                value1 = $("input[name='" + name1 + "']:checked").val();
+            }
+            if (name2 != null && name2.length > 0) {
+                value2 = parseInt($("input[name='" + name2 + "']:checked").val());
+            }
+
+            return value1 * value2;
+        }
+
+        function getScorename(value) {
+            var scorename = "Very low";
+            if (value >= 7) {
+                scorename = "Low";
+            }
+            if (value >= 10) {
+                scorename = "Medium";
+            }
+            if (value >= 17) {
+                scorename = "High";
+            }
+            if (value >= 21) {
+                scorename = "Very high";
+            }
+            return scorename;
+        }
+
+        function getScoreClass(value) {
+            var scorename = getScorename(value).replace(/\s/g, "-").toLowerCase();
+            return scorename;
+        }
+
+        function load_questions(saved1, saved2) {
+            var numloaded = 0;
+            if (localStorage.getItem(saved1) != null) {
+                setRadioValue(saved1, localStorage.getItem(saved1));
+                numloaded++;
+            }
+            if (localStorage.getItem(saved2) != null) {
+                setRadioValue(saved2, localStorage.getItem(saved2));
+                numloaded++;
+            }
+            return numloaded;
+        }
+
+        function save_questions(saved1, saved2) {
+
+            localStorage.setItem(saved1, getRadioValue(saved1));
+            localStorage.setItem(saved2, getRadioValue(saved2));
+
+        }
+
+    });
+</script>
