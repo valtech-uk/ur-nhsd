@@ -1,35 +1,23 @@
-﻿Press play to listen to the beautiful birds
-
-Agitated birds and cockatiel screeching
-Nightingales singing, close perspective
-Thirty budgerigars in shed
-
-Press play to have a listen
-
-Fax machine - receive
-Dialling out through modem
-Creed machine operating (100 wpm.)
-3/7
-
-No one got hurt during the making of this sound effect, but what's it called?
-Scuffle with twangs
-6 people brawling
-36 people brawling
+﻿<div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide" aria-label="Document Header">
+        <div class="local-header article-header article-header--with-icon">
+            <div class="grid-wrapper">
+                <div class="article-header__inner">
+                    <div class="grid-row">
+                        <div class="column--two-thirds column--reset">
 
 
-What could it be?
-Supermarket till area
-Roulette, wheel spinning with large ball
-Fruit machines, close perspective
+
+                            <h1 id="top" class="local-header__title" data-uipath="document.title" itemprop="name">Audit team</h1>
 
 
-ast one now. Hopefully you've got the hang of this. What do you think this sound effect is called?
-Trampolining (using a competition mat)
-One drawbridge opening sideways
-Three thunder claps simulated by rolling cannon ball (as used in Elizabethan theatre)
+                                    <div itemprop="description" class="article-header__subtitle" data-uipath="website.team.summary">The audit team provide independent scrutiny across programmes and services</div>
 
-Remember, all of these are the names of genuine sound effects. Which one is this?
-Coffee percolator bubbling
-Inside a human or animal body
-Mountain stream bubbling over stones
-4/7
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>

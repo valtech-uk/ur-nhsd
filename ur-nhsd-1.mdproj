@@ -181,6 +181,9 @@
     <None Include="content\icons\globe.svg" />
     <None Include="content\icons\lightbulb.svg" />
     <None Include="arm\cpmo\reporting\portfolios.html" />
+    <None Include="arm\audit\index.html" />
+    <None Include="arm\audit\audit-types.html" />
+    <None Include="arm\audit\data-sharing-audits.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="arm\cpmo\standards-and-investment\" />
@@ -188,5 +191,6 @@
     <Folder Include="arm\cpmo\reporting\" />
     <Folder Include="arm\cpmo\news\" />
     <Folder Include="arm\cpmo\resources\" />
+    <Folder Include="arm\audit\" />
   </ItemGroup>
 </Project>
