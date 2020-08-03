@@ -8,38 +8,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Generic meta tags -->
-    <title>Intranet - CPMO</title>
+    <title>Intranet - Partnering</title>
 
 
-    <link rel="preload" href="../../content/fonts/FrutigerLTW01-55Roman.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../../content/fonts/FrutigerLTW01-56Italic.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../../content/fonts/FrutigerLTW01-65Bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../../content/fonts/FrutigerLTW01-66BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../content/fonts/FrutigerLTW01-55Roman.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../content/fonts/FrutigerLTW01-56Italic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../content/fonts/FrutigerLTW01-65Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../content/fonts/FrutigerLTW01-66BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
 
     <meta name="theme-color" content="#ffffff">
 
     <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="../../content/css/nhsd-intranet.css" type="text/css" />
+    <link rel="stylesheet" href="../../../content/css/nhsd-intranet.css" type="text/css" />
     <!--<![endif]-->
     <!--[if IE 6]>
-    <link rel="stylesheet" href="../../content/css/nhsuk-ie6.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="../../../content/css/nhsuk-ie6.css" media="screen" type="text/css"/>
     <![endif]-->
     <!--[if IE 7]>
-    <link rel="stylesheet" href="../../content/css/nhsuk-ie7.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="../../../content/css/nhsuk-ie7.css" media="screen" type="text/css"/>
     <![endif]-->
     <!--[if IE 8]>
-    <link rel="stylesheet" href="../../content/css/nhsuk-ie8.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="../../../content/css/nhsuk-ie8.css" media="screen" type="text/css"/>
     <![endif]-->
-    <link rel="stylesheet" href="../../content/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="../../../content/css/custom.css" type="text/css" />
 
-    <script src="../../content/js/jquery.js"></script>
-    <!--<script defer src="../../content/js/breadcrumbs.js"></script>-->
-    <script defer src="../../content/js/highlighter-copy-button.js"></script>
-    <script defer src="../../content/js/aria.js"></script>
-    <script defer src="../../content/js/details-element-polyfill.js"></script>
-    <script src="../../content/js/custom.js"></script>
+    <script src="../../../content/js/jquery.js"></script>
+    <!--<script defer src="../../../content/js/breadcrumbs.js"></script>-->
+    <script defer src="../../../content/js/highlighter-copy-button.js"></script>
+    <script defer src="../../../content/js/aria.js"></script>
+    <script defer src="../../../content/js/details-element-polyfill.js"></script>
+    <script src="../../../content/js/custom.js"></script>
 
+    <style type="text/css">
+        /* As SVG does not provide a default visual style for links,
+   it's considered best practice to add some */
 
+        @namespace svg url(http://www.w3.org/2000/svg);
+        /* Necessary to select only SVG <a> elements, and not also HTML’s.
+   See warning below */
+
+        svg|a:link, svg|a:visited {
+            cursor: pointer;
+        }
+
+        svg|a text,
+        text svg|a {
+            fill: white; /* Even for text, SVG uses fill over color */
+            text-decoration: underline;
+        }
+
+        svg|a:hover, svg|a:active {
+            outline: dotted 1px white;
+        }
+    </style>
 </head>
 
 <body class="debugs">
@@ -122,7 +143,7 @@
                         <div class="grid-row">
                             <div class="column column--18-75 column--reset">
                                 <a class="site-header__waffle-link" href="https://www.office.com/" target="_blank" aria-label="Office 365"><span class="ms-Icon ms-Icon--WaffleOffice365"></span></a>
-                                <a class="site-header-a__logo" href="../search/home.html"><img src="../../content/images/nhs-digital-intranet-logo.svg" alt="NHS Digital Intranet logo" class="site-header__logo"></a>
+                                <a class="site-header-a__logo" href="../../search/home.html"><img src="../../../content/images/nhs-digital-intranet-logo.svg" alt="NHS Digital Intranet logo" class="site-header__logo"></a>
                             </div>
 
 
@@ -137,7 +158,7 @@
                                             </div>
                                             <div class="search-strip__table-cell search-strip__table-cell--button">
                                                 <button data-uipath="search.button" class="search-strip__button" aria-label="Search">
-                                                    <img src="../../content/images/icon-search-white.png" alt="Magnifying glass" />
+                                                    <img src="../../../content/images/icon-search-white.png" alt="Magnifying glass" />
                                                 </button>
                                             </div>
                                         </div>
@@ -159,8 +180,8 @@
                                         <div class="main-nav__menu">
                                             <nav>
                                                 <ol class="list list--reset list--inline">
-                                                    <li><a href="../pages/task-list.html">Tasks</a></li>
-                                                    <li class="active"><a href="../pages/team-list.html" class="active">Teams and networks</a></li>
+                                                    <li><a href="../../pages/task-list.html">Tasks</a></li>
+                                                    <li class="active"><a href="../../pages/team-list.html" class="active">Teams and networks</a></li>
                                                     <li><a href="#">News &amp; Announcements</a></li>
                                                     <li><a href="#">Collaborate</a></li>
                                                 </ol>
@@ -184,29 +205,120 @@
                 <nav aria-label="Breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb__crumb">
-                            <a href="../search/home.html" class="breadcrumb__link" data-text="NHS Digital">NHS Digital</a>
+                            <a href="../../search/home.html" class="breadcrumb__link" data-text="NHS Digital">NHS Digital</a>
                         </li>
                         <li class="breadcrumb__crumb">
-                            <img src="../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
-                            <a href="../pages/team-list.html" class="breadcrumb__link" data-text="ARM">Teams</a>
+                            <img src="../../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
+                            <a href="../../pages/team-list.html" class="breadcrumb__link" data-text="ARM">Teams</a>
                         </li>
                         <li class="breadcrumb__crumb">
-                            <img src="../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
-                            <a href="index.html" class="breadcrumb__link breadcrumb__link--secondary" data-text="Discovery phase " aria-current="page">Audit team </a>
+                            <img src="../../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
+                            <a href="../index.html" class="breadcrumb__link" data-text="ARM">Audit</a>
                         </li>
+
                     </ol>
                 </nav>
-               
             </div>
         </div>
     </div>
 
     <main id="main-content">
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- Set up equation support from mathjax -->
         <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS_HTML"></script>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- strip HTML tags -->
+
+
+
+
+
+
+
 
 
         <article class="article article--general">
@@ -227,9 +339,9 @@
 
 
 
-                                    <h1 id="top" class="local-header__title" data-uipath="document.title" itemprop="name">Audit types</h1>
+                                    <h1 id="top" class="local-header__title" data-uipath="document.title" itemprop="name">ISO 9001 certification</h1>
                                     <div class="article-header__subtitle" data-uipath="website.general.summary">
-                                        <p>The aim of an audit is to form an objective opinion on the use of technology and data against recognised standards</p>
+                                        <p>the foundation for good business management</p>
                                     </div>
 
                                 </div>
@@ -257,7 +369,16 @@
                                         <nav>
                                             <ol class="article-section-nav__list">
                                                 <li>
-                                                    <a href="#top" aria-label="Scroll to 'Top of page'" title="Scroll to 'Top of page'" class="active">Top of page</a>
+                                                    <a href="#top" aria-label="Scroll to 'Top of page'" title="Scroll to 'Top of page'" class=" ">Top of page</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#certified-business-areas" aria-label="Scroll to 'Certified business areas'" title="Scroll to 'Certified business areas'" class="active">Certified business areas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#case-study" aria-label="Scroll to 'Case study'" title="Scroll to 'Case study'">Case study</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#resources-and-downloads" aria-label="Scroll to 'Resources and downloads'" title="Scroll to 'Resources and downloads'">Resources and downloads</a>
                                                 </li>
                                                 <li>
                                                     <a href="#contact-us" aria-label="Scroll to 'Contact us'" title="Scroll to 'Contact us'">Contact us</a>
@@ -278,50 +399,174 @@
 
 
 
-                        <div class="article-section-with-no-heading">
+                        <div id="certified-business-areas" class="article-section ">
+
+                            <h2 data-uipath="website.contentblock.section.title">Certified business areas</h2>
+
                             <div data-uipath="website.contentblock.section.content" class="rich-text-content">
-                                <p>These are the types of audit we conduct:</p>
+                                <p>We had a successful re-certification audit in January 2020 which confirmed our on-going certification to ISO 9001. Our independent external auditor, <strong>Certification Europe</strong>, carried out the audit.</p>
 
-                                <table style="width:609px">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col" data-sort-default="" data-sort-method="string" role="columnheader" aria-sort="ascending"><strong>Audit type</strong></th>
-                                            <th scope="col" style="width:398px" data-sort-method="string" role="columnheader"><strong>Contact</strong></th>
-                                        </tr>
-                                    </thead>
+                                <p>These areas of NHS Digital are certified</p>
+
+                                <table>
                                     <tbody>
-
-
-
-
-
-
                                         <tr>
-                                            <td>Data protection officer audits</td>
-                                            <td style="width:398px"><a href="/site/_cmsinternal/intranet/teams/audit">Audit team</a></td>
+                                            <td role="columnheader">
+                                                <p>Area</p>
+                                            </td>
+                                            <td role="columnheader">
+                                                <p>Local Contact</p>
+                                            </td>
+                                            <td role="columnheader">
+                                                <p>Certified</p>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td><a href="data-sharing-audits.html">Data sharing audits</a></td>
-                                            <td style="width:398px"><a href="/site/_cmsinternal/intranet/teams/audit">Audit team</a></td>
+                                            <td>
+                                                <p>Management Systems</p>
+                                            </td>
+                                            <td>
+                                                <p>Michael Weller</p>
+                                            </td>
+                                            <td>
+                                                <p>February 2017</p>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td><a href="#">Internal audits</a></td>
-                                            <td style="width:398px">Government Internal Audit Agency – <a href="/site/_cmsinternal/intranet/teams/audit/internal-audit-overview">Internal audit team</a></td>
+                                            <td>
+                                                <p>Terminology and Classifications</p>
+                                            </td>
+                                            <td>
+                                                <p>Peter Garrett</p>
+                                            </td>
+                                            <td>
+                                                <p>February 2017</p>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td><a href="iso-certification.html">ISO certification</a></td>
-                                            <td style="width:398px"><a href="ISO-standards/index.html">Audit team</a></td>
+                                            <td>
+                                                <p>Data Sharing Audit&nbsp;</p>
+                                            </td>
+                                            <td>
+                                                <p>John Fox</p>
+                                            </td>
+                                            <td>
+                                                <p>February 2017</p>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td>Public key infrastructure audits</td>
-                                            <td style="width:398px"><a href="/site/_cmsinternal/intranet/teams/audit">Audit team</a></td>
+                                            <td>
+                                                <p>Training Quality Improvement</p>
+                                            </td>
+                                            <td>
+                                                <p>Jenny Craggs</p>
+                                            </td>
+                                            <td>
+                                                <p>February 2017</p>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td>Tailored audits</td>
-                                            <td style="width:398px"><a href="/site/_cmsinternal/intranet/teams/audit">Audit team</a></td>
+                                            <td>
+                                                <p>NHS Data Model and&nbsp;Dictionary Service</p>
+                                            </td>
+                                            <td>
+                                                <p>Jane Mosley</p>
+                                            </td>
+                                            <td>
+                                                <p>February 2017</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Records Management</p>
+                                            </td>
+                                            <td>
+                                                <p>Vanessa Kaliapermal</p>
+                                            </td>
+                                            <td>February 2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Data Standards Assurance Service</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    Ken Harris-Jones<br>
+                                                    Janet Waterhouse
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>March 2019</p>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
+                            </div>
+                        </div>
+
+
+                        <div class="article-section-with-no-heading">
+                            <div data-uipath="website.contentblock.section.content" class="rich-text-content">
+                            </div>
+                        </div>
+
+
+                        <div id="case-study" class="article-section ">
+
+                            <h2 data-uipath="website.contentblock.section.title">Case study</h2>
+
+                            <div data-uipath="website.contentblock.section.content" class="rich-text-content">
+                                <p>The NHS Data Model and Dictionary Service area is certified to ISO 9001. The team wanted to drive consistencies and continual improvements into their way of working.&nbsp;</p>
+
+                                <p>Benefits of certification include:</p>
+
+                                <ul>
+                                    <li>
+                                        <p>allowing the team to work smarter</p>
+                                    </li>
+                                    <li>
+                                        <p>ensuring they focus on their objectives</p>
+                                    </li>
+                                    <li>
+                                        <p>looking at service provision from the customer's perspective.</p>
+                                    </li>
+                                    <li>
+                                        <p>reshaping&nbsp;the way they operate as a team, and also how they interact with customers.</p>
+                                    </li>
+                                </ul>
+
+                                <p>A range of healthcare professionals use the service to analyse and compare different parts of the healthcare system. &nbsp;</p>
+
+                                <p>Jane Mosley, quality lead for the service said:</p>
+                            </div>
+                        </div>
+                        <div class="quote-box" aria-label="Quotation">
+                            <div itemscope="" itemtype="https://schema.org/Quotation">
+                                <div class="quote-text" itemprop="text">
+                                    <p>The ISO 9001 standard made us look at how we work and allowed us to see if we were using best practices. Referring to the standard, we started working alongside the people wanting to collect the data we provide. We didn't directly engage in the way we do now. It has really given us focus, and more visibility of the end user. Working to a process, and continually challenging ourselves, routinely obtaining feedback and engaging users, we've been able to tighten our processes and improve on efficiencies.</p>
+
+                                    <p>Using the ISO branding has given us the credibility to influence stakeholders that what we have to offer is fit for purpose and can deliver.</p>
+
+                                    <p>Adopting the principles of ISO 9001 has highlighted to us that other areas within NHS Digital could benefit from this process. It's hugely important to how we run our service. We should all be thinking about how we can be better, and this standard gives us the foundation to do so</p>
+                                </div>
+                                <div class="quote-box-role">
+
+
+                                    <span itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+
+
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="resources-and-downloads" class="article-section ">
+
+                            <h2 data-uipath="website.contentblock.section.title">Resources and downloads</h2>
+
+                            <div data-uipath="website.contentblock.section.content" class="rich-text-content">
+                                <p><a href="/site/_cmsinternal/intranet/teams/audit/iso-standards/quality-management">Quality statement and Corporate business excellence framework</a></p>
                             </div>
                         </div>
 
@@ -331,15 +576,26 @@
                             <h2 data-uipath="website.contentblock.section.title">Contact us</h2>
 
                             <div data-uipath="website.contentblock.section.content" class="rich-text-content">
-                                <p>
-                                    <a href="/site/_cmsinternal/intranet/teams/audit">Audit team</a><br>
-                                    The audit team provide independent scrutiny across programmes and services
-                                </p>
+                            </div>
+                        </div>
 
-                                <p>
-                                    <a href="/site/_cmsinternal/intranet/teams/audit/internal-audit-overview">Internal audit&nbsp;- GIAA</a><br>
-                                    NHS Digital's internal audit service is provided by the Government Internal Audit Agency (GIAA)
-                                </p>
+
+                        <div class="emphasis-box emphasis-box-emphasis" aria-label="Highlighted Information">
+
+                            <div class="emphasis-box__content">
+
+                                <div data-uipath="website.contentblock.emphasis.content">
+                                    <p>
+                                        Email the Audit team&nbsp;at&nbsp;<a href="mailto:management.systems@nhs.net" onclick="logGoogleAnalyticsEvent('Link click','General','mailto:management.systems@nhs.net');" onkeyup="return vjsu.onKeyUp(event)">management.systems@nhs.net</a><br>
+                                        &nbsp;
+                                    </p>
+
+                                    <h3>Help us improve</h3>
+
+                                    <p>If you have any questions or feedback, complete our online form:</p>
+
+                                    <p><a href="http:" title="Audit team contact form" onclick="logGoogleAnalyticsEvent('Link click','General','http:');" onkeyup="return vjsu.onKeyUp(event)">Audit&nbsp;team contact form</a></p>
+                                </div>
                             </div>
                         </div>
 
@@ -348,9 +604,9 @@
 
 
                         <div class="article-section muted">
-                            Last edited: 27 July 2020 3:34 pm
+                            Last edited: 29 July 2020 10:49 am
                         </div>
-                        <div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 650px; height: 836px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div>
+                        <div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1002px; height: 2204px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div>
                     </div>
                 </div>
             </div>

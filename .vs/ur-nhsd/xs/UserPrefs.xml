@@ -2,19 +2,14 @@
   <MonoDevelop.Ide.ItemProperties.ur-nhsd-1 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="arm/audit/data-sharing-audits.html">
     <Files>
-      <File FileName="arm/risk/assess-risk-2.html" Line="1039" Column="78" />
-      <File FileName="arm/cpmo/index.html" />
-      <File FileName="arm/cpmo/standards-and-investment/index.html" />
-      <File FileName="arm/cpmo/portfolio-partnering/index.html" />
-      <File FileName="arm/risk/index.html" />
-      <File FileName="arm/cpmo/reporting/index.html" />
-      <File FileName="arm/cpmo/reporting/portfolios.html" />
-      <File FileName="EmptyTextFile.txt" Line="23" Column="11" />
-      <File FileName="../../../OneDrive - Valtech/ARM/A and A/new-content/audit-process.svg" Line="1" Column="1" />
-      <File FileName="index.html" Line="1" Column="1" />
-      <File FileName="arm/audit/index.html" Line="300" Column="61" />
-      <File FileName="arm/audit/audit-types.html" Line="308" Column="25" />
-      <File FileName="arm/audit/data-sharing-audits.html" Line="203" Column="1" />
+      <File FileName="arm/audit/index.html" Line="396" Column="45" />
+      <File FileName="arm/audit/audit-types.html" Line="304" Column="112" />
+      <File FileName="arm/audit/data-sharing-audits.html" Line="686" Column="12" />
+      <File FileName="arm/audit/ISO standards/index.html" Line="687" Column="68" />
+      <File FileName="arm/audit/ISO-standards/ISO-9001.html" Line="605" Column="1" />
+      <File FileName="arm/audit/ISO-standards/quality-management.html" Line="486" Column="12" />
+      <File FileName="arm/cpmo/resources/change-control-task.html" Line="315" Column="47" />
+      <File FileName="arm/audit/ISO-standards/quality-council.html" Line="486" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,11 +18,17 @@
             <Node name="ur-nhsd-1" expanded="True">
               <Node name="arm" expanded="True">
                 <Node name="audit" expanded="True">
+                  <Node name="ISO-standards" expanded="True" />
                   <Node name="data-sharing-audits.html" selected="True" />
                 </Node>
-                <Node name="cpmo" expanded="True" />
+                <Node name="cpmo" expanded="True">
+                  <Node name="news" expanded="True" />
+                  <Node name="portfolio-partnering" expanded="True" />
+                  <Node name="resources" expanded="True" />
+                  <Node name="standards-and-investment" expanded="True" />
+                </Node>
+                <Node name="risk" expanded="True" />
               </Node>
-              <Node name="pages" expanded="True" />
             </Node>
           </Node>
         </State>

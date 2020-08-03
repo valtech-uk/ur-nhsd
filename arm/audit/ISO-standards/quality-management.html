@@ -8,38 +8,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Generic meta tags -->
-    <title>Intranet - CPMO</title>
+    <title>Intranet - Partnering</title>
 
 
-    <link rel="preload" href="../../content/fonts/FrutigerLTW01-55Roman.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../../content/fonts/FrutigerLTW01-56Italic.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../../content/fonts/FrutigerLTW01-65Bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../../content/fonts/FrutigerLTW01-66BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../content/fonts/FrutigerLTW01-55Roman.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../content/fonts/FrutigerLTW01-56Italic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../content/fonts/FrutigerLTW01-65Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../content/fonts/FrutigerLTW01-66BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
 
     <meta name="theme-color" content="#ffffff">
 
     <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="../../content/css/nhsd-intranet.css" type="text/css" />
+    <link rel="stylesheet" href="../../../content/css/nhsd-intranet.css" type="text/css" />
     <!--<![endif]-->
     <!--[if IE 6]>
-    <link rel="stylesheet" href="../../content/css/nhsuk-ie6.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="../../../content/css/nhsuk-ie6.css" media="screen" type="text/css"/>
     <![endif]-->
     <!--[if IE 7]>
-    <link rel="stylesheet" href="../../content/css/nhsuk-ie7.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="../../../content/css/nhsuk-ie7.css" media="screen" type="text/css"/>
     <![endif]-->
     <!--[if IE 8]>
-    <link rel="stylesheet" href="../../content/css/nhsuk-ie8.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="../../../content/css/nhsuk-ie8.css" media="screen" type="text/css"/>
     <![endif]-->
-    <link rel="stylesheet" href="../../content/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="../../../content/css/custom.css" type="text/css" />
 
-    <script src="../../content/js/jquery.js"></script>
-    <!--<script defer src="../../content/js/breadcrumbs.js"></script>-->
-    <script defer src="../../content/js/highlighter-copy-button.js"></script>
-    <script defer src="../../content/js/aria.js"></script>
-    <script defer src="../../content/js/details-element-polyfill.js"></script>
-    <script src="../../content/js/custom.js"></script>
+    <script src="../../../content/js/jquery.js"></script>
+    <!--<script defer src="../../../content/js/breadcrumbs.js"></script>-->
+    <script defer src="../../../content/js/highlighter-copy-button.js"></script>
+    <script defer src="../../../content/js/aria.js"></script>
+    <script defer src="../../../content/js/details-element-polyfill.js"></script>
+    <script src="../../../content/js/custom.js"></script>
 
+    <style type="text/css">
+        /* As SVG does not provide a default visual style for links,
+   it's considered best practice to add some */
 
+        @namespace svg url(http://www.w3.org/2000/svg);
+        /* Necessary to select only SVG <a> elements, and not also HTML’s.
+   See warning below */
+
+        svg|a:link, svg|a:visited {
+            cursor: pointer;
+        }
+
+        svg|a text,
+        text svg|a {
+            fill: white; /* Even for text, SVG uses fill over color */
+            text-decoration: underline;
+        }
+
+        svg|a:hover, svg|a:active {
+            outline: dotted 1px white;
+        }
+    </style>
 </head>
 
 <body class="debugs">
@@ -122,7 +143,7 @@
                         <div class="grid-row">
                             <div class="column column--18-75 column--reset">
                                 <a class="site-header__waffle-link" href="https://www.office.com/" target="_blank" aria-label="Office 365"><span class="ms-Icon ms-Icon--WaffleOffice365"></span></a>
-                                <a class="site-header-a__logo" href="../search/home.html"><img src="../../content/images/nhs-digital-intranet-logo.svg" alt="NHS Digital Intranet logo" class="site-header__logo"></a>
+                                <a class="site-header-a__logo" href="../../search/home.html"><img src="../../../content/images/nhs-digital-intranet-logo.svg" alt="NHS Digital Intranet logo" class="site-header__logo"></a>
                             </div>
 
 
@@ -137,7 +158,7 @@
                                             </div>
                                             <div class="search-strip__table-cell search-strip__table-cell--button">
                                                 <button data-uipath="search.button" class="search-strip__button" aria-label="Search">
-                                                    <img src="../../content/images/icon-search-white.png" alt="Magnifying glass" />
+                                                    <img src="../../../content/images/icon-search-white.png" alt="Magnifying glass" />
                                                 </button>
                                             </div>
                                         </div>
@@ -159,8 +180,8 @@
                                         <div class="main-nav__menu">
                                             <nav>
                                                 <ol class="list list--reset list--inline">
-                                                    <li><a href="../pages/task-list.html">Tasks</a></li>
-                                                    <li class="active"><a href="../pages/team-list.html" class="active">Teams and networks</a></li>
+                                                    <li><a href="../../pages/task-list.html">Tasks</a></li>
+                                                    <li class="active"><a href="../../pages/team-list.html" class="active">Teams and networks</a></li>
                                                     <li><a href="#">News &amp; Announcements</a></li>
                                                     <li><a href="#">Collaborate</a></li>
                                                 </ol>
@@ -184,29 +205,120 @@
                 <nav aria-label="Breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb__crumb">
-                            <a href="../search/home.html" class="breadcrumb__link" data-text="NHS Digital">NHS Digital</a>
+                            <a href="../../search/home.html" class="breadcrumb__link" data-text="NHS Digital">NHS Digital</a>
                         </li>
                         <li class="breadcrumb__crumb">
-                            <img src="../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
-                            <a href="../pages/team-list.html" class="breadcrumb__link" data-text="ARM">Teams</a>
+                            <img src="../../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
+                            <a href="../../pages/team-list.html" class="breadcrumb__link" data-text="ARM">Teams</a>
                         </li>
                         <li class="breadcrumb__crumb">
-                            <img src="../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
-                            <a href="index.html" class="breadcrumb__link breadcrumb__link--secondary" data-text="Discovery phase " aria-current="page">Audit team </a>
+                            <img src="../../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
+                            <a href="../index.html" class="breadcrumb__link" data-text="ARM">Audit</a>
                         </li>
+
                     </ol>
                 </nav>
-               
             </div>
         </div>
     </div>
 
     <main id="main-content">
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- Set up equation support from mathjax -->
         <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS_HTML"></script>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- strip HTML tags -->
+
+
+
+
+
+
+
 
 
         <article class="article article--general">
@@ -227,9 +339,9 @@
 
 
 
-                                    <h1 id="top" class="local-header__title" data-uipath="document.title" itemprop="name">Audit types</h1>
+                                    <h1 id="top" class="local-header__title" data-uipath="document.title" itemprop="name">Quality council</h1>
                                     <div class="article-header__subtitle" data-uipath="website.general.summary">
-                                        <p>The aim of an audit is to form an objective opinion on the use of technology and data against recognised standards</p>
+                                        <p>a decision-making authority who ensure decisions about our processes and assurance methods are carried out across the organisation</p>
                                     </div>
 
                                 </div>
@@ -260,6 +372,9 @@
                                                     <a href="#top" aria-label="Scroll to 'Top of page'" title="Scroll to 'Top of page'" class="active">Top of page</a>
                                                 </li>
                                                 <li>
+                                                    <a href="#resources-and-downloads" aria-label="Scroll to 'Resources and downloads'" title="Scroll to 'Resources and downloads'">Resources and downloads</a>
+                                                </li>
+                                                <li>
                                                     <a href="#contact-us" aria-label="Scroll to 'Contact us'" title="Scroll to 'Contact us'">Contact us</a>
                                                 </li>
                                             </ol>
@@ -280,48 +395,49 @@
 
                         <div class="article-section-with-no-heading">
                             <div data-uipath="website.contentblock.section.content" class="rich-text-content">
-                                <p>These are the types of audit we conduct:</p>
+                                <p>The council reviews the effectiveness of the implementation of the standards we follow.</p>
 
-                                <table style="width:609px">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col" data-sort-default="" data-sort-method="string" role="columnheader" aria-sort="ascending"><strong>Audit type</strong></th>
-                                            <th scope="col" style="width:398px" data-sort-method="string" role="columnheader"><strong>Contact</strong></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
+                                <p>At the current time, they include:</p>
+
+                                <ul>
+                                    <li>
+                                        <p><a href="/site/_cmsinternal/intranet/teams/audit/iso-standards/iso-9001-certification">ISO 9001</a> - Quality Management Systems</p>
+                                    </li>
+                                    <li>
+                                        <p><a href="/site/_cmsinternal/intranet/teams/audit/iso-standards/iso-20000">ISO 20000</a> - Service Management</p>
+                                    </li>
+                                    <li>
+                                        <p><a href="/site/_cmsinternal/intranet/teams/audit/iso-standards/iso-27001">ISO 27001</a> - Information Security Management</p>
+                                    </li>
+                                </ul>
+
+                                <p>The council makes recommendations to the Chief executive and Audit and Risk Committee as appropriate on:</p>
+
+                                <ul>
+                                    <li>
+                                        <p>all risk and control related statements arising from internal and external audits</p>
+                                    </li>
+                                    <li>
+                                        <p>assurance processes that show the degree of the achievement of corporate objectives</p>
+                                    </li>
+                                    <li>
+                                        <p>assurance processes that show the effectiveness of the management of risks and disclosure</p>
+                                    </li>
+                                </ul>
+
+                                <p>The quality council uses the outcomes of the work of the audit team. It also seeks reports and assurances from directors and managers as appropriate.</p>
+                            </div>
+                        </div>
 
 
+                        <div id="resources-and-downloads" class="article-section ">
 
+                            <h2 data-uipath="website.contentblock.section.title">Resources and downloads</h2>
 
+                            <div data-uipath="website.contentblock.section.content" class="rich-text-content">
+                                <p><a href="/site/_cmsinternal/binaries/content/assets/intranet/teams/audit/quality_council_tor2019_interim_oct2019.pdf" onclick="logGoogleAnalyticsEvent('Download attachment','General','Quality council => quality_council_tor2019_interim_oct2019.pdf');" onkeyup="return vjsu.onKeyUp(event)">Terms of reference</a></p>
 
-
-                                        <tr>
-                                            <td>Data protection officer audits</td>
-                                            <td style="width:398px"><a href="/site/_cmsinternal/intranet/teams/audit">Audit team</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="data-sharing-audits.html">Data sharing audits</a></td>
-                                            <td style="width:398px"><a href="/site/_cmsinternal/intranet/teams/audit">Audit team</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#">Internal audits</a></td>
-                                            <td style="width:398px">Government Internal Audit Agency – <a href="/site/_cmsinternal/intranet/teams/audit/internal-audit-overview">Internal audit team</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="iso-certification.html">ISO certification</a></td>
-                                            <td style="width:398px"><a href="ISO-standards/index.html">Audit team</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Public key infrastructure audits</td>
-                                            <td style="width:398px"><a href="/site/_cmsinternal/intranet/teams/audit">Audit team</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tailored audits</td>
-                                            <td style="width:398px"><a href="/site/_cmsinternal/intranet/teams/audit">Audit team</a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <p><a href="/site/_cmsinternal/intranet/teams/audit/iso-standards/quality-management">Quality management</a> including quality statement</p>
                             </div>
                         </div>
 
@@ -331,15 +447,26 @@
                             <h2 data-uipath="website.contentblock.section.title">Contact us</h2>
 
                             <div data-uipath="website.contentblock.section.content" class="rich-text-content">
-                                <p>
-                                    <a href="/site/_cmsinternal/intranet/teams/audit">Audit team</a><br>
-                                    The audit team provide independent scrutiny across programmes and services
-                                </p>
+                            </div>
+                        </div>
 
-                                <p>
-                                    <a href="/site/_cmsinternal/intranet/teams/audit/internal-audit-overview">Internal audit&nbsp;- GIAA</a><br>
-                                    NHS Digital's internal audit service is provided by the Government Internal Audit Agency (GIAA)
-                                </p>
+
+                        <div class="emphasis-box emphasis-box-emphasis" aria-label="Highlighted Information">
+
+                            <div class="emphasis-box__content">
+
+                                <div data-uipath="website.contentblock.emphasis.content">
+                                    <p>
+                                        Email the Audit team&nbsp;at&nbsp;<a href="mailto:management.systems@nhs.net" onclick="logGoogleAnalyticsEvent('Link click','General','mailto:management.systems@nhs.net');" onkeyup="return vjsu.onKeyUp(event)">management.systems@nhs.net</a><br>
+                                        &nbsp;
+                                    </p>
+
+                                    <p><strong>Help us improve</strong></p>
+
+                                    <p>If you have any questions or feedback, complete our online form:</p>
+
+                                    <p><a href="/site/_cmsinternal/intranet/forms/contact-audit-team">Audit&nbsp;team contact form</a></p>
+                                </div>
                             </div>
                         </div>
 
@@ -348,9 +475,9 @@
 
 
                         <div class="article-section muted">
-                            Last edited: 27 July 2020 3:34 pm
+                            Last edited: 29 July 2020 12:47 pm
                         </div>
-                        <div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 650px; height: 836px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div>
+                        <div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1002px; height: 1137px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div>
                     </div>
                 </div>
             </div>
