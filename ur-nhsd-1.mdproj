@@ -187,7 +187,11 @@
     <None Include="arm\audit\ISO-standards\index.html" />
     <None Include="arm\audit\ISO-standards\ISO-9001.html" />
     <None Include="arm\audit\ISO-standards\quality-management.html" />
-    <None Include="arm\audit\ISO-standards\quality-management %28copy%29.html" />
+    <None Include="arm\audit\ISO-standards\quality-council.html" />
+    <None Include="arm\audit\dpo-audits.html" />
+    <None Include="arm\audit\index %28copy%29.html" />
+    <None Include="arm\audit\audit-types %28copy%29.html" />
+    <None Include="arm\audit\custom-audits.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="arm\cpmo\standards-and-investment\" />
