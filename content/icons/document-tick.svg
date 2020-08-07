@@ -1,0 +1,17 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+  <title>ICONS Sets_v3</title>
+  <g id="Pages_tick" data-name="Pages tick">
+    <path d="M44,206.65V33.75a6.12,6.12,0,0,1,6.15-6.15H161.32l37,37v142a6.12,6.12,0,0,1-6.15,6.15h-142A6.2,6.2,0,0,1,44,206.65Z" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <line x1="161.32" y1="27.6" x2="198.33" y2="64.62" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <polyline points="198.33 64.62 161.32 64.62 161.32 27.6" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <line x1="74.98" y1="89.33" x2="167.58" y2="89.33" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <line x1="74.98" y1="59.33" x2="126.35" y2="59.33" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+    <g>
+      <circle cx="120" cy="154.59" r="35.31" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.65490007400513px"/>
+      <polyline points="104.18 161.28 109.51 168.59 135.86 136.87" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 3.65490007400513px"/>
+    </g>
+  </g>
+  <g id="Pages_warning" data-name="Pages warning">
+    <line x1="74.98" y1="119.33" x2="84.69" y2="119.33" style="fill: none;stroke: #005EB8;stroke-linecap: round;stroke-linejoin: round;stroke-width: 4px"/>
+  </g>
+</svg>
