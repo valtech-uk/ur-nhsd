@@ -1,0 +1,768 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Generic meta tags -->
+    <title>Intranet - Partnering</title>
+
+
+    <link rel="preload" href="../../../content/fonts/FrutigerLTW01-55Roman.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../content/fonts/FrutigerLTW01-56Italic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../content/fonts/FrutigerLTW01-65Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../../content/fonts/FrutigerLTW01-66BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+
+    <meta name="theme-color" content="#ffffff">
+
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="../../../content/css/nhsd-intranet.css" type="text/css" />
+    <!--<![endif]-->
+    <!--[if IE 6]>
+    <link rel="stylesheet" href="../../../content/css/nhsuk-ie6.css" media="screen" type="text/css"/>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="../../../content/css/nhsuk-ie7.css" media="screen" type="text/css"/>
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" href="../../../content/css/nhsuk-ie8.css" media="screen" type="text/css"/>
+    <![endif]-->
+    <link rel="stylesheet" href="../../../content/css/custom.css" type="text/css" />
+
+    <script src="../../../content/js/jquery.js"></script>
+    <!--<script defer src="../../../content/js/breadcrumbs.js"></script>-->
+    <script defer src="../../../content/js/highlighter-copy-button.js"></script>
+    <script defer src="../../../content/js/aria.js"></script>
+    <script defer src="../../../content/js/details-element-polyfill.js"></script>
+    <script src="../../../content/js/custom.js"></script>
+
+    <style type="text/css">
+        /* As SVG does not provide a default visual style for links,
+   it's considered best practice to add some */
+
+        @namespace svg url(http://www.w3.org/2000/svg);
+        /* Necessary to select only SVG <a> elements, and not also HTML’s.
+   See warning below */
+
+        svg|a:link, svg|a:visited {
+            cursor: pointer;
+        }
+
+        svg|a text,
+        text svg|a {
+            fill: white; /* Even for text, SVG uses fill over color */
+            text-decoration: underline;
+        }
+
+        svg|a:hover, svg|a:active {
+            outline: dotted 1px white;
+        }
+    </style>
+</head>
+
+<body class="debugs">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-src="sprite.de5f5359395829169670f642beb41ba0.svg" style="width: 0px; height: 0px; display: none;">
+        <defs>
+            <symbol viewBox="0 0 24 24" id="add--sprite">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="edit-document--sprite">
+                <g>
+                    <path d="M14,17c0,0.472-0.561,1-1.031,1 M13,15V8H9C8.529,8,8,7.471,8,7V3H3L2.998,17.049L11,17.01L10.002,18H2.854
+		C2.383,18,2,17.617,2,17.146V2.913c0-0.472,0.383-0.854,0.854-0.854h5.97c0.473,0,1.131,0.275,1.461,0.605l3.111,2.877
+		C13.725,5.871,14,6.528,14,7v7L13,15z M13,17 M5.284,10h5.431C10.875,10,11,10.125,11,10.285v0.431C11,10.875,10.875,11,10.715,11
+		H5.284C5.125,11,5,10.875,5,10.715v-0.431C5,10.125,5.125,10,5.284,10z M5.284,12h5.431C10.875,12,11,12.124,11,12.284v0.431
+		C11,12.875,10.875,13,10.715,13H5.284C5.125,13,5,12.875,5,12.715v-0.431C5,12.124,5.125,12,5.284,12z M5.284,14h5.431
+		C10.875,14,11,14.124,11,14.284v0.431C11,14.875,10.875,15,10.715,15H5.284C5.125,15,5,14.875,5,14.715v-0.431
+		C5,14.124,5.125,14,5.284,14z M9,7h4c-0.053-0.151-0.135-0.302-0.197-0.365L9.365,3.196C9.303,3.134,9.152,3.054,9,3V7z"></path>
+                </g>
+                <g>
+                    <rect x="19.793" y="11.086" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 43.8345 6.8431)" width="1.414" height="2.828"></rect>
+                    <polygon points="18,13 11,20 11,22 13,22 20,15 	"></polygon>
+                </g>
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="edit-menu--sprite">
+                <g>
+                    <polygon points="14,13 4,13 4,14 13,14 14,13 	"></polygon>
+                </g>
+                <g>
+                    <polygon points="17,8 4,8 4,9 17,9 17,8 	"></polygon>
+                </g>
+                <g>
+                    <polygon points="17,3 4,3 4,4 17,4 17,3 	"></polygon>
+                </g>
+                <g>
+                    <rect x="19.793" y="10.086" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 43.1274 5.136)" width="1.414" height="2.828"></rect>
+                    <polygon points="18,12 11,19 11,21 13,21 20,14 	"></polygon>
+                </g>
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="flask--sprite">
+                <g>
+                    <path d="M13,5v4c0,0.188,0.054,0.374,0.154,0.533c2.483,3.942,5.234,8.42,5.706,9.371c-0.074,0.925-0.759,1.086-1.165,1.096H6.544
+		c-0.345,0-1.435-0.082-1.536-1.077c0.493-1.019,3.646-6.003,5.832-9.379C10.944,9.382,11,9.193,11,9V5H13 M15,4H9v1h1v4
+		c0,0-6,9.265-6,9.769C4,20.966,6.397,21,6.544,21c0.005,0,0.007,0,0.007,0h11.145c0,0,2.172,0,2.172-2.267C19.867,18.315,14,9,14,9
+		V5h1V4L15,4z"></path>
+                </g>
+                <rect x="6.267" y="15" width="11.333" height="1"></rect>
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="lock--sprite">
+                <g>
+                    <path d="M11.5,3.937c2.231,0,3.563,1.519,3.563,4.063v3.063H7.937V8C7.937,5.456,9.269,3.937,11.5,3.937 M11.5,3
+		C8.674,3,7,5.042,7,8v4h9V8C16,5.042,14.327,3,11.5,3L11.5,3z"></path>
+                </g>
+                <g>
+                    <path d="M17.077,11.923v8.154H5.923v-8.154H17.077 M18,11H5v10h13V11L18,11z"></path>
+                </g>
+                <rect x="11" y="14" width="1" height="4"></rect>
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="not-allowed--sprite">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8 0-1.85.63-3.55 1.69-4.9L16.9 18.31C15.55 19.37 13.85 20 12 20zm6.31-3.1L7.1 5.69C8.45 4.63 10.15 4 12 4c4.42 0 8 3.58 8 8 0 1.85-.63 3.55-1.69 4.9z"></path>
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="plus--sprite">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path>
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="search--sprite">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+            </symbol>
+        </defs>
+    </svg><div id="MathJax_Message" style="display: none;"></div>
+
+
+    <a href="#main-content" class="nhsd-skip-link">Skip to main content</a>
+
+    <header class="site-header site-header--intranet site-header--with-search" id="header">
+        <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide">
+            <div class="grid-row">
+                <div class="column column--reset">
+                    <div class="grid-wrapper grid-wrapper--collapse">
+                        <div class="grid-row">
+                            <div class="column column--18-75 column--reset">
+                                <a class="site-header__waffle-link" href="https://www.office.com/" target="_blank" aria-label="Office 365"><span class="ms-Icon ms-Icon--WaffleOffice365"></span></a>
+                                <a class="site-header-a__logo" href="../../search/home.html"><img src="../../../content/images/nhs-digital-intranet-logo.svg" alt="NHS Digital Intranet logo" class="site-header__logo"></a>
+                            </div>
+
+
+                            <div class="main-nav">
+
+                                <div class="site-header__search-wrapper">
+                                    <form role="search" method="get" action=/search class="search-strip" aria-label="???search-banner.title???" id="search">
+                                        <div class="search-strip__contents">
+                                            <div class="search-strip__table-cell">
+                                                <input type="text" name="query" id="query" class="search-strip__input" placeholder="Search" value="" aria-label="Search">
+                                                <label for="query" class="visually-hidden">Search</label>
+                                            </div>
+                                            <div class="search-strip__table-cell search-strip__table-cell--button">
+                                                <button data-uipath="search.button" class="search-strip__button" aria-label="Search">
+                                                    <img src="../../../content/images/icon-search-white.png" alt="Magnifying glass" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+
+                                <nav>
+                                    <button tabindex="0" class="main-nav__burger" aria-label="Navigation menu" id="navToggle">
+                                        <span class="main-nav__burger-button">
+                                            <span class="main-nav__burger-line-group">
+                                                <span class="main-nav__burger-line">&nbsp;</span>
+                                                <span class="main-nav__burger-line">&nbsp;</span>
+                                                <span class="main-nav__burger-line">&nbsp;</span>
+                                            </span>
+                                        </span>
+                                    </button>
+                                    <div class="column  column--reset">
+                                        <div class="main-nav__menu">
+                                            <nav>
+                                                <ol class="list list--reset list--inline">
+                                                    <li><a href="../../pages/task-list.html">Tasks</a></li>
+                                                    <li class="active"><a href="../../pages/team-list.html" class="active">Teams and networks</a></li>
+                                                    <li><a href="#">News &amp; Announcements</a></li>
+                                                    <li><a href="#">Collaborate</a></li>
+                                                </ol>
+                                                <!-- {"HST-Type":"EDIT_MENU_LINK","uuid":"c5c8bbc5-123a-4693-91c5-5ce53926056d"} --><a class="hst-fab hippo-overlay-box"></a>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="grid-wrapper">
+        <div class="grid-row">
+            <div class="column column--reset">
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb__crumb">
+                            <a href="../../search/home.html" class="breadcrumb__link" data-text="NHS Digital">NHS Digital</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
+                            <a href="../../pages/team-list.html" class="breadcrumb__link" data-text="ARM">Teams</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
+                            <a href="../index.html" class="breadcrumb__link" data-text="ARM">CPMO</a>
+                        </li>
+                        <li class="breadcrumb__crumb">
+                            <img src="../../../content/images/icon-arrow.svg" alt="Right arrow icon" class="breadcrumb__sep" aria-hidden="true">
+                            <span class="breadcrumb__link breadcrumb__link--secondary" data-text="Discovery phase " aria-current="page">Portfolio Partnering</span>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Set up equation support from mathjax -->
+        <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS_HTML"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- strip HTML tags -->
+
+
+
+
+
+
+
+
+        <article class="article article--team">
+
+
+            <!-- checking whether simulating doc in order to avoid console errors from NewsHub and EventHub docs -->
+
+
+
+
+
+            <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide" aria-label="Document Header">
+                <div class="local-header article-header article-header--with-icon">
+                    <div class="grid-wrapper">
+                        <div class="article-header__inner">
+                            <div class="grid-row">
+                                <div class="column--two-thirds column--reset">
+
+
+
+                                    <h1 id="top" class="local-header__title" data-uipath="document.title" itemprop="name">Programme assurance</h1>
+
+
+                                    <div itemprop="description" class="article-header__subtitle" data-uipath="website.team.summary">We work with the Infrastructure and projects authority (IPA) who conduct reviews of major government projects</div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="grid-wrapper grid-wrapper--article">
+
+                <div class="grid-row">
+                    <div class="column column--one-third page-block page-block--sidebar article-section-nav-outer-wrapper">
+                        <div id="sticky-nav" class="" style="">
+                            <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                                <div class="article-section-nav-wrapper">
+                                    <div class="article-section-nav">
+                                        <h2 class="article-section-nav__title">Page contents</h2>
+                                        <nav>
+                                            <ol class="article-section-nav__list">
+                                                <li>
+                                                    <a href="#top" aria-label="Scroll to 'Top of page'" title="Scroll to 'Top of page'" class=" ">Top of page</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#what-is-programme-assurance-" aria-label="Scroll to 'What is programme assurance?'" title="Scroll to 'What is programme assurance?'" class="active">What is programme assurance?</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#risk-scores-and-programme-size" aria-label="Scroll to 'Risk scores and programme size'" title="Scroll to 'Risk scores and programme size'" class=" ">Risk scores and programme size</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#programme-assurance-process" aria-label="Scroll to 'Programme assurance process'" title="Scroll to 'Programme assurance process'">Programme assurance process</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#resources-and-downloads" aria-label="Scroll to 'Resources and downloads'" title="Scroll to 'Resources and downloads'">Resources and downloads</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#contact-us" aria-label="Scroll to 'Contact us'" title="Scroll to 'Contact us'">Contact us</a>
+                                                </li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column column--two-thirds page-block page-block--main">
+
+
+
+
+
+                        <div id="what-is-programme-assurance-" class="article-section ">
+
+                            <h2 data-uipath="website.contentblock.section.title">What is programme assurance?</h2>
+
+                            <div data-uipath="website.contentblock.section.content" class="rich-text-content">
+                                <p>Programme assurance is the set of actions necessary to provide confidence to senior leaders and stakeholders that work is controlled, on track to deliver and aligned with policy and strategy.</p>
+
+                                <p>Assurance should be scheduled to provide decision makers with an assessment and outlook. It should be planned to minimise the impact on the team and reviewers.</p>
+
+                                <h3>Risk potential assessments</h3>
+
+                                <p>The RPA determines the degree of assurance required on a project or programme. The IPA owns the RPA template.</p>
+                            </div>
+                        </div>
+                        <div class="ctabtn--div">
+                            <div class="ctabtn-left" aria-labelledby="ctabtn-complete-the-rpa-template-">
+                                <a href="https://www.gov.uk/government/publications/risk-potential-assessment-form" class="ctabtn-left ctabtn--nhs-digital-button" id="ctabtn-complete-the-rpa-template-" onclick="logGoogleAnalyticsEvent('Link click', 'Team', 'https://www.gov.uk/government/publications/risk-potential-assessment-form')" onkeyup="return vjsu.onKeyUp(event)">
+                                    Complete the RPA (template)
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div id="risk-scores-and-programme-size" class="article-section ">
+
+                            <h2 data-uipath="website.contentblock.section.title">Risk scores and programme size</h2>
+
+                            <div data-uipath="website.contentblock.section.content" class="rich-text-content">
+                                <p>The score and project size affect the process. The second&nbsp; is&nbsp;for programmes listed&nbsp;in&nbsp;the Government Major Projects Portfolio.</p>
+
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td width="15%" role="columnheader">
+                                                <p><strong>RPA Score</strong></p>
+                                            </td>
+                                            <td width="20%" role="columnheader">
+                                                <p><strong>Major Project&nbsp;</strong><strong>Portfolio</strong></p>
+                                            </td>
+                                            <td role="columnheader">
+                                                <p><strong>Outcome</strong></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p><div class="callout--severe">High</div></p>
+                                            </td>
+                                            <td>
+                                                <p>Yes</p>
+                                            </td>
+                                            <td>
+                                                <p>The IPA will conduct a Gateway Review. The Programme has 4 weeks to gather and complete the required documentation</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p><div class="callout--alert">High</div></p>
+                                            </td>
+                                            <td>
+                                                <p>No</p>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <div>DHSC will arrange an initial Assessment Meeting. A Gateway</div>
+                                                </div>
+
+                                                <div>
+                                                    <div>Review follows within 16 weeks of the rating</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Medium</p>
+                                            </td>
+                                            <td>
+                                                <p>No</p>
+                                            </td>
+                                            <td>
+                                                <p>A Gateway Review is not likely to take place unless there are exceptional circumstances. Programmes/Projects should consider and arrange alternative assurance review</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Low</p>
+                                            </td>
+                                            <td>
+                                                <p>No</p>
+                                            </td>
+                                            <td>
+                                                <p>A Gateway Review will not take place, so use alternative assurance reviews instead</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+                        <div id="programme-assurance-process" class="article-section ">
+
+                            <h2 data-uipath="website.contentblock.section.title">Programme assurance process</h2>
+
+                            <div data-uipath="website.contentblock.section.content" class="rich-text-content">
+                                <p>Programmes complete a risk potential assessment annually and at key decision points to detail the key risk areas. This assessment is used to determine the degree of assurance required on a project or programme.</p>
+
+                                <p>The overall process at a high level is detailed here. For more detail, see the resources section.</p>
+                            </div>
+                        </div>
+                        <div class="article-section-with-no-heading expander expander-most">
+                            <details>
+                                <summary aria-expanded="false" aria-controls="details-content-0">
+                                    <span>
+                                        Planning
+                                    </span>
+                                </summary>
+                                <div class="details-body" aria-hidden="true" id="details-content-0">
+                                    <p>The Senior Responsible Owner decides when to conduct a Risk Potential Assessment. Triggers include:</p>
+
+                                    <ul>
+                                        <li>
+                                            <p>significant changes such as funding, scope, milestones or portfolio reprioritisation</p>
+                                        </li>
+                                        <li>
+                                            <p>when navigating functional controls or when passing significant milestones</p>
+                                        </li>
+                                        <li>
+                                            <p>Otherwise, review at least twice a year</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </div>
+                        <div class="article-section-with-no-heading expander expander-most">
+                            <details>
+                                <summary aria-expanded="false" aria-controls="details-content-1">
+                                    <span>
+                                        Complete a Risk Potential Assessment
+                                    </span>
+                                </summary>
+                                <div class="details-body" aria-hidden="true" id="details-content-1">
+                                    <p>The Risk Potential Assessment determines the degree of assurance required on a project or programme. The IPA owns the form, and you'll need to <a href="https://www.gov.uk/government/publications/risk-potential-assessment-form">download the latest</a>.</p>
+
+                                    <p>When completing it, consider:</p>
+
+                                    <ul>
+                                        <li>
+                                            <p>the inherent risk from the beginning</p>
+                                        </li>
+                                        <li>
+                                            <p>the complexity and resources required</p>
+                                        </li>
+                                        <li>
+                                            <p>the audience for the document, what they need to know</p>
+                                        </li>
+                                    </ul>
+
+                                    <p>Check the guidance documents in Resources and downloads</p>
+                                </div>
+                            </details>
+                        </div>
+                        <div class="article-section-with-no-heading expander expander-most">
+                            <details>
+                                <summary aria-expanded="false" aria-controls="details-content-2">
+                                    <span>
+                                        Scoring
+                                    </span>
+                                </summary>
+                                <div class="details-body" aria-hidden="true" id="details-content-2">
+                                </div>
+                            </details>
+                        </div>
+                        <div class="article-section-with-no-heading expander expander-most">
+                            <details>
+                                <summary aria-expanded="false" aria-controls="details-content-3">
+                                    <span>
+                                        Assessment and review
+                                    </span>
+                                </summary>
+                                <div class="details-body" aria-hidden="true" id="details-content-3">
+                                </div>
+                            </details>
+                        </div>
+
+
+                        <div id="resources-and-downloads" class="article-section">
+
+                            <h2 data-uipath="website.contentblock.download.title">Resources and downloads</h2>
+
+                            <div data-uipath="website.contentblock.download.description"></div>
+
+                            <div class="article-section--list">
+                                <div class="grid-row">
+                                    <div class="column column--reset">
+                                        <div class="list list--reset cta-list cta-list--sections">
+                                            <div class="visually-hidden">
+                                                <div class="type-span type-span--external type-span--hidden" data-type="external">external</div>
+
+
+                                                <div class="block-link">
+                                                    <div class="block-link__header">
+                                                        <div class="icon icon--html icon--2x" aria-hidden="true"></div>
+                                                    </div>
+                                                    <div class="block-link__body">
+                                                        <div class="block-link__title">
+                                                            <a href="https://www.gov.uk/government/publications/risk-potential-assessment-form">Risk Potential Assessment (RPA) form</a>
+                                                        </div>
+                                                        <p class="cta__text">Use the risk potential assessment form to initiate a review.</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div>
+                                                <div class="type-span type-span--asset type-span--hidden" data-type="asset">asset</div>
+
+
+                                                <div class="block-link">
+                                                    <div class="block-link__header">
+                                                        <div class="icon icon--doc icon--2x" aria-hidden="true"></div>
+                                                    </div>
+                                                    <div class="block-link__body">
+                                                        <div class="block-link__title">
+                                                            <a href="/site/_cmsinternal/binaries/content/assets/intranet/teams/cpmo/rpa-guidance-2020-kb.docx">Guidance to complete the Risk Potential Assessment (RPA)</a>
+                                                        </div>
+                                                        <meta itemprop="encodingFormat" content="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                                                        <div class="block-link__meta regular">Created by NHSD CPMO Business partners to help you complete the form</div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div class="type-span type-span--asset type-span--hidden" data-type="asset">asset</div>
+
+
+                                                <div class="block-link">
+                                                    <div class="block-link__header">
+                                                        <div class="icon icon--pdf icon--2x" aria-hidden="true"></div>
+                                                    </div>
+                                                    <div class="block-link__body">
+                                                        <div class="block-link__title">
+                                                            <a href="/site/_cmsinternal/binaries/content/assets/intranet/teams/cpmo/dtp-assurance-guidance-v1.0---kb.pdf">
+                                                                Interim Assurance guidance (PDF)
+                                                            </a>
+                                                        </div>
+                                                        <meta itemprop="encodingFormat" content="application/pdf">
+                                                        <div class="block-link__meta regular">Created by XXX</div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <div id="contact-us" class="article-section ">
+
+                            <h2 data-uipath="website.contentblock.section.title">Contact us</h2>
+
+                            <div data-uipath="website.contentblock.section.content" class="rich-text-content">
+                                <h3><a href="https://gbr.delve.office.com/?u=f8efd6f6-b9dd-44a1-b4e6-4ec1a8c5adea&amp;v=work" onclick="logGoogleAnalyticsEvent('Link click','Team','https://gbr.delve.office.com/?u=f8efd6f6-b9dd-44a1-b4e6-4ec1a8c5adea&amp;v=work');" onkeyup="return vjsu.onKeyUp(event)">Karl Blackshaw</a></h3>
+
+                                <p>
+                                    Business Partner<br>
+                                    &nbsp;
+                                </p>
+
+                                <p>Team: <a href="/intranet/teams/cpmo/portfolio-partnering">Portfolio partnering team</a></p>
+
+                                <p>Email:&nbsp;<a href="mailto:corporateportfoliomanagementoffice@nhs.net" target="_blank" onclick="logGoogleAnalyticsEvent('Link click','Team','mailto:corporateportfoliomanagementoffice@nhs.net');" onkeyup="return vjsu.onKeyUp(event)">corporateportfoliomanagementoffice@nhs.net</a>&nbsp;</p>
+
+                                <p>&nbsp;</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="article-section muted">
+                            Last edited: 13 August 2020 3:00 pm
+                        </div>
+                        <div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1002px; height: 2545px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer white-links" id="footer">
+        <div class="grid-wrapper grid-wrapper--full-width grid-wrapper--wide">
+            <div class="grid-row">
+                <div class="column column--reset">
+
+                    <div class="site-footer__section site-footer__section--top">
+                        <div class="grid-wrapper grid-wrapper--collapse">
+                            <div class="grid-row">
+                                <div class="column column--left column--one-half">
+                                    <nav class="site-footer__menu site-footer__menu--1">
+                                        <h2 class="list__header">About NHS Digital</h2>
+                                        <ul class="list list--reset list--close">
+                                            <li><a href="#">About us</a></li>
+                                            <li><a href="#">Our strategy</a></li>
+                                            <li><a href="#">Annual report and accounts</a></li>
+                                            <li><a href="#">Our business plan</a></li>
+                                            <li><a href="#">News and events</a></li>
+                                            <li><a href="#">How we look after your information</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                                <div class="column column--right column--one-half">
+                                    <nav class="site-footer__menu site-footer__menu--3">
+                                        <ul class="list list--reset list--close">
+                                            <li><a href="#">Contact us</a></li>
+                                            <li><a href="#">Press office</a></li>
+                                            <li><a href="#">Freedom of information</a></li>
+                                            <li><a href="#">Careers</a></li>
+                                            <li class="last-item"><a href="#" title="Provide website feedback">Tell us what you think of our website</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="site-footer__section site-footer__section--bottom">
+                        <div class="grid-wrapper grid-wrapper--collapse">
+                            <div class="grid-row">
+                                <div class="column column--left">
+                                    <nav class="site-footer__menu site-footer__menu--4">
+                                        <ul class="list list--inline list--reset">
+                                            <li><a href="#">Privacy and cookies</a></li>
+                                            <li><a href="#">Terms and conditions</a></li>
+                                            <li><a href="#">Accessibility</a></li>
+                                            <li><a href="#">Cookie consent</a></li>
+                                        </ul>
+                                    </nav>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>window.addEventListener("load", function () {
+            $("#js-agile").on("click", function (e) {
+                e.preventDefault();
+                $(".button").removeClass("active");
+                $(this).addClass("active");
+                $("#js-panel-agile").removeClass("hide");
+                $("#js-panel-agile-programme").addClass("hide");
+                $("#js-panel-waterfall-programme").addClass("hide");
+            });
+            $("#js-agile-programme").on("click", function (e) {
+                e.preventDefault();
+                $(".button").removeClass("active");
+                $(this).addClass("active");
+                $("#js-panel-agile").addClass("hide");
+                $("#js-panel-agile-programme").removeClass("hide");
+                $("#js-panel-waterfall-programme").addClass("hide");
+            });
+            $("#js-waterfall-programme").on("click", function (e) {
+                e.preventDefault();
+                $(".button").removeClass("active");
+                $(this).addClass("active");
+                $("#js-panel-agile").addClass("hide");
+                $("#js-panel-agile-programme").addClass("hide");
+                $("#js-panel-waterfall-programme").removeClass("hide");
+            })
+
+        });</script>
+
+</body>
+
+</html>

@@ -192,6 +192,7 @@
     <None Include="arm\audit\index %28copy%29.html" />
     <None Include="arm\audit\audit-types %28copy%29.html" />
     <None Include="arm\audit\custom-audits.html" />
+    <None Include="arm\cpmo\portfolio-partnering\programme-assurance.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="arm\cpmo\standards-and-investment\" />
