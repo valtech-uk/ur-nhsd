@@ -297,6 +297,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- strip HTML tags -->
 
 
@@ -306,7 +323,8 @@
 
 
 
-        <article class="article article--team">
+
+        <article class="article article--general">
 
 
             <!-- checking whether simulating doc in order to avoid console errors from NewsHub and EventHub docs -->
@@ -325,9 +343,9 @@
 
 
                                     <h1 id="top" class="local-header__title" data-uipath="document.title" itemprop="name">Programme assurance</h1>
-
-
-                                    <div itemprop="description" class="article-header__subtitle" data-uipath="website.team.summary">We work with the Infrastructure and projects authority (IPA) who conduct reviews of major government projects</div>
+                                    <div class="article-header__subtitle" data-uipath="website.general.summary">
+                                        <p>We work with the Infrastructure and projects authority (IPA) who conduct reviews of major government projects</p>
+                                    </div>
 
                                 </div>
                             </div>
@@ -342,8 +360,10 @@
 
             <div class="grid-wrapper grid-wrapper--article">
 
+
                 <div class="grid-row">
                     <div class="column column--one-third page-block page-block--sidebar article-section-nav-outer-wrapper">
+                        <!-- start sticky-nav -->
                         <div id="sticky-nav" class="" style="">
                             <div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
                                 <div class="article-section-nav-wrapper">
@@ -358,10 +378,7 @@
                                                     <a href="#what-is-programme-assurance-" aria-label="Scroll to 'What is programme assurance?'" title="Scroll to 'What is programme assurance?'" class="active">What is programme assurance?</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#risk-scores-and-programme-size" aria-label="Scroll to 'Risk scores and programme size'" title="Scroll to 'Risk scores and programme size'" class=" ">Risk scores and programme size</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#programme-assurance-process" aria-label="Scroll to 'Programme assurance process'" title="Scroll to 'Programme assurance process'">Programme assurance process</a>
+                                                    <a href="#programme-assurance-process" aria-label="Scroll to 'Programme assurance process'" title="Scroll to 'Programme assurance process'" class=" ">Programme assurance process</a>
                                                 </li>
                                                 <li>
                                                     <a href="#resources-and-downloads" aria-label="Scroll to 'Resources and downloads'" title="Scroll to 'Resources and downloads'">Resources and downloads</a>
@@ -375,9 +392,11 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- end sticky-nav -->
                     </div>
 
                     <div class="column column--two-thirds page-block page-block--main">
+
 
 
 
@@ -398,86 +417,10 @@
                             </div>
                         </div>
                         <div class="ctabtn--div">
-                            <div class="ctabtn-left" aria-labelledby="ctabtn-complete-the-rpa-template-">
-                                <a href="https://www.gov.uk/government/publications/risk-potential-assessment-form" class="ctabtn-left ctabtn--nhs-digital-button" id="ctabtn-complete-the-rpa-template-" onclick="logGoogleAnalyticsEvent('Link click', 'Team', 'https://www.gov.uk/government/publications/risk-potential-assessment-form')" onkeyup="return vjsu.onKeyUp(event)">
-                                    Complete the RPA (template)
+                            <div class="ctabtn-left" aria-labelledby="ctabtn-complete-an-rpa-form">
+                                <a href="https://www.gov.uk/government/publications/risk-potential-assessment-form" class="ctabtn-left ctabtn--nhs-digital-button" id="ctabtn-complete-an-rpa-form" onclick="logGoogleAnalyticsEvent('Link click', 'General', 'https://www.gov.uk/government/publications/risk-potential-assessment-form')" onkeyup="return vjsu.onKeyUp(event)" target="_blank">
+                                    Complete an RPA form
                                 </a>
-                            </div>
-                        </div>
-
-
-                        <div id="risk-scores-and-programme-size" class="article-section ">
-
-                            <h2 data-uipath="website.contentblock.section.title">Risk scores and programme size</h2>
-
-                            <div data-uipath="website.contentblock.section.content" class="rich-text-content">
-                                <p>The score and project size affect the process. The second&nbsp; is&nbsp;for programmes listed&nbsp;in&nbsp;the Government Major Projects Portfolio.</p>
-
-                                <table>
-                                    <tbody>
-                                        <tr>
-                                            <td width="15%" role="columnheader">
-                                                <p><strong>RPA Score</strong></p>
-                                            </td>
-                                            <td width="20%" role="columnheader">
-                                                <p><strong>Major Project&nbsp;</strong><strong>Portfolio</strong></p>
-                                            </td>
-                                            <td role="columnheader">
-                                                <p><strong>Outcome</strong></p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p><div class="callout--severe">High</div></p>
-                                            </td>
-                                            <td>
-                                                <p>Yes</p>
-                                            </td>
-                                            <td>
-                                                <p>The IPA will conduct a Gateway Review. The Programme has 4 weeks to gather and complete the required documentation</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p><div class="callout--alert">High</div></p>
-                                            </td>
-                                            <td>
-                                                <p>No</p>
-                                            </td>
-                                            <td>
-                                                <div>
-                                                    <div>DHSC will arrange an initial Assessment Meeting. A Gateway</div>
-                                                </div>
-
-                                                <div>
-                                                    <div>Review follows within 16 weeks of the rating</div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p>Medium</p>
-                                            </td>
-                                            <td>
-                                                <p>No</p>
-                                            </td>
-                                            <td>
-                                                <p>A Gateway Review is not likely to take place unless there are exceptional circumstances. Programmes/Projects should consider and arrange alternative assurance review</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p>Low</p>
-                                            </td>
-                                            <td>
-                                                <p>No</p>
-                                            </td>
-                                            <td>
-                                                <p>A Gateway Review will not take place, so use alternative assurance reviews instead</p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
                             </div>
                         </div>
 
@@ -487,7 +430,7 @@
                             <h2 data-uipath="website.contentblock.section.title">Programme assurance process</h2>
 
                             <div data-uipath="website.contentblock.section.content" class="rich-text-content">
-                                <p>Programmes complete a risk potential assessment annually and at key decision points to detail the key risk areas. This assessment is used to determine the degree of assurance required on a project or programme.</p>
+                                <p>All programmes complete a risk potential assessment annually and at key decision points to detail the key risk areas. This assessment is used to determine the degree of assurance required on a project or programme.</p>
 
                                 <p>The overall process at a high level is detailed here. For more detail, see the resources section.</p>
                             </div>
@@ -520,27 +463,73 @@
                             <details>
                                 <summary aria-expanded="false" aria-controls="details-content-1">
                                     <span>
-                                        Complete a Risk Potential Assessment
+                                        Scoring
                                     </span>
                                 </summary>
                                 <div class="details-body" aria-hidden="true" id="details-content-1">
-                                    <p>The Risk Potential Assessment determines the degree of assurance required on a project or programme. The IPA owns the form, and you'll need to <a href="https://www.gov.uk/government/publications/risk-potential-assessment-form">download the latest</a>.</p>
+                                    <p>The score and project size affect the process. The second&nbsp; is&nbsp;for programmes listed&nbsp;in&nbsp;the Government Major Projects Portfolio.</p>
 
-                                    <p>When completing it, consider:</p>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td width="15%" role="columnheader">
+                                                    <p><strong>RPA Score</strong></p>
+                                                </td>
+                                                <td width="20%" role="columnheader">
+                                                    <p><strong>Major Project&nbsp;</strong><strong>Portfolio</strong></p>
+                                                </td>
+                                                <td role="columnheader">
+                                                    <p><strong>Outcome</strong></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="callout callout--severe">High</div>
+                                                </td>
+                                                <td>
+                                                    <p>Yes</p>
+                                                </td>
+                                                <td>
+                                                    <p>The IPA will conduct a Gateway Review. The Programme has 4 weeks to gather and complete the required documentation</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="callout callout--severe">High</div>
+                                                </td>
+                                                <td>
+                                                    <p>No</p>
+                                                </td>
+                                                <td>
+                                                    <p>DHSC will arrange an initial Assessment Meeting. A Gateway</p>
 
-                                    <ul>
-                                        <li>
-                                            <p>the inherent risk from the beginning</p>
-                                        </li>
-                                        <li>
-                                            <p>the complexity and resources required</p>
-                                        </li>
-                                        <li>
-                                            <p>the audience for the document, what they need to know</p>
-                                        </li>
-                                    </ul>
-
-                                    <p>Check the guidance documents in Resources and downloads</p>
+                                                    <p>Review follows within 16 weeks of the rating</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="callout callout--warning">Medium</div>
+                                                </td>
+                                                <td>
+                                                    <p>No</p>
+                                                </td>
+                                                <td>
+                                                    <p>A Gateway Review is not likely to take place unless there are exceptional circumstances. Programmes/Projects should consider and arrange alternative assurance review</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="callout callout--info">Low</div>
+                                                </td>
+                                                <td>
+                                                    <p>No</p>
+                                                </td>
+                                                <td>
+                                                    <p>A Gateway Review will not take place, so use alternative assurance reviews instead</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </details>
                         </div>
@@ -548,7 +537,7 @@
                             <details>
                                 <summary aria-expanded="false" aria-controls="details-content-2">
                                     <span>
-                                        Scoring
+                                        Assessment and review
                                     </span>
                                 </summary>
                                 <div class="details-body" aria-hidden="true" id="details-content-2">
@@ -559,7 +548,7 @@
                             <details>
                                 <summary aria-expanded="false" aria-controls="details-content-3">
                                     <span>
-                                        Assessment and review
+                                        Gateway review
                                     </span>
                                 </summary>
                                 <div class="details-body" aria-hidden="true" id="details-content-3">
@@ -577,64 +566,23 @@
                             <div class="article-section--list">
                                 <div class="grid-row">
                                     <div class="column column--reset">
-                                        <div class="list list--reset cta-list cta-list--sections">
-                                            <div class="visually-hidden">
-                                                <div class="type-span type-span--external type-span--hidden" data-type="external">external</div>
+                                        <ul class="list list--reset cta-list cta-list--sections">
+                                            <li>
+                                                <span class="type-span type-span--external type-span--hidden" data-type="external">external</span>
 
 
-                                                <div class="block-link">
+                                                <a href="https://www.gov.uk/government/publications/risk-potential-assessment-form" class="block-link" onclick="logGoogleAnalyticsEvent('Link click', 'General', 'Risk Potential Assessment (RPA) form')" onkeyup="return vjsu.onKeyUp(event)" target="_blank">
                                                     <div class="block-link__header">
-                                                        <div class="icon icon--html icon--2x" aria-hidden="true"></div>
+                                                        <span class="icon icon--html icon--2x" aria-hidden="true"></span>
                                                     </div>
                                                     <div class="block-link__body">
-                                                        <div class="block-link__title">
-                                                            <a href="https://www.gov.uk/government/publications/risk-potential-assessment-form">Risk Potential Assessment (RPA) form</a>
-                                                        </div>
+                                                        <span class="block-link__title">Risk Potential Assessment (RPA) form</span>
                                                         <p class="cta__text">Use the risk potential assessment form to initiate a review.</p>
                                                     </div>
-                                                </div>
+                                                </a>
 
-                                            </div>
-                                            <div>
-                                                <div class="type-span type-span--asset type-span--hidden" data-type="asset">asset</div>
-
-
-                                                <div class="block-link">
-                                                    <div class="block-link__header">
-                                                        <div class="icon icon--doc icon--2x" aria-hidden="true"></div>
-                                                    </div>
-                                                    <div class="block-link__body">
-                                                        <div class="block-link__title">
-                                                            <a href="/site/_cmsinternal/binaries/content/assets/intranet/teams/cpmo/rpa-guidance-2020-kb.docx">Guidance to complete the Risk Potential Assessment (RPA)</a>
-                                                        </div>
-                                                        <meta itemprop="encodingFormat" content="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
-                                                        <div class="block-link__meta regular">Created by NHSD CPMO Business partners to help you complete the form</div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <div class="type-span type-span--asset type-span--hidden" data-type="asset">asset</div>
-
-
-                                                <div class="block-link">
-                                                    <div class="block-link__header">
-                                                        <div class="icon icon--pdf icon--2x" aria-hidden="true"></div>
-                                                    </div>
-                                                    <div class="block-link__body">
-                                                        <div class="block-link__title">
-                                                            <a href="/site/_cmsinternal/binaries/content/assets/intranet/teams/cpmo/dtp-assurance-guidance-v1.0---kb.pdf">
-                                                                Interim Assurance guidance (PDF)
-                                                            </a>
-                                                        </div>
-                                                        <meta itemprop="encodingFormat" content="application/pdf">
-                                                        <div class="block-link__meta regular">Created by XXX</div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -643,36 +591,152 @@
                         </div>
 
 
+                        <div class="article-section-with-no-heading">
+                            <div data-uipath="website.contentblock.section.content" class="rich-text-content">
+                                <div class="article-section--list">
+                                    <div class="grid-row">
+                                        <div class="column column--reset">
+                                            <div class="cta-list cta-list--sections list list--reset">
+                                                <div>
+                                                    <div class="type-span type-span--asset type-span--hidden">asset</div>
+
+                                                    <div class="block-link">
+                                                        <div class="block-link__header">
+                                                            <div class="icon icon--2x icon--doc">&nbsp;</div>
+                                                        </div>
+
+                                                        <div class="block-link__body">
+                                                            <div class="block-link__title"><a href="/site/_cmsinternal/binaries/content/assets/intranet/teams/cpmo/rpa-guidance-2020-kb.docx" onclick="logGoogleAnalyticsEvent('Download attachment','General','Programme assurance => rpa-guidance-2020-kb.docx');" onkeyup="return vjsu.onKeyUp(event)">Guidance to complete the Risk Potential Assessment (RPA)</a></div>
+
+                                                            <div class="block-link__meta regular">Created by NHSD CPMO Business partners to help you complete the form</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="type-span type-span--asset type-span--hidden">asset</div>
+
+                                                    <div class="block-link">
+                                                        <div class="block-link__header">
+                                                            <div class="icon icon--2x icon--pdf">&nbsp;</div>
+                                                        </div>
+
+                                                        <div class="block-link__body">
+                                                            <div class="block-link__title"><a href="/site/_cmsinternal/binaries/content/assets/intranet/teams/cpmo/dtp-assurance-guidance-v1.0---kb.pdf" onclick="logGoogleAnalyticsEvent('Download attachment','General','Programme assurance => dtp-assurance-guidance-v1.0---kb.pdf');" onkeyup="return vjsu.onKeyUp(event)">DTP Assurance guidance (PDF)</a>&nbsp;2019 - updated version to follow</div>
+
+                                                            <div class="block-link__meta regular">Created by NHSX, NHSD, IPA and DHSC</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>Assurance review toolkit for Gateway Reviews</h3>
+                                    
+                                    <div class="grid-row">
+                                        <div class="column column--reset">
+                                            <div class="cta-list cta-list--sections list list--reset">
+
+                                                <div>
+
+                                                    <div class="block-link">
+                                                        
+                                                        <div class="block-link__body">
+                                                            <p>Guidance and templates for use when undertaking assurance reviews on major government projects</p>
+                                                            <ul>
+                                                                <li>
+
+                                                                    <a href="https://www.gov.uk/government/publications/ogc-gateway-review-0-strategic-assessment-guidance-and-templates">
+                                                                        Strategic assessment guidance and templates
+                                                                    </a>
+
+                                                                </li>
+                                                                <li>
+
+                                                                    <a href="https://www.gov.uk/government/publications/ogc-gateway-review-1-business-justification-guidance-and-templates">
+                                                                        Business justification guidance and templates
+                                                                    </a>
+
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="https://www.gov.uk/government/publications/ogc-gateway-review-2-delivery-strategy-guidance-and-templates">
+                                                                        Delivery strategy guidance and templates
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.gov.uk/government/publications/ogc-gateway-review-3-investment-decision-guidance-and-templates">
+                                                                        Investment decision guidance and templates
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.gov.uk/government/publications/ogc-gateway-review-4-readiness-for-service-guidance-and-templates">
+                                                                        Readiness for service guidance and templates
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.gov.uk/government/publications/ogc-gateway-review-5-operations-review-guidance-and-templates">
+                                                                        Operations review guidance and templates
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                    
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                         <div id="contact-us" class="article-section ">
 
                             <h2 data-uipath="website.contentblock.section.title">Contact us</h2>
 
                             <div data-uipath="website.contentblock.section.content" class="rich-text-content">
-                                <h3><a href="https://gbr.delve.office.com/?u=f8efd6f6-b9dd-44a1-b4e6-4ec1a8c5adea&amp;v=work" onclick="logGoogleAnalyticsEvent('Link click','Team','https://gbr.delve.office.com/?u=f8efd6f6-b9dd-44a1-b4e6-4ec1a8c5adea&amp;v=work');" onkeyup="return vjsu.onKeyUp(event)">Karl Blackshaw</a></h3>
+                                <h3><a href="https://gbr.delve.office.com/?u=f8efd6f6-b9dd-44a1-b4e6-4ec1a8c5adea&amp;v=work" onclick="logGoogleAnalyticsEvent('Link click','Team','https://gbr.delve.office.com/?u=f8efd6f6-b9dd-44a1-b4e6-4ec1a8c5adea&amp;v=work');;logGoogleAnalyticsEvent('Link click','General','https://gbr.delve.office.com/?u=f8efd6f6-b9dd-44a1-b4e6-4ec1a8c5adea&amp;v=work');" onkeyup="return vjsu.onKeyUp(event)" target="_blank">Karl Blackshaw</a></h3>
 
                                 <p>
                                     Business Partner<br>
                                     &nbsp;
                                 </p>
 
-                                <p>Team: <a href="/intranet/teams/cpmo/portfolio-partnering">Portfolio partnering team</a></p>
+                                <p>Email us at:&nbsp;&nbsp;<a href="mailto:corporateportfoliomanagementoffice@nhs.net" target="_blank" onclick="logGoogleAnalyticsEvent('Link click','Team','mailto:corporateportfoliomanagementoffice@nhs.net');;logGoogleAnalyticsEvent('Link click','General','mailto:corporateportfoliomanagementoffice@nhs.net');" onkeyup="return vjsu.onKeyUp(event)">corporateportfoliomanagementoffice@nhs.net</a>&nbsp;</p>
 
-                                <p>Email:&nbsp;<a href="mailto:corporateportfoliomanagementoffice@nhs.net" target="_blank" onclick="logGoogleAnalyticsEvent('Link click','Team','mailto:corporateportfoliomanagementoffice@nhs.net');" onkeyup="return vjsu.onKeyUp(event)">corporateportfoliomanagementoffice@nhs.net</a>&nbsp;</p>
+                                <p>About the&nbsp;<a href="https://dev.nhsd.io/intranet/teams/cpmo/portfolio-partnering" onclick="logGoogleAnalyticsEvent('Link click','General','https://dev.nhsd.io/intranet/teams/cpmo/portfolio-partnering');" onkeyup="return vjsu.onKeyUp(event)" target="_blank">CPMO Portfolio partnering team</a></p>
 
                                 <p>&nbsp;</p>
+
+                                <p><strong>Help us improve</strong></p>
+
+                                <p>
+                                    If you have any questions or feedback, complete our online form:<br>
+                                    <a href="/site/_cmsinternal/intranet/forms/contact-cmpo">CPMO contact form</a>
+                                </p>
                             </div>
                         </div>
 
 
 
+
+
                         <div class="article-section muted">
-                            Last edited: 13 August 2020 3:00 pm
+                            Last edited: 14 August 2020 9:46 am
                         </div>
-                        <div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1002px; height: 2545px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div>
+                        <div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1002px; height: 2157px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div>
                     </div>
                 </div>
             </div>
         </article>
+
     </main>
 
     <footer class="site-footer white-links" id="footer">
