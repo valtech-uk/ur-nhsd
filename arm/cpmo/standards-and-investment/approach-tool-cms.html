@@ -409,59 +409,7 @@
             </div>
         </article>
 
-        <style type="text/css">
-            td.high {
-                background-color: lightgreen;
-                color: #000;
-            }
 
-            td.medium {
-                background-color: lightgoldenrodyellow;
-                color: #000;
-            }
-
-            td.low {
-                background-color: red;
-                color: #fff;
-            }
-
-            td.very-low {
-                background-color: purple;
-                color: #fff;
-            }
-
-            .eforms label {
-                min-width: 36px;
-            }
-
-            .eforms input[type=radio] {
-                margin: 0 !important;
-                top: 0 !important;
-                position: relative;
-            }
-
-            #parent {
-                list-style: none;
-                width: 100%;
-                margin: 0;
-                padding: 0;
-                white-space: nowrap;
-                overflow-x: auto;
-                overflow-y: hidden;
-            }
-
-                #parent > li {
-                    display: inline-block;
-                }
-
-            .article-section.muted {
-                display: none
-            }
-
-            .grid-wrapper.grid-wrapper--article {
-                margin-bottom: 20px;
-            }
-        </style>
         <div class="grid-wrapper grid-wrapper--article">
 
             <div class="grid-row">
@@ -1344,6 +1292,319 @@
                 </div>
             </div>
         </div>
+
+
+        <style type="text/css">
+            td.high {
+                background-color: lightgreen;
+                color: #000;
+            }
+
+            td.medium {
+                background-color: lightgoldenrodyellow;
+                color: #000;
+            }
+
+            td.low {
+                background-color: red;
+                color: #fff;
+            }
+
+            td.very-low {
+                background-color: purple;
+                color: #fff;
+            }
+
+            .eforms label {
+                min-width: 36px;
+            }
+
+            .eforms input[type=radio] {
+                margin: 0 !important;
+                top: 0 !important;
+                position: relative;
+            }
+
+            #parent {
+                list-style: none;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                white-space: nowrap;
+                overflow-x: auto;
+                overflow-y: hidden;
+            }
+
+                #parent > li {
+                    display: inline-block;
+                }
+
+            .article-section.muted {
+                display: none
+            }
+
+            .grid-wrapper.grid-wrapper--article {
+                margin-bottom: 20px;
+            }
+
+
+            .nhsuk-select:focus {
+                border: 4px solid #212b32;
+                box-shadow: 0 0 0 4px #ffeb3b;
+                outline: 4px solid transparent;
+                outline-offset: 4px
+            }
+
+                .nhsuk-select option:active, .nhsuk-select option:checked, .nhsuk-select:focus::-ms-value {
+                    background-color: #005eb8;
+                    color: #fff
+                }
+
+
+            .nhsuk-input {
+                font-weight: 400;
+                font-size: 16px;
+                font-size: 1rem;
+                line-height: 1.5;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                appearance: none;
+                border: 2px solid #4c6272;
+                border-radius: 0;
+                box-sizing: border-box;
+                height: 40px;
+                margin-top: 0;
+                padding: 4px;
+                width: 100%
+            }
+
+            @media (min-width: 40.0625em) {
+                .nhsuk-input {
+                    font-size: 19px;
+                    font-size: 1.1875rem;
+                    line-height: 1.47368
+                }
+            }
+
+            @media print {
+                .nhsuk-input {
+                    font-size: 14pt;
+                    line-height: 1.15
+                }
+            }
+
+            .nhsuk-input:focus {
+                border: 4px solid #212b32;
+                box-shadow: 0 0 0 4px #ffeb3b;
+                outline: 4px solid transparent;
+                outline-offset: 4px
+            }
+
+            .nhsuk-input::-webkit-outer-spin-button,
+            .nhsuk-input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0
+            }
+
+            .nhsuk-input[type="number"] {
+                -moz-appearance: textfield
+            }
+
+            .nhsuk-input--error {
+                border: 4px solid #d5281b
+            }
+
+            .nhsuk-input--width-30 {
+                max-width: 59ex
+            }
+
+            .nhsuk-input--width-20 {
+                max-width: 41ex
+            }
+
+            .nhsuk-input--width-10 {
+                max-width: 23ex
+            }
+
+            .nhsuk-input--width-5 {
+                max-width: 10.8ex
+            }
+
+            .nhsuk-input--width-4 {
+                max-width: 9ex
+            }
+
+            .nhsuk-input--width-3 {
+                max-width: 7.2ex
+            }
+
+            .nhsuk-input--width-2 {
+                max-width: 5.4ex
+            }
+
+
+            .nhsuk-hint {
+                font-weight: 400;
+                font-size: 16px;
+                font-size: 1rem;
+                line-height: 1.5;
+                color: #4c6272;
+                display: block;
+                margin-bottom: 16px
+            }
+
+            .nhsuk-radios__item {
+                font-weight: 400;
+                font-size: 16px;
+                font-size: 1rem;
+                line-height: 1.5;
+                clear: left;
+                display: block;
+                margin-bottom: 8px;
+                min-height: 40px;
+                padding: 0 0 0 40px;
+                position: relative
+            }
+
+                .nhsuk-radios__item:last-child, .nhsuk-radios__item:last-of-type {
+                    margin-bottom: 0
+                }
+
+            .nhsuk-radios__input {
+                cursor: pointer;
+                height: 40px;
+                left: 0;
+                margin: 0;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                width: 40px;
+                z-index: 1
+            }
+
+            .nhsuk-radios__label {
+                -ms-touch-action: manipulation;
+                cursor: pointer;
+                display: inline-block;
+                margin-bottom: 0;
+                padding: 8px 12px 4px;
+                touch-action: manipulation
+            }
+
+            .nhsuk-radios__hint {
+                display: block;
+                padding-left: 12px;
+                padding-right: 12px
+            }
+
+            .nhsuk-radios__input + .nhsuk-radios__label::before {
+                background: #fff;
+                border: 2px solid #4c6272;
+                border-radius: 50%;
+                box-sizing: border-box;
+                content: '';
+                height: 40px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 40px
+            }
+
+            .nhsuk-radios__input + .nhsuk-radios__label::after {
+                background: #4c6272;
+                border: 10px solid #212b32;
+                border-radius: 50%;
+                content: '';
+                height: 0;
+                left: 10px;
+                opacity: 0;
+                position: absolute;
+                top: 10px;
+                width: 0
+            }
+
+            .nhsuk-radios__input:focus + .nhsuk-radios__label::before {
+                border: 4px solid #212b32;
+                box-shadow: 0 0 0 4px #ffeb3b;
+                outline: 4px solid transparent;
+                outline-offset: 4px
+            }
+
+            .nhsuk-radios__input:checked + .nhsuk-radios__label::after {
+                opacity: 1
+            }
+
+            .nhsuk-radios__input:disabled, .nhsuk-radios__input:disabled + .nhsuk-radios__label {
+                cursor: default
+            }
+
+                .nhsuk-radios__input:disabled + .nhsuk-radios__label {
+                    opacity: .5
+                }
+
+            @media (min-width: 40.0625em) {
+                .nhsuk-radios--inline:after {
+                    clear: both;
+                    content: '';
+                    display: block
+                }
+
+                .nhsuk-radios--inline .nhsuk-radios__item {
+                    clear: none;
+                    float: left;
+                    margin-right: 24px
+                }
+            }
+
+            .nhsuk-radios--inline.nhsuk-radios--conditional .nhsuk-radios__item {
+                float: none;
+                margin-right: 0
+            }
+
+            .nhsuk-radios__divider {
+                font-weight: 400;
+                font-size: 16px;
+                font-size: 1rem;
+                line-height: 1.5;
+                color: #212b32;
+                margin-bottom: 8px;
+                text-align: center;
+                width: 40px
+            }
+
+            @media (min-width: 40.0625em) {
+                .nhsuk-radios__divider {
+                    font-size: 19px;
+                    font-size: 1.1875rem;
+                    line-height: 1.47368
+                }
+            }
+
+            @media print {
+                .nhsuk-radios__divider {
+                    font-size: 14pt;
+                    line-height: 1.15
+                }
+            }
+
+            .nhsuk-radios__conditional {
+                margin-bottom: 16px;
+                border-left: 4px solid #4c6272;
+                margin-left: 18px;
+                padding-left: 30px
+            }
+
+            @media (min-width: 40.0625em) {
+                .nhsuk-radios__conditional {
+                    margin-bottom: 24px
+                }
+            }
+
+            .nhsuk-radios__conditional > :last-child {
+                margin-bottom: 0
+            }
+        </style>
+
 
         <script src="https://code.highcharts.com/highcharts.js"></script>
         <script src="https://code.highcharts.com/highcharts-more.js"></script>
