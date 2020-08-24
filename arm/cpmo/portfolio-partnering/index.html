@@ -40,26 +40,26 @@
     <script src="../../../content/js/custom.js"></script>
 
     <style type="text/css">
-        /* As SVG does not provide a default visual style for links,
-   it's considered best practice to add some */
+             /* As SVG does not provide a default visual style for links,
+        it's considered best practice to add some */
 
-        @namespace svg url(http://www.w3.org/2000/svg);
-        /* Necessary to select only SVG <a> elements, and not also HTML’s.
-   See warning below */
+             @namespace svg url(http://www.w3.org/2000/svg);
+             /* Necessary to select only SVG <a> elements, and not also HTML’s.
+        See warning below */
 
-        svg|a:link, svg|a:visited {
-            cursor: pointer;
-        }
+             svg|a:link, svg|a:visited {
+                 cursor: pointer;
+             }
 
-        svg|a text,
-        text svg|a {
-            fill: white; /* Even for text, SVG uses fill over color */
-            text-decoration: underline;
-        }
+             svg|a text,
+             text svg|a {
+                 fill: white; /* Even for text, SVG uses fill over color */
+                 text-decoration: underline;
+             }
 
-        svg|a:hover, svg|a:active {
-            outline: dotted 1px white;
-        }
+             svg|a:hover, svg|a:active {
+                 outline: dotted 1px white;
+             }
     </style>
 </head>
 
@@ -224,7 +224,6 @@
             </div>
         </div>
     </div>
-
     <main id="main-content">
 
 
@@ -423,7 +422,9 @@
                                     </div>
 
                                     <div class="iconList__content">
-                                        <div class="iconList__title" data-uipath="website.contentblock.iconlistitem.heading">Submit a change request</div>
+                                        <div class="iconList__title" data-uipath="website.contentblock.iconlistitem.heading">
+                                            <a href="/site/_cmsinternal/intranet/teams/cpmo/portfolio-partnering/make-a-change-request" onclick="logGoogleAnalyticsEvent('Link click','Person','Make a change request');" onkeyup="return vjsu.onKeyUp(event)" title="Submit a change request">Submit a change request</a>
+                                        </div>
 
                                         <div class="iconList__body" data-uipath="website.contentblock.iconlistitem.description">
                                             <p>Guidance to complete a change request and a link to the online form</p>
@@ -459,29 +460,6 @@
 
                             <div data-uipath="website.contentblock.download.description"></div>
 
-                            <div class="article-section--list">
-                                <div class="grid-row">
-                                    <div class="column column--reset">
-                                        <ul class="list list--reset cta-list cta-list--sections">
-                                            <li>
-                                                <span class="type-span type-span--internal type-span--hidden" data-type="internal">internal</span>
-
-
-
-                                                <a href="/site/_cmsinternal/intranet/teams/cpmo/portfolio-partnering/programme-assurance" class="block-link" onclick="logGoogleAnalyticsEvent('Link click', 'Team', 'Programme assurance')" onkeyup="return vjsu.onKeyUp(event)">
-                                                    <div class="block-link__header">
-                                                        <span class="icon icon--2x icon--html" aria-hidden="true"></span>
-                                                    </div>
-                                                    <div class="block-link__body">
-                                                        <span class="block-link__title">Programme assurance</span>
-                                                    </div>
-                                                </a>
-
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
 
 
                         </div>
@@ -489,51 +467,136 @@
 
                         <div class="article-section-with-no-heading">
                             <div data-uipath="website.contentblock.section.content" class="rich-text-content">
-                                <div class="article-section--list">
-                                    <div class="grid-row">
-                                        <div class="column column--reset">
-                                            <div class="cta-list cta-list--sections list list--reset">
-                                                <div>
-                                                    <div class="type-span type-span--asset type-span--hidden">asset</div>
 
-                                                    <div class="block-link">
-                                                        <div class="block-link__header">
-                                                            <div class="icon icon--2x icon--html">&nbsp;</div>
-                                                        </div>
+                                <div class="grid-row">
+                                    <div class="column">
+                                        <h3>Planning and reporting</h3>
+                                    </div>
 
-                                                        <div class="block-link__body">
-                                                            <div class="block-link__title">
-                                                                <a href="/site/_cmsinternal/intranet/teams/cpmo/portfolio-reporting/milestone-guidance">Milestones quick guide</a>
-                                                            </div>
+                                    <div class="column column--one-half">
+                                        <div class="cta-list cta-list--sections list list--reset">
+                                            <div>
 
-                                                            <div class="block-link__meta regular">Created by NHSD CPMO Business partners to help you complete the form</div>
-                                                        </div>
+                                                <div class="block-link">
+                                                    <div class="block-link__header">
+                                                        <div class="icon icon--2x icon--html">&nbsp;</div>
+                                                    </div>
+
+                                                    <div class="block-link__body">
+                                                        <div class="block-link__title"><a href="https://apps.powerapps.com/play/providers/Microsoft.PowerApps/apps/9bf10fad-38e2-4bf2-b00a-7a3bd78ba6b9?&amp;authMode=Default">Reporting tools</a></div>
+
+                                                        <div class="block-link__meta regular">Create the Highlight Report for monthly reporting​</div>
                                                     </div>
                                                 </div>
+                                            </div>
 
-                                                <div>
-                                                    <div class="type-span type-span--asset type-span--hidden">asset</div>
+                                            <div>
+                                                <div class="type-span type-span--asset type-span--hidden">asset</div>
 
-                                                    <div class="block-link">
-                                                        <div class="block-link__header">
-                                                            <div class="icon icon--2x icon--pdf">&nbsp;</div>
-                                                        </div>
+                                                <div class="block-link">
+                                                    <div class="block-link__header">
+                                                        <div class="icon icon--2x icon--html">&nbsp;</div>
+                                                    </div>
 
-                                                        <div class="block-link__body">
-                                                            <div class="block-link__title"><a href="/site/_cmsinternal/binaries/content/assets/intranet/teams/cpmo/dtp-assurance-guidance-v1.0---kb.pdf" onclick="logGoogleAnalyticsEvent('Download attachment','General','Programme assurance => dtp-assurance-guidance-v1.0---kb.pdf');" onkeyup="return vjsu.onKeyUp(event)">DTP Assurance guidance (PDF)</a>&nbsp;2019 - updated version to follow</div>
+                                                    <div class="block-link__body">
+                                                        <div class="block-link__title"><a href="../resources/milestone-guidance.html" onclick="logGoogleAnalyticsEvent('Link click','Team','/site/_cmsinternal/intranet/teams/cpmo/portfolio-reporting/milestone-guidance');">Milestones quick guide</a></div>
 
-                                                            <div class="block-link__meta regular">Created by NHSX, NHSD, IPA and DHSC</div>
-                                                        </div>
+                                                        <div class="block-link__meta regular">Guidance on how to create milestones in your programme</div>
                                                     </div>
                                                 </div>
+                                            </div>
 
+                                            <div>
+                                                <div class="block-link">
+                                                    <div class="block-link__header">
+                                                        <div class="icon icon--2x icon--doc">&nbsp;</div>
+                                                    </div>
+
+                                                    <div class="block-link__body">
+                                                        <div class="block-link__title"><a href="/site/_cmsinternal/binaries/content/assets/intranet/teams/cpmo/planning-framework-v1.9.docx" onclick="logGoogleAnalyticsEvent('Download attachment','General','Programme assurance =&gt; dtp-assurance-guidance-v1.0---kb.pdf');">Planning framework</a></div>
+
+                                                        <div class="block-link__meta regular">NHSX&nbsp;guidance on project planning</div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-       
+                                    <div class="column column--one-half">
+                                        <div class="cta-list cta-list--sections list list--reset">
+                                            <div>
+
+                                                <div class="block-link">
+                                                    <div class="block-link__header">
+                                                        <div class="icon icon--2x icon--doc">&nbsp;</div>
+                                                    </div>
+
+                                                    <div class="block-link__body">
+                                                        <div class="block-link__title"><a href="../resources/rag-status-definitions-v0.2.docx">RAG status definitions (download DOCX)</a></div>
+
+                                                        <div class="block-link__meta regular">Proposed changes to RAG status definitions</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div class="block-link">
+                                                    <div class="block-link__header">
+                                                        <div class="icon icon--2x icon--doc">&nbsp;</div>
+                                                    </div>
+
+                                                    <div class="block-link__body">
+                                                        <div class="block-link__title"><a href="https://valtechcom.sharepoint.com/:w:/r/sites/Carolynsite/CarolynPublicDocs/Benefits-HLR-App-guide.docx?d=w954326a96d3641cea12cc352147f3f41&csf=1&web=1&e=WeOMZg">Benefits high level reporting app guide (online Word doc)</a></div>
+
+                                                        <div class="block-link__meta regular">Guide to the Benefits reporting app</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="column">
+  
+                                        <div class="cta-list cta-list--sections list ">
+
+                                            <h3>Programme assurance</h3>
+                                            <div>
+                                                <div class="block-link">
+                                                    <div class="block-link__header">
+                                                        <div class="icon icon--2x icon--html">&nbsp;</div>
+                                                    </div>
+
+                                                    <div class="block-link__body">
+                                                        <div class="block-link__title"><a href="/site/_cmsinternal/intranet/teams/cpmo/portfolio-partnering/programme-assurance">Programme assurance</a></div>
+
+                                                        <div class="block-link__meta regular">Working with the government team blah blah</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <h3>Benefits</h3>
+
+                                            <div>
+                                                <div class="block-link">
+                                                    <div class="block-link__header">
+                                                        <div class="icon icon--2x icon--html">&nbsp;</div>
+                                                    </div>
+
+                                                    <div class="block-link__body">
+                                                        <div class="block-link__title"><a href="/site/_cmsinternal/intranet/teams/cpmo/portfolio-partnering/make-a-change-request">Make a change request</a></div>
+
+                                                        <div class="block-link__meta regular">Raise a request when a change is forecast to fall outside of agreed tolerance levels for your programme</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+
+
+
                             </div>
                         </div>
+
 
                         <div id="contact-us" class="article-section ">
 
@@ -615,9 +678,9 @@
 
 
                         <div class="article-section muted">
-                            Last edited: 14 August 2020 4:14 pm
+                            Last edited: 17 August 2020 12:11 pm
                         </div>
-                        <div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1002px; height: 2198px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div>
+                        <div dir="ltr" class="resize-sensor" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div class="resize-sensor-expand" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1002px; height: 2753px;"></div></div><div class="resize-sensor-shrink" style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;"></div></div></div>
                     </div>
                 </div>
             </div>
