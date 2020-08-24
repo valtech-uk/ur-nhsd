@@ -194,6 +194,8 @@
     <None Include="arm\audit\custom-audits.html" />
     <None Include="arm\cpmo\portfolio-partnering\programme-assurance.html" />
     <None Include="arm\cpmo\portfolio-partnering\index %28copy%29.html" />
+    <None Include="arm\cpmo\programmes.html" />
+    <None Include="arm\cpmo\resources\rag-status-definitions-v0.2.docx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="arm\cpmo\standards-and-investment\" />
