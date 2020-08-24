@@ -196,6 +196,7 @@
     <None Include="arm\cpmo\portfolio-partnering\index %28copy%29.html" />
     <None Include="arm\cpmo\programmes.html" />
     <None Include="arm\cpmo\resources\rag-status-definitions-v0.2.docx" />
+    <None Include="arm\cpmo\standards-and-investment\approach-tool-cms.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="arm\cpmo\standards-and-investment\" />
