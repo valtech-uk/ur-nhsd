@@ -904,6 +904,10 @@ input#query-main{
     margin-bottom: 32px
 }
 
+.expander .nhsuk-summary-list {
+    margin-bottom: 0;
+}
+
 @media (min-width: 40.0625em) {
     .nhsuk-summary-list {
         font-size:19px;
@@ -1865,4 +1869,19 @@ form label {
 
 .nhsuk-radios__conditional>:last-child {
     margin-bottom: 0
+}
+
+.dashboards-list__detail {
+    margin-left: 128px;
+}
+
+.dashboards-list__item {
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #b3bbc1;
+}
+
+.dashboards-list .nhsuk-inset-text {
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
